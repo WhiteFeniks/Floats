@@ -14,6 +14,7 @@ typedef struct f_struct
     int fractional_part[1100];
     int order[15];
     int mantissa[64];
+    int effective_order;
 }               f_floats;
 
 #endif //FLOATS_FLOATS_H
