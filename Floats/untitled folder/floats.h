@@ -10,8 +10,10 @@
 typedef struct f_struct
 {
     int sign;
-    int celoe[1100];
-    int mnt[1100];
+    int integer_part[1100];
+    int fractional_part[1100];
+    int order[15];
+    int mantissa[64];
 }               f_floats;
 
 #endif //FLOATS_FLOATS_H
