@@ -1,6 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
-#include <floats.h>
+#include "floats.h"
 
 
 union number                                                                    // объединение, чтобы можно было обратиться к long double
@@ -8,6 +8,22 @@ union number                                                                    
     long double x;
     short       my_array[5];                                                    // short занимает 16 байт * 5 = 80 байт (поэтому 5 штук)
 };
+
+int my_number(f_floats **new)
+{
+    int i;
+    int *result;
+
+    i = 0;
+    result = ft_make_zero_str(1100);
+    while (i < 64)
+    {
+        result = ft_exponentiation_long_arithmetic(i + (*new)->effective_order);
+        printf("i[%d] = %d \n", i, *result);
+        i++;
+    }
+    return (0);
+}
 
 int make_mantissa(f_floats **new)                                               // функция нахождения позиции, где заканчиваются значащие цифры мантиссы
 {
@@ -50,11 +66,10 @@ void make_order(f_floats **new)                                                 
         i++;
         k--;
     }
-    while (--i > 0)                                                              // просуммируем все полученные числа в элементах массива
+    while (--i >= 0)                                                              // просуммируем все полученные числа в элементах массива
         digit = digit + (*new)->order[i];
     (*new)->effective_order = digit - 16383;                                     // 011 1111 1111 1100 - 011 1111 1111 1111 = -3
 }                                                                                // эффективный порядок = -3
-
 
 int number_breakdown (char number_of_bits[], f_floats **new)
 {
@@ -94,9 +109,10 @@ int number_breakdown (char number_of_bits[], f_floats **new)
 
     make_order(new);                                                            // перевод порядка в десятичную систему
     // очистить вывод снизу                                                     // очистить
-    printf("Эффективынй порядок = %d", (*new)->effective_order);                // очистить
+    printf("Эффективынй порядок = %d \n\n", (*new)->effective_order);                // очистить
     // очистить ввод сверху */                                                  // очистить
-    return(i);
+    my_number(new);
+    return(0);
 }
 
 int write_number_in_binary(size_t const step, void *my_value, f_floats **new)  // функция записи нашего числа из 10-ой системы в двоичную
@@ -137,6 +153,6 @@ int main()
 {
     f_floats *new;
 
-    new = (f_floats*)malloc(sizeof(f_floats));
+    new = (f_floats*)malloc(sizeof(f_floats));                                   // создание структуры с мантисой, порядком, дробной, целой частью и  эффективным порядком
     write_number(0.15625, &new);                                            // наше приходящее число
 }

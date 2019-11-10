@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I"/Users/umoff/git_floats/Floats/untitled folder/." 
+C_INCLUDES = -I"/Users/umoff/git_floats/Floats/untitled folder/." -I"/Users/umoff/git_floats/Floats/untitled folder/libft" 
 

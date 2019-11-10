@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../floats.h
-unistd.h
+/Users/umoff/git_floats/Floats/untitled folder/libft/ft_difference_long_arithmetic.c
+libft.h
+/Users/umoff/git_floats/Floats/untitled folder/libft/libft.h
+
+/Users/umoff/git_floats/Floats/untitled folder/libft/libft.h
+string.h
 -
 stdlib.h
 -
-stdio.h
--
-
-/Users/umoff/git_floats/Floats/untitled folder/1.ft_make_number_with_main.c
 unistd.h
--
-stdio.h
--
-floats.h
 -
 
