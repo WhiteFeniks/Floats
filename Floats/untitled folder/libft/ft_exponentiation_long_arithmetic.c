@@ -12,6 +12,6 @@ int    *ft_exponentiation_long_arithmetic(int power)
         return (result);
     }
     while (power-- > 1)
-            result = ft_addition_long_arithmetic(result, result);
+        result = ft_addition_long_arithmetic(result, result);
     return (result);
 }

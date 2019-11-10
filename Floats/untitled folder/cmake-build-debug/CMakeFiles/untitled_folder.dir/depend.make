@@ -5,6 +5,9 @@ CMakeFiles/untitled_folder.dir/1.ft_make_number_with_main.c.o: ../1.ft_make_numb
 CMakeFiles/untitled_folder.dir/1.ft_make_number_with_main.c.o: ../floats.h
 CMakeFiles/untitled_folder.dir/1.ft_make_number_with_main.c.o: ../libft/libft.h
 
+CMakeFiles/untitled_folder.dir/libft/ft_abs.c.o: ../libft/ft_abs.c
+CMakeFiles/untitled_folder.dir/libft/ft_abs.c.o: ../libft/libft.h
+
 CMakeFiles/untitled_folder.dir/libft/ft_addition_long_arithmetic.c.o: ../libft/ft_addition_long_arithmetic.c
 CMakeFiles/untitled_folder.dir/libft/ft_addition_long_arithmetic.c.o: ../libft/libft.h
 

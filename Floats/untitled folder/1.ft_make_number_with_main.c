@@ -12,14 +12,15 @@ union number                                                                    
 int my_number(f_floats **new)
 {
     int i;
-    int *result;
+    int *outcome;
 
     i = 0;
-    result = ft_make_zero_str(1100);
-    while (i < 64)
+    outcome = ft_make_zero_str(1100);
+    if ((*new)->effective_order < 0)
+        outcome = ft_exponentiation_long_arithmetic(i + ft_abs((*new)->effective_order));
+    while (i < 1100)
     {
-        result = ft_exponentiation_long_arithmetic(i + (*new)->effective_order);
-        printf("i[%d] = %d \n", i, *result);
+        printf("i%d = %d\n", i, outcome[i]);
         i++;
     }
     return (0);
