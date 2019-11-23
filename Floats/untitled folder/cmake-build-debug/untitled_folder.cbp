@@ -152,6 +152,9 @@
 		<Unit filename="/Users/umoff/git_floats/Floats/untitled folder/libft/ft_lstnew.c">
 			<Option target="untitled_folder"/>
 		</Unit>
+		<Unit filename="/Users/umoff/git_floats/Floats/untitled folder/libft/ft_make_number.c">
+			<Option target="untitled_folder"/>
+		</Unit>
 		<Unit filename="/Users/umoff/git_floats/Floats/untitled folder/libft/ft_make_zero_str.c">
 			<Option target="untitled_folder"/>
 		</Unit>

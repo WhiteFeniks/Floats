@@ -690,6 +690,33 @@ libft/ft_lstnew.c.s:
 	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_lstnew.c.s
 .PHONY : libft/ft_lstnew.c.s
 
+libft/ft_make_number.o: libft/ft_make_number.c.o
+
+.PHONY : libft/ft_make_number.o
+
+# target to build an object file
+libft/ft_make_number.c.o:
+	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_make_number.c.o
+.PHONY : libft/ft_make_number.c.o
+
+libft/ft_make_number.i: libft/ft_make_number.c.i
+
+.PHONY : libft/ft_make_number.i
+
+# target to preprocess a source file
+libft/ft_make_number.c.i:
+	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_make_number.c.i
+.PHONY : libft/ft_make_number.c.i
+
+libft/ft_make_number.s: libft/ft_make_number.c.s
+
+.PHONY : libft/ft_make_number.s
+
+# target to generate assembly for a file
+libft/ft_make_number.c.s:
+	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_make_number.c.s
+.PHONY : libft/ft_make_number.c.s
+
 libft/ft_make_zero_str.o: libft/ft_make_zero_str.c.o
 
 .PHONY : libft/ft_make_zero_str.o
@@ -2058,6 +2085,9 @@ help:
 	@echo "... libft/ft_lstnew.o"
 	@echo "... libft/ft_lstnew.i"
 	@echo "... libft/ft_lstnew.s"
+	@echo "... libft/ft_make_number.o"
+	@echo "... libft/ft_make_number.i"
+	@echo "... libft/ft_make_number.s"
 	@echo "... libft/ft_make_zero_str.o"
 	@echo "... libft/ft_make_zero_str.i"
 	@echo "... libft/ft_make_zero_str.s"

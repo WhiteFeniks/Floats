@@ -65,6 +65,9 @@ CMakeFiles/untitled_folder.dir/libft/ft_lstmap.c.o: ../libft/libft.h
 CMakeFiles/untitled_folder.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
 CMakeFiles/untitled_folder.dir/libft/ft_lstnew.c.o: ../libft/libft.h
 
+CMakeFiles/untitled_folder.dir/libft/ft_make_number.c.o: ../libft/ft_make_number.c
+CMakeFiles/untitled_folder.dir/libft/ft_make_number.c.o: ../libft/libft.h
+
 CMakeFiles/untitled_folder.dir/libft/ft_make_zero_str.c.o: ../libft/ft_make_zero_str.c
 CMakeFiles/untitled_folder.dir/libft/ft_make_zero_str.c.o: ../libft/libft.h
 

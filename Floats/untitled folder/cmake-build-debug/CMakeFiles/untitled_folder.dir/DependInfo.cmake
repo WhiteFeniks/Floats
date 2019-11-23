@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_lstiter.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_lstiter.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_lstmap.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_lstmap.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_lstnew.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_lstnew.c.o"
+  "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_make_number.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_make_number.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_make_zero_str.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_make_zero_str.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_memalloc.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_memalloc.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_memccpy.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_memccpy.c.o"

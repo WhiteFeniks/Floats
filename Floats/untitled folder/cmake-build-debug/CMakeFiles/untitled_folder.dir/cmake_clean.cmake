@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled_folder.dir/libft/ft_lstiter.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_lstmap.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_lstnew.c.o"
+  "CMakeFiles/untitled_folder.dir/libft/ft_make_number.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_make_zero_str.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_memalloc.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_memccpy.c.o"

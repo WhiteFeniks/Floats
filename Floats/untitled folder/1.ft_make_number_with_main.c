@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <stdio.h>
 #include "floats.h"
 
@@ -9,15 +8,59 @@ union number                                                                    
     short       my_array[5];                                                    // short занимает 16 байт * 5 = 80 байт (поэтому 5 штук)
 };
 
+int shift_one(int len)
+{
+    int result;
+
+    if (len == 0)
+        return (1);
+    result = 10;
+    while (--len > 0)
+        result = result * 10;
+    return (result);
+}
+
+int make_number(int *my_array)
+{
+    int i;
+    int num;
+    int len;
+
+    i = 1100;
+    num = 0;
+    while (my_array[i] == 0)
+        i--;
+    len = i;
+    i = 0;
+    while (len >= 0)
+    {
+        num = num + my_array[i] * shift_one(len);
+        len--;
+        i++;
+    }
+    return (num);
+}
+
 int my_number(f_floats **new)
 {
     int i;
     int *outcome;
+    int *single_unit_array;
+    int digital;
 
     i = 0;
+    digital = 0;
     outcome = ft_make_zero_str(1100);
-    if ((*new)->effective_order < 0)
-        outcome = ft_exponentiation_long_arithmetic(i + ft_abs((*new)->effective_order));
+    single_unit_array = ft_make_zero_str(1100);
+    single_unit_array[1099] = 1;
+    while(i < 64)
+    {
+        if ((*new)->effective_order < 0)
+            outcome = ft_division_long_arithmetic(single_unit_array, ft_exponentiation_long_arithmetic(i + ft_abs((*new)->effective_order)));
+            digital = make_number(outcome);
+            (*new)->mantissa[i] * digital;
+        i++;
+    }
     while (i < 1100)
     {
         printf("i%d = %d\n", i, outcome[i]);

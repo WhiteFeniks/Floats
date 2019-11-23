@@ -26,6 +26,7 @@ ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_make_zero_str.c \
 ft_addition_long_arithmetic.c  ft_division_long_arithmetic.c \
 ft_difference_long_arithmetic.c ft_exponentiation_long_arithmetic.c \
 ft_shift_elements_left.c ft_shift_elements_right.c  ft_abs.c \
+ft_make_number.c \
 
 OBJECTS = ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o \
 ft_isdigit.o ft_isprint.o ft_memccpy.o ft_memchr.o ft_memcmp.o ft_memcpy.o \
@@ -41,6 +42,7 @@ ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o ft_make_zero_str.o \
 ft_addition_long_arithmetic.o  ft_division_long_arithmetic.o \
 ft_difference_long_arithmetic.o ft_exponentiation_long_arithmetic.o \
 ft_shift_elements_left.o ft_shift_elements_right.o ft_abs.o \
+ft_make_number.o
 
 HEADERS = ./
 
