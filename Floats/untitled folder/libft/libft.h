@@ -99,7 +99,6 @@ int                 ft_make_number(int *my_array);
 int                 ft_shift_one(int len);
 int                 ft_abs(int digital);
 int                 my_shift_one(int len);
-int                 make_number(int *my_array);
 int                 shift_one(int len);
 
 

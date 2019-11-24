@@ -20,11 +20,12 @@ int shift_one(int len)
     return (result);
 }
 
-int make_number(int *my_array)
+/*int make_number(int *my_array, f_floats **new)
 {
     int i;
     int num;
     int len;
+    int count_zero;
 
     i = 1100;
     num = 0;
@@ -32,38 +33,143 @@ int make_number(int *my_array)
         i--;
     len = i;
     i = 0;
+    (*new)->count_zero = 0;
     while (len >= 0)
     {
+        if (my_array[i] == 0)
+            (*new)->count_zero++;
         num = num + my_array[i] * shift_one(len);
         len--;
         i++;
     }
     return (num);
 }
+*/
+int len_number(int digital)
+{
+    int len;
+
+    len = 0;
+    while (digital % 10 != 0)
+    {
+        digital = digital / 10;
+        len++;
+    }
+    return (len);
+}
+
+int make_real(double digital)
+{
+    int result;
+
+    result = 1;
+    while (digital > 0)
+    {
+        result = result * 10;
+        digital--;
+    }
+    return (result);
+}
+
+int *ft_shift_in_back(int *ft_array, f_floats **new)
+{
+    int i;
+    int j;
+
+    i = 1100;
+    (*new)->len_number_1 = 0;
+    while (ft_array[i] == 0 && i >= 0)
+        i--;
+    (*new)->len_number_1 = i + 1;
+    j = 1099;
+    while (i >= 0)
+    {
+        ft_array[j] = ft_array[i];
+        ft_array[i] = 0;
+        i--;
+        j--;
+    }
+    return (ft_array);
+}
+
+int ft_shift_array(int *x)
+{
+    int i;
+    int j;
+
+    i = 0;
+    while (x[i] == 0)
+        i++;
+    while (i < 1100)
+    {
+        x[i - 1] = x[i];
+        x[i] = 0;
+        i++;
+    }
+}
+
+int multiplication_ten(int len, int *out)
+{
+    if (len < 0)
+    {
+        len = (-len);
+        while (len >= 0)
+        {
+            ft_shift_array(out);
+            len--;
+        }
+    }
+    return (out);
+}
+
+int ft_len(int *array, f_floats **new)
+{
+    int i;
+    int len;
+
+    i = 0;
+    len = 0;
+    while (array[i] == 0)
+        i++;
+    len = 1100 - i;
+    return (len);
+}
 
 int my_number(f_floats **new)
 {
     int i;
-    int *outcome;
     int *single_unit_array;
-    int digital;
+    int *result;
+    int *out;
+    int count;
 
     i = 0;
-    digital = 0;
-    outcome = ft_make_zero_str(1100);
-    single_unit_array = ft_make_zero_str(1100);
-    single_unit_array[1099] = 1;
+    count = 0;
+    out = ft_make_zero_str(1100);
     while(i < 64)
     {
+
+        result = ft_make_zero_str(1100);
         if ((*new)->effective_order < 0)
-            outcome = ft_division_long_arithmetic(single_unit_array, ft_exponentiation_long_arithmetic(i + ft_abs((*new)->effective_order)));
-            digital = make_number(outcome);
-            (*new)->mantissa[i] * digital;
+        {
+            single_unit_array = ft_make_zero_str(1100);
+            single_unit_array[1099] = 1;
+            result = ft_division_long_arithmetic(single_unit_array, ft_exponentiation_long_arithmetic(i + ft_abs((*new)->effective_order)));
+            result = ft_shift_in_back(result, new);
+        }
+        count = ((*new)->len_number_2 - (*new)->len_number_1);
+        while (count < 0)
+        {
+            ft_shift_array(out);
+            count++;
+        }
+        out = ft_addition_long_arithmetic(out, result);
+        (*new)->len_number_2 = ft_len(out, new);
         i++;
     }
     while (i < 1100)
     {
-        printf("i%d = %d\n", i, outcome[i]);
+        printf("i%d = %d\n", i, out[i]);
         i++;
     }
     return (0);
@@ -89,7 +195,7 @@ int power_of_two(int power)                                                     
     result = 1;
     while(power > 0)                                                            // пока степень больше 0
     {
-        result = result * 2;                                                    // домнажаем result на 2
+        result = result * 2;                                                    // домножаем result на 2
         power--;                                                                // уменьшаем степень
     }
     return (result);                                                            // результат = 2^power

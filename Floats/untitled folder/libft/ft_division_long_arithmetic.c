@@ -37,8 +37,8 @@ int ft_align_digital(int digital)
 
 int    *ft_division_long_arithmetic(int *x, int *y)
 {
-    long long number_1;
-    long long number_2;
+    int number_1;
+    int number_2;
     int *result;
     int i;
     int len;
