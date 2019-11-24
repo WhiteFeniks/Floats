@@ -16,7 +16,7 @@ typedef struct f_struct
     int order[15];
     int mantissa[64];
     int effective_order;
-    int count_zero;
+    int count_mantissa;
     int len_number_1;
     int len_number_2;
 }               f_floats;

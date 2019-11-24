@@ -135,6 +135,16 @@ int ft_len(int *array, f_floats **new)
     return (len);
 }
 
+void ft_count_mantissa(f_floats **new)
+{
+    int i;
+
+    i = 63;
+    while ((*new)->mantissa[i] == 0)
+        i--;
+    (*new)->count_mantissa = i;
+}
+
 int my_number(f_floats **new)
 {
     int i;
@@ -146,7 +156,8 @@ int my_number(f_floats **new)
     i = 0;
     count = 0;
     out = ft_make_zero_str(1100);
-    while(i < 64)
+    ft_count_mantissa(new);
+    while(i <= (*new)->count_mantissa)
     {
 
         result = ft_make_zero_str(1100);
@@ -163,16 +174,20 @@ int my_number(f_floats **new)
             ft_shift_array(out);
             count++;
         }
+        if ((*new)->mantissa[i] == 0)
+            result = ft_make_zero_str(1100);
         out = ft_addition_long_arithmetic(out, result);
         (*new)->len_number_2 = ft_len(out, new);
         i++;
     }
+    i = 0;
+    while (out[i] == 0)
+        i++;
     while (i < 1100)
     {
         printf("i%d = %d\n", i, out[i]);
         i++;
     }
-    return (0);
 }
 
 int make_mantissa(f_floats **new)                                               // функция нахождения позиции, где заканчиваются значащие цифры мантиссы
