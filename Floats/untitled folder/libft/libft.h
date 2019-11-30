@@ -88,7 +88,7 @@ int					ft_tolower(int c);
 int					ft_toupper(int c);
 int                 *ft_addition_long_arithmetic(int *x, int *y);
 int                 *ft_make_zero_str(int size);
-int                 *ft_difference_long_arithmetic(int *x, int *y);
+int                 *ft_difference_long_arithmetic(const int *x, const int *y);
 int                 *ft_division_long_arithmetic(int *x, int *y);
 int                 *ft_exponentiation_long_arithmetic(int power);
 int                 ft_align_digital(int digital);

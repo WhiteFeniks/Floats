@@ -1,10 +1,26 @@
 #include "libft.h"
 
-int    *ft_difference_long_arithmetic(int *x, int *y)
+int *my_copy_array(const int *x)
+{
+    int i;
+    int *result;
+    result = ft_make_zero_str(1100);
+
+    i = 0;
+    while (i < 1100)
+    {
+        result[i] = x[i];
+        i++;
+    }
+    return (result);
+}
+
+int    *ft_difference_long_arithmetic(const int *x, const int *y)
 {
     int *result;
     int i;
     int count;
+    int *temp;
 
     i = 0;
     result = ft_make_zero_str(1100);
@@ -12,15 +28,16 @@ int    *ft_difference_long_arithmetic(int *x, int *y)
         i++;
     count = 1100 - i;
     i = 1100;
+    temp = my_copy_array(x);
     while (--i >= (1100 - count))
     {
-        if (x[i] >= y[i])
-            result[i] = x[i] - y[i];
-        else
+        if (temp[i] < y[i])
         {
-            result[i] = 10 + x[i] - y[i];
-            x[i - 1] = x[i - 1] - 1;
+            temp[i] += 10;
+            temp[i - 1] -= 1;
         }
+        result[i] = temp[i] - y[i];
     }
+    result[i] = temp[i];
     return(result);
 }

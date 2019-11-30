@@ -11,6 +11,9 @@ CMakeFiles/untitled_folder.dir/libft/ft_abs.c.o: ../libft/libft.h
 CMakeFiles/untitled_folder.dir/libft/ft_addition_long_arithmetic.c.o: ../libft/ft_addition_long_arithmetic.c
 CMakeFiles/untitled_folder.dir/libft/ft_addition_long_arithmetic.c.o: ../libft/libft.h
 
+CMakeFiles/untitled_folder.dir/libft/ft_array_length.c.o: ../libft/ft_array_length.c
+CMakeFiles/untitled_folder.dir/libft/ft_array_length.c.o: ../libft/libft.h
+
 CMakeFiles/untitled_folder.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/untitled_folder.dir/libft/ft_atoi.c.o: ../libft/libft.h
 

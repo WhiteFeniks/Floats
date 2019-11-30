@@ -1,69 +1,123 @@
 #include "libft.h"
 
-int ft_shift_one(int len)
+int *ft_copy_array(const int *x)
 {
-    int result;
+    int i;
+    int *result;
+    result = ft_make_zero_str(1100);
 
-    if (len == 0)
-        return (1);
-    result = 10;
-    while (--len > 0)
-        result = result * 10;
+    i = 0;
+    while (i < 1100)
+    {
+        result[i] = x[i];
+        i++;
+    }
     return (result);
 }
 
-int	ft_array_length(int *my_array)
+int ft_comparison(const int *x, const int *y)
 {
     int i;
-    int count;
+    int *result;
+    int *temp;
 
     i = 0;
-    count = 0;
-    while(my_array[i] == 0)
-        i++;
-    while (i < 1100)
+    result = ft_make_zero_str(1100);
+    temp = ft_copy_array(x);
+    result = ft_difference_long_arithmetic(x, y);
+    x = ft_copy_array(temp);
+    while(i < 1100)
     {
+        if (result[i] < 0)
+            return (0);
         i++;
-        count++;
     }
-    return (count);
+    return (1);
 }
 
-int ft_align_digital(int digital)
+int *ft_multiplication(const int *x, const int *y)
 {
-    digital = digital * 10;
-    return (digital);
+    int i;
+    int j;
+    int *result;
+
+    i = 0;
+    result = ft_make_zero_str(1100);
+    while (y[i] == 0)
+        i++;
+    j = 1099;
+    while (j >= i)
+    {
+        result[j] = result[j] + y[j] * x[1099];
+        if (result[j] > 10)
+        {
+            result[j - 1] = result[j] / 10;
+            result[j] = result[j] % 10;
+        }
+        j--;
+    }
+    return (result);
+}
+
+int ft_work(int *x)
+{
+    int i;
+
+    i = 0;
+    while(x[i] == 0 && i < 1100)
+        i++;
+    if (i == 1100)
+        return (0);
+    else
+        return (1);
 }
 
 int    *ft_division_long_arithmetic(int *x, int *y)
 {
-    int number_1;
-    int number_2;
-    int *result;
-    int i;
+    int *result_divider;
     int len;
-    int flag;
+    int *res_mult;
+    int len_sdwig;
+    int i;
+    int j;
 
-    i = 0;
-    flag = 0;
-    result = ft_make_zero_str(1100);
+    j = 0;
     len = (ft_array_length(y) - ft_array_length(x));
-    x = ft_shift_elements_left(x, len + 1);
-    number_1 = ft_make_number(x);
-    number_2 = ft_make_number(y);
-    while (number_1 % number_2 != 0)
+    len_sdwig = len;
+    x = ft_shift_elements_left(x, len);
+    result_divider = ft_make_zero_str(1100);
+    while(ft_work(x) > 0)
     {
-        while (number_1 / number_2 <= 0)
+        if (result_divider[j] == 999)
         {
-            flag++;
-            number_1 = ft_align_digital(number_1);
+            result_divider[j] = 0;
+            j++;
         }
-        if (flag > 1)
-            i++;
-        result[i++] = number_1 / number_2;
-        number_1 = number_1 % number_2;
-        flag = 0;
+        len = (ft_array_length(y) - ft_array_length(x));
+        x = ft_shift_elements_left(x, len);
+        if (ft_comparison(x, y) < 1 && len == 0)
+            x = ft_shift_elements_left(x, 1);
+        if ((ft_comparison(x, y) < 1 && len == 1))
+        {
+            result_divider[j + 1] = 999;
+            x = ft_shift_elements_left(x, 1);
+        }
+        i = 1;
+        res_mult = ft_make_zero_str(1100);
+        while (ft_comparison(x, res_mult) > 0)
+        {
+            res_mult = ft_make_zero_str(1100);
+            res_mult[1099] = i;
+            res_mult = ft_multiplication(res_mult, y);
+            if (ft_comparison(x, res_mult) > 0)
+                i++;
+            else
+                break;
+        }
+        result_divider[j] = i - 1;
+        x = ft_difference_long_arithmetic(x, ft_difference_long_arithmetic(res_mult, y));
+        j++;
     }
-    ft_shift_elements_right(result, len);
-    return (result);
+    ft_shift_elements_right(result_divider, len_sdwig);
+    return (result_divider);
 }

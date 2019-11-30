@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/umoff/git_floats/Floats/untitled folder/1.ft_make_number_with_main.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/1.ft_make_number_with_main.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_abs.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_abs.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_addition_long_arithmetic.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_addition_long_arithmetic.c.o"
+  "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_array_length.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_array_length.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_atoi.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_atoi.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_bzero.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_bzero.c.o"
   "/Users/umoff/git_floats/Floats/untitled folder/libft/ft_difference_long_arithmetic.c" "/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir/libft/ft_difference_long_arithmetic.c.o"

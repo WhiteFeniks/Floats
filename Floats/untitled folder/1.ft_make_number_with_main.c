@@ -92,13 +92,13 @@ int *ft_shift_in_back(int *ft_array, f_floats **new)
     return (ft_array);
 }
 
-int ft_shift_array(int *x)
+int *ft_shift_array(int *x)
 {
     int i;
     int j;
 
     i = 0;
-    while (x[i] == 0)
+    while (x[i] == 0 && i < 1100)
         i++;
     while (i < 1100)
     {
@@ -106,8 +106,9 @@ int ft_shift_array(int *x)
         x[i] = 0;
         i++;
     }
+    return (x);
 }
-
+/*
 int multiplication_ten(int len, int *out)
 {
     if (len < 0)
@@ -121,7 +122,7 @@ int multiplication_ten(int len, int *out)
     }
     return (out);
 }
-
+*/
 int ft_len(int *array, f_floats **new)
 {
     int i;
@@ -142,10 +143,10 @@ void ft_count_mantissa(f_floats **new)
     i = 63;
     while ((*new)->mantissa[i] == 0)
         i--;
-    (*new)->count_mantissa = i;
+    (*new)->count_mantissa = i + 1;
 }
 
-int my_number(f_floats **new)
+void my_number(f_floats **new)
 {
     int i;
     int *single_unit_array;
@@ -319,5 +320,5 @@ int main()
     f_floats *new;
 
     new = (f_floats*)malloc(sizeof(f_floats));                                   // создание структуры с мантисой, порядком, дробной, целой частью и  эффективным порядком
-    write_number(0.15625, &new);                                            // наше приходящее число
+    write_number(0.15125, &new);                                            // наше приходящее число
 }

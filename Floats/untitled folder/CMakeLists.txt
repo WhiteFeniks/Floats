@@ -76,6 +76,7 @@ add_executable(untitled_folder
         libft/ft_tolower.c
         libft/ft_toupper.c
         libft/libft.h
+        libft/ft_array_length.c
         libft/ft_make_number.c
         1.ft_make_number_with_main.c
         floats.h)

@@ -204,6 +204,33 @@ libft/ft_addition_long_arithmetic.c.s:
 	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_addition_long_arithmetic.c.s
 .PHONY : libft/ft_addition_long_arithmetic.c.s
 
+libft/ft_array_length.o: libft/ft_array_length.c.o
+
+.PHONY : libft/ft_array_length.o
+
+# target to build an object file
+libft/ft_array_length.c.o:
+	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_array_length.c.o
+.PHONY : libft/ft_array_length.c.o
+
+libft/ft_array_length.i: libft/ft_array_length.c.i
+
+.PHONY : libft/ft_array_length.i
+
+# target to preprocess a source file
+libft/ft_array_length.c.i:
+	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_array_length.c.i
+.PHONY : libft/ft_array_length.c.i
+
+libft/ft_array_length.s: libft/ft_array_length.c.s
+
+.PHONY : libft/ft_array_length.s
+
+# target to generate assembly for a file
+libft/ft_array_length.c.s:
+	$(MAKE) -f CMakeFiles/untitled_folder.dir/build.make CMakeFiles/untitled_folder.dir/libft/ft_array_length.c.s
+.PHONY : libft/ft_array_length.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -2031,6 +2058,9 @@ help:
 	@echo "... libft/ft_addition_long_arithmetic.o"
 	@echo "... libft/ft_addition_long_arithmetic.i"
 	@echo "... libft/ft_addition_long_arithmetic.s"
+	@echo "... libft/ft_array_length.o"
+	@echo "... libft/ft_array_length.i"
+	@echo "... libft/ft_array_length.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

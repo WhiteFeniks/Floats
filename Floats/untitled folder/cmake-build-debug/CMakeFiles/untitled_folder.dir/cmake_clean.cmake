@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled_folder.dir/1.ft_make_number_with_main.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_abs.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_addition_long_arithmetic.c.o"
+  "CMakeFiles/untitled_folder.dir/libft/ft_array_length.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_atoi.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_bzero.c.o"
   "CMakeFiles/untitled_folder.dir/libft/ft_difference_long_arithmetic.c.o"
