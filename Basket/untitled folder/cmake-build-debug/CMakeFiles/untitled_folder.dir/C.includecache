@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/umoff/git_floats/Floats/untitled folder/libft/ft_division_long_arithmetic.c
+libft.h
+/Users/umoff/git_floats/Floats/untitled folder/libft/libft.h
+
+/Users/umoff/git_floats/Floats/untitled folder/libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
