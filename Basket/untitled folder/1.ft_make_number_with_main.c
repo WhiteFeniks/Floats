@@ -71,25 +71,23 @@ int make_real(double digital)
     return (result);
 }
 
-int *ft_shift_in_back(int *ft_array, f_floats **new)
+int *ft_shift_in_back(int *result)
 {
     int i;
     int j;
 
     i = 1100;
-    (*new)->len_number_1 = 0;
-    while (ft_array[i] == 0 && i >= 0)
+    while (result[i] == 0 && i >= 0)
         i--;
-    (*new)->len_number_1 = i + 1;
     j = 1099;
     while (i >= 0)
     {
-        ft_array[j] = ft_array[i];
-        ft_array[i] = 0;
+        result[j] = result[i];
+        result[i] = 0;
         i--;
         j--;
     }
-    return (ft_array);
+    return (result);
 }
 
 int *ft_shift_array(int *x)
@@ -136,16 +134,153 @@ int ft_len(int *array, f_floats **new)
     return (len);
 }
 
-void ft_count_mantissa(f_floats **new)
+int ft_count_mantissa(f_floats **new)
 {
     int i;
+    int count;
 
     i = 63;
     while ((*new)->mantissa[i] == 0)
         i--;
-    (*new)->count_mantissa = i + 1;
+    return (i);
 }
 
+int *make_integer(f_floats **new, int *x, int i)
+{
+    int *temp;
+
+    temp = ft_make_zero_str(1100);
+    if ((*new)->mantissa[i] == 1)
+        temp = ft_exponentiation_long_arithmetic((*new)->effective_order);
+    x = ft_addition_long_arithmetic(x, temp, 1100);
+    (*new)->effective_order--;
+    free(temp);
+    return (x);
+}
+
+int *make_fractional(f_floats **new, int *x, int i)
+{
+    int *temp;
+    int *single_unit_array;
+    int *result;
+
+    temp = ft_make_zero_str(1100);
+    result = ft_make_zero_str(1100);
+    single_unit_array = ft_make_zero_str(1100);
+    single_unit_array[1099] = 1;
+    if ((*new)->mantissa[i] == 1)
+    {
+        temp = ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order));
+        result = ft_division_long_arithmetic(single_unit_array, temp, 1100, 0);
+    }
+    x = ft_addition_long_arithmetic(x, result, 1100);
+    (*new)->effective_order--;
+    free(temp);
+    free(single_unit_array);
+    free(result);
+    return (x);
+}
+
+char *ft_make_zero_char(int size)
+{
+    char *s;
+    int i;
+
+    i = 0;
+    if (size == 0)
+        return(0);
+    if (!(s = (char *)malloc(sizeof(char) * size)))
+        return (NULL);
+    while(i < size)
+    {
+        s[i] = 0;
+        i++;
+    }
+    return(s);
+}
+
+char *ft_make_str(int *integer_part, int *fractional_part)
+{
+    int i;
+    int j;
+    char *x;
+
+    i = 0;
+    j = 0;
+    x = ft_make_zero_char(1100);
+    while (integer_part[i] == 0)
+        i++;
+    while (i < 1100)
+        x[j++] = integer_part[i++] + 48;
+    x[j] = '.';
+    while (fractional_part[i] == 0)
+        i--;
+    x[i + j + 1] = '\0';
+    while (i >= 0)
+    {
+        x[i + j + 1] = fractional_part[i] + 48;
+        i--;
+    }
+
+
+    return (x);
+}
+
+
+char *my_number(f_floats **new)
+{
+    int i;
+    char *result;
+    int *integer_part;
+    int *fractional_part;
+
+    i = 0;
+    integer_part = ft_make_zero_str(1100);
+    fractional_part = ft_make_zero_str(1100);
+    result = ft_make_zero_char(1100);
+    while (i <= ft_count_mantissa(new))
+    {
+        if ((*new)->effective_order >= 0)
+            integer_part = make_integer(new, integer_part, i);
+        else
+            fractional_part = make_fractional(new, fractional_part, i);
+        i++;
+    }
+    result = ft_make_str(integer_part, fractional_part);
+
+    /* удалить вывод */
+
+    i = 0;
+    printf("integer_part = ");
+    while (integer_part[i] == 0)
+        i++;
+    while (i < 1100)
+    {
+        printf("%d", integer_part[i]);
+        i++;
+    }
+    printf("\n");
+
+    i = 1100;
+    int j = 0;
+    printf("fractional_part = ");
+    while (fractional_part[i] == 0)
+        i--;
+    while (j <= i)
+    {
+        printf("%d", fractional_part[j]);
+        j++;
+    }
+    printf("\n ");
+    i = 0;
+    while (result[i] != '\0')
+    {
+        printf("%c", result[i]);
+        i++;
+    }
+    return (result);
+}
+/*
 void my_number(f_floats **new)
 {
     int i;
@@ -191,7 +326,7 @@ void my_number(f_floats **new)
         i++;
     }
 }
-
+*/
 int make_mantissa(f_floats **new)                                               // функция нахождения позиции, где заканчиваются значащие цифры мантиссы
 {
     int i;
@@ -321,6 +456,6 @@ int main()
     f_floats *new;
 
     new = (f_floats*)malloc(sizeof(f_floats));                                   // создание структуры с мантисой, порядком, дробной, целой частью и  эффективным порядком
-    write_number(0.15123, &new);                                            // наше приходящее число
-    printf("\n %.100f ", 0.15123  );
+    write_number(1000014583.15132416546549846, &new);                                            // наше приходящее число
+    printf("\n %.100f ", 1000014583.15132416546549846  );
 }

@@ -11,8 +11,8 @@
 typedef struct f_struct
 {
     int sign;
-    int integer_part[1100];
-    int fractional_part[1100];
+    int *integer_part;
+    int *fractional_part;
     int order[15];
     int mantissa[64];
     int effective_order;
