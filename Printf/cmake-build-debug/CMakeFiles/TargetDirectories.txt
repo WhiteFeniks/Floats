@@ -1,0 +1,3 @@
+/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir
