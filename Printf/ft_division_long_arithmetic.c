@@ -83,7 +83,6 @@ int	*ft_division_long_arithmetic(int *x, int *y, int accuracy, int numb_of_zero)
             result[numb_of_zero]++;
             temp = ft_addition_long_arithmetic(temp, y, accuracy);
         }
-        int *
         temp = ft_difference_long_arithmetic(temp, y, accuracy);
         x = ft_difference_long_arithmetic(x, temp, accuracy);
         i = check_end(x, accuracy);
@@ -92,6 +91,5 @@ int	*ft_division_long_arithmetic(int *x, int *y, int accuracy, int numb_of_zero)
         x = mult_on_ten(x, i, accuracy);
         free(temp);
     }
-    free(x);
     return (result);
 }

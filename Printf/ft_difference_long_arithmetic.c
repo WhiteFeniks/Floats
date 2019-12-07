@@ -24,6 +24,6 @@ int	*ft_difference_long_arithmetic(int *x, int *y, int accuracy)
         result[i] = x[i] - y[i];
         i--;
     }
-    //free(*x);
+    temp = result;
     return (result);
 }

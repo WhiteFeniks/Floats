@@ -39,21 +39,8 @@ int *make_integer(f_floats **new, int *x, int i)
 
     temp = ft_make_zero_str(1100);
     if ((*new)->mantissa[i] == 1)
-	{
-		int *tmp1;
-		tmp1 = ft_exponentiation_long_arithmetic((*new)->effective_order);
-		//temp = ft_exponentiation_long_arithmetic((*new)->effective_order);
-		free(temp);
-		temp = NULL;
-		temp = tmp1;
-	}
-    int *tmp;
-    tmp = ft_addition_long_arithmetic(x, temp, 1100);
-//  x = ft_addition_long_arithmetic(x, temp, 1100);
-    free(x);
-    x = NULL;
-    x = tmp;
-    printf("new x = %d\n", *x);
+        temp = ft_exponentiation_long_arithmetic((*new)->effective_order);
+    x = ft_addition_long_arithmetic(x, temp, 1100);
     (*new)->effective_order--;
     free(temp);
     return (x);
@@ -71,28 +58,10 @@ int *make_fractional(f_floats **new, int *x, int i)
     single_unit_array[1099] = 1;
     if ((*new)->mantissa[i] == 1)
     {
-		int *tmp2 = NULL;
-		tmp2 = ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order));
-		//   temp = ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order));
-		free(temp);
-		temp = NULL;
-		temp = tmp2;
-    	//   temp = ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order));
-		int *tmp1 = NULL;
-		tmp1 = ft_division_long_arithmetic(single_unit_array, temp, 1100, 0);
-       // result = ft_division_long_arithmetic(single_unit_array, temp, 1100, 0);
-		free(result);
-		result = NULL;
-		result = tmp1;
-		//free(temp);
+        temp = ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order));
+        result = ft_division_long_arithmetic(single_unit_array, temp, 1100, 0);
     }
-  //  free(temp);
-    int *tmp = NULL;
-    tmp = ft_addition_long_arithmetic(x, result, 1100);
-//    x = ft_addition_long_arithmetic(x, result, 1100);
-    free(x);
-    x = NULL;
-    x = tmp;
+    x = ft_addition_long_arithmetic(x, result, 1100);
     (*new)->effective_order--;
     free(temp);
     free(single_unit_array);
@@ -144,7 +113,7 @@ char *ft_make_str(int *integer_part, int *fractional_part)
 }
 
 
-char    *my_number(f_floats **new)
+char *my_number(f_floats **new)
 {
     int i;
     char *result;
@@ -158,22 +127,16 @@ char    *my_number(f_floats **new)
     while (i <= ft_count_mantissa(new))
     {
         if ((*new)->effective_order >= 0)
-			integer_part = make_integer(new, integer_part, i);
+            integer_part = make_integer(new, integer_part, i);
         else
             fractional_part = make_fractional(new, fractional_part, i);
         i++;
     }
-	char *tmp = NULL;
-	tmp = ft_make_str(integer_part, fractional_part);
-	//   result = ft_make_str(integer_part, fractional_part);
-	free(result);
-	result = NULL;
-	result = tmp;
-
+    result = ft_make_str(integer_part, fractional_part);
     (*new)->len_stroka = ft_strlen(result);
     free(integer_part);
     free(fractional_part);
-  //  free(result);
+    free(result);
 
     /*
 *  Удалить вывод *********************************************************************************
@@ -207,11 +170,11 @@ char    *my_number(f_floats **new)
         printf("%c", result[i]);
         i++;
     }
-    //free(result);
-    return (result);
 /*
  *  Удалить вывод *********************************************************************************
  */
+
+    return (0);
 }
 
 int make_mantissa(f_floats **new)
@@ -276,9 +239,7 @@ int number_breakdown (char number_of_bits[], f_floats **new)
         (*new)->mantissa[j++] = number_of_bits[i++];
     k = make_mantissa(new);
     make_order(new);
-   // my_number(new);
     (*new)->stroka = my_number(new);
-    free((*new)->stroka);
     return(0);
 }
 
@@ -316,11 +277,6 @@ int write_number(double num, f_floats **new)
     return (write_number_in_binary(size_array, &value.x, new));
 }
 
-/*void free_f_floats(f_floats **new)
-{
-
-}*/
-
 int main()
 {
     f_floats *new;
@@ -329,6 +285,4 @@ int main()
     write_number(1000014583.0000001225331212214755542, &new);
     printf("\n%d", new->len_stroka);
     printf("\n%d", printf("\n%.23f", 1000014583.0000001225331212214755542) - 1);
-//	free((new)->stroka);
-    free(new);
 }
