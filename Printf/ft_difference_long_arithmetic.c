@@ -4,11 +4,9 @@ int	*ft_difference_long_arithmetic(int *x, int *y, int accuracy)
 {
     int i;
     int *result;
-    int *temp;
 
     i = accuracy - 1;
     result = ft_make_zero_str(1100);
-    temp = result;
     while (i >= 0)
     {
         result[i] = 0;
@@ -25,6 +23,5 @@ int	*ft_difference_long_arithmetic(int *x, int *y, int accuracy)
         result[i] = x[i] - y[i];
         i--;
     }
-    //free(temp);
     return (result);
 }

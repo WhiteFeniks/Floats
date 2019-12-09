@@ -66,10 +66,11 @@ int *make_fractional(f_floats **new, int *x, int i)
         ft_free_new(&temp, ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order)));
         ft_free_new(&result, ft_division_long_arithmetic(single_unit_array, temp, 1100, 0));
     }
+    else
+        free(single_unit_array);
     ft_free_new(&x, ft_addition_long_arithmetic(x, result, 1100));
     (*new)->effective_order--;
     free(temp);
-    free(single_unit_array);
     free(result);
     return (x);
 }
@@ -126,7 +127,7 @@ char *my_number(f_floats **new)
     int *fractional_part;
     int *temp1;
     char *temp2;
-    int *temp3;
+    //int *temp3;
 
     i = 0;
     integer_part = ft_make_zero_str(1100);
@@ -141,46 +142,17 @@ char *my_number(f_floats **new)
 			free(temp1);
 		}
         else
-        {
-			//temp3 = fractional_part;
 			fractional_part = make_fractional(new, fractional_part, i);
-			//free(temp3);
-		}
         i++;
     }
     temp2 = result;
     result = ft_make_str(integer_part, fractional_part);
     free(temp2);
-    (*new)->len_stroka = ft_strlen(result);
     free(integer_part);
     free(fractional_part);
-    free(result);
-
-    /*
+/*
 *  Удалить вывод *********************************************************************************
 */
-
-   /* i = 0;
-    printf("integer_part = ");
-    while (integer_part[i] == 0)
-        i++;
-    while (i < 1100)
-    {
-        printf("%d", integer_part[i]);
-        i++;
-    }
-    printf("\n");
-
-    i = 1100;
-    int j = 0;
-    printf("fractional_part = ");
-    while (fractional_part[i] == 0)
-        i--;
-    while (j <= i)
-    {
-        printf("%d", fractional_part[j]);
-        j++;
-    }*/
     printf("\n");
     i = 0;
     while (result[i] != '\0')
@@ -192,7 +164,7 @@ char *my_number(f_floats **new)
  *  Удалить вывод *********************************************************************************
  */
 
-    return (0);
+    return(result);
 }
 
 int make_mantissa(f_floats **new)
@@ -258,6 +230,7 @@ int number_breakdown (char number_of_bits[], f_floats **new)
     k = make_mantissa(new);
     make_order(new);
     (*new)->stroka = my_number(new);
+	(*new)->len_stroka = ft_strlen((*new)->stroka);
     return(0);
 }
 
@@ -295,14 +268,15 @@ int write_number(double num, f_floats **new)
     return (write_number_in_binary(size_array, &value.x, new));
 }
 
+
 int main()
 {
     f_floats *new;
 
     new = (f_floats*)malloc(sizeof(f_floats));
-    write_number(1000014583.0000001225331212214755542, &new);
+    write_number(1000014583.1225331212214755542, &new);
     printf("\n%d", new->len_stroka);
-    printf("\n%d", printf("\n%.23f", 1000014583.0000001225331212214755542) - 1);
+    printf("\n%d", printf("\n%.23f", 1000014583.1225331212214755542) - 1);
     free(new->stroka);
     free(new);
 }
