@@ -40,38 +40,35 @@ int ft_count_mantissa(f_floats **new)
 
 int *make_integer(f_floats **new, int *x, int i)
 {
-    int *temp1;
-	int *temp2;
+    int *temp;
 
-    temp1 = ft_make_zero_str(1100);
+    temp = ft_make_zero_str(1100);
     if ((*new)->mantissa[i] == 1)
-    	ft_free_new(&temp1, ft_exponentiation_long_arithmetic((*new)->effective_order));
-    ft_free_new(&x, ft_addition_long_arithmetic(x, temp1, 1100));
-
+        ft_free_new(&temp, ft_exponentiation_long_arithmetic((*new)->effective_order));
+    x = ft_addition_long_arithmetic(x, temp, 1100);
     (*new)->effective_order--;
-    free(temp1);
+    free(temp);
     return (x);
 }
 
 int *make_fractional(f_floats **new, int *x, int i)
 {
-    int *temp1;
-	int *temp2;
+    int *temp;
     int *single_unit_array;
     int *result;
 
-    temp1 = ft_make_zero_str(1100);
+    temp = ft_make_zero_str(1100);
     result = ft_make_zero_str(1100);
     single_unit_array = ft_make_zero_str(1100);
     single_unit_array[1099] = 1;
     if ((*new)->mantissa[i] == 1)
     {
-    	ft_free_new(&temp1, ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order)));
-		ft_free_new(&result, ft_division_long_arithmetic(single_unit_array, temp1, 1100, 0));
+        ft_free_new(&temp, ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order)));
+        ft_free_new(&result, ft_division_long_arithmetic(single_unit_array, temp, 1100, 0));
     }
-	ft_free_new(&x, ft_addition_long_arithmetic(x, result, 1100));
+    ft_free_new(&x, ft_addition_long_arithmetic(x, result, 1100));
     (*new)->effective_order--;
-    free(temp1);
+    free(temp);
     free(single_unit_array);
     free(result);
     return (x);
@@ -129,6 +126,7 @@ char *my_number(f_floats **new)
     int *fractional_part;
     int *temp1;
     char *temp2;
+    int *temp3;
 
     i = 0;
     integer_part = ft_make_zero_str(1100);
@@ -139,20 +137,20 @@ char *my_number(f_floats **new)
         if ((*new)->effective_order >= 0)
 		{
         	temp1 = integer_part;
-        	integer_part = make_integer(new, integer_part, i);
-        	free(temp1);
+			integer_part = make_integer(new, integer_part, i);
+			free(temp1);
 		}
         else
-		{
-			temp1 = fractional_part;
+        {
+			//temp3 = fractional_part;
 			fractional_part = make_fractional(new, fractional_part, i);
-			free(temp1);
+			//free(temp3);
 		}
         i++;
     }
-	temp2 = result;
-	result = ft_make_str(integer_part, fractional_part);
-	free(temp2);
+    temp2 = result;
+    result = ft_make_str(integer_part, fractional_part);
+    free(temp2);
     (*new)->len_stroka = ft_strlen(result);
     free(integer_part);
     free(fractional_part);
