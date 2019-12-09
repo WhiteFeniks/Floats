@@ -4,6 +4,8 @@ int    *ft_exponentiation_long_arithmetic(int power)
 {
     int *result;
     int *tmp;
+	int *tmp1;
+	int *tmp2;
 
     result = ft_make_zero_str(1100);
     result[1100 - 1] = 2;

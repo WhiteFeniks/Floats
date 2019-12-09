@@ -24,11 +24,15 @@ all:
 #	gcc -g $(NAME) write_fgr.c -o main.1  -L. libft.a
 
 #	gcc -g $(NAME) -o ft_printf -L. libft/libftprintf.a
-	gcc -g 1.ft_make_number_with_main.c -L. libft/libft.a
+	@gcc -g 1.ft_make_number_with_main.c ft_addition_long_arithmetic.c \
+	ft_exponentiation_long_arithmetic.c ft_difference_long_arithmetic.c \
+	ft_division_long_arithmetic.c -L. ft_make_zero_str.c libft/libft.a
+
 clean:
-	$(RM) $(NAME_O)
+	@$(RM) $(NAME_O)
 
 fclean:clean
-	$(RM) $(NAME_O)
+	@$(RM) $(NAME_O)
+
 
 re: fclean all
