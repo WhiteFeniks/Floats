@@ -231,6 +231,33 @@ ft_division_long_arithmetic.c.s:
 	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.s
 .PHONY : ft_division_long_arithmetic.c.s
 
+ft_division_long_arithmetic_2.o: ft_division_long_arithmetic_2.c.o
+
+.PHONY : ft_division_long_arithmetic_2.o
+
+# target to build an object file
+ft_division_long_arithmetic_2.c.o:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o
+.PHONY : ft_division_long_arithmetic_2.c.o
+
+ft_division_long_arithmetic_2.i: ft_division_long_arithmetic_2.c.i
+
+.PHONY : ft_division_long_arithmetic_2.i
+
+# target to preprocess a source file
+ft_division_long_arithmetic_2.c.i:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.i
+.PHONY : ft_division_long_arithmetic_2.c.i
+
+ft_division_long_arithmetic_2.s: ft_division_long_arithmetic_2.c.s
+
+.PHONY : ft_division_long_arithmetic_2.s
+
+# target to generate assembly for a file
+ft_division_long_arithmetic_2.c.s:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.s
+.PHONY : ft_division_long_arithmetic_2.c.s
+
 ft_exponentiation_long_arithmetic.o: ft_exponentiation_long_arithmetic.c.o
 
 .PHONY : ft_exponentiation_long_arithmetic.o
@@ -2061,6 +2088,9 @@ help:
 	@echo "... ft_division_long_arithmetic.o"
 	@echo "... ft_division_long_arithmetic.i"
 	@echo "... ft_division_long_arithmetic.s"
+	@echo "... ft_division_long_arithmetic_2.o"
+	@echo "... ft_division_long_arithmetic_2.i"
+	@echo "... ft_division_long_arithmetic_2.s"
 	@echo "... ft_exponentiation_long_arithmetic.o"
 	@echo "... ft_exponentiation_long_arithmetic.i"
 	@echo "... ft_exponentiation_long_arithmetic.s"

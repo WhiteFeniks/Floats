@@ -954,9 +954,22 @@ CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/umoff/git_floats/Printf/ft_division_long_arithmetic.c -o CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.s
 
+CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o: CMakeFiles/Printf.dir/flags.make
+CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o: ../ft_division_long_arithmetic_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o   -c /Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c
+
+CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c > CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.i
+
+CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c -o CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.s
+
 CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o: CMakeFiles/Printf.dir/flags.make
 CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o: ../ft_exponentiation_long_arithmetic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o   -c /Users/umoff/git_floats/Printf/ft_exponentiation_long_arithmetic.c
 
 CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.i: cmake_force
@@ -969,7 +982,7 @@ CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.s: cmake_force
 
 CMakeFiles/Printf.dir/ft_make_zero_str.c.o: CMakeFiles/Printf.dir/flags.make
 CMakeFiles/Printf.dir/ft_make_zero_str.c.o: ../ft_make_zero_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Printf.dir/ft_make_zero_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/Printf.dir/ft_make_zero_str.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Printf.dir/ft_make_zero_str.c.o   -c /Users/umoff/git_floats/Printf/ft_make_zero_str.c
 
 CMakeFiles/Printf.dir/ft_make_zero_str.c.i: cmake_force
@@ -1051,6 +1064,7 @@ Printf_OBJECTS = \
 "CMakeFiles/Printf.dir/ft_addition_long_arithmetic.c.o" \
 "CMakeFiles/Printf.dir/ft_difference_long_arithmetic.c.o" \
 "CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.o" \
+"CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o" \
 "CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o" \
 "CMakeFiles/Printf.dir/ft_make_zero_str.c.o"
 
@@ -1126,11 +1140,12 @@ Printf: CMakeFiles/Printf.dir/1.ft_make_number_with_main.c.o
 Printf: CMakeFiles/Printf.dir/ft_addition_long_arithmetic.c.o
 Printf: CMakeFiles/Printf.dir/ft_difference_long_arithmetic.c.o
 Printf: CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.o
+Printf: CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o
 Printf: CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o
 Printf: CMakeFiles/Printf.dir/ft_make_zero_str.c.o
 Printf: CMakeFiles/Printf.dir/build.make
 Printf: CMakeFiles/Printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking C executable Printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking C executable Printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

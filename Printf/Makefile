@@ -26,7 +26,8 @@ all:
 #	gcc -g $(NAME) -o ft_printf -L. libft/libftprintf.a
 	gcc -g 1.ft_make_number_with_main.c -L. libft/libft.a ft_make_zero_str.c \
 	ft_addition_long_arithmetic.c ft_difference_long_arithmetic.c \
-    ft_division_long_arithmetic.c ft_exponentiation_long_arithmetic.c
+    ft_division_long_arithmetic.c ft_exponentiation_long_arithmetic.c \
+    ft_division_long_arithmetic_2.c
 clean:
 	$(RM) $(NAME_O)
 

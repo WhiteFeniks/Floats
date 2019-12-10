@@ -99,6 +99,9 @@
 		<Unit filename="/Users/umoff/git_floats/Printf/ft_division_long_arithmetic.c">
 			<Option target="Printf"/>
 		</Unit>
+		<Unit filename="/Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c">
+			<Option target="Printf"/>
+		</Unit>
 		<Unit filename="/Users/umoff/git_floats/Printf/ft_exponentiation_long_arithmetic.c">
 			<Option target="Printf"/>
 		</Unit>

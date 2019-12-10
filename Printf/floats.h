@@ -23,5 +23,7 @@ int                 *ft_make_zero_str(int size);
 int                 *ft_difference_long_arithmetic(int *x, int *y, int accuracy);
 int                 *ft_division_long_arithmetic(int *x, int *y, int accuracy, int numb_of_zero);
 int                 *ft_exponentiation_long_arithmetic(int power);
+int                 numb_of_zeroes(int *divider);
+int                 comparasion(int *x, int *y, int accuracy);
 
 #endif //FLOATS_FLOATS_H

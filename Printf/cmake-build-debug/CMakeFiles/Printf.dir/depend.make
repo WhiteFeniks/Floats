@@ -17,6 +17,10 @@ CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.o: ../floats.h
 CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.o: ../ft_division_long_arithmetic.c
 CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.o: ../libft/libft.h
 
+CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o: ../floats.h
+CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o: ../ft_division_long_arithmetic_2.c
+CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o: ../libft/libft.h
+
 CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o: ../floats.h
 CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o: ../ft_exponentiation_long_arithmetic.c
 CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o: ../libft/libft.h

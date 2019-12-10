@@ -1,4 +1,7 @@
 #include "floats.h"
+/*
+** Функция вычитания из массива x, массив y
+*/
 
 int	*ft_difference_long_arithmetic(int *x, int *y, int accuracy)
 {
@@ -6,7 +9,7 @@ int	*ft_difference_long_arithmetic(int *x, int *y, int accuracy)
     int *result;
 
     i = accuracy - 1;
-    result = ft_make_zero_str(1100);
+    result = ft_make_zero_str(accuracy);
     while (i >= 0)
     {
         result[i] = 0;

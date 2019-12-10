@@ -16,7 +16,15 @@ stdio.h
 libft/libft.h
 /Users/umoff/git_floats/Printf/libft/libft.h
 
+/Users/umoff/git_floats/Printf/ft_difference_long_arithmetic.c
+floats.h
+/Users/umoff/git_floats/Printf/floats.h
+
 /Users/umoff/git_floats/Printf/ft_division_long_arithmetic.c
+floats.h
+/Users/umoff/git_floats/Printf/floats.h
+
+/Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c
 floats.h
 /Users/umoff/git_floats/Printf/floats.h
 

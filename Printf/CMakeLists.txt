@@ -78,5 +78,6 @@ add_executable(Printf
         ft_addition_long_arithmetic.c
         ft_difference_long_arithmetic.c
         ft_division_long_arithmetic.c
+        ft_division_long_arithmetic_2.c
         ft_exponentiation_long_arithmetic.c
         ft_make_zero_str.c)

@@ -1,47 +1,20 @@
 #include "floats.h"
 
 /*
- ** Функция подсчёта количества нулей в массиве числа (делителе)
- */
+** 1. Функция очистки temp1 и последующее перепресвоение
+*/
 
-int	numb_of_zeroes(int *divider)
-{
-    int i;
-
-    i = 0;
-    while (divider[i] == 0)
-        i++;
-    return (i);
-}
-
-void ft_free_my(int **temp1, int *result)
+void    ft_free_my(int **temp1, int *result)
 {
 	free(*temp1);
 	*temp1 = result;
 }
- /*
- ** Функция сравнения двух массивов
- */
-
-int	comparasion(int *x, int *y, int accuracy)
-{
-    int i;
-
-    i = 0;
-    while (x[i] == 0 && y[i] == 0)
-        i++;
-    while (x[i] == y[i] && i != accuracy)
-        i++;
-    if (i == accuracy)
-        return (1);
-    return ((x[i] > y[i]) ? 1 : 0);
-}
 
  /*
- ** Функция умножения числа на 10
+ ** 2. Функция умножения числа на 10
  */
 
-int	*mult_on_ten(int *x, int i, int accuracy)
+int     *mult_on_ten(int *x, int i, int accuracy)
 {
     while (i <= accuracy - 1)
     {
@@ -52,10 +25,10 @@ int	*mult_on_ten(int *x, int i, int accuracy)
 }
 
 /*
- ** Функция проверки массива на числа отличные от нуля, чтобы в посследствии понять дошли ли мы до конца или нет
+ ** 3. Функция проверки массива на числа отличные от нуля, чтобы в посследствии понять дошли ли мы до конца или нет
  */
 
-int	check_end(int *x, int accuracy)
+int     check_end(int *x, int accuracy)
 {
     int i;
 
@@ -65,18 +38,22 @@ int	check_end(int *x, int accuracy)
     return (i);
 }
 
-int *ft_free_x(int *x, int *result)
+/*
+** 4. Функция очистки x и возврат result
+*/
+
+int     *ft_free_x(int *x, int *result)
 {
     free(x);
     return (result);
 }
 
 /*
-** Функция деления числа х на у. аccuracy - точность = 1100. Numb_of_zero - количество нулей которые нужно записать
+** 5. Функция деления числа х на у. аccuracy - точность = 1100. Numb_of_zero - количество нулей которые нужно записать
 ** справа от 1, вынесена вверх, чтобы уместить в 25 строк.
 */
 
-int	*ft_division_long_arithmetic(int *x, int *y, int accuracy, int numb_of_zero)
+int     *ft_division_long_arithmetic(int *x, int *y, int accuracy, int numb_of_zero)
 {
     int i;
     int *result;

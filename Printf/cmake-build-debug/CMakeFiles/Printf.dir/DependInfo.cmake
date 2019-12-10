@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/umoff/git_floats/Printf/ft_addition_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_addition_long_arithmetic.c.o"
   "/Users/umoff/git_floats/Printf/ft_difference_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_difference_long_arithmetic.c.o"
   "/Users/umoff/git_floats/Printf/ft_division_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.o"
+  "/Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o"
   "/Users/umoff/git_floats/Printf/ft_exponentiation_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o"
   "/Users/umoff/git_floats/Printf/ft_make_zero_str.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_make_zero_str.c.o"
   "/Users/umoff/git_floats/Printf/libft/ft_abs.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/libft/ft_abs.c.o"
