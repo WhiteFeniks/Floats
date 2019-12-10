@@ -65,6 +65,14 @@ int	check_end(int *x, int accuracy)
     return (i);
 }
 
+int *ft_help(int **x, int **temp, int acc)
+{
+    int *temp1;
+    temp1 = *x;
+    *x = ft_difference_long_arithmetic(*x, *temp, acc);
+    free(temp1);
+    return (*x);
+}
 /*
  ** Функция деления числа х на у. аccuracy - точность = 1100. Numb_of_zero - количество нулей которые нужно записать
  ** справа от 1, вынесена вверх, чтобы уместить в 25 строк.
@@ -75,6 +83,8 @@ int	*ft_division_long_arithmetic(int *x, int *y, int accuracy, int numb_of_zero)
     int i;
     int *result;
     int *temp;
+   // int *temp1;
+
 
     result = ft_make_zero_str(accuracy);
     numb_of_zero = accuracy - 2 - numb_of_zeroes(y);
@@ -89,13 +99,18 @@ int	*ft_division_long_arithmetic(int *x, int *y, int accuracy, int numb_of_zero)
             ft_free_my(&temp, ft_addition_long_arithmetic(temp, y, accuracy));
         }
         ft_free_my(&temp, ft_difference_long_arithmetic(temp, y, accuracy));
-		ft_free_my(&x, ft_difference_long_arithmetic(x, temp, accuracy));
-		free(temp);
-        i = check_end(x, accuracy);
+      //  temp1 = x;
+      //  x = ft_difference_long_arithmetic(x, temp, accuracy);
+		x = ft_help(&x, &temp, accuracy);
+       // free(temp1);
+		i = check_end(x, accuracy);
+        free(temp);
         if (i == accuracy)
+        {
+            free(x);
             return (result);
+        }
         x = mult_on_ten(x, i, accuracy);
     }
-    free(x);
     return (result);
 }

@@ -56,6 +56,7 @@ int *make_fractional(f_floats **new, int *x, int i)
     int *temp;
     int *single_unit_array;
     int *result;
+ //   int *temp1;
 
     temp = ft_make_zero_str(1100);
     result = ft_make_zero_str(1100);
@@ -64,7 +65,10 @@ int *make_fractional(f_floats **new, int *x, int i)
     if ((*new)->mantissa[i] == 1)
     {
         ft_free_new(&temp, ft_exponentiation_long_arithmetic(ft_abs((*new)->effective_order)));
+        //temp1 =result;
+       // result = ft_division_long_arithmetic(single_unit_array, temp, 1100, 0);
         ft_free_new(&result, ft_division_long_arithmetic(single_unit_array, temp, 1100, 0));
+       // free(temp1);
     }
     else
         free(single_unit_array);
@@ -74,6 +78,8 @@ int *make_fractional(f_floats **new, int *x, int i)
     free(result);
     return (x);
 }
+
+
 
 char *ft_make_zero_char(int size)
 {
@@ -142,7 +148,9 @@ char *my_number(f_floats **new)
 			free(temp1);
 		}
         else
+            //temp1 = fractional_part;
 			fractional_part = make_fractional(new, fractional_part, i);
+			//free(temp1);
         i++;
     }
     temp2 = result;
@@ -217,7 +225,7 @@ int number_breakdown (char number_of_bits[], f_floats **new)
 {
     int i;
     int j;
-    int k;
+    //char *temp;
 
     (*new)->sign = number_of_bits[0];
     i = 1;
@@ -227,9 +235,11 @@ int number_breakdown (char number_of_bits[], f_floats **new)
     j = 0;
     while (i < 80)
         (*new)->mantissa[j++] = number_of_bits[i++];
-    k = make_mantissa(new);
+    make_mantissa(new);
     make_order(new);
+    //temp = (*new)->stroka;
     (*new)->stroka = my_number(new);
+    //free(temp);
 	(*new)->len_stroka = ft_strlen((*new)->stroka);
     return(0);
 }
