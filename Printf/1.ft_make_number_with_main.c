@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "floats.h"
 
+/*
+** Объединение где записано наше число
+*/
 
 union number
 {
@@ -8,11 +11,19 @@ union number
     short       my_array[5];
 };
 
+/*
+** Функция для освобождения выделенной памяти
+*/
+
 void ft_free_new(int **temp1, int *result)
 {
 	free(*temp1);
 	*temp1 = result;
 }
+
+/*
+** Функция подсчитывает длину числа
+*/
 
 int len_number(int digital)
 {
@@ -27,6 +38,9 @@ int len_number(int digital)
     return (len);
 }
 
+/*
+** Функция подсчитывает длину матиссы
+*/
 
 int ft_count_mantissa(f_floats **new)
 {
@@ -37,6 +51,10 @@ int ft_count_mantissa(f_floats **new)
         i--;
     return (i);
 }
+
+/*
+** Функция собирает целую часть (правее точки) из порядка, мантиссы и эффективного порядка
+*/
 
 int *make_integer(f_floats **new, int *x, int i)
 {
@@ -50,6 +68,10 @@ int *make_integer(f_floats **new, int *x, int i)
     free(temp);
     return (x);
 }
+
+/*
+** Функция собирает дробную часть (правее точки) из порядка, мантиссы и эффективного порядка
+*/
 
 int *make_fractional(f_floats **new, int *x, int i)
 {
@@ -80,6 +102,9 @@ int *make_fractional(f_floats **new, int *x, int i)
 }
 
 
+/*
+** Функция создает нулевую строку из char-овских символов
+*/
 
 char *ft_make_zero_char(int size)
 {
@@ -99,32 +124,46 @@ char *ft_make_zero_char(int size)
     return(s);
 }
 
+/*
+** Функция создает строку из двух int-вых массивов
+*/
+
 char *ft_make_str(int *integer_part, int *fractional_part)
 {
-    int i;
-    int j;
+ //   int a[0];
+  //  int a[1];
+    int a[2];  // a[0] = i, a[1] = j
     char *x;
 
-    i = 0;
-    j = 0;
+    a[0] = 0;
+    a[1] = 0;
     x = ft_make_zero_char(1100);
-    while (integer_part[i] == 0)
-        i++;
-    while (i < 1100)
-        x[j++] = integer_part[i++] + 48;
-    x[j] = '.';
-    while (fractional_part[i] == 0 && i >= 0)
-        i--;
-    if (i == -1)
-        i++;
-    x[i + j + 1] = '\0';
-    while (i >= 0)
+    while (integer_part[a[0]] == 0 && a[0] < 1100)
+        a[0]++;
+    if (a[0] == 1100)
     {
-        x[i + j + 1] = fractional_part[i] + 48;
-        i--;
+        a[1]++;
+        x[0] = 48;
+    }
+    while (a[0] < 1100)
+        x[a[1]++] = integer_part[a[0]++] + 48;
+    x[a[1]] = '.';
+    while (fractional_part[a[0]] == 0 && a[0] >= 0)
+        a[0]--;
+    if (a[0] == -1)
+        a[0]++;
+   // x[i + j + 1] = '\0';
+    while (a[0] >= 0)
+    {
+        x[a[0] + a[1] + 1] = fractional_part[a[0]] + 48;
+        a[0]--;
     }
     return (x);
 }
+
+/*
+** Вспомогательная функция для my_number, чтобы уместить в 25 строк
+**/
 
 void ft_free_array(char *temp2, int *integer_part, int *fractional_part)
 {
@@ -133,6 +172,9 @@ void ft_free_array(char *temp2, int *integer_part, int *fractional_part)
     free(fractional_part);
 }
 
+/*
+** Функция собирает число изходя из мантиссы и порядка + эффективного порядка
+*/
 
 char *my_number(f_floats **new)
 {
@@ -169,17 +211,24 @@ char *my_number(f_floats **new)
 ** Удалить вывод *********************************************************************************
 */
     printf("\n");
-    i = 0;
-    while (result[i] != '\0')
+    int j = 0;
+    i = 1100;
+    while (result[i] == 0)
+        i--;
+    while (j <= i)
     {
-        printf("%c", result[i]);
-        i++;
+        printf("%c", result[j]);
+        j++;
     }
 /*
 **  Удалить вывод *********************************************************************************
 */
     return(result);
 }
+
+/*
+** Функция нахождения позиции, где заканчиваются значащие цифры мантиссы
+*/
 
 int make_mantissa(f_floats **new)
 {
@@ -194,6 +243,10 @@ int make_mantissa(f_floats **new)
     return(i);
 }
 
+/*
+** Функция возведения в степень 2 (двойки)
+*/
+
 int power_of_two(int power)
 {
     int result;
@@ -206,6 +259,11 @@ int power_of_two(int power)
     }
     return (result);
 }
+
+/*
+** Идет перевод из двоичной системы порядка в десятичную и вычитание числа 16383 (011 1111 1111 1111),
+** для того чтобы вычислить эффективный порядок
+*/
 
 void make_order(f_floats **new)
 {
@@ -227,6 +285,10 @@ void make_order(f_floats **new)
     (*new)->effective_order = digit - 16383;
 }
 
+/*
+** Функция проверки на то, что пришло число 0.0 (Пустые integer_part и fractal_part)
+*/
+
 int check_zero(f_floats **new)
 {
     int i;
@@ -242,6 +304,12 @@ int check_zero(f_floats **new)
         return (0);
     return (1);
 }
+
+
+/*
+** Функция разбивки числа на мантису, порядок и знак, а так же получение дробной и целой части,
+** а после перезаписи в строку
+*/
 
 char *number_breakdown (char number_of_bits[], f_floats **new)
 {
@@ -284,6 +352,10 @@ char *number_breakdown (char number_of_bits[], f_floats **new)
 	return((*new)->stroka);
 }
 
+/*
+** Функция записи нашего числа из 10-ой системы в двоичную
+*/
+
 char     *write_number_in_binary(size_t const step, void *value, f_floats **new)
 {
     int             i;
@@ -307,7 +379,13 @@ char     *write_number_in_binary(size_t const step, void *value, f_floats **new)
     }
     return (number_breakdown(number_of_bits, new));
 }
-
+/*
+** Sixe_array - Размер массива в байтах, необходимо чтобы понять сколько раз нужно зайти в цикл, чтобы получить число 80 (long double)
+** в нашем случае size_array составляет 10, значит нужно 8 раз зайти в цикл
+** в объединение в поле х записываем наше число
+** sizeof - это унарный оператор, возвращающий длину в байтах переменной или типа, помещенных в скобки
+** отправляем наше количество заходов в цикл, и адрес на наше число
+*/
 char     *write_number(double num, f_floats **new)
 {
     int size_array;
@@ -323,9 +401,10 @@ int main()
     f_floats *new;
 
     new = (f_floats*)malloc(sizeof(f_floats));
-    write_number(4564.0546546541, &new);
+    write_number(45645646545.7, &new);
+
     printf("\n%d", new->len_stroka);
-    printf("\n%d", printf("\n%.40f", 4564.0546546541) - 1);
+    printf("\n%d", printf("\n%.40f", 45645646545.7) - 1);
     free(new->stroka);
     free(new);
 }
