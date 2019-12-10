@@ -113,8 +113,10 @@ char *ft_make_str(int *integer_part, int *fractional_part)
     while (i < 1100)
         x[j++] = integer_part[i++] + 48;
     x[j] = '.';
-    while (fractional_part[i] == 0)
+    while (fractional_part[i] == 0 && i >= 0)
         i--;
+    if (i == -1)
+        i++;
     x[i + j + 1] = '\0';
     while (i >= 0)
     {
@@ -122,6 +124,13 @@ char *ft_make_str(int *integer_part, int *fractional_part)
         i--;
     }
     return (x);
+}
+
+void ft_free_array(char *temp2, int *integer_part, int *fractional_part)
+{
+    free(temp2);
+    free(integer_part);
+    free(fractional_part);
 }
 
 
@@ -133,7 +142,6 @@ char *my_number(f_floats **new)
     int *fractional_part;
     int *temp1;
     char *temp2;
-    //int *temp3;
 
     i = 0;
     integer_part = ft_make_zero_str(1100);
@@ -148,18 +156,17 @@ char *my_number(f_floats **new)
 			free(temp1);
 		}
         else
-            //temp1 = fractional_part;
 			fractional_part = make_fractional(new, fractional_part, i);
-			//free(temp1);
         i++;
     }
     temp2 = result;
     result = ft_make_str(integer_part, fractional_part);
-    free(temp2);
-    free(integer_part);
-    free(fractional_part);
+    ft_free_array(temp2, integer_part, fractional_part);
+    // free(temp2);
+    // free(integer_part);
+    // free(fractional_part);
 /*
-*  Удалить вывод *********************************************************************************
+** Удалить вывод *********************************************************************************
 */
     printf("\n");
     i = 0;
@@ -169,9 +176,8 @@ char *my_number(f_floats **new)
         i++;
     }
 /*
- *  Удалить вывод *********************************************************************************
- */
-
+**  Удалить вывод *********************************************************************************
+*/
     return(result);
 }
 
@@ -221,11 +227,26 @@ void make_order(f_floats **new)
     (*new)->effective_order = digit - 16383;
 }
 
-int number_breakdown (char number_of_bits[], f_floats **new)
+int check_zero(f_floats **new)
 {
     int i;
     int j;
-    //char *temp;
+
+    i = 0;
+    j = 0;
+    while ((*new)->order[i] == 0 && i <= 14)
+        i++;
+    while ((*new)->mantissa[j] == 0 && j <= 63)
+        j++;
+    if (i + j == 79)
+        return (0);
+    return (1);
+}
+
+char *number_breakdown (char number_of_bits[], f_floats **new)
+{
+    int i;
+    int j;
 
     (*new)->sign = number_of_bits[0];
     i = 1;
@@ -237,14 +258,33 @@ int number_breakdown (char number_of_bits[], f_floats **new)
         (*new)->mantissa[j++] = number_of_bits[i++];
     make_mantissa(new);
     make_order(new);
-    //temp = (*new)->stroka;
-    (*new)->stroka = my_number(new);
-    //free(temp);
-	(*new)->len_stroka = ft_strlen((*new)->stroka);
-    return(0);
+    if (check_zero(new) == 0)
+    {
+        (*new)->stroka = ft_make_zero_char(1100);
+        (*new)->stroka[0] = '0';
+        (*new)->stroka[1] = '.';
+        (*new)->stroka[2] = '0';
+/*
+** Удалить вывод *******************************************************************************
+*/
+        printf("%s", (*new)->stroka);
+/*
+** Удалить вывод *******************************************************************************
+*/
+    }
+    else
+        (*new)->stroka = my_number(new);
+/*
+** Удалить вывод *******************************************************************************
+*/
+    (*new)->len_stroka = ft_strlen((*new)->stroka);
+/*
+** Удалить вывод *******************************************************************************
+*/
+	return((*new)->stroka);
 }
 
-int write_number_in_binary(size_t const step, void *my_value, f_floats **new)
+char     *write_number_in_binary(size_t const step, void *value, f_floats **new)
 {
     int             i;
     int             j;
@@ -254,7 +294,7 @@ int write_number_in_binary(size_t const step, void *my_value, f_floats **new)
 
     i = step - 1;
     k = 0;
-    temp = (unsigned char *) my_value;
+    temp = (unsigned char *) value;
     while (i != -1)
     {
         j = (80 / step) - 1;
@@ -268,7 +308,7 @@ int write_number_in_binary(size_t const step, void *my_value, f_floats **new)
     return (number_breakdown(number_of_bits, new));
 }
 
-int write_number(double num, f_floats **new)
+char     *write_number(double num, f_floats **new)
 {
     int size_array;
     union number value;
@@ -278,15 +318,14 @@ int write_number(double num, f_floats **new)
     return (write_number_in_binary(size_array, &value.x, new));
 }
 
-
 int main()
 {
     f_floats *new;
 
     new = (f_floats*)malloc(sizeof(f_floats));
-    write_number(1000014583.0, &new);
+    write_number(4564.0546546541, &new);
     printf("\n%d", new->len_stroka);
-    printf("\n%d", printf("\n%.23f", 1000014583.0) - 1);
+    printf("\n%d", printf("\n%.40f", 4564.0546546541) - 1);
     free(new->stroka);
     free(new);
 }
