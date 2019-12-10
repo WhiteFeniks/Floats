@@ -1,6 +1,7 @@
 #include "floats.h"
+
 /*
-** Функция вычитания из массива x, массив y
+** Функция вычитания из массива x, массив y и точностью accuracy
 */
 
 int	*ft_difference_long_arithmetic(int *x, int *y, int accuracy)

@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/umoff/git_floats/Printf/1.ft_make_number_with_main.c
+stdio.h
+-
+floats.h
+/Users/umoff/git_floats/Printf/floats.h
+
 /Users/umoff/git_floats/Printf/floats.h
 unistd.h
 -
@@ -20,11 +26,7 @@ libft/libft.h
 floats.h
 /Users/umoff/git_floats/Printf/floats.h
 
-/Users/umoff/git_floats/Printf/ft_division_long_arithmetic.c
-floats.h
-/Users/umoff/git_floats/Printf/floats.h
-
-/Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c
+/Users/umoff/git_floats/Printf/ft_make_zero_str.c
 floats.h
 /Users/umoff/git_floats/Printf/floats.h
 

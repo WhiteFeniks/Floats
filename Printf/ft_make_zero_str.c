@@ -1,5 +1,9 @@
 #include "floats.h"
 
+/*
+** Функция создания int-овой строки размера size
+*/
+
 int *ft_make_zero_str(int size)
 {
     int *s;

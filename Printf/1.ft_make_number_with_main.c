@@ -284,9 +284,9 @@ int main()
     f_floats *new;
 
     new = (f_floats*)malloc(sizeof(f_floats));
-    write_number(1000014583.1225331212214755542, &new);
+    write_number(1000014583.0, &new);
     printf("\n%d", new->len_stroka);
-    printf("\n%d", printf("\n%.23f", 1000014583.1225331212214755542) - 1);
+    printf("\n%d", printf("\n%.23f", 1000014583.0) - 1);
     free(new->stroka);
     free(new);
 }
