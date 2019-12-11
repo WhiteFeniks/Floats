@@ -22,30 +22,13 @@ void ft_free_array(int *integer_part, int *fractional_part)
 }
 
 /*
-** 5. Функция для освобождения выделенной памяти char-ского массива
+** 2. Функция для освобождения выделенной памяти char-ского массива
 */
 
 void ft_free_new(int **temp1, int *result)
 {
     free(*temp1);
     *temp1 = result;
-}
-
-/*
-** 2. Функция подсчитывает длину числа
-*/
-
-int my_len_number(int digital)
-{
-    int len;
-
-    len = 0;
-    while (digital % 10 != 0)
-    {
-        digital = digital / 10;
-        len++;
-    }
-    return (len);
 }
 
 /*
