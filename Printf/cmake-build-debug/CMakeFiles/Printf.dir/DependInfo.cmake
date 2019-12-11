@@ -79,6 +79,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/umoff/git_floats/Printf/libft/ft_strtrim.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/libft/ft_strtrim.c.o"
   "/Users/umoff/git_floats/Printf/libft/ft_tolower.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/libft/ft_tolower.c.o"
   "/Users/umoff/git_floats/Printf/libft/ft_toupper.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/libft/ft_toupper.c.o"
+  "/Users/umoff/git_floats/Printf/vimrc.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/vimrc.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

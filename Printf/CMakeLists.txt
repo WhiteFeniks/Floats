@@ -83,4 +83,4 @@ add_executable(Printf
         ft_floats_2.c
         ft_floats_3.c
         ft_floats_4.c
-        ft_make_zero_str.c)
+        ft_make_zero_str.c vimrc.c)
