@@ -2,7 +2,7 @@
 #include "floats.h"
 
 /*
-** Объединение где записано наше число
+** Объединение, где записано наше число
 */
 
 union number
@@ -19,6 +19,12 @@ void ft_free_new(int **temp1, int *result)
 {
 	free(*temp1);
 	*temp1 = result;
+}
+
+void ft_free_result(char **temp1, char *result)
+{
+    free(*temp1);
+    *temp1 = result;
 }
 
 /*
@@ -165,9 +171,8 @@ char *ft_make_str(int *integer_part, int *fractional_part)
 ** Вспомогательная функция для my_number, чтобы уместить в 25 строк
 **/
 
-void ft_free_array(char *temp2, int *integer_part, int *fractional_part)
+void ft_free_array(int *integer_part, int *fractional_part)
 {
-    free(temp2);
     free(integer_part);
     free(fractional_part);
 }
@@ -183,7 +188,6 @@ char *my_number(f_floats **new)
     int *integer_part;
     int *fractional_part;
     int *temp1;
-    char *temp2;
 
     i = 0;
     integer_part = ft_make_zero_str(1100);
@@ -201,28 +205,8 @@ char *my_number(f_floats **new)
 			fractional_part = make_fractional(new, fractional_part, i);
         i++;
     }
-    temp2 = result;
-    result = ft_make_str(integer_part, fractional_part);
-    ft_free_array(temp2, integer_part, fractional_part);
-    // free(temp2);
-    // free(integer_part);
-    // free(fractional_part);
-/*
-** Удалить вывод *********************************************************************************
-*/
-    printf("\n");
-    int j = 0;
-    i = 1100;
-    while (result[i] == 0)
-        i--;
-    while (j <= i)
-    {
-        printf("%c", result[j]);
-        j++;
-    }
-/*
-**  Удалить вывод *********************************************************************************
-*/
+    ft_free_result(&result, ft_make_str(integer_part, fractional_part));
+    ft_free_array(integer_part, fractional_part);
     return(result);
 }
 
@@ -401,7 +385,34 @@ int main()
     f_floats *new;
 
     new = (f_floats*)malloc(sizeof(f_floats));
-    write_number(45645646545.7, &new);
+/*
+** Удалить вывод *********************************************************************************
+*/
+    char *result;
+    int i;
+
+    i = 0;
+/*
+** Удалить вывод *********************************************************************************
+*/
+    result = write_number(45645646545.7, &new);
+/*
+** Удалить вывод *********************************************************************************
+*/
+    printf("\n");
+    int j = 0;
+    i = 1100;
+    while (result[i] == 0)
+        i--;
+    while (j <= i)
+    {
+        printf("%c", result[j]);
+        j++;
+    }
+
+/*
+**  Удалить вывод *********************************************************************************
+*/
 
     printf("\n%d", new->len_stroka);
     printf("\n%d", printf("\n%.40f", 45645646545.7) - 1);
