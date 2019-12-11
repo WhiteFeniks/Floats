@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/umoff/git_floats/Printf/1.ft_make_number_with_main.c">
-			<Option target="Printf"/>
-		</Unit>
 		<Unit filename="/Users/umoff/git_floats/Printf/floats.h">
 			<Option target="Printf"/>
 		</Unit>
@@ -102,7 +99,19 @@
 		<Unit filename="/Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c">
 			<Option target="Printf"/>
 		</Unit>
-		<Unit filename="/Users/umoff/git_floats/Printf/ft_exponentiation_long_arithmetic.c">
+		<Unit filename="/Users/umoff/git_floats/Printf/ft_exp_long_arithmetic.c">
+			<Option target="Printf"/>
+		</Unit>
+		<Unit filename="/Users/umoff/git_floats/Printf/ft_floats.c">
+			<Option target="Printf"/>
+		</Unit>
+		<Unit filename="/Users/umoff/git_floats/Printf/ft_floats_2.c">
+			<Option target="Printf"/>
+		</Unit>
+		<Unit filename="/Users/umoff/git_floats/Printf/ft_floats_3.c">
+			<Option target="Printf"/>
+		</Unit>
+		<Unit filename="/Users/umoff/git_floats/Printf/ft_floats_4.c">
 			<Option target="Printf"/>
 		</Unit>
 		<Unit filename="/Users/umoff/git_floats/Printf/ft_make_zero_str.c">

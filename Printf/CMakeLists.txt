@@ -73,11 +73,14 @@ add_executable(Printf
         libft/ft_tolower.c
         libft/ft_toupper.c
         libft/libft.h
-        1.ft_make_number_with_main.c
         floats.h
         ft_addition_long_arithmetic.c
         ft_difference_long_arithmetic.c
         ft_division_long_arithmetic.c
         ft_division_long_arithmetic_2.c
-        ft_exponentiation_long_arithmetic.c
+        ft_exp_long_arithmetic.c
+        ft_floats.c
+        ft_floats_2.c
+        ft_floats_3.c
+        ft_floats_4.c
         ft_make_zero_str.c)

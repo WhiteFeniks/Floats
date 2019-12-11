@@ -123,33 +123,6 @@ Printf/fast:
 	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/build
 .PHONY : Printf/fast
 
-1.ft_make_number_with_main.o: 1.ft_make_number_with_main.c.o
-
-.PHONY : 1.ft_make_number_with_main.o
-
-# target to build an object file
-1.ft_make_number_with_main.c.o:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/1.ft_make_number_with_main.c.o
-.PHONY : 1.ft_make_number_with_main.c.o
-
-1.ft_make_number_with_main.i: 1.ft_make_number_with_main.c.i
-
-.PHONY : 1.ft_make_number_with_main.i
-
-# target to preprocess a source file
-1.ft_make_number_with_main.c.i:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/1.ft_make_number_with_main.c.i
-.PHONY : 1.ft_make_number_with_main.c.i
-
-1.ft_make_number_with_main.s: 1.ft_make_number_with_main.c.s
-
-.PHONY : 1.ft_make_number_with_main.s
-
-# target to generate assembly for a file
-1.ft_make_number_with_main.c.s:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/1.ft_make_number_with_main.c.s
-.PHONY : 1.ft_make_number_with_main.c.s
-
 ft_addition_long_arithmetic.o: ft_addition_long_arithmetic.c.o
 
 .PHONY : ft_addition_long_arithmetic.o
@@ -258,32 +231,140 @@ ft_division_long_arithmetic_2.c.s:
 	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.s
 .PHONY : ft_division_long_arithmetic_2.c.s
 
-ft_exponentiation_long_arithmetic.o: ft_exponentiation_long_arithmetic.c.o
+ft_exp_long_arithmetic.o: ft_exp_long_arithmetic.c.o
 
-.PHONY : ft_exponentiation_long_arithmetic.o
+.PHONY : ft_exp_long_arithmetic.o
 
 # target to build an object file
-ft_exponentiation_long_arithmetic.c.o:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o
-.PHONY : ft_exponentiation_long_arithmetic.c.o
+ft_exp_long_arithmetic.c.o:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_exp_long_arithmetic.c.o
+.PHONY : ft_exp_long_arithmetic.c.o
 
-ft_exponentiation_long_arithmetic.i: ft_exponentiation_long_arithmetic.c.i
+ft_exp_long_arithmetic.i: ft_exp_long_arithmetic.c.i
 
-.PHONY : ft_exponentiation_long_arithmetic.i
+.PHONY : ft_exp_long_arithmetic.i
 
 # target to preprocess a source file
-ft_exponentiation_long_arithmetic.c.i:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.i
-.PHONY : ft_exponentiation_long_arithmetic.c.i
+ft_exp_long_arithmetic.c.i:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_exp_long_arithmetic.c.i
+.PHONY : ft_exp_long_arithmetic.c.i
 
-ft_exponentiation_long_arithmetic.s: ft_exponentiation_long_arithmetic.c.s
+ft_exp_long_arithmetic.s: ft_exp_long_arithmetic.c.s
 
-.PHONY : ft_exponentiation_long_arithmetic.s
+.PHONY : ft_exp_long_arithmetic.s
 
 # target to generate assembly for a file
-ft_exponentiation_long_arithmetic.c.s:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.s
-.PHONY : ft_exponentiation_long_arithmetic.c.s
+ft_exp_long_arithmetic.c.s:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_exp_long_arithmetic.c.s
+.PHONY : ft_exp_long_arithmetic.c.s
+
+ft_floats.o: ft_floats.c.o
+
+.PHONY : ft_floats.o
+
+# target to build an object file
+ft_floats.c.o:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats.c.o
+.PHONY : ft_floats.c.o
+
+ft_floats.i: ft_floats.c.i
+
+.PHONY : ft_floats.i
+
+# target to preprocess a source file
+ft_floats.c.i:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats.c.i
+.PHONY : ft_floats.c.i
+
+ft_floats.s: ft_floats.c.s
+
+.PHONY : ft_floats.s
+
+# target to generate assembly for a file
+ft_floats.c.s:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats.c.s
+.PHONY : ft_floats.c.s
+
+ft_floats_2.o: ft_floats_2.c.o
+
+.PHONY : ft_floats_2.o
+
+# target to build an object file
+ft_floats_2.c.o:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_2.c.o
+.PHONY : ft_floats_2.c.o
+
+ft_floats_2.i: ft_floats_2.c.i
+
+.PHONY : ft_floats_2.i
+
+# target to preprocess a source file
+ft_floats_2.c.i:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_2.c.i
+.PHONY : ft_floats_2.c.i
+
+ft_floats_2.s: ft_floats_2.c.s
+
+.PHONY : ft_floats_2.s
+
+# target to generate assembly for a file
+ft_floats_2.c.s:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_2.c.s
+.PHONY : ft_floats_2.c.s
+
+ft_floats_3.o: ft_floats_3.c.o
+
+.PHONY : ft_floats_3.o
+
+# target to build an object file
+ft_floats_3.c.o:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_3.c.o
+.PHONY : ft_floats_3.c.o
+
+ft_floats_3.i: ft_floats_3.c.i
+
+.PHONY : ft_floats_3.i
+
+# target to preprocess a source file
+ft_floats_3.c.i:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_3.c.i
+.PHONY : ft_floats_3.c.i
+
+ft_floats_3.s: ft_floats_3.c.s
+
+.PHONY : ft_floats_3.s
+
+# target to generate assembly for a file
+ft_floats_3.c.s:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_3.c.s
+.PHONY : ft_floats_3.c.s
+
+ft_floats_4.o: ft_floats_4.c.o
+
+.PHONY : ft_floats_4.o
+
+# target to build an object file
+ft_floats_4.c.o:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_4.c.o
+.PHONY : ft_floats_4.c.o
+
+ft_floats_4.i: ft_floats_4.c.i
+
+.PHONY : ft_floats_4.i
+
+# target to preprocess a source file
+ft_floats_4.c.i:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_4.c.i
+.PHONY : ft_floats_4.c.i
+
+ft_floats_4.s: ft_floats_4.c.s
+
+.PHONY : ft_floats_4.s
+
+# target to generate assembly for a file
+ft_floats_4.c.s:
+	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/ft_floats_4.c.s
+.PHONY : ft_floats_4.c.s
 
 ft_make_zero_str.o: ft_make_zero_str.c.o
 
@@ -2076,9 +2157,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Printf"
-	@echo "... 1.ft_make_number_with_main.o"
-	@echo "... 1.ft_make_number_with_main.i"
-	@echo "... 1.ft_make_number_with_main.s"
 	@echo "... ft_addition_long_arithmetic.o"
 	@echo "... ft_addition_long_arithmetic.i"
 	@echo "... ft_addition_long_arithmetic.s"
@@ -2091,9 +2169,21 @@ help:
 	@echo "... ft_division_long_arithmetic_2.o"
 	@echo "... ft_division_long_arithmetic_2.i"
 	@echo "... ft_division_long_arithmetic_2.s"
-	@echo "... ft_exponentiation_long_arithmetic.o"
-	@echo "... ft_exponentiation_long_arithmetic.i"
-	@echo "... ft_exponentiation_long_arithmetic.s"
+	@echo "... ft_exp_long_arithmetic.o"
+	@echo "... ft_exp_long_arithmetic.i"
+	@echo "... ft_exp_long_arithmetic.s"
+	@echo "... ft_floats.o"
+	@echo "... ft_floats.i"
+	@echo "... ft_floats.s"
+	@echo "... ft_floats_2.o"
+	@echo "... ft_floats_2.i"
+	@echo "... ft_floats_2.s"
+	@echo "... ft_floats_3.o"
+	@echo "... ft_floats_3.i"
+	@echo "... ft_floats_3.s"
+	@echo "... ft_floats_4.o"
+	@echo "... ft_floats_4.i"
+	@echo "... ft_floats_4.s"
 	@echo "... ft_make_zero_str.o"
 	@echo "... ft_make_zero_str.i"
 	@echo "... ft_make_zero_str.s"

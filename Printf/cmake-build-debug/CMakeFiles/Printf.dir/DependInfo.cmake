@@ -4,12 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/umoff/git_floats/Printf/1.ft_make_number_with_main.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/1.ft_make_number_with_main.c.o"
   "/Users/umoff/git_floats/Printf/ft_addition_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_addition_long_arithmetic.c.o"
   "/Users/umoff/git_floats/Printf/ft_difference_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_difference_long_arithmetic.c.o"
   "/Users/umoff/git_floats/Printf/ft_division_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_division_long_arithmetic.c.o"
   "/Users/umoff/git_floats/Printf/ft_division_long_arithmetic_2.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_division_long_arithmetic_2.c.o"
-  "/Users/umoff/git_floats/Printf/ft_exponentiation_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_exponentiation_long_arithmetic.c.o"
+  "/Users/umoff/git_floats/Printf/ft_exp_long_arithmetic.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_exp_long_arithmetic.c.o"
+  "/Users/umoff/git_floats/Printf/ft_floats.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_floats.c.o"
+  "/Users/umoff/git_floats/Printf/ft_floats_2.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_floats_2.c.o"
+  "/Users/umoff/git_floats/Printf/ft_floats_3.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_floats_3.c.o"
+  "/Users/umoff/git_floats/Printf/ft_floats_4.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_floats_4.c.o"
   "/Users/umoff/git_floats/Printf/ft_make_zero_str.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/ft_make_zero_str.c.o"
   "/Users/umoff/git_floats/Printf/libft/ft_abs.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/libft/ft_abs.c.o"
   "/Users/umoff/git_floats/Printf/libft/ft_array_length.c" "/Users/umoff/git_floats/Printf/cmake-build-debug/CMakeFiles/Printf.dir/libft/ft_array_length.c.o"

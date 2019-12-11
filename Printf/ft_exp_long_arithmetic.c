@@ -1,6 +1,6 @@
 #include "floats.h"
 
-int    *ft_exponentiation_long_arithmetic(int power)
+int    *ft_exp_long_arithmetic(int power)
 {
     int *result;
     int *tmp;
