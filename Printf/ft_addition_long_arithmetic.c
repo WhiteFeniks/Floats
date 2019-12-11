@@ -1,5 +1,9 @@
 #include "floats.h"
 
+/*
+** Функция сложения массива x с массивом y и точностью accuracy
+*/
+
 int	*ft_addition_long_arithmetic(int *x, int *y, int accuracy)
 {
     int *result;

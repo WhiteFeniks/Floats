@@ -1,18 +1,8 @@
 #include "floats.h"
 
 /*
-** 1. Функция очистки temp1 и последующее перепресвоение
+** 5. Функция умножения числа на 10
 */
-
-void    ft_free_my(int **temp1, int *result)
-{
-	free(*temp1);
-	*temp1 = result;
-}
-
- /*
- ** 2. Функция умножения числа на 10
- */
 
 int     *mult_on_ten(int *x, int i, int accuracy)
 {
@@ -25,8 +15,20 @@ int     *mult_on_ten(int *x, int i, int accuracy)
 }
 
 /*
- ** 3. Функция проверки массива на числа отличные от нуля, чтобы в посследствии понять дошли ли мы до конца или нет
- */
+** 4. Функция очистки x и возврат result
+*/
+
+int     *ft_free_x(int *x, int *result)
+{
+    free(x);
+    return (result);
+}
+
+
+
+/*
+** 3. Функция проверки массива на числа отличные от нуля, чтобы в посследствии понять дошли ли мы до конца или нет
+*/
 
 int     check_end(int *x, int accuracy)
 {
@@ -39,13 +41,13 @@ int     check_end(int *x, int accuracy)
 }
 
 /*
-** 4. Функция очистки x и возврат result
+** 2. Функция очистки temp1 и последующее перепресвоение
 */
 
-int     *ft_free_x(int *x, int *result)
+void    ft_free_my(int **temp1, int *result)
 {
-    free(x);
-    return (result);
+    free(*temp1);
+    *temp1 = result;
 }
 
 /*
