@@ -315,9 +315,6 @@
 		<Unit filename="/Users/umoff/git_floats/Printf/libft/libft.h">
 			<Option target="Printf"/>
 		</Unit>
-		<Unit filename="/Users/umoff/git_floats/Printf/vimrc.c">
-			<Option target="Printf"/>
-		</Unit>
 		<Unit filename="/Users/umoff/git_floats/Printf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

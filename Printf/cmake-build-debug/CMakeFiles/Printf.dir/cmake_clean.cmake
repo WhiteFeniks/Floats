@@ -74,7 +74,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Printf.dir/libft/ft_strtrim.c.o"
   "CMakeFiles/Printf.dir/libft/ft_tolower.c.o"
   "CMakeFiles/Printf.dir/libft/ft_toupper.c.o"
-  "CMakeFiles/Printf.dir/vimrc.c.o"
   "Printf"
   "Printf.pdb"
 )

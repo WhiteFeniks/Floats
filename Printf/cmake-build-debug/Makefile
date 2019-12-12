@@ -2148,33 +2148,6 @@ libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
-vimrc.o: vimrc.c.o
-
-.PHONY : vimrc.o
-
-# target to build an object file
-vimrc.c.o:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/vimrc.c.o
-.PHONY : vimrc.c.o
-
-vimrc.i: vimrc.c.i
-
-.PHONY : vimrc.i
-
-# target to preprocess a source file
-vimrc.c.i:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/vimrc.c.i
-.PHONY : vimrc.c.i
-
-vimrc.s: vimrc.c.s
-
-.PHONY : vimrc.s
-
-# target to generate assembly for a file
-vimrc.c.s:
-	$(MAKE) -f CMakeFiles/Printf.dir/build.make CMakeFiles/Printf.dir/vimrc.c.s
-.PHONY : vimrc.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2409,9 +2382,6 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
-	@echo "... vimrc.o"
-	@echo "... vimrc.i"
-	@echo "... vimrc.s"
 .PHONY : help
 
 
