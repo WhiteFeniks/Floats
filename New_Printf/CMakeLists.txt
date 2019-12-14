@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.15)
-project(My_test C)
+cmake_minimum_required(VERSION 3.14)
+project(New_Printf C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 include_directories(libft)
 
-add_executable(My_test
+add_executable(New_Printf
         libft/ft_abs.c
         libft/ft_array_length.c
         libft/ft_atoi.c

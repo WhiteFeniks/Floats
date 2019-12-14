@@ -104,7 +104,7 @@ char *ft_accuracy_int(char *ret)
     {
         while ((test_num(ret[i]) == 1) && (i >= 0))
             i--;
-        while (i < k)
+        while (i <= k)
         {
             if (test_num(ret[i]) == 1)
                 ret[i] = change2(ret[i]);
@@ -135,11 +135,6 @@ char *ft_accuracy_fract(char *ret, t_data *list)
     {
         while ((test_num(ret[i]) == 1) && (i > j))
             i--;
-        if (i == j)
-        {
-            i = i - 2;
-            ft_accuracy_int(ret);
-        }
         while (i < k)
         {
             if (test_num(ret[i]) == 1)
@@ -150,6 +145,26 @@ char *ft_accuracy_fract(char *ret, t_data *list)
         }
     }
     return (ret);
+}
+
+char *ft_rewrite(char *ret, t_data *list)
+{
+    int i;
+    int j;
+    char *x;
+
+    i = 0;
+    j = 0;
+    while (ret[j] != '.')
+        j++;
+    x = (char *)malloc(sizeof(char) * (list->accuracy + j + 1));
+    while(i < list->accuracy + j + 1)
+    {
+        x[i] = ret[i];
+        i++;
+    }
+    x[i] = '\0';
+    return (x);
 }
 
 void		ft_f(t_data *list, va_list arg)
@@ -163,6 +178,7 @@ void		ft_f(t_data *list, va_list arg)
 	ret = ft_floats(f);
     ft_accuracy_int(ret);
     ft_accuracy_fract(ret, list);
+    ft_rewrite(ret, list);
 	ft_write(list, ret);
 }
 
