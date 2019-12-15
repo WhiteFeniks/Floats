@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/umoff/git_floats/Printf/floats.h
+unistd.h
+-
+stdlib.h
+-
+stdio.h
+-
+libft/libft.h
+/Users/umoff/git_floats/Printf/libft/libft.h
+
+/Users/umoff/git_floats/Printf/ft_floats.c
+stdio.h
+-
+floats.h
+/Users/umoff/git_floats/Printf/floats.h
+
+/Users/umoff/git_floats/Printf/libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
