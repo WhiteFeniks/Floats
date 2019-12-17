@@ -20,7 +20,12 @@ char		*ft_accuracy_f2(t_data *list, char *tmp, char *ret)
 		ret[list->j++] = tmp[list->i++];
 	if (tmp[list->i] == '.')
 	{
-		if (list->point != '.' && list->accuracy != 0)
+		if (list->point == '.' && list->accuracy == 0)
+		{
+			ret[list->j] = '\0';
+			return (ret);
+		}
+		else
 		{
 			ret[list->j++] = tmp[list->i++];
 			while (list->accuracy > 0)
@@ -30,6 +35,7 @@ char		*ft_accuracy_f2(t_data *list, char *tmp, char *ret)
 			}
 		}
 	}
+	ret[list->j] = '\0';
 	return (ret);
 }
 

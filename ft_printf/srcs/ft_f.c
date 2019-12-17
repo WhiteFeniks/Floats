@@ -50,9 +50,9 @@ char		*ft_plus_space_f(t_data *list, char *tmp)
 	{
 		ret = (char*)malloc(sizeof(char) * list->len + 2);
 		if (list->plus_space == '+')
-			ret[list->i] = '+';
+			ret[list->i++] = '+';
 		else if (list->plus_space == ' ')
-			ret[list->i] = ' ';
+			ret[list->i++] = ' ';
 		while (tmp[list->j])
 			ret[list->i++] = tmp[list->j++];
 		ret[list->i++] = '\0';
