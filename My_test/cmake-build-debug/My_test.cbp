@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_Lf.c">
+			<Option target="My_test"/>
+		</Unit>
 		<Unit filename="/Users/umoff/git_floats/My_test/ft_addition_long_arithmetic.c">
 			<Option target="My_test"/>
 		</Unit>

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/My_test.dir/ft_Lf.c.o"
   "CMakeFiles/My_test.dir/ft_addition_long_arithmetic.c.o"
   "CMakeFiles/My_test.dir/ft_allocation.c.o"
   "CMakeFiles/My_test.dir/ft_c.c.o"

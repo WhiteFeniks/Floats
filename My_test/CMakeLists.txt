@@ -89,6 +89,7 @@ add_executable(My_test
         ft_floats_5.c
         ft_help_s.c
         ft_help_s2.c
+        ft_Lf.c
         ft_lib1.c
         ft_lib2.c
         ft_lib3.c

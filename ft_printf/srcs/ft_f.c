@@ -12,7 +12,6 @@
 
 #include "../includes/ft_printf.h"
 
-
 void		ft_write(t_data *list, char *s)
 {
     ft_clean_counts(list);
@@ -25,7 +24,7 @@ void		ft_write(t_data *list, char *s)
 
 void		ft_f(t_data *list, va_list arg)
 {
-    double		f;
+    double          f;
     char			*ret;
 
     f = 0;

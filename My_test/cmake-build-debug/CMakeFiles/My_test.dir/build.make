@@ -1110,9 +1110,22 @@ CMakeFiles/My_test.dir/ft_help_s2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/My_test.dir/ft_help_s2.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/umoff/git_floats/My_test/ft_help_s2.c -o CMakeFiles/My_test.dir/ft_help_s2.c.s
 
+CMakeFiles/My_test.dir/ft_Lf.c.o: CMakeFiles/My_test.dir/flags.make
+CMakeFiles/My_test.dir/ft_Lf.c.o: ../ft_Lf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/My_test.dir/ft_Lf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_Lf.c.o   -c /Users/umoff/git_floats/My_test/ft_Lf.c
+
+CMakeFiles/My_test.dir/ft_Lf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/My_test.dir/ft_Lf.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/umoff/git_floats/My_test/ft_Lf.c > CMakeFiles/My_test.dir/ft_Lf.c.i
+
+CMakeFiles/My_test.dir/ft_Lf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/My_test.dir/ft_Lf.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/umoff/git_floats/My_test/ft_Lf.c -o CMakeFiles/My_test.dir/ft_Lf.c.s
+
 CMakeFiles/My_test.dir/ft_lib1.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_lib1.c.o: ../ft_lib1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/My_test.dir/ft_lib1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/My_test.dir/ft_lib1.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_lib1.c.o   -c /Users/umoff/git_floats/My_test/ft_lib1.c
 
 CMakeFiles/My_test.dir/ft_lib1.c.i: cmake_force
@@ -1125,7 +1138,7 @@ CMakeFiles/My_test.dir/ft_lib1.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_lib2.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_lib2.c.o: ../ft_lib2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/My_test.dir/ft_lib2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/My_test.dir/ft_lib2.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_lib2.c.o   -c /Users/umoff/git_floats/My_test/ft_lib2.c
 
 CMakeFiles/My_test.dir/ft_lib2.c.i: cmake_force
@@ -1138,7 +1151,7 @@ CMakeFiles/My_test.dir/ft_lib2.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_lib3.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_lib3.c.o: ../ft_lib3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/My_test.dir/ft_lib3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/My_test.dir/ft_lib3.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_lib3.c.o   -c /Users/umoff/git_floats/My_test/ft_lib3.c
 
 CMakeFiles/My_test.dir/ft_lib3.c.i: cmake_force
@@ -1151,7 +1164,7 @@ CMakeFiles/My_test.dir/ft_lib3.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_make_zero_str.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_make_zero_str.c.o: ../ft_make_zero_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/My_test.dir/ft_make_zero_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/My_test.dir/ft_make_zero_str.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_make_zero_str.c.o   -c /Users/umoff/git_floats/My_test/ft_make_zero_str.c
 
 CMakeFiles/My_test.dir/ft_make_zero_str.c.i: cmake_force
@@ -1164,7 +1177,7 @@ CMakeFiles/My_test.dir/ft_make_zero_str.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_null.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_null.c.o: ../ft_null.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/My_test.dir/ft_null.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/My_test.dir/ft_null.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_null.c.o   -c /Users/umoff/git_floats/My_test/ft_null.c
 
 CMakeFiles/My_test.dir/ft_null.c.i: cmake_force
@@ -1177,7 +1190,7 @@ CMakeFiles/My_test.dir/ft_null.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_null_s.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_null_s.c.o: ../ft_null_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/My_test.dir/ft_null_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/My_test.dir/ft_null_s.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_null_s.c.o   -c /Users/umoff/git_floats/My_test/ft_null_s.c
 
 CMakeFiles/My_test.dir/ft_null_s.c.i: cmake_force
@@ -1190,7 +1203,7 @@ CMakeFiles/My_test.dir/ft_null_s.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_o.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_o.c.o: ../ft_o.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/My_test.dir/ft_o.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/My_test.dir/ft_o.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_o.c.o   -c /Users/umoff/git_floats/My_test/ft_o.c
 
 CMakeFiles/My_test.dir/ft_o.c.i: cmake_force
@@ -1203,7 +1216,7 @@ CMakeFiles/My_test.dir/ft_o.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_p.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_p.c.o: ../ft_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/My_test.dir/ft_p.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/My_test.dir/ft_p.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_p.c.o   -c /Users/umoff/git_floats/My_test/ft_p.c
 
 CMakeFiles/My_test.dir/ft_p.c.i: cmake_force
@@ -1216,7 +1229,7 @@ CMakeFiles/My_test.dir/ft_p.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_percent.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_percent.c.o: ../ft_percent.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/My_test.dir/ft_percent.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/My_test.dir/ft_percent.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_percent.c.o   -c /Users/umoff/git_floats/My_test/ft_percent.c
 
 CMakeFiles/My_test.dir/ft_percent.c.i: cmake_force
@@ -1229,7 +1242,7 @@ CMakeFiles/My_test.dir/ft_percent.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_printf.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_printf.c.o: ../ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/My_test.dir/ft_printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/My_test.dir/ft_printf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_printf.c.o   -c /Users/umoff/git_floats/My_test/ft_printf.c
 
 CMakeFiles/My_test.dir/ft_printf.c.i: cmake_force
@@ -1242,7 +1255,7 @@ CMakeFiles/My_test.dir/ft_printf.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_remember.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_remember.c.o: ../ft_remember.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/My_test.dir/ft_remember.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/My_test.dir/ft_remember.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_remember.c.o   -c /Users/umoff/git_floats/My_test/ft_remember.c
 
 CMakeFiles/My_test.dir/ft_remember.c.i: cmake_force
@@ -1255,7 +1268,7 @@ CMakeFiles/My_test.dir/ft_remember.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_s.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_s.c.o: ../ft_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/My_test.dir/ft_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/My_test.dir/ft_s.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_s.c.o   -c /Users/umoff/git_floats/My_test/ft_s.c
 
 CMakeFiles/My_test.dir/ft_s.c.i: cmake_force
@@ -1268,7 +1281,7 @@ CMakeFiles/My_test.dir/ft_s.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_take_digit.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_take_digit.c.o: ../ft_take_digit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/My_test.dir/ft_take_digit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/My_test.dir/ft_take_digit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_take_digit.c.o   -c /Users/umoff/git_floats/My_test/ft_take_digit.c
 
 CMakeFiles/My_test.dir/ft_take_digit.c.i: cmake_force
@@ -1281,7 +1294,7 @@ CMakeFiles/My_test.dir/ft_take_digit.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_u.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_u.c.o: ../ft_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/My_test.dir/ft_u.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/My_test.dir/ft_u.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_u.c.o   -c /Users/umoff/git_floats/My_test/ft_u.c
 
 CMakeFiles/My_test.dir/ft_u.c.i: cmake_force
@@ -1294,7 +1307,7 @@ CMakeFiles/My_test.dir/ft_u.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_widht_d.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_widht_d.c.o: ../ft_widht_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/My_test.dir/ft_widht_d.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/My_test.dir/ft_widht_d.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_widht_d.c.o   -c /Users/umoff/git_floats/My_test/ft_widht_d.c
 
 CMakeFiles/My_test.dir/ft_widht_d.c.i: cmake_force
@@ -1307,7 +1320,7 @@ CMakeFiles/My_test.dir/ft_widht_d.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_write_and_clean.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_write_and_clean.c.o: ../ft_write_and_clean.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/My_test.dir/ft_write_and_clean.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/My_test.dir/ft_write_and_clean.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_write_and_clean.c.o   -c /Users/umoff/git_floats/My_test/ft_write_and_clean.c
 
 CMakeFiles/My_test.dir/ft_write_and_clean.c.i: cmake_force
@@ -1320,7 +1333,7 @@ CMakeFiles/My_test.dir/ft_write_and_clean.c.s: cmake_force
 
 CMakeFiles/My_test.dir/ft_x.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/ft_x.c.o: ../ft_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/My_test.dir/ft_x.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/My_test.dir/ft_x.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/ft_x.c.o   -c /Users/umoff/git_floats/My_test/ft_x.c
 
 CMakeFiles/My_test.dir/ft_x.c.i: cmake_force
@@ -1333,7 +1346,7 @@ CMakeFiles/My_test.dir/ft_x.c.s: cmake_force
 
 CMakeFiles/My_test.dir/main.c.o: CMakeFiles/My_test.dir/flags.make
 CMakeFiles/My_test.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/My_test.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/My_test.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/My_test.dir/main.c.o   -c /Users/umoff/git_floats/My_test/main.c
 
 CMakeFiles/My_test.dir/main.c.i: cmake_force
@@ -1427,6 +1440,7 @@ My_test_OBJECTS = \
 "CMakeFiles/My_test.dir/ft_floats_5.c.o" \
 "CMakeFiles/My_test.dir/ft_help_s.c.o" \
 "CMakeFiles/My_test.dir/ft_help_s2.c.o" \
+"CMakeFiles/My_test.dir/ft_Lf.c.o" \
 "CMakeFiles/My_test.dir/ft_lib1.c.o" \
 "CMakeFiles/My_test.dir/ft_lib2.c.o" \
 "CMakeFiles/My_test.dir/ft_lib3.c.o" \
@@ -1530,6 +1544,7 @@ My_test: CMakeFiles/My_test.dir/ft_floats_4.c.o
 My_test: CMakeFiles/My_test.dir/ft_floats_5.c.o
 My_test: CMakeFiles/My_test.dir/ft_help_s.c.o
 My_test: CMakeFiles/My_test.dir/ft_help_s2.c.o
+My_test: CMakeFiles/My_test.dir/ft_Lf.c.o
 My_test: CMakeFiles/My_test.dir/ft_lib1.c.o
 My_test: CMakeFiles/My_test.dir/ft_lib2.c.o
 My_test: CMakeFiles/My_test.dir/ft_lib3.c.o
@@ -1550,7 +1565,7 @@ My_test: CMakeFiles/My_test.dir/ft_x.c.o
 My_test: CMakeFiles/My_test.dir/main.c.o
 My_test: CMakeFiles/My_test.dir/build.make
 My_test: CMakeFiles/My_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Linking C executable My_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Linking C executable My_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/My_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

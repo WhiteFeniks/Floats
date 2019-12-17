@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/umoff/git_floats/My_test/ft_Lf.c" "/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles/My_test.dir/ft_Lf.c.o"
   "/Users/umoff/git_floats/My_test/ft_addition_long_arithmetic.c" "/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles/My_test.dir/ft_addition_long_arithmetic.c.o"
   "/Users/umoff/git_floats/My_test/ft_allocation.c" "/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles/My_test.dir/ft_allocation.c.o"
   "/Users/umoff/git_floats/My_test/ft_c.c" "/Users/umoff/git_floats/My_test/cmake-build-debug/CMakeFiles/My_test.dir/ft_c.c.o"

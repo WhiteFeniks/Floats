@@ -123,6 +123,33 @@ My_test/fast:
 	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/build
 .PHONY : My_test/fast
 
+ft_Lf.o: ft_Lf.c.o
+
+.PHONY : ft_Lf.o
+
+# target to build an object file
+ft_Lf.c.o:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_Lf.c.o
+.PHONY : ft_Lf.c.o
+
+ft_Lf.i: ft_Lf.c.i
+
+.PHONY : ft_Lf.i
+
+# target to preprocess a source file
+ft_Lf.c.i:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_Lf.c.i
+.PHONY : ft_Lf.c.i
+
+ft_Lf.s: ft_Lf.c.s
+
+.PHONY : ft_Lf.s
+
+# target to generate assembly for a file
+ft_Lf.c.s:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_Lf.c.s
+.PHONY : ft_Lf.c.s
+
 ft_addition_long_arithmetic.o: ft_addition_long_arithmetic.c.o
 
 .PHONY : ft_addition_long_arithmetic.o
@@ -2805,6 +2832,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... My_test"
+	@echo "... ft_Lf.o"
+	@echo "... ft_Lf.i"
+	@echo "... ft_Lf.s"
 	@echo "... ft_addition_long_arithmetic.o"
 	@echo "... ft_addition_long_arithmetic.i"
 	@echo "... ft_addition_long_arithmetic.s"
