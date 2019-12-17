@@ -28,26 +28,26 @@
 
 char     *write_number_in_binary(size_t const step, void *value, f_floats **new)
 {
-	int             i;
-	int             j;
-	int             k;
-	char            number_of_bits[80];
-	unsigned char   *temp;
+    int             i;
+    int             j;
+    int             k;
+    char            number_of_bits[80];
+    unsigned char   *temp;
 
-	i = step - 1;
-	k = 0;
-	temp = (unsigned char *) value;
-	while (i != -1)
-	{
-		j = (80 / step) - 1;
-		while (j != -1)
-		{
-			number_of_bits[k++] = (temp[i] >> j) & 1;
-			j--;
-		}
-		i--;
-	}
-	return (number_breakdown(number_of_bits, new));
+    i = step - 1;
+    k = 0;
+    temp = (unsigned char *) value;
+    while (i != -1)
+    {
+        j = (80 / step) - 1;
+        while (j != -1)
+        {
+            number_of_bits[k++] = (temp[i] >> j) & 1;
+            j--;
+        }
+        i--;
+    }
+    return (number_breakdown(number_of_bits, new));
 }
 
 /*
@@ -57,8 +57,8 @@ char     *write_number_in_binary(size_t const step, void *value, f_floats **new)
 
 union number
 {
-	long double x;
-	short       my_array[5];
+    long double x;
+    short       my_array[5];
 };
 
 /*
@@ -74,12 +74,12 @@ union number
 
 char     *write_number(double num, f_floats **new)
 {
-	int size_array;
-	union number value;
+    int size_array;
+    union number value;
 
-	value.x = num;
-	size_array = sizeof(value.my_array);
-	return (write_number_in_binary(size_array, &value.x, new));
+    value.x = num;
+    size_array = sizeof(value.my_array);
+    return (write_number_in_binary(size_array, &value.x, new));
 }
 
 /*
@@ -88,15 +88,20 @@ char     *write_number(double num, f_floats **new)
 
 char *ft_floats(double num, long long int accuracy)
 {
-	f_floats *new;
-	char *result;
+    f_floats *new;
+    char *result;
+    char *result_nan;
 
-	if (num != num)
-	    return(write(1, "nan", 3));
-	new = (f_floats*)malloc(sizeof(f_floats));
-	new->accuracy = accuracy;
-	result = write_number(num, &new);
-	free(new->stroka);
-	free(new);
-	return (result);
+    result_nan = ft_make_zero_char(3);
+    result_nan[0] = 'n';
+    result_nan[1] = 'a';
+    result_nan[2] = 'n';
+    if (num != num)
+        return(result_nan);
+    new = (f_floats*)malloc(sizeof(f_floats));
+    new->accuracy = accuracy;
+    result = write_number(num, &new);
+    free(new->stroka);
+    free(new);
+    return (result);
 }

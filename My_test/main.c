@@ -18,8 +18,8 @@ int		main(void)
 
     i = 0;
 
-                printf("lib точность =   250 , %.22f\n", 1.0/0);
-    i = ft_printf("my точность =    250 , %.22f\n", 1.0/0);
+                printf("lib точность =   250 , %.22f\n", NAN);
+    i = ft_printf("my точность =    250 , %.22f\n", NAN);
     printf("\n");
     printf("lib точность =  0,      10999.9999979 = %.0f\n", 2.5);
     i = ft_printf("lib точность =  0,      10999.9999979 = %.0f\n", 2.5);

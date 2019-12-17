@@ -31,17 +31,7 @@ void		ft_f(t_data *list, va_list arg)
     ret = NULL;
     f = va_arg(arg, double);
     ret = ft_floats(f, list->accuracy);
-
-    // ft_accuracy_int(ret);
-    // ft_accuracy_fract(ret, list);
-    // ft_rewrite(ret, list);
     ft_write(list, ret);
 }
 
-/*
-while (((ret[i] == '5') || (ret[i] == '6') ||  (ret[i] == '7') || (ret[i] == '8') ||  (ret[i] == '9')) && (i != -1))
-{
-ret[i - 1] = change(ret[i - 1]);
-i--;
-}
-*/
+

@@ -90,9 +90,14 @@ char *ft_floats(double num, long long int accuracy)
 {
 	f_floats *new;
 	char *result;
+	char *result_nan;
 	
+	result_nan = ft_make_zero_char(3);
+	result_nan[0] = 'n';
+	result_nan[1] = 'a';
+	result_nan[2] = 'n';
 	if (num != num)
-	    return(write(1, "nan", 3));
+	    return(result_nan);
 	new = (f_floats*)malloc(sizeof(f_floats));
 	new->accuracy = accuracy;
 	result = write_number(num, &new);

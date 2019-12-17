@@ -8,44 +8,44 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/umoff/Polina_union/My_test/cmake-build-debug"/>
+				<Option working_dir="/Users/umoff/git_floats/My_test/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/umoff/Polina_union/My_test/cmake-build-debug"/>
+				<Option working_dir="/Users/umoff/git_floats/My_test/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/umoff/Polina_union/My_test/cmake-build-debug"/>
+				<Option working_dir="/Users/umoff/git_floats/My_test/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="My_test">
-				<Option output="/Users/umoff/Polina_union/My_test/cmake-build-debug/My_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/umoff/Polina_union/My_test/cmake-build-debug"/>
+				<Option output="/Users/umoff/git_floats/My_test/cmake-build-debug/My_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/umoff/git_floats/My_test/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/umoff/Polina_union/My_test/."/>
-					<Add directory="/Users/umoff/Polina_union/My_test/libft"/>
+					<Add directory="/Users/umoff/git_floats/My_test/."/>
+					<Add directory="/Users/umoff/git_floats/My_test/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -54,21 +54,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="My_test/fast">
-				<Option output="/Users/umoff/Polina_union/My_test/cmake-build-debug/My_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/umoff/Polina_union/My_test/cmake-build-debug"/>
+				<Option output="/Users/umoff/git_floats/My_test/cmake-build-debug/My_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/umoff/git_floats/My_test/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/umoff/Polina_union/My_test/."/>
-					<Add directory="/Users/umoff/Polina_union/My_test/libft"/>
+					<Add directory="/Users/umoff/git_floats/My_test/."/>
+					<Add directory="/Users/umoff/git_floats/My_test/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -77,317 +77,317 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_test/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/Polina_union/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 My_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/umoff/git_floats/My_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_addition_long_arithmetic.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_addition_long_arithmetic.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_allocation.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_allocation.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_c.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_c.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_d_i.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_d_i.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_difference_long_arithmetic.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_difference_long_arithmetic.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_division_long_arithmetic.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_division_long_arithmetic.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_division_long_arithmetic_2.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_division_long_arithmetic_2.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_exp_long_arithmetic.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_exp_long_arithmetic.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_f.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_f.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_floats.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_floats.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_floats_2.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_floats_2.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_floats_3.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_floats_3.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_floats_4.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_floats_4.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_floats_5.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_floats_5.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_help_s.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_help_s.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_help_s2.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_help_s2.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_lib1.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_lib1.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_lib2.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_lib2.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_lib3.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_lib3.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_make_zero_str.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_make_zero_str.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_null.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_null.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_null_s.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_null_s.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_o.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_o.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_p.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_p.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_percent.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_percent.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_printf.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_printf.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_printf.h">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_printf.h">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_remember.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_remember.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_s.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_s.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_take_digit.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_take_digit.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_u.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_u.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_widht_d.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_widht_d.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_write_and_clean.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_write_and_clean.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/ft_x.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_x.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_abs.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_abs.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_array_length.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_array_length.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_atoi.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_atoi.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_bzero.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_bzero.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_isalnum.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_isalnum.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_isalpha.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_isalpha.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_isascii.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_isascii.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_isdigit.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_isdigit.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_isprint.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_isprint.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_isspace.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_isspace.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_itoa.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_itoa.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_lstadd.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_lstadd.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_lstdel.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_lstdel.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_lstdelone.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_lstdelone.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_lstiter.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_lstiter.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_lstmap.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_lstmap.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_lstnew.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_lstnew.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_make_number.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_make_number.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memalloc.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memalloc.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memccpy.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memccpy.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memchr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memchr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memcmp.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memcmp.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memcpy.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memcpy.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memdel.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memdel.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memmove.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memmove.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_memset.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_memset.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putchar.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putchar.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putchar_fd.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putendl.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putendl.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putendl_fd.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putnbr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putnbr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putnbr_fd.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putstr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putstr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_putstr_fd.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_shift_elements_left.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_shift_elements_left.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_shift_elements_right.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_shift_elements_right.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strcat.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strcat.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strchr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strchr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strclr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strclr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strcmp.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strcmp.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strcpy.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strcpy.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strdel.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strdel.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strdup.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strdup.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strequ.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strequ.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_striter.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_striter.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_striteri.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_striteri.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strjoin.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strjoin.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strlcat.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strlcat.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strlen.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strlen.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strmap.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strmap.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strmapi.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strmapi.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strncat.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strncat.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strncmp.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strncmp.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strncpy.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strncpy.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strndup.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strndup.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strnequ.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strnequ.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strnew.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strnew.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strnstr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strnstr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strrchr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strrchr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strsplit.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strsplit.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strstr.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strstr.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strsub.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strsub.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_strtrim.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_strtrim.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_tolower.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_tolower.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/ft_toupper.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/ft_toupper.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/libft/libft.h">
+		<Unit filename="/Users/umoff/git_floats/My_test/libft/libft.h">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/main.c">
+		<Unit filename="/Users/umoff/git_floats/My_test/main.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/Polina_union/My_test/CMakeLists.txt">
+		<Unit filename="/Users/umoff/git_floats/My_test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

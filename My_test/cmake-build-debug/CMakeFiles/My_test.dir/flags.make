@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/umoff/Polina_union/My_test/. -I/Users/umoff/Polina_union/My_test/libft 
+C_INCLUDES = -I/Users/umoff/git_floats/My_test/. -I/Users/umoff/git_floats/My_test/libft 
 
