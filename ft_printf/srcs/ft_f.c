@@ -32,6 +32,7 @@ char		*ft_accuracy_f(t_data *list, char *tmp)
 		ret = (char*)malloc(sizeof(char) * list->accuracy + 1);
 		while (list->accuracy--)
 			ret[list->j++] = '0';
+		ret[list->j] = '\0';
 		ret = ft_strjoin(tmp, ret);
 	}
 	else if (list->accuracy <= list->len)

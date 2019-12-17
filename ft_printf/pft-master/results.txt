@@ -1,38 +1,3 @@
-Test 1402 (f_prec8_1) : FAILED.
-    First line of code: {return test("this %.8f float", 1.5);}
-      expected output : "this 1.50000000 float"
-      your output     : "this 1.50000000  float"
-      expected (nonprintable as hex) : "this 1.50000000 float"
-      actual   (nonprintable as hex) : "this 1.50000000\xa0 float"
-
-Test 1403 (f_prec8_fltonly) : FAILED.
-    First line of code: {return test("%.8f", 7.5);}
-      expected output : "7.50000000"
-      your output     : "7.50000000 "
-      expected (nonprintable as hex) : "7.50000000"
-      actual   (nonprintable as hex) : "7.50000000\xa0"
-
-Test 1404 (f_prec8_whole) : FAILED.
-    First line of code: {return test("%.8f", 1.0);}
-      expected output : "1.00000000"
-      your output     : "1.00000000 "
-      expected (nonprintable as hex) : "1.00000000"
-      actual   (nonprintable as hex) : "1.00000000\xa0"
-
-Test 1465 (f_stress_prec10_negative_3_10) : FAILED.
-    First line of code: {return test("%.10f", -958.125);}
-      expected output : "-958.1250000000"
-      your output     : "-958.1250000000 "
-      expected (nonprintable as hex) : "-958.1250000000"
-      actual   (nonprintable as hex) : "-958.1250000000\xa0"
-
-Test 1511 (f_stress_prec17_limits_big) : FAILED.
-    First line of code: {return test("%.17f",  0.999999999999999990);}
-      expected output : "1.00000000000000000"
-      your output     : "1.00000000000000000"
-      expected (nonprintable as hex) : "1.00000000000000000"
-      actual   (nonprintable as hex) : "1.00000000000000000\x16"
-
 Test 1689 (f_overprec_might_be_undefbehav_ndblmin) : FAILED.
     First line of code: {return test("%.2000f", -DBL_MIN);}
     SEGFAULT
@@ -44,20 +9,12 @@ Test 1690 (f_limits_dblmax_prec0_notmandatory) : FAILED.
       expected (nonprintable as hex) : "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703"
       actual   (nonprintable as hex) : "179769313486231517976931348623151797693134862315179769313486231517976931348623151797693134862315179769313486231517976931348623151797693134862315179769"
 
-Test 1693 (f_limits_dblmax_prec8_notmandatory) : FAILED.
-    First line of code: {return test("%.8f", DBL_MAX);}
-      expected output : "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703"
-      your output     : "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703"
-      expected (nonprintable as hex) : "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703"
-      actual   (nonprintable as hex) : "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703"
-
-Test 1695 (f_stress_limits_dblmax_prec16_notmandatory) : FAILED.
-    First line of code: {return test("%.16f", DBL_MAX);}
-    SEGFAULT
-
 Test 1697 (f_limits_ndblmax_prec0_notmandatory) : FAILED.
     First line of code: {return test("%.0f", -DBL_MAX);}
-    SIGABRT
+      expected output : "-17976931348623157081452742373170435679807056752584499659891747680315726078002853876058955863276687817154045895351438246423432132688946418276846754670"
+      your output     : "-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-17976"
+      expected (nonprintable as hex) : "-17976931348623157081452742373170435679807056752584499659891747680315726078002853876058955863276687817154045895351438246423432132688946418276846754670"
+      actual   (nonprintable as hex) : "-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-17976"
 
 Test 1711 (f_limits_ndblmin_prec0) : FAILED.
     First line of code: {return test("%.0f", -DBL_MIN);}
@@ -87,20 +44,6 @@ Test 1717 (f_stress_limits_ndblmin_prec18) : FAILED.
     First line of code: {return test("%.18f", -DBL_MIN);}
     SEGFAULT
 
-Test 1718 (f_reserved_values_inf) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-      expected output : "inf"
-      your output     : "inf000000"
-      expected (nonprintable as hex) : "inf"
-      actual   (nonprintable as hex) : "inf000000"
-
-Test 1719 (f_reserved_values_ninf) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "-inf"
-      your output     : "-inf00"
-      expected (nonprintable as hex) : "-inf"
-      actual   (nonprintable as hex) : "-inf00"
-
 Test 1720 (f_reserved_values_nan) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
       expected output : "nan"
@@ -108,12 +51,12 @@ Test 1720 (f_reserved_values_nan) : FAILED.
       expected (nonprintable as hex) : "nan"
       actual   (nonprintable as hex) : "nan00000"
 
-Test 1733 (f_reserved_values_inf_6was) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-      expected output : "  +inf"
-      your output     : "+inf000000"
-      expected (nonprintable as hex) : "  +inf"
-      actual   (nonprintable as hex) : "+inf000000"
+Test 1725 (f_reserved_values_nan_6w) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+      expected output : "   nan"
+      your output     : "0000000000"
+      expected (nonprintable as hex) : "   nan"
+      actual   (nonprintable as hex) : "0000000000"
 
 Test 1734 (f_reserved_values_ninf_6was) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
@@ -125,27 +68,16 @@ Test 1734 (f_reserved_values_ninf_6was) : FAILED.
 Test 1735 (f_reserved_values_nan_6was) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
       expected output : "   nan"
-      your output     : "+0000000000"
+      your output     : "+nan00000"
       expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "+0000000000"
-
-Test 1738 (f_reserved_values_inf_10w_prec7) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-    SEGFAULT
-
-Test 1739 (f_reserved_values_ninf_10w_prec7) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "      -inf"
-      your output     : "   -inf000"
-      expected (nonprintable as hex) : "      -inf"
-      actual   (nonprintable as hex) : "   -inf000"
+      actual   (nonprintable as hex) : "+nan00000"
 
 Test 1740 (f_reserved_values_nan_10w_prec7) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
       expected output : "       nan"
-      your output     : " nan000000"
+      your output     : "000000000000"
       expected (nonprintable as hex) : "       nan"
-      actual   (nonprintable as hex) : " nan000000"
+      actual   (nonprintable as hex) : "000000000000"
 
 Test 1744 (f_reserved_values_ninf_sp_prec7) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
@@ -170,14 +102,17 @@ Test 1750 (f_reserved_values_nan_sp) : FAILED.
 
 Test 1753 (f_reserved_values_inf_6wzp) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-    SEGFAULT
+      expected output : "   inf"
+      your output     : "000inf"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : "000inf"
 
 Test 1754 (f_reserved_values_ninf_6wzp) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
       expected output : "  -inf"
-      your output     : "-inf00"
+      your output     : "-inf00000"
       expected (nonprintable as hex) : "  -inf"
-      actual   (nonprintable as hex) : "-inf00"
+      actual   (nonprintable as hex) : "-inf00000"
 
 Test 1755 (f_reserved_values_nan_6wzp) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
@@ -186,68 +121,58 @@ Test 1755 (f_reserved_values_nan_6wzp) : FAILED.
       expected (nonprintable as hex) : "   nan"
       actual   (nonprintable as hex) : "000nan"
 
-Test 1761 (f_L_basic_negative) : FAILED.
-    First line of code: {return test("%Lf", -3.85l);}
-    SEGFAULT
-
-Test 1771 (f_L_basic_limits_smallfpart_neg) : FAILED.
-    First line of code: {return test("%Lf", -875.000001l);}
-    SEGFAULT
-
-Test 1781 (f_L_rndu_multidigit_neg) : FAILED.
-    First line of code: {return test("%Lf", -5.0299999l);}
+Test 1787 (f_L_rndu_bumpwhole_neg) : FAILED.
+    First line of code: {return test("%Lf", -5.9999999l);}
     SEGFAULT
 
 Test 1811 (f_L_rnd_prec7_rndu_multidigit_neg) : FAILED.
     First line of code: {return test("%.7Lf", -5.0299999l);}
     SEGFAULT
 
-Test 1817 (f_L_prec8_1) : FAILED.
-    First line of code: {return test("this %.8Lf float", 1.5l);}
-      expected output : "this 1.50000000 float"
-      your output     : "this 1.50000000  float"
-      expected (nonprintable as hex) : "this 1.50000000 float"
-      actual   (nonprintable as hex) : "this 1.50000000\xa0 float"
-
-Test 1818 (f_L_prec8_fltonly) : FAILED.
-    First line of code: {return test("%.8Lf", 7.5l);}
-      expected output : "7.50000000"
-      your output     : "7.50000000 "
-      expected (nonprintable as hex) : "7.50000000"
-      actual   (nonprintable as hex) : "7.50000000\xa0"
-
-Test 1819 (f_L_prec8_whole) : FAILED.
-    First line of code: {return test("%.8Lf", 1.0l);}
-      expected output : "1.00000000"
-      your output     : "1.00000000 "
-      expected (nonprintable as hex) : "1.00000000"
-      actual   (nonprintable as hex) : "1.00000000\xa0"
-
-Test 1820 (f_L_prec8_negative) : FAILED.
-    First line of code: {return test("%.8Lf", -3.85l);}
+Test 1830 (f_L_prec8_limits_smallfpart_neg) : FAILED.
+    First line of code: {return test("%.8Lf", -875.000001l);}
     SEGFAULT
 
-Test 1873 (f_L_rnd_prec9_rndd_wholnobump_neg) : FAILED.
-    First line of code: {return test("%.9Lf", -0.99999949l);}
+Test 1834 (f_L_prec8_limits_bigfpart_neg) : FAILED.
+    First line of code: {return test("%.8Lf", -0.999999l);}
     SEGFAULT
 
-Test 1878 (f_L_stress_prec10_negative) : FAILED.
-    First line of code: {return test("%.10Lf", -3.85l);}
+Test 1844 (f_L_rnd_prec8_rndd_wholnobump_neg) : FAILED.
+    First line of code: {return test("%.8Lf", -0.99999949l);}
     SEGFAULT
 
-Test 1880 (f_L_stress_prec10_negative_3_10) : FAILED.
-    First line of code: {return test("%.10Lf", -958.125l);}
-      expected output : "-958.1250000000"
-      your output     : "-958.1250000000 "
-      expected (nonprintable as hex) : "-958.1250000000"
-      actual   (nonprintable as hex) : "-958.1250000000\xa0"
+Test 1849 (f_L_prec9_negative) : FAILED.
+    First line of code: {return test("%.9Lf", -3.85l);}
+    SEGFAULT
 
-Test 1914 (f_L_stress_prec17_limits_big) : FAILED.
-    First line of code: {return test("%.17f",  0.999999999999999990000);}
-      expected output : "1.00000000000000000"
-      your output     : "1.00000000000000000"
-      expected (nonprintable as hex) : "1.00000000000000000"
-      actual   (nonprintable as hex) : "1.00000000000000000\x16"
+Test 1857 (f_L_prec9_limits_allsmall_neg) : FAILED.
+    First line of code: {return test("%.9Lf", -0.00000001l);}
+    SEGFAULT
+
+Test 1889 (f_L_stress_prec10_negative_smallfpart) : FAILED.
+    First line of code: {return test("%.10Lf", -7.000000036l);}
+    SEGFAULT
+
+Test 1927 (f_L_reserved_values_inf) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "inf"
+      actual   (nonprintable as hex) : "inf000000"
+
+Test 1929 (f_L_reserved_values_nan) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "nan"
+      your output     : "0000000000"
+      expected (nonprintable as hex) : "nan"
+      actual   (nonprintable as hex) : "0000000000"
+
+Test 1932 (f_L_reserved_values_inf_6w) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "   inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : "inf000000"
 
 Test 1933 (f_L_reserved_values_ninf_6w) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
@@ -263,11 +188,18 @@ Test 1937 (f_L_reserved_values_inf_6wlj) : FAILED.
       expected (nonprintable as hex) : "inf   "
       actual   (nonprintable as hex) : "inf000000"
 
-Test 1938 (f_L_reserved_values_ninf_6wlj) : FAILED.
+Test 1942 (f_L_reserved_values_inf_6was) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "  +inf"
+      your output     : "+inf000000"
+      expected (nonprintable as hex) : "  +inf"
+      actual   (nonprintable as hex) : "+inf000000"
+
+Test 1943 (f_L_reserved_values_ninf_6was) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "-inf  "
+      expected output : "  -inf"
       your output     : "-inf00000"
-      expected (nonprintable as hex) : "-inf  "
+      expected (nonprintable as hex) : "  -inf"
       actual   (nonprintable as hex) : "-inf00000"
 
 Test 1944 (f_L_reserved_values_nan_6was) : FAILED.
@@ -280,23 +212,23 @@ Test 1944 (f_L_reserved_values_nan_6was) : FAILED.
 Test 1947 (f_L_reserved_values_inf_10w_prec7) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
       expected output : "       inf"
-      your output     : "inf0000000 "
+      your output     : "inf0000000"
       expected (nonprintable as hex) : "       inf"
-      actual   (nonprintable as hex) : "inf0000000\xa0"
-
-Test 1948 (f_L_reserved_values_ninf_10w_prec7) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "      -inf"
-      your output     : "   -inf000"
-      expected (nonprintable as hex) : "      -inf"
-      actual   (nonprintable as hex) : "   -inf000"
+      actual   (nonprintable as hex) : "inf0000000"
 
 Test 1954 (f_L_reserved_values_nan_sp_prec7) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
       expected output : "nan"
-      your output     : " nan000"
+      your output     : " 000000000000"
       expected (nonprintable as hex) : "nan"
-      actual   (nonprintable as hex) : " nan000"
+      actual   (nonprintable as hex) : " 000000000000"
+
+Test 1958 (f_L_reserved_values_ninf_sp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "-inf"
+      your output     : "-inf00000"
+      expected (nonprintable as hex) : "-inf"
+      actual   (nonprintable as hex) : "-inf00000"
 
 Test 1959 (f_L_reserved_values_nan_sp) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
@@ -308,23 +240,23 @@ Test 1959 (f_L_reserved_values_nan_sp) : FAILED.
 Test 1962 (f_L_reserved_values_inf_6wzp) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
       expected output : "   inf"
-      your output     : "inf000000"
+      your output     : "000inf"
       expected (nonprintable as hex) : "   inf"
-      actual   (nonprintable as hex) : "inf000000"
+      actual   (nonprintable as hex) : "000inf"
 
 Test 1963 (f_L_reserved_values_ninf_6wzp) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
       expected output : "  -inf"
-      your output     : "-inf00"
+      your output     : "-00inf"
       expected (nonprintable as hex) : "  -inf"
-      actual   (nonprintable as hex) : "-inf00"
+      actual   (nonprintable as hex) : "-00inf"
 
 Test 1964 (f_L_reserved_values_nan_6wzp) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
       expected output : "   nan"
-      your output     : "000nan"
+      your output     : "0000000000"
       expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "000nan"
+      actual   (nonprintable as hex) : "0000000000"
 
 Test 1967 (f_L_overprec_might_be_undefbehav_100) : FAILED.
     First line of code: {return test("%.100Lf", 0.237l);}
@@ -347,59 +279,48 @@ Test 1972 (f_L_overprec_might_be_undefbehav_2000) : FAILED.
       expected (nonprintable as hex) : "623.28376510723481002118617766427632886916399002075195312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
       actual   (nonprintable as hex) : "623.28376510723478531872387975454330444335937500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
 
-Test 1973 (f_L_overprec_might_be_undefbehav_dblmin) : FAILED.
-    First line of code: {return test("%.2000Lf", LDBL_MIN);}
-      expected output : "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-      your output     : "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-      expected (nonprintable as hex) : "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-      actual   (nonprintable as hex) : "0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-
-Test 1974 (f_L_overprec_might_be_undefbehav_ndblmin) : FAILED.
-    First line of code: {return test("%.2000Lf", -LDBL_MIN);}
-      expected output : "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-      your output     : "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-      expected (nonprintable as hex) : "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-      actual   (nonprintable as hex) : "-0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-
 Test 1975 (f_L_limits_dblmax_prec0_notmandatory) : FAILED.
     First line of code: {return test("%.0Lf", LDBL_MAX);}
+    SEGFAULT
+
+Test 1976 (f_L_limits_dblmax_prec3_notmandatory) : FAILED.
+    First line of code: {return test("%.3Lf", LDBL_MAX);}
       expected output : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
       your output     : "inf"
       expected (nonprintable as hex) : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
       actual   (nonprintable as hex) : "inf"
 
-Test 1976 (f_L_limits_dblmax_prec3_notmandatory) : FAILED.
-    First line of code: {return test("%.3Lf", LDBL_MAX);}
-      expected output : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
-      your output     : "inf000"
-      expected (nonprintable as hex) : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
-      actual   (nonprintable as hex) : "inf000"
-
 Test 1977 (f_L_limits_dblmax_precd_notmandatory) : FAILED.
     First line of code: {return test("%Lf", LDBL_MAX);}
-      expected output : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
-      your output     : "inf000000"
-      expected (nonprintable as hex) : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
-      actual   (nonprintable as hex) : "inf000000"
+    SEGFAULT
 
 Test 1978 (f_L_limits_dblmax_prec8_notmandatory) : FAILED.
     First line of code: {return test("%.8Lf", LDBL_MAX);}
-    SEGFAULT
+      expected output : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
+      your output     : "inf"
+      expected (nonprintable as hex) : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
+      actual   (nonprintable as hex) : "inf"
 
 Test 1979 (f_L_stress_limits_dblmax_prec12_notmandatory) : FAILED.
     First line of code: {return test("%.12Lf", LDBL_MAX);}
-    SEGFAULT
+      expected output : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
+      your output     : "inf000000000000"
+      expected (nonprintable as hex) : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
+      actual   (nonprintable as hex) : "inf000000000000"
 
 Test 1980 (f_L_stress_limits_dblmax_prec16_notmandatory) : FAILED.
     First line of code: {return test("%.16Lf", LDBL_MAX);}
-    SEGFAULT
+      expected output : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
+      your output     : "inf"
+      expected (nonprintable as hex) : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
+      actual   (nonprintable as hex) : "inf"
 
 Test 1981 (f_L_stress_limits_dblmax_prec18_notmandatory) : FAILED.
     First line of code: {return test("%.18Lf", LDBL_MAX);}
       expected output : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
-      your output     : "inf000000000000000000"
+      your output     : "inf"
       expected (nonprintable as hex) : "118973149535723176502126385303097020516906332229462420044032373389173700552297072261641029033652888285354569780749557731442744315367028843419812557385"
-      actual   (nonprintable as hex) : "inf000000000000000000"
+      actual   (nonprintable as hex) : "inf"
 
 Test 1982 (f_L_limits_ndblmax_prec0_notmandatory) : FAILED.
     First line of code: {return test("%.0Lf", -LDBL_MAX);}
@@ -411,64 +332,42 @@ Test 1982 (f_L_limits_ndblmax_prec0_notmandatory) : FAILED.
 Test 1983 (f_L_limits_ndblmax_prec3_notmandatory) : FAILED.
     First line of code: {return test("%.3Lf", -LDBL_MAX);}
       expected output : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      your output     : "-inf"
+      your output     : "-inf000"
       expected (nonprintable as hex) : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      actual   (nonprintable as hex) : "-inf"
+      actual   (nonprintable as hex) : "-inf000"
 
 Test 1984 (f_L_limits_ndblmax_precd_notmandatory) : FAILED.
     First line of code: {return test("%Lf", -LDBL_MAX);}
       expected output : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      your output     : "-inf00"
+      your output     : "-inf00000"
       expected (nonprintable as hex) : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      actual   (nonprintable as hex) : "-inf00"
+      actual   (nonprintable as hex) : "-inf00000"
 
 Test 1985 (f_L_limits_ndblmax_prec8_notmandatory) : FAILED.
     First line of code: {return test("%.8Lf", -LDBL_MAX);}
-      expected output : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      your output     : "-inf0000"
-      expected (nonprintable as hex) : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      actual   (nonprintable as hex) : "-inf0000"
-
-Test 1986 (f_L_stress_limits_ndblmax_prec12_notmandatory) : FAILED.
-    First line of code: {return test("%.12Lf", -LDBL_MAX);}
       expected output : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
       your output     : "-inf00000000"
       expected (nonprintable as hex) : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
       actual   (nonprintable as hex) : "-inf00000000"
 
+Test 1986 (f_L_stress_limits_ndblmax_prec12_notmandatory) : FAILED.
+    First line of code: {return test("%.12Lf", -LDBL_MAX);}
+      expected output : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
+      your output     : "-inf00000000000"
+      expected (nonprintable as hex) : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
+      actual   (nonprintable as hex) : "-inf00000000000"
+
 Test 1987 (f_L_stress_limits_ndblmax_prec16_notmandatory) : FAILED.
     First line of code: {return test("%.16Lf", -LDBL_MAX);}
       expected output : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      your output     : "-inf000000000000000"
+      your output     : "-inf0000000000000000"
       expected (nonprintable as hex) : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      actual   (nonprintable as hex) : "-inf000000000000000"
+      actual   (nonprintable as hex) : "-inf0000000000000000"
 
 Test 1988 (f_L_stress_limits_ndblmax_prec18_notmandatory) : FAILED.
     First line of code: {return test("%.18Lf", -LDBL_MAX);}
       expected output : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      your output     : "-inf000000000000000000"
+      your output     : "-inf00000000000000000"
       expected (nonprintable as hex) : "-11897314953572317650212638530309702051690633222946242004403237338917370055229707226164102903365288828535456978074955773144274431536702884341981255738"
-      actual   (nonprintable as hex) : "-inf000000000000000000"
-
-Test 1992 (f_L_limits_dblmin_prec8) : FAILED.
-    First line of code: {return test("%.8Lf", LDBL_MIN);}
-      expected output : "0.00000000"
-      your output     : "0.00000000 "
-      expected (nonprintable as hex) : "0.00000000"
-      actual   (nonprintable as hex) : "0.00000000\xa0"
-
-Test 1994 (f_L_stress_limits_dblmin_prec16) : FAILED.
-    First line of code: {return test("%.16Lf", LDBL_MIN);}
-    SEGFAULT
-
-Test 1999 (f_L_limits_ndblmin_prec8) : FAILED.
-    First line of code: {return test("%.8Lf", -LDBL_MIN);}
-      expected output : "-0.00000000"
-      your output     : "-0.00000000 "
-      expected (nonprintable as hex) : "-0.00000000"
-      actual   (nonprintable as hex) : "-0.00000000\xa0"
-
-Test 2001 (f_L_stress_limits_ndblmin_prec16) : FAILED.
-    First line of code: {return test("%.16Lf", -LDBL_MIN);}
-    SEGFAULT
+      actual   (nonprintable as hex) : "-inf00000000000000000"
 

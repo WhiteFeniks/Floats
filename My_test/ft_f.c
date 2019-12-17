@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/17 18:32:46 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 18:39:32 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char		*ft_accuracy_f(t_data *list, char *tmp)
 		while (tmp[list->i++])
 			list->len++;
 	}
+	else if (tmp[list->i] != '.')
+		return (ret);
 	if (list->accuracy > list->len)
 	{
 		list->accuracy = list->accuracy - list->len;
