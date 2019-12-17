@@ -6,11 +6,11 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/13 16:42:36 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/17 17:04:34 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 17:42:02 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 char		*ft_accuracy_f2(t_data *list, char *tmp, char *ret)
 {

@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/12 17:43:33 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 17:42:35 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdarg.h>
 # include <stdio.h>                     //
 # include <stdlib.h>
-# include "libft/libft.h"
+# include "../includes/libft.h"
 
 
 /*

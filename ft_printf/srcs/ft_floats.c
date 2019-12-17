@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 18:13:39 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/12 17:43:13 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 17:48:37 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,5 +121,7 @@ char *ft_floats(double num, long long int accuracy)
     result = write_number(num, &new);
     free(new->stroka);
     free(new);
+    if (new->sign == 1)
+        result = ft_strjoin("-", result);
     return (result);
 }
