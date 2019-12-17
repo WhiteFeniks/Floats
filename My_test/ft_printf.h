@@ -118,5 +118,8 @@ void	                    ft_free_array(int *integer_part, int *fractional_part);
 void	                    ft_free_result(char **temp1, char *result);
 void	                    ft_free_new(int **temp1, int *result);
 void                        ft_sps_polina(int **integer_part, int **fractional_part, long long int accuracy, int i);
+int                         check_inf_order(f_floats **new);
+int                         check_inf_mantissa(f_floats **new);
+char                        *make_inf(f_floats **new);
 
 #endif

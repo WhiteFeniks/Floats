@@ -1,5 +1,8 @@
 #include "../includes/ft_printf.h"
 
+/*
+ ** 5. Функция округления дробной части
+ */
 void ft_round_fract(int **fractional_part, long long int j)
 {
     int i;
@@ -17,6 +20,10 @@ void ft_round_fract(int **fractional_part, long long int j)
         j--;
     }
 }
+
+/*
+ ** 4.Функиця округления числа, если точность = 0
+ */
 
 void ft_zero_accuracy(int **integer_part, int **fractional_part)
 {
@@ -41,6 +48,10 @@ void ft_zero_accuracy(int **integer_part, int **fractional_part)
         j--;
     }
 }
+
+/*
+ ** 3. Функция округления числа + функции окргления дробной и целой части
+ */
 
 void ft_sps_polina(int **integer_part, int **fractional_part, long long int acc, int i)
 {
@@ -70,5 +81,41 @@ void ft_sps_polina(int **integer_part, int **fractional_part, long long int acc,
         }
         j--;
     }
+}
+
+/*
+ ** 2. Функция проверяющая порядок на наличие чисел != 1 для проверки inf
+ */
+
+int check_inf_order(f_floats **new)
+{
+    int i;
+
+    i = 0;
+    while (i < 15)
+    {
+        if ((*new)->order[i] != 1)
+            return (0);
+        i++;
+    }
+    return(1);
+}
+
+/*
+ ** 1. Функция проверяющая мантиссу на наличие чисел != 0 для проверки inf
+ */
+
+int check_inf_mantissa(f_floats **new)
+{
+    int i;
+
+    i = 0;
+    while (i < 65)
+    {
+        if ((*new)->mantissa[i] != 0)
+            return (0);
+        i++;
+    }
+    return(1);
 }
 

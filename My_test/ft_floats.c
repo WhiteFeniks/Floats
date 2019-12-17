@@ -13,6 +13,20 @@
 #include "ft_printf.h"
 
 /*
+ ** 5. Функция выводящая inf (1.0/0.0 -> когда мантисса все 0, порядок все 1,
+ ** знак = либо 0, либо 1 бит, указывающий положит./отриц. бесконечность)
+ */
+
+char *make_inf(f_floats **new)
+{
+    (*new)->stroka = ft_make_zero_char(1100);
+    (*new)->stroka[0] = 'i';
+    (*new)->stroka[1] = 'n';
+    (*new)->stroka[2] = 'f';
+    return((*new)->stroka);
+}
+
+/*
  ** 4. Функция записи нашего числа из десятичной системы в двоичную
  ** number_of_bits, как это число записано в памяти компьютера
  ** i именно такое т.к. начинаем с 0, то чтобы пройти по всему числу нужно
@@ -90,14 +104,18 @@ char *ft_floats(double num, long long int accuracy)
 {
     f_floats *new;
     char *result;
-    char *result_nan;
+    char *temp;
 
-    result_nan = ft_make_zero_char(3);
-    result_nan[0] = 'n';
-    result_nan[1] = 'a';
-    result_nan[2] = 'n';
     if (num != num)
-        return(result_nan);
+    {
+        result = ft_make_zero_char(3);
+        temp = result;
+        free(temp);
+        result[0] = 'n';
+        result[1] = 'a';
+        result[2] = 'n';
+        return(result);
+    }
     new = (f_floats*)malloc(sizeof(f_floats));
     new->accuracy = accuracy;
     result = write_number(num, &new);

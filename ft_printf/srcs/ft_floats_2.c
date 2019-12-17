@@ -95,6 +95,8 @@ char *number_breakdown (char number_of_bits[], f_floats **new)
 	j = 0;
 	while (i <= 15)
 		(*new)->order[j++] = number_of_bits[i++];
+    if ((check_inf_order(new) == 1) && (check_inf_mantissa(new) == 1))
+        return (make_inf(new));
 	j = 0;
 	while (i < 80)
 		(*new)->mantissa[j++] = number_of_bits[i++];
