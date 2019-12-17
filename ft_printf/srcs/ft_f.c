@@ -25,18 +25,20 @@ char		*ft_accuracy_f(t_data *list, char *tmp)
 		list->i++;
 		while (tmp[list->i++])
 			list->len++;
+		if (list->accuracy > list->len)
+		{
+			list->accuracy = list->accuracy - list->len;
+			ret = (char*)malloc(sizeof(char) * list->accuracy + 1);
+			while (list->accuracy--)
+				ret[list->j++] = '0';
+			ret[list->j] = '\0';
+			ret = ft_strjoin(tmp, ret);
+		}
+		else if (list->accuracy <= list->len)
+			ret = ft_accuracy_f2(list, tmp, ret);
 	}
-	if (list->accuracy > list->len)
-	{
-		list->accuracy = list->accuracy - list->len;
-		ret = (char*)malloc(sizeof(char) * list->accuracy + 1);
-		while (list->accuracy--)
-			ret[list->j++] = '0';
-		ret[list->j] = '\0';
-		ret = ft_strjoin(tmp, ret);
-	}
-	else if (list->accuracy <= list->len)
-		ret = ft_accuracy_f2(list, tmp, ret);
+	else
+		ret = ft_strdup(tmp);
 	return (ret);
 }
 

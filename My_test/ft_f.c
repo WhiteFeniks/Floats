@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/17 18:39:32 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 19:00:52 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,20 +25,20 @@ char		*ft_accuracy_f(t_data *list, char *tmp)
 		list->i++;
 		while (tmp[list->i++])
 			list->len++;
+		if (list->accuracy > list->len)
+		{
+			list->accuracy = list->accuracy - list->len;
+			ret = (char*)malloc(sizeof(char) * list->accuracy + 1);
+			while (list->accuracy--)
+				ret[list->j++] = '0';
+			ret[list->j] = '\0';
+			ret = ft_strjoin(tmp, ret);
+		}
+		else if (list->accuracy <= list->len)
+			ret = ft_accuracy_f2(list, tmp, ret);
 	}
-	else if (tmp[list->i] != '.')
-		return (ret);
-	if (list->accuracy > list->len)
-	{
-		list->accuracy = list->accuracy - list->len;
-		ret = (char*)malloc(sizeof(char) * list->accuracy + 1);
-		while (list->accuracy--)
-			ret[list->j++] = '0';
-		ret[list->j] = '\0';
-		ret = ft_strjoin(tmp, ret);
-	}
-	else if (list->accuracy <= list->len)
-		ret = ft_accuracy_f2(list, tmp, ret);
+	else
+		ret = ft_strdup(tmp);
 	return (ret);
 }
 
