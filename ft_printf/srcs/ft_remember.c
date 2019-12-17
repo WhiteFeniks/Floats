@@ -73,7 +73,7 @@ int		rem_length(const char *format, int i, t_data *list)
 		if (list->length == 0)
 		{
 			if (format[i] == 'L')
-				list->length = 1;
+				list->length = 3;
 			else if (format[i] == 'l')
 				i = ft_l(format, i, list);
 			else if (format[i] == 'h')
