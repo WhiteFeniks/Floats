@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/17 16:58:06 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 18:21:49 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,9 @@ char		*ft_plus_space_f(t_data *list, char *tmp)
 	{
 		ret = (char*)malloc(sizeof(char) * list->len + 2);
 		if (list->plus_space == '+')
-			ret[list->i] = '+';
+			ret[list->i++] = '+';
 		else if (list->plus_space == ' ')
-			ret[list->i] = ' ';
+			ret[list->i++] = ' ';
 		while (tmp[list->j])
 			ret[list->i++] = tmp[list->j++];
 		ret[list->i++] = '\0';

@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/17 17:04:58 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 18:13:48 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <unistd.h>
 # include <stdarg.h>
-# include <stdio.h>                     //
+# include <stdio.h>
 # include <stdlib.h>
 # include "libft/libft.h"
 
@@ -40,7 +40,6 @@ typedef struct              s_data
 	long long int			j;
 	long long int			tmp;
 	int						nol;
-	int						a;
 }                           t_data;
 
 typedef struct              f_struct
