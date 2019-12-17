@@ -31,4 +31,5 @@ void	ft_allocation(t_data *list, va_list arg)
 		ft_x(list, arg);
 	else if (list->type == 'f' || list->type == 'F')
 		ft_f(list, arg);
+		
 }
