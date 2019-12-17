@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 14:51:59 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/12 15:30:03 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 16:51:15 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ int		rem_length(const char *format, int i, t_data *list)
 		if (list->length == 0)
 		{
 			if (format[i] == 'L')
-				list->length = 1;
+				list->length = 3;
 			else if (format[i] == 'l')
 				i = ft_l(format, i, list);
 			else if (format[i] == 'h')

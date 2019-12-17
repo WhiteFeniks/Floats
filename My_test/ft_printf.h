@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/12 17:43:33 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 17:04:58 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ typedef struct              s_data
 	long long int			j;
 	long long int			tmp;
 	int						nol;
+	int						a;
 }                           t_data;
 
 typedef struct              f_struct
@@ -68,7 +69,6 @@ void						ft_allocation(t_data *list, va_list arg);
 void						rem_type(const char *format, int i, t_data *list);
 void						rem_flag(const char *format, int i, t_data *list);
 void						ft_f(t_data *list, va_list arg);
-void                        ft_Lf(t_data *list, va_list arg);
 void						ft_c(t_data *list, va_list arg);
 void						ft_d_i(t_data *list, va_list arg);
 void						ft_o(t_data *list, va_list arg);
@@ -111,5 +111,9 @@ void                        ft_sps_polina(int **integer_part, int **fractional_p
 int                         check_inf_order(f_floats **new);
 int                         check_inf_mantissa(f_floats **new);
 char                        *make_inf(f_floats **new);
+char						*ft_width_f(t_data *list, char *tmp);
+char						*ft_accuracy_f2(t_data *list, char *tmp, char *ret);
+char						*ft_Lf(t_data *list, va_list arg);
+
 
 #endif
