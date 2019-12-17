@@ -68,6 +68,7 @@ void						ft_allocation(t_data *list, va_list arg);
 void						rem_type(const char *format, int i, t_data *list);
 void						rem_flag(const char *format, int i, t_data *list);
 void						ft_f(t_data *list, va_list arg);
+void						ft_Lf(t_data *list, va_list arg);
 void						ft_c(t_data *list, va_list arg);
 void						ft_d_i(t_data *list, va_list arg);
 void						ft_o(t_data *list, va_list arg);
