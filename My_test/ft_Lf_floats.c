@@ -1,16 +1,18 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_floats.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/11 18:13:39 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/17 17:48:37 by vaisha           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include "ft_printf.h"
 
-#include "../includes/ft_printf.h"
+/*
+ ** 5. Функция выводящая inf (1.0/0.0 -> когда мантисса все 0, порядок все 1,
+ ** знак = либо 0, либо 1 бит, указывающий положит./отриц. бесконечность)
+ */
+
+char *make_inf_Lf(f_floats **new)
+{
+    (*new)->stroka = ft_make_zero_char(1100);
+    (*new)->stroka[0] = 'i';
+    (*new)->stroka[1] = 'n';
+    (*new)->stroka[2] = 'f';
+    return((*new)->stroka);
+}
 
 /*
  ** 4. Функция записи нашего числа из десятичной системы в двоичную
@@ -26,7 +28,7 @@
  ** получаем как число записано в компьютере
  */
 
-char     *write_number_in_binary(size_t const step, void *value, f_floats **new)
+char     *write_number_Lf_in_binary(size_t const step, void *value, f_floats **new)
 {
     int             i;
     int             j;
@@ -72,26 +74,26 @@ union number
  ** отправляем наше количество заходов в цикл, и адрес на наше число
  */
 
-char     *write_number(double num, f_floats **new)
+char     *write_Lf_number(long double num, f_floats **new)
 {
     int size_array;
     union number value;
 
     value.x = num;
     size_array = sizeof(value.my_array);
-    return (write_number_in_binary(size_array, &value.x, new));
+    return (write_number_Lf_in_binary(size_array, &value.x, new));
 }
 
 /*
  ** 1. Основная функция ft_floats
  */
 
-char *ft_floats(double num, long long int accuracy)
+char *ft_Lf_floats(long double num, long long int accuracy)
 {
     f_floats *new;
     char *result;
     char *temp;
-
+    new = (f_floats*)malloc(sizeof(f_floats));
     if (num != num)
     {
         result = ft_make_zero_char(3);
@@ -102,9 +104,8 @@ char *ft_floats(double num, long long int accuracy)
         result[2] = 'n';
         return(result);
     }
-    new = (f_floats*)malloc(sizeof(f_floats));
     new->accuracy = accuracy;
-    result = write_number(num, &new);
+    result = write_Lf_number(num, &new);
     free(new->stroka);
     free(new);
     if (new->sign == 1)

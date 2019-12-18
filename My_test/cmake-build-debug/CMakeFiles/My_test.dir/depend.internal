@@ -5,7 +5,14 @@ CMakeFiles/My_test.dir/ft_Lf.c.o
  /Users/umoff/git_floats/My_test/ft_Lf.c
  /Users/umoff/git_floats/My_test/ft_printf.h
  /Users/umoff/git_floats/My_test/libft/libft.h
+CMakeFiles/My_test.dir/ft_Lf_floats.c.o
+ /Users/umoff/git_floats/My_test/ft_Lf_floats.c
+ /Users/umoff/git_floats/My_test/ft_printf.h
+ /Users/umoff/git_floats/My_test/libft/libft.h
 CMakeFiles/My_test.dir/ft_addition_long_arithmetic.c.o
+ /Users/umoff/git_floats/My_test/ft_addition_long_arithmetic.c
+ /Users/umoff/git_floats/My_test/ft_printf.h
+ /Users/umoff/git_floats/My_test/libft/libft.h
 CMakeFiles/My_test.dir/ft_allocation.c.o
  /Users/umoff/git_floats/My_test/ft_allocation.c
  /Users/umoff/git_floats/My_test/ft_printf.h
@@ -121,6 +128,10 @@ CMakeFiles/My_test.dir/ft_u.c.o
 CMakeFiles/My_test.dir/ft_widht_d.c.o
  /Users/umoff/git_floats/My_test/ft_printf.h
  /Users/umoff/git_floats/My_test/ft_widht_d.c
+ /Users/umoff/git_floats/My_test/libft/libft.h
+CMakeFiles/My_test.dir/ft_width_f.c.o
+ /Users/umoff/git_floats/My_test/ft_printf.h
+ /Users/umoff/git_floats/My_test/ft_width_f.c
  /Users/umoff/git_floats/My_test/libft/libft.h
 CMakeFiles/My_test.dir/ft_write_and_clean.c.o
  /Users/umoff/git_floats/My_test/ft_printf.h

@@ -5,6 +5,13 @@ CMakeFiles/My_test.dir/ft_Lf.c.o: ../ft_Lf.c
 CMakeFiles/My_test.dir/ft_Lf.c.o: ../ft_printf.h
 CMakeFiles/My_test.dir/ft_Lf.c.o: ../libft/libft.h
 
+CMakeFiles/My_test.dir/ft_Lf_floats.c.o: ../ft_Lf_floats.c
+CMakeFiles/My_test.dir/ft_Lf_floats.c.o: ../ft_printf.h
+CMakeFiles/My_test.dir/ft_Lf_floats.c.o: ../libft/libft.h
+
+CMakeFiles/My_test.dir/ft_addition_long_arithmetic.c.o: ../ft_addition_long_arithmetic.c
+CMakeFiles/My_test.dir/ft_addition_long_arithmetic.c.o: ../ft_printf.h
+CMakeFiles/My_test.dir/ft_addition_long_arithmetic.c.o: ../libft/libft.h
 
 CMakeFiles/My_test.dir/ft_allocation.c.o: ../ft_allocation.c
 CMakeFiles/My_test.dir/ft_allocation.c.o: ../ft_printf.h
@@ -121,6 +128,10 @@ CMakeFiles/My_test.dir/ft_u.c.o: ../libft/libft.h
 CMakeFiles/My_test.dir/ft_widht_d.c.o: ../ft_printf.h
 CMakeFiles/My_test.dir/ft_widht_d.c.o: ../ft_widht_d.c
 CMakeFiles/My_test.dir/ft_widht_d.c.o: ../libft/libft.h
+
+CMakeFiles/My_test.dir/ft_width_f.c.o: ../ft_printf.h
+CMakeFiles/My_test.dir/ft_width_f.c.o: ../ft_width_f.c
+CMakeFiles/My_test.dir/ft_width_f.c.o: ../libft/libft.h
 
 CMakeFiles/My_test.dir/ft_write_and_clean.c.o: ../ft_printf.h
 CMakeFiles/My_test.dir/ft_write_and_clean.c.o: ../ft_write_and_clean.c

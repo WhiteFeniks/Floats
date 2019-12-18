@@ -100,6 +100,7 @@ int                         comparasion(int *x, int *y, int accuracy);
 int                         numb_of_zeroes(int *divider);
 int                         *ft_make_zero_str(int size);
 char                        *ft_floats(double num, long long int accuracy);
+char                        *ft_Lf_floats(long double num, long long int accuracy);
 char                        *number_breakdown (char number_of_bits[], f_floats **new);
 char	                    *my_number(f_floats **new);
 char	                    *ft_make_zero_char(int size);
@@ -109,10 +110,10 @@ void	                    ft_free_new(int **temp1, int *result);
 void                        ft_sps_polina(int **integer_part, int **fractional_part, long long int accuracy, int i);
 int                         check_inf_order(f_floats **new);
 int                         check_inf_mantissa(f_floats **new);
+char                        *make_nan(f_floats **new);
 char                        *make_inf(f_floats **new);
 char						*ft_width_f(t_data *list, char *tmp);
 char						*ft_accuracy_f2(t_data *list, char *tmp, char *ret);
 char						*ft_Lf(t_data *list, va_list arg);
-
 
 #endif

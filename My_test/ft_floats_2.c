@@ -83,6 +83,14 @@ int make_mantissa(f_floats **new)
 /*
  ** 1. Функция разбивки числа на мантису, порядок и знак, а так же получение
  ** дробной и целой части, а после перезаписи в строку
+ ** NaN:
+ ** sign = либо 0, либо 1.
+ ** exponent = все 1 бит.
+ ** mantissa = Всё что угодно кроме 0.
+ ** Inf:
+ ** sign = либо 0, либо 1.
+ ** exponent = все 1 бит.
+ ** mantissa =  все 0 бит.
  */
 
 char *number_breakdown (char number_of_bits[], f_floats **new)
@@ -90,11 +98,14 @@ char *number_breakdown (char number_of_bits[], f_floats **new)
 	int i;
 	int j;
 
+
 	(*new)->sign = number_of_bits[0];
 	i = 1;
 	j = 0;
 	while (i <= 15)
 		(*new)->order[j++] = number_of_bits[i++];
+    if ((check_inf_order(new) == 1) && (check_inf_mantissa(new) == 0))
+        return (make_nan(new));
     if ((check_inf_order(new) == 1) && (check_inf_mantissa(new) == 1))
         return (make_inf(new));
 	j = 0;

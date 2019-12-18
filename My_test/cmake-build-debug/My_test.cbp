@@ -87,6 +87,9 @@
 		<Unit filename="/Users/umoff/git_floats/My_test/ft_Lf.c">
 			<Option target="My_test"/>
 		</Unit>
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_Lf_floats.c">
+			<Option target="My_test"/>
+		</Unit>
 		<Unit filename="/Users/umoff/git_floats/My_test/ft_addition_long_arithmetic.c">
 			<Option target="My_test"/>
 		</Unit>
@@ -181,6 +184,9 @@
 			<Option target="My_test"/>
 		</Unit>
 		<Unit filename="/Users/umoff/git_floats/My_test/ft_widht_d.c">
+			<Option target="My_test"/>
+		</Unit>
+		<Unit filename="/Users/umoff/git_floats/My_test/ft_width_f.c">
 			<Option target="My_test"/>
 		</Unit>
 		<Unit filename="/Users/umoff/git_floats/My_test/ft_write_and_clean.c">

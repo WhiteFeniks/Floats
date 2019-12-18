@@ -105,18 +105,15 @@ char *ft_floats(double num, long long int accuracy)
     f_floats *new;
     char *result;
     char *temp;
-
+    new = (f_floats*)malloc(sizeof(f_floats));
     if (num != num)
     {
         result = ft_make_zero_char(3);
-        temp = result;
-        free(temp);
         result[0] = 'n';
         result[1] = 'a';
         result[2] = 'n';
         return(result);
     }
-    new = (f_floats*)malloc(sizeof(f_floats));
     new->accuracy = accuracy;
     result = write_number(num, &new);
     free(new->stroka);

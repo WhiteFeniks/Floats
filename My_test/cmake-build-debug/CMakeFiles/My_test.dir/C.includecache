@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/umoff/git_floats/My_test/ft_Lf_floats.c
+ft_printf.h
+/Users/umoff/git_floats/My_test/ft_printf.h
+
 /Users/umoff/git_floats/My_test/ft_printf.h
 unistd.h
 -
@@ -24,13 +28,5 @@ string.h
 stdlib.h
 -
 unistd.h
--
-
-/Users/umoff/git_floats/My_test/main.c
-float.h
--
-ft_printf.h
-/Users/umoff/git_floats/My_test/ft_printf.h
-math.h
 -
 

@@ -83,6 +83,7 @@ add_executable(My_test
         ft_exp_long_arithmetic.c
         ft_f.c
         ft_floats.c
+        ft_Lf_floats.c
         ft_floats_2.c
         ft_floats_3.c
         ft_floats_4.c
@@ -106,6 +107,7 @@ add_executable(My_test
         ft_take_digit.c
         ft_u.c
         ft_widht_d.c
+        ft_width_f.c
         ft_write_and_clean.c
         ft_x.c
         main.c)

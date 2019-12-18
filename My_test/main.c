@@ -12,15 +12,60 @@
 
 #include "ft_printf.h"
 #include <math.h>
+#include <float.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <string.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <strings.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <limits.h>
+#include <signal.h>
+#include <sys/wait.h>
+#include <time.h>
+#include <float.h>
+#include <termios.h>
+#define DBL_INF    0x7FF0000000000000
+#define DBL_NINF   0xFFF0000000000000
+#define DBL_NAN    0x7FF0000000100000
+#define DBL_PZERO  0x0000000000000000
+#define DBL_NZERO  0x8000000000000000
+
+#define LDBL_INF   0x7FFF0000000000000000L
+#define LDBL_NINF  0xFFFF0000000000000000L
+#define LDBL_NAN   0x7FFF0000000001000000L
+#define LDBL_PZERO 0x00000000000000000000L
+#define LDBL_NZERO 0x80000000000000000000L
 int		main(void)
 {
     int i;
 
     i = 0;
 
-                printf("lib точность =   250 , %.2000Lf\n", 623.28376510723481l);
-    i = ft_printf("my точность =    250 , %.2000Lf\n", 623.28376510723481l);
+    printf("lib точность =  DBL_MIN, %.700f\n", DBL_MIN);
+    i = ft_printf("my точность =   DBL_MIN, %.700f\n", DBL_MIN);
     printf("\n");
+
+    printf("lib точность =  DBL_MAX, %.700f\n", DBL_MAX);
+    i = ft_printf("my точность =   DBL_MIN, %.700f\n", DBL_MAX);
+    printf("\n");
+
+
+
+    printf("lib точность =  0.237, %.100Lf\n", 0.237l);
+    i = ft_printf("my точность =   0.237, %.100Lf\n", 0.237l);
+    printf("\n");
+/*
+    printf("lib точность =  INF, %.700f\n", 1.0/0.0);
+    i = ft_printf("my точность =   INF, %.700f\n", 1.0/0.0);
+    printf("\n");*/
     /*printf("lib точность =  0,      10999.9999979 = %.0f\n", 2.5);
     i = ft_printf("lib точность =  0,      10999.9999979 = %.0f\n", 2.5);
     printf("\n");

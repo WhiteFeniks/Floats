@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/My_test.dir/ft_Lf.c.o"
+  "CMakeFiles/My_test.dir/ft_Lf_floats.c.o"
   "CMakeFiles/My_test.dir/ft_addition_long_arithmetic.c.o"
   "CMakeFiles/My_test.dir/ft_allocation.c.o"
   "CMakeFiles/My_test.dir/ft_c.c.o"
@@ -31,6 +32,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/My_test.dir/ft_take_digit.c.o"
   "CMakeFiles/My_test.dir/ft_u.c.o"
   "CMakeFiles/My_test.dir/ft_widht_d.c.o"
+  "CMakeFiles/My_test.dir/ft_width_f.c.o"
   "CMakeFiles/My_test.dir/ft_write_and_clean.c.o"
   "CMakeFiles/My_test.dir/ft_x.c.o"
   "CMakeFiles/My_test.dir/libft/ft_abs.c.o"

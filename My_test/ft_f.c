@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 14:00:03 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 19:00:52 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char		*ft_accuracy_f(t_data *list, char *tmp)
 {
 	char	*ret;
-	char	*t;
 
 	ret = NULL;
 	ft_clean_counts(list);
@@ -33,9 +32,7 @@ char		*ft_accuracy_f(t_data *list, char *tmp)
 			while (list->accuracy--)
 				ret[list->j++] = '0';
 			ret[list->j] = '\0';
-			t = ret;
-			ft_clean_s(ret);
-			ret = ft_strjoin(tmp, t);
+			ret = ft_strjoin(tmp, ret);
 		}
 		else if (list->accuracy <= list->len)
 			ret = ft_accuracy_f2(list, tmp, ret);

@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/umoff/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/umoff/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/umoff/git_floats/My_test/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/umoff/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/umoff/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -149,6 +149,33 @@ ft_Lf.s: ft_Lf.c.s
 ft_Lf.c.s:
 	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_Lf.c.s
 .PHONY : ft_Lf.c.s
+
+ft_Lf_floats.o: ft_Lf_floats.c.o
+
+.PHONY : ft_Lf_floats.o
+
+# target to build an object file
+ft_Lf_floats.c.o:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_Lf_floats.c.o
+.PHONY : ft_Lf_floats.c.o
+
+ft_Lf_floats.i: ft_Lf_floats.c.i
+
+.PHONY : ft_Lf_floats.i
+
+# target to preprocess a source file
+ft_Lf_floats.c.i:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_Lf_floats.c.i
+.PHONY : ft_Lf_floats.c.i
+
+ft_Lf_floats.s: ft_Lf_floats.c.s
+
+.PHONY : ft_Lf_floats.s
+
+# target to generate assembly for a file
+ft_Lf_floats.c.s:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_Lf_floats.c.s
+.PHONY : ft_Lf_floats.c.s
 
 ft_addition_long_arithmetic.o: ft_addition_long_arithmetic.c.o
 
@@ -986,6 +1013,33 @@ ft_widht_d.s: ft_widht_d.c.s
 ft_widht_d.c.s:
 	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_widht_d.c.s
 .PHONY : ft_widht_d.c.s
+
+ft_width_f.o: ft_width_f.c.o
+
+.PHONY : ft_width_f.o
+
+# target to build an object file
+ft_width_f.c.o:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_width_f.c.o
+.PHONY : ft_width_f.c.o
+
+ft_width_f.i: ft_width_f.c.i
+
+.PHONY : ft_width_f.i
+
+# target to preprocess a source file
+ft_width_f.c.i:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_width_f.c.i
+.PHONY : ft_width_f.c.i
+
+ft_width_f.s: ft_width_f.c.s
+
+.PHONY : ft_width_f.s
+
+# target to generate assembly for a file
+ft_width_f.c.s:
+	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_width_f.c.s
+.PHONY : ft_width_f.c.s
 
 ft_write_and_clean.o: ft_write_and_clean.c.o
 
@@ -2835,6 +2889,9 @@ help:
 	@echo "... ft_Lf.o"
 	@echo "... ft_Lf.i"
 	@echo "... ft_Lf.s"
+	@echo "... ft_Lf_floats.o"
+	@echo "... ft_Lf_floats.i"
+	@echo "... ft_Lf_floats.s"
 	@echo "... ft_addition_long_arithmetic.o"
 	@echo "... ft_addition_long_arithmetic.i"
 	@echo "... ft_addition_long_arithmetic.s"
@@ -2928,6 +2985,9 @@ help:
 	@echo "... ft_widht_d.o"
 	@echo "... ft_widht_d.i"
 	@echo "... ft_widht_d.s"
+	@echo "... ft_width_f.o"
+	@echo "... ft_width_f.i"
+	@echo "... ft_width_f.s"
 	@echo "... ft_write_and_clean.o"
 	@echo "... ft_write_and_clean.i"
 	@echo "... ft_write_and_clean.s"

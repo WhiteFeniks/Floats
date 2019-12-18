@@ -100,6 +100,7 @@ int                         comparasion(int *x, int *y, int accuracy);
 int                         numb_of_zeroes(int *divider);
 int                         *ft_make_zero_str(int size);
 char                        *ft_floats(double num, long long int accuracy);
+char						*ft_Lf_floats(long double num, long long int accuracy);
 char                        *number_breakdown (char number_of_bits[], f_floats **new);
 char	                    *my_number(f_floats **new);
 char	                    *ft_make_zero_char(int size);

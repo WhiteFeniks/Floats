@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/13 16:42:36 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 14:03:58 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 18:12:47 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ char		*ft_accuracy_f2(t_data *list, char *tmp, char *ret)
 		}
 	}
 	ret[list->j] = '\0';
-	ft_clean_s(tmp);
 	return (ret);
 }
 
@@ -98,6 +97,5 @@ char		*ft_width_f(t_data *list, char *tmp)
 		else if (list->minus_null == '0')
 			res = ft_null_f(list, tmp, res);
 	}
-	ft_clean_s(tmp);
 	return (res);
 }
