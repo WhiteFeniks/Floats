@@ -6,25 +6,11 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 18:13:39 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/12 17:43:13 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/18 15:28:26 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-/*
- ** 5. Функция выводящая inf (1.0/0.0 -> когда мантисса все 0, порядок все 1,
- ** знак = либо 0, либо 1 бит, указывающий положит./отриц. бесконечность)
- */
-
-char *make_inf(f_floats **new)
-{
-    (*new)->stroka = ft_make_zero_char(1100);
-    (*new)->stroka[0] = 'i';
-    (*new)->stroka[1] = 'n';
-    (*new)->stroka[2] = 'f';
-    return((*new)->stroka);
-}
 
 /*
  ** 4. Функция записи нашего числа из десятичной системы в двоичную
@@ -105,18 +91,23 @@ char *ft_floats(double num, long long int accuracy)
     f_floats *new;
     char *result;
     char *temp;
-    new = (f_floats*)malloc(sizeof(f_floats));
+
     if (num != num)
     {
         result = ft_make_zero_char(3);
+        temp = result;
+        free(temp);
         result[0] = 'n';
         result[1] = 'a';
         result[2] = 'n';
         return(result);
     }
+    new = (f_floats*)malloc(sizeof(f_floats));
     new->accuracy = accuracy;
     result = write_number(num, &new);
     free(new->stroka);
     free(new);
+    if (new->sign == 1)
+        result = ft_strjoin("-", result);
     return (result);
 }

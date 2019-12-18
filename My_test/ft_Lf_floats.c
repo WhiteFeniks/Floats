@@ -1,20 +1,6 @@
 #include "ft_printf.h"
 
 /*
- ** 5. Функция выводящая inf (1.0/0.0 -> когда мантисса все 0, порядок все 1,
- ** знак = либо 0, либо 1 бит, указывающий положит./отриц. бесконечность)
- */
-
-char *make_inf_Lf(f_floats **new)
-{
-    (*new)->stroka = ft_make_zero_char(1100);
-    (*new)->stroka[0] = 'i';
-    (*new)->stroka[1] = 'n';
-    (*new)->stroka[2] = 'f';
-    return((*new)->stroka);
-}
-
-/*
  ** 4. Функция записи нашего числа из десятичной системы в двоичную
  ** number_of_bits, как это число записано в памяти компьютера
  ** i именно такое т.к. начинаем с 0, то чтобы пройти по всему числу нужно
@@ -28,7 +14,7 @@ char *make_inf_Lf(f_floats **new)
  ** получаем как число записано в компьютере
  */
 
-char     *write_number_Lf_in_binary(size_t const step, void *value, f_floats **new)
+char     *write_Lf_number_in_binary(size_t const step, void *value, f_floats **new)
 {
     int             i;
     int             j;
@@ -81,7 +67,7 @@ char     *write_Lf_number(long double num, f_floats **new)
 
     value.x = num;
     size_array = sizeof(value.my_array);
-    return (write_number_Lf_in_binary(size_array, &value.x, new));
+    return (write_Lf_number_in_binary(size_array, &value.x, new));
 }
 
 /*

@@ -12,5 +12,3 @@ char		*ft_Lf(t_data *list, va_list arg)
     ret = ft_Lf_floats(Lf, list->accuracy);
     return (ret);
 }
-
-

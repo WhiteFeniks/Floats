@@ -1,279 +1,203 @@
-Test 1689 (f_overprec_might_be_undefbehav_ndblmin) : FAILED.
-    First line of code: {return test("%.2000f", -DBL_MIN);}
-    SEGFAULT
-
 Test 1690 (f_limits_dblmax_prec0_notmandatory) : FAILED.
     First line of code: {return test("%.0f", DBL_MAX);}
-    SEGFAULT
+      expected output : "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703"
+      your output     : "179769313486231517976931348623151797693134862315179769313486231517976931348623151797693134862315179769313486231517976931348623151797693134862315179769"
+      expected (nonprintable as hex) : "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703"
+      actual   (nonprintable as hex) : "179769313486231517976931348623151797693134862315179769313486231517976931348623151797693134862315179769313486231517976931348623151797693134862315179769"
 
-Test 1697 (f_limits_ndblmax_prec0_notmandatory) : FAILED.
-    First line of code: {return test("%.0f", -DBL_MAX);}
-      expected output : "-17976931348623157081452742373170435679807056752584499659891747680315726078002853876058955863276687817154045895351438246423432132688946418276846754670"
-      your output     : "-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-17976"
-      expected (nonprintable as hex) : "-17976931348623157081452742373170435679807056752584499659891747680315726078002853876058955863276687817154045895351438246423432132688946418276846754670"
-      actual   (nonprintable as hex) : "-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-179769313486231-17976"
-
-Test 1711 (f_limits_ndblmin_prec0) : FAILED.
-    First line of code: {return test("%.0f", -DBL_MIN);}
-    SEGFAULT
-
-Test 1712 (f_limits_ndblmin_prec3) : FAILED.
-    First line of code: {return test("%.3f", -DBL_MIN);}
-    SEGFAULT
-
-Test 1713 (f_limits_ndblmin_precd) : FAILED.
-    First line of code: {return test("%f", -DBL_MIN);}
-    SEGFAULT
-
-Test 1714 (f_limits_ndblmin_prec8) : FAILED.
-    First line of code: {return test("%.8f", -DBL_MIN);}
-    SEGFAULT
-
-Test 1715 (f_stress_limits_ndblmin_prec12) : FAILED.
-    First line of code: {return test("%.12f", -DBL_MIN);}
-    SEGFAULT
-
-Test 1716 (f_stress_limits_ndblmin_prec16) : FAILED.
-    First line of code: {return test("%.16f", -DBL_MIN);}
-    SEGFAULT
-
-Test 1717 (f_stress_limits_ndblmin_prec18) : FAILED.
-    First line of code: {return test("%.18f", -DBL_MIN);}
-    SEGFAULT
+Test 1718 (f_reserved_values_inf) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "inf"
+      actual   (nonprintable as hex) : "inf000000"
 
 Test 1719 (f_reserved_values_ninf) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
       expected output : "-inf"
-      your output     : "-inf000"
+      your output     : "-inf00000"
       expected (nonprintable as hex) : "-inf"
-      actual   (nonprintable as hex) : "-inf000"
+      actual   (nonprintable as hex) : "-inf00000"
+
+Test 1720 (f_reserved_values_nan) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
 
 Test 1723 (f_reserved_values_inf_6w) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-    SEGFAULT
+      expected output : "   inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : "inf000000"
 
 Test 1725 (f_reserved_values_nan_6w) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
-      expected output : "   nan"
-      your output     : "nan00000"
-      expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "nan00000"
+    SIGABRT
+
+Test 1728 (f_reserved_values_inf_6wlj) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "inf   "
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "inf   "
+      actual   (nonprintable as hex) : "inf000000"
 
 Test 1729 (f_reserved_values_ninf_6wlj) : FAILED.
     First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "-inf  "
-      your output     : "-inf000"
-      expected (nonprintable as hex) : "-inf  "
-      actual   (nonprintable as hex) : "-inf000"
-
-Test 1730 (f_reserved_values_nan_6wlj) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
-      expected output : "nan   "
-      your output     : "000000"
-      expected (nonprintable as hex) : "nan   "
-      actual   (nonprintable as hex) : "000000"
-
-Test 1734 (f_reserved_values_ninf_6was) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "  -inf"
-      your output     : "-inf000"
-      expected (nonprintable as hex) : "  -inf"
-      actual   (nonprintable as hex) : "-inf000"
-
-Test 1735 (f_reserved_values_nan_6was) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
-      expected output : "   nan"
-      your output     : "+000000"
-      expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "+000000"
-
-Test 1738 (f_reserved_values_inf_10w_prec7) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-    SEGFAULT
-
-Test 1739 (f_reserved_values_ninf_10w_prec7) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "      -inf"
-      your output     : "-inf000000"
-      expected (nonprintable as hex) : "      -inf"
-      actual   (nonprintable as hex) : "-inf000000"
-
-Test 1740 (f_reserved_values_nan_10w_prec7) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
-      expected output : "       nan"
-      your output     : "000000000000"
-      expected (nonprintable as hex) : "       nan"
-      actual   (nonprintable as hex) : "000000000000"
-
-Test 1744 (f_reserved_values_ninf_sp_prec7) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "-inf"
-      your output     : "-inf0000"
-      expected (nonprintable as hex) : "-inf"
-      actual   (nonprintable as hex) : "-inf0000"
-
-Test 1745 (f_reserved_values_nan_sp_prec7) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
-      expected output : "nan"
-      your output     : " nan"
-      expected (nonprintable as hex) : "nan"
-      actual   (nonprintable as hex) : " nan"
-
-Test 1748 (f_reserved_values_inf_sp) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-    SEGFAULT
-
-Test 1749 (f_reserved_values_ninf_sp) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "-inf"
-      your output     : "-inf000"
-      expected (nonprintable as hex) : "-inf"
-      actual   (nonprintable as hex) : "-inf000"
-
-Test 1750 (f_reserved_values_nan_sp) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
-      expected output : "nan"
-      your output     : " 000000"
-      expected (nonprintable as hex) : "nan"
-      actual   (nonprintable as hex) : " 000000"
-
-Test 1753 (f_reserved_values_inf_6wzp) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
-      expected output : "   inf"
-      your output     : "000inf"
-      expected (nonprintable as hex) : "   inf"
-      actual   (nonprintable as hex) : "000inf"
-
-Test 1754 (f_reserved_values_ninf_6wzp) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
-      expected output : "  -inf"
-      your output     : "-inf000"
-      expected (nonprintable as hex) : "  -inf"
-      actual   (nonprintable as hex) : "-inf000"
-
-Test 1755 (f_reserved_values_nan_6wzp) : FAILED.
-    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
-      expected output : "   nan"
-      your output     : "000000"
-      expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "000000"
-
-Test 1771 (f_L_basic_limits_smallfpart_neg) : FAILED.
-    First line of code: {return test("%Lf", -875.000001l);}
-    SEGFAULT
-
-Test 1777 (f_L_rndd_neg) : FAILED.
-    First line of code: {return test("%Lf", -985.765426499l);}
-    SEGFAULT
-
-Test 1785 (f_L_rndd_wholnobump_neg) : FAILED.
-    First line of code: {return test("%Lf", -0.99999949l);}
-    SEGFAULT
-
-Test 1787 (f_L_rndu_bumpwhole_neg) : FAILED.
-    First line of code: {return test("%Lf", -5.9999999l);}
-    SEGFAULT
-
-Test 1791 (f_L_prec7_negative) : FAILED.
-    First line of code: {return test("%.7Lf", -3.85l);}
-    SEGFAULT
-
-Test 1830 (f_L_prec8_limits_smallfpart_neg) : FAILED.
-    First line of code: {return test("%.8Lf", -875.000001l);}
-    SEGFAULT
-
-Test 1838 (f_L_rnd_prec8_rndu_neg) : FAILED.
-    First line of code: {return test("%.8Lf", -56.2012685l);}
-    SEGFAULT
-
-Test 1886 (f_L_stress_prec10_rndu_neg) : FAILED.
-    First line of code: {return test("%.10Lf", -56.47852012685l);}
-    SEGFAULT
-
-Test 1890 (f_L_stress_prec10_negative_allsmall) : FAILED.
-    First line of code: {return test("%.10Lf", -0.000000032l);}
-    SEGFAULT
-
-Test 1929 (f_L_reserved_values_nan) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "nan"
-      your output     : "nan000"
-      expected (nonprintable as hex) : "nan"
-      actual   (nonprintable as hex) : "nan000"
-
-Test 1932 (f_L_reserved_values_inf_6w) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
-    SEGFAULT
-
-Test 1934 (f_L_reserved_values_nan_6w) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "   nan"
-      your output     : "000000"
-      expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "000000"
-
-Test 1938 (f_L_reserved_values_ninf_6wlj) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
       expected output : "-inf  "
       your output     : "-inf00000"
       expected (nonprintable as hex) : "-inf  "
       actual   (nonprintable as hex) : "-inf00000"
 
-Test 1939 (f_L_reserved_values_nan_6wlj) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "nan   "
-      your output     : "0000000000"
-      expected (nonprintable as hex) : "nan   "
-      actual   (nonprintable as hex) : "0000000000"
+Test 1730 (f_reserved_values_nan_6wlj) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
 
-Test 1943 (f_L_reserved_values_ninf_6was) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+Test 1733 (f_reserved_values_inf_6was) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "  +inf"
+      your output     : "+inf000000"
+      expected (nonprintable as hex) : "  +inf"
+      actual   (nonprintable as hex) : "+inf000000"
+
+Test 1735 (f_reserved_values_nan_6was) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1738 (f_reserved_values_inf_10w_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+    SEGFAULT
+
+Test 1740 (f_reserved_values_nan_10w_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1743 (f_reserved_values_inf_sp_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : " inf"
+      your output     : " inf0000000"
+      expected (nonprintable as hex) : " inf"
+      actual   (nonprintable as hex) : " inf0000000"
+
+Test 1745 (f_reserved_values_nan_sp_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1748 (f_reserved_values_inf_sp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : " inf"
+      your output     : " inf000000"
+      expected (nonprintable as hex) : " inf"
+      actual   (nonprintable as hex) : " inf000000"
+
+Test 1750 (f_reserved_values_nan_sp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1753 (f_reserved_values_inf_6wzp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+    SEGFAULT
+
+Test 1754 (f_reserved_values_ninf_6wzp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
       expected output : "  -inf"
-      your output     : "-inf000"
+      your output     : "-inf00000"
       expected (nonprintable as hex) : "  -inf"
-      actual   (nonprintable as hex) : "-inf000"
+      actual   (nonprintable as hex) : "-inf00000"
 
-Test 1944 (f_L_reserved_values_nan_6was) : FAILED.
+Test 1755 (f_reserved_values_nan_6wzp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1927 (f_L_reserved_values_inf) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "inf"
+      actual   (nonprintable as hex) : "inf000000"
+
+Test 1929 (f_L_reserved_values_nan) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "   nan"
-      your output     : "+000000"
-      expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "+000000"
+    SIGABRT
 
-Test 1949 (f_L_reserved_values_nan_10w_prec7) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "       nan"
-      your output     : "  00000000"
-      expected (nonprintable as hex) : "       nan"
-      actual   (nonprintable as hex) : "  00000000"
-
-Test 1954 (f_L_reserved_values_nan_sp_prec7) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "nan"
-      your output     : " nan0000"
-      expected (nonprintable as hex) : "nan"
-      actual   (nonprintable as hex) : " nan0000"
-
-Test 1958 (f_L_reserved_values_ninf_sp) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "-inf"
-      your output     : "-inf000"
-      expected (nonprintable as hex) : "-inf"
-      actual   (nonprintable as hex) : "-inf000"
-
-Test 1959 (f_L_reserved_values_nan_sp) : FAILED.
-    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "nan"
-      your output     : " 000000"
-      expected (nonprintable as hex) : "nan"
-      actual   (nonprintable as hex) : " 000000"
-
-Test 1962 (f_L_reserved_values_inf_6wzp) : FAILED.
+Test 1932 (f_L_reserved_values_inf_6w) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
       expected output : "   inf"
       your output     : "inf000000"
       expected (nonprintable as hex) : "   inf"
       actual   (nonprintable as hex) : "inf000000"
+
+Test 1934 (f_L_reserved_values_nan_6w) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1937 (f_L_reserved_values_inf_6wlj) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "inf   "
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "inf   "
+      actual   (nonprintable as hex) : "inf000000"
+
+Test 1939 (f_L_reserved_values_nan_6wlj) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1942 (f_L_reserved_values_inf_6was) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "  +inf"
+      your output     : "+inf000000"
+      expected (nonprintable as hex) : "  +inf"
+      actual   (nonprintable as hex) : "+inf000000"
+
+Test 1943 (f_L_reserved_values_ninf_6was) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "  -inf"
+      your output     : "-inf00000"
+      expected (nonprintable as hex) : "  -inf"
+      actual   (nonprintable as hex) : "-inf00000"
+
+Test 1944 (f_L_reserved_values_nan_6was) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1949 (f_L_reserved_values_nan_10w_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1952 (f_L_reserved_values_inf_sp_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : " inf"
+      your output     : " inf0000000"
+      expected (nonprintable as hex) : " inf"
+      actual   (nonprintable as hex) : " inf0000000"
+
+Test 1953 (f_L_reserved_values_ninf_sp_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "-inf"
+      your output     : "-inf000000"
+      expected (nonprintable as hex) : "-inf"
+      actual   (nonprintable as hex) : "-inf000000"
+
+Test 1954 (f_L_reserved_values_nan_sp_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1958 (f_L_reserved_values_ninf_sp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "-inf"
+      your output     : "-inf00000"
+      expected (nonprintable as hex) : "-inf"
+      actual   (nonprintable as hex) : "-inf00000"
+
+Test 1959 (f_L_reserved_values_nan_sp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1962 (f_L_reserved_values_inf_6wzp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "   inf"
+      your output     : "000inf"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : "000inf"
 
 Test 1963 (f_L_reserved_values_ninf_6wzp) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
@@ -284,10 +208,7 @@ Test 1963 (f_L_reserved_values_ninf_6wzp) : FAILED.
 
 Test 1964 (f_L_reserved_values_nan_6wzp) : FAILED.
     First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
-      expected output : "   nan"
-      your output     : "0000000000"
-      expected (nonprintable as hex) : "   nan"
-      actual   (nonprintable as hex) : "0000000000"
+    SIGABRT
 
 Test 1975 (f_L_limits_dblmax_prec0_notmandatory) : FAILED.
     First line of code: {return test("%.0Lf", LDBL_MAX);}
@@ -344,8 +265,4 @@ Test 1987 (f_L_stress_limits_ndblmax_prec16_notmandatory) : FAILED.
 Test 1988 (f_L_stress_limits_ndblmax_prec18_notmandatory) : FAILED.
     First line of code: {return test("%.18Lf", -LDBL_MAX);}
     Timed out
-
-Test 1996 (f_L_limits_ndblmin_prec0) : FAILED.
-    First line of code: {return test("%.0Lf", -LDBL_MIN);}
-    SEGFAULT
 

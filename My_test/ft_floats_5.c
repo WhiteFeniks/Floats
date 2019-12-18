@@ -1,4 +1,5 @@
 #include "ft_printf.h"
+
 /*
  ** 5. Функция округления дробной части
  */
@@ -117,3 +118,4 @@ int check_inf_mantissa(f_floats **new)
     }
     return(1);
 }
+

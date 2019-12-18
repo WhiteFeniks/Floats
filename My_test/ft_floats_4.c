@@ -5,12 +5,12 @@
  ** знак = либо 0, либо 1 бит, указывающий положит./отриц. бесконечность)
  */
 
-char *make_nan(f_floats **new)
+char *make_inf(f_floats **new)
 {
     (*new)->stroka = ft_make_zero_char(1100);
-    (*new)->stroka[0] = 'n';
-    (*new)->stroka[1] = 'a';
-    (*new)->stroka[2] = 'n';
+    (*new)->stroka[0] = 'i';
+    (*new)->stroka[1] = 'n';
+    (*new)->stroka[2] = 'f';
     return((*new)->stroka);
 }
 

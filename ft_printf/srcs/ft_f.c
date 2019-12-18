@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/12 17:49:20 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/18 17:39:28 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,41 @@
 
 char		*ft_accuracy_f(t_data *list, char *tmp)
 {
-	char	*ret;
+    char	*ret;
+    char *t;
 
-	ret = NULL;
-	ft_clean_counts(list);
-	while (tmp && tmp[list->i] != '.')
-		list->i++;
-	if (tmp[list->i] == '.')
-	{
-		list->i++;
-		while (tmp[list->i++])
-			list->len++;
-		if (list->accuracy > list->len)
-		{
-			list->accuracy = list->accuracy - list->len;
-			ret = (char*)malloc(sizeof(char) * list->accuracy + 1);
-			while (list->accuracy--)
-				ret[list->j++] = '0';
-			ret[list->j] = '\0';
-			ret = ft_strjoin(tmp, ret);
-		}
-		else if (list->accuracy <= list->len)
-			ret = ft_accuracy_f2(list, tmp, ret);
-	}
-	else
-		ret = ft_strdup(tmp);
-	return (ret);
+    ret = NULL;
+    t = NULL;
+    ft_clean_counts(list);
+    while (tmp && tmp[list->i] != '.')
+        list->i++;
+    if (tmp[list->i] == '.')
+    {
+        list->i++;
+        while (tmp[list->i++])
+            list->len++;
+        if (list->accuracy > list->len)
+        {
+            list->accuracy = list->accuracy - list->len;
+            t = (char*)malloc(sizeof(char) * list->accuracy + 1);
+            while (list->accuracy--)
+                t[list->j++] = '0';
+            t[list->j] = '\0';
+            ret = ft_strdup(t);
+            free(t);
+            t = ft_strdup(ret);
+            free(ret);
+            ret = ft_strjoin(tmp, t);
+            free(t);
+
+        }
+        else if (list->accuracy <= list->len)
+            ret = ft_accuracy_f2(list, tmp, ret);
+    }
+    else
+        ret = ft_strdup(tmp);
+    ft_clean_s(tmp);
+    return (ret);
 }
 
 char		*ft_plus_space_f(t_data *list, char *tmp)
