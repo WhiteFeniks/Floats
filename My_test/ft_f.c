@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 15:35:35 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/18 19:01:02 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ char		*ft_accuracy_f(t_data *list, char *tmp)
 	}
 	else
 		ret = ft_strdup(tmp);
+	ft_clean_s(tmp);
 	return (ret);
 }
 
@@ -92,16 +93,6 @@ char		*ft_oktotorp_f(t_data *list, char *tmp)
 	return (ret);
 }
 
-void		ft_write(t_data *list, char *s)
-{
-	ft_clean_counts(list);
-	while (s && s[list->i])
-	{
-		write(1, &s[list->i++], 1);
-		list->ret++;
-	}
-}
-
 void					ft_f(t_data *list, va_list arg)
 {
 	double				f;
@@ -122,5 +113,5 @@ void					ft_f(t_data *list, va_list arg)
 	ret = ft_oktotorp_f(list, ret);
 	ret = ft_plus_space_f(list, ret);
 	ret = ft_width_f(list, ret);
-	ft_write(list, ret);
+	ft_write_and_clean_s(list, ret);
 }

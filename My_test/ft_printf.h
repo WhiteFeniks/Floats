@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 15:27:02 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/18 18:55:18 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,17 @@
 # include <stdio.h>                     //
 # include <stdlib.h>
 # include "libft/libft.h"
+#define DBL_INF    0x7FF0000000000000
+#define DBL_NINF   0xFFF0000000000000
+#define DBL_NAN    0x7FF0000000100000
+#define DBL_PZERO  0x0000000000000000
+#define DBL_NZERO  0x8000000000000000
+
+#define LDBL_INF   0x7FFF0000000000000000L
+#define LDBL_NINF  0xFFFF0000000000000000L
+#define LDBL_NAN   0x7FFF0000000001000000L
+#define LDBL_PZERO 0x00000000000000000000L
+#define LDBL_NZERO 0x80000000000000000000L
 
 
 /*

@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:51:04 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 15:42:25 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/18 19:25:10 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,8 @@ int		main(void)
 
 */
 
-    printf("lib точность = %Lf\n", -LDBL_MIN);
-    i = ft_printf("my точность =   %Lf\n", -LDBL_MIN);
+    printf("lib точность = %.0Lf\n", -LDBL_MIN);
+    i = ft_printf("my точность = %.0Lf\n", -LDBL_MIN);
     printf("\n");
 /*
     printf("lib точность =  INF, %.700f\n", 1.0/0.0);

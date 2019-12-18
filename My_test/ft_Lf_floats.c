@@ -79,6 +79,9 @@ char *ft_Lf_floats(long double num, long long int accuracy)
     f_floats *new;
     char *result;
     char *temp;
+    char    *t;
+
+    t = NULL;
     new = (f_floats*)malloc(sizeof(f_floats));
     if (num != num)
     {
@@ -92,9 +95,13 @@ char *ft_Lf_floats(long double num, long long int accuracy)
     }
     new->accuracy = accuracy;
     result = write_Lf_number(num, &new);
-    free(new->stroka);
     free(new);
+    t = ft_strdup(result);
+    free(result);
     if (new->sign == 1)
-        result = ft_strjoin("-", result);
+        result = ft_strjoin("-", t);
+    else
+        result = ft_strdup(t);
+    free(t);
     return (result);
 }
