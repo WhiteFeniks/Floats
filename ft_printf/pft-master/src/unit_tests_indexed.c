@@ -196,51 +196,51 @@ int s_prec_8_lj_width_10_s_null(void){return ft_printf("%-10.8s", NULL);}
 int s_prec_00_lj_s_hidden_trunc(void){return ft_printf("%-.00s", s_hidden);}
 int s_prec_09_lj_s_hidden_notrunc(void){return ft_printf("%-.09s", s_hidden);}
 // multiple flags diff order same width and precision
-int	s_undefbehav_4_flags_diff_order_1(void){return ft_printf("%+- 06.06s", s_hidden);}
-int	s_undefbehav_4_flags_diff_order_2(void){return ft_printf("% 0+-6.06s", s_hidden);}
-int	s_undefbehav_4_flags_diff_order_3(void){return ft_printf("%0 +-6.06s", s_hidden);}
-int	s_undefbehav_4_flags_diff_order_4(void){return ft_printf("%+-0 6.06s", s_hidden);}
-int	s_undefbehav_4_flags_diff_order_5(void){return ft_printf("%-+ 06.06s", s_hidden);}
-int	s_undefbehav_4_flags_diff_order_6(void){return ft_printf("% -+06.06s", s_hidden);}
+ int	s_undefbehav_4_flags_diff_order_1(void){return ft_printf("%+- 06.06s", s_hidden);}
+ int	s_undefbehav_4_flags_diff_order_2(void){return ft_printf("% 0+-6.06s", s_hidden);}
+ int	s_undefbehav_4_flags_diff_order_3(void){return ft_printf("%0 +-6.06s", s_hidden);}
+ int	s_undefbehav_4_flags_diff_order_4(void){return ft_printf("%+-0 6.06s", s_hidden);}
+ int	s_undefbehav_4_flags_diff_order_5(void){return ft_printf("%-+ 06.06s", s_hidden);}
+ int	s_undefbehav_4_flags_diff_order_6(void){return ft_printf("% -+06.06s", s_hidden);}
 // multiple flags diff order width > precision
-int	s_undefbehav_4_flags_sp_padded_diff_order_1(void){return ft_printf("%+- 07.06s", s_hidden);}
-int	s_undefbehav_4_flags_sp_padded_diff_order_2(void){return ft_printf("% 0+-8.06s", s_hidden);}
-int	s_undefbehav_4_flags_sp_padded_diff_order_3(void){return ft_printf("%0 +-9.06s", s_hidden);}
-int	s_undefbehav_4_flags_sp_padded_diff_order_4(void){return ft_printf("%+-0 10.06s", s_hidden);}
-int	s_undefbehav_4_flags_sp_padded_diff_order_5(void){return ft_printf("%-+ 011.06s", s_hidden);}
-int	s_undefbehav_4_flags_sp_padded_diff_order_6(void){return ft_printf("% -+012.06s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_padded_diff_order_1(void){return ft_printf("%+- 07.06s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_padded_diff_order_2(void){return ft_printf("% 0+-8.06s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_padded_diff_order_3(void){return ft_printf("%0 +-9.06s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_padded_diff_order_4(void){return ft_printf("%+-0 10.06s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_padded_diff_order_5(void){return ft_printf("%-+ 011.06s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_padded_diff_order_6(void){return ft_printf("% -+012.06s", s_hidden);}
 // multiple flags diff order width > precision, truncated string
-int	s_undefbehav_4_flags_as_lj_sp_zero_trunc(void){return ft_printf("%+- 06.04s", s_hidden);}
-int	s_undefbehav_4_flags_sp_zero_as_lj_trunc(void){return ft_printf("% 0+-6.04s", s_hidden);}
-int	s_undefbehav_4_flags_zero_sp_as_lj_trunc(void){return ft_printf("%0 +-6.04s", s_hidden);}
-int	s_undefbehav_4_flags_as_lj_zero_sp_trunc(void){return ft_printf("%+-0 6.04s", s_hidden);}
-int	s_undefbehav_4_flags_lj_as_sp_zero_trunc(void){return ft_printf("%-+ 06.04s", s_hidden);}
-int	s_undefbehav_4_flags_sp_zero_lj_as_trunc(void){return ft_printf("% 0-+6.04s", s_hidden);}
+ int	s_undefbehav_4_flags_as_lj_sp_zero_trunc(void){return ft_printf("%+- 06.04s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_zero_as_lj_trunc(void){return ft_printf("% 0+-6.04s", s_hidden);}
+ int	s_undefbehav_4_flags_zero_sp_as_lj_trunc(void){return ft_printf("%0 +-6.04s", s_hidden);}
+ int	s_undefbehav_4_flags_as_lj_zero_sp_trunc(void){return ft_printf("%+-0 6.04s", s_hidden);}
+ int	s_undefbehav_4_flags_lj_as_sp_zero_trunc(void){return ft_printf("%-+ 06.04s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_zero_lj_as_trunc(void){return ft_printf("% 0-+6.04s", s_hidden);}
 // multiple flags diff order width < precision, excess precision
-int	s_undefbehav_4_flags_as_lj_sp_zero__pads(void){return ft_printf("%+- 06.09s", s_hidden);}
-int	s_undefbehav_4_flags_sp_zero_as_lj__pads(void){return ft_printf("% 0+-6.09s", s_hidden);}
-int	s_undefbehav_4_flags_zero_sp_as_lj__pads(void){return ft_printf("%0 +-6.09s", s_hidden);}
-int	s_undefbehav_4_flags_as_lj_zero_sp__pads(void){return ft_printf("%+-0 6.09s", s_hidden);}
-int	s_undefbehav_4_flags_lj_as_sp_zero__pads(void){return ft_printf("%-+ 06.09s", s_hidden);}
-int	s_undefbehav_4_flags_sp_zero_lj_as__pads(void){return ft_printf("% 0-+6.09s", s_hidden);}
+ int	s_undefbehav_4_flags_as_lj_sp_zero__pads(void){return ft_printf("%+- 06.09s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_zero_as_lj__pads(void){return ft_printf("% 0+-6.09s", s_hidden);}
+ int	s_undefbehav_4_flags_zero_sp_as_lj__pads(void){return ft_printf("%0 +-6.09s", s_hidden);}
+ int	s_undefbehav_4_flags_as_lj_zero_sp__pads(void){return ft_printf("%+-0 6.09s", s_hidden);}
+ int	s_undefbehav_4_flags_lj_as_sp_zero__pads(void){return ft_printf("%-+ 06.09s", s_hidden);}
+ int	s_undefbehav_4_flags_sp_zero_lj_as__pads(void){return ft_printf("% 0-+6.09s", s_hidden);}
 // multi zeros
-int	s_undefbehav_0_2zero(void){return ft_printf("%00s", s_hidden);}
-int	s_undefbehav_0_3zero(void){return ft_printf("%000s", s_hidden);}
-int	s_undefbehav_0_4zero(void){return ft_printf("%0000s", s_hidden);}
-int	s_undefbehav_0_lj_2zero(void){return ft_printf("%-00s", s_hidden);}
-int	s_undefbehav_0_zero_lj_zero(void){return ft_printf("%0-0s", s_hidden);}
-int	s_undefbehav_0_2zero_lj(void){return ft_printf("%00-s", s_hidden);}
+ int	s_undefbehav_0_2zero(void){return ft_printf("%00s", s_hidden);}
+ int	s_undefbehav_0_3zero(void){return ft_printf("%000s", s_hidden);}
+ int	s_undefbehav_0_4zero(void){return ft_printf("%0000s", s_hidden);}
+ int	s_undefbehav_0_lj_2zero(void){return ft_printf("%-00s", s_hidden);}
+ int	s_undefbehav_0_zero_lj_zero(void){return ft_printf("%0-0s", s_hidden);}
+ int	s_undefbehav_0_2zero_lj(void){return ft_printf("%00-s", s_hidden);}
 // zero and width
-int	s_undefbehav_0_width_3(void){return ft_printf("%03s", s_hidden);}
-int	s_undefbehav_0_width_9(void){return ft_printf("%09s", s_hidden);}
+ int	s_undefbehav_0_width_3(void){return ft_printf("%03s", s_hidden);}
+ int	s_undefbehav_0_width_9(void){return ft_printf("%09s", s_hidden);}
 // as and zero flags  width
-int	s_undefbehav_as_0_width_3(void){return ft_printf("%+03s", s_hidden);}
-int	s_undefbehav_as_0_width_9(void){return ft_printf("%+09s", s_hidden);}
+ int	s_undefbehav_as_0_width_3(void){return ft_printf("%+03s", s_hidden);}
+ int	s_undefbehav_as_0_width_9(void){return ft_printf("%+09s", s_hidden);}
 // flag cancelling
-int	s_undefbehav_lj_0_width_3(void){return ft_printf("%-03s", s_hidden);}
-int	s_undefbehav_lj_0_width_9(void){return ft_printf("%-09s", s_hidden);}
-int	s_undefbehav_as_sp_width_3(void){return ft_printf("%+ 3s", s_hidden);}
-int	s_undefbehav_as_sp_width_6(void){return ft_printf("%+ 6s", s_hidden);}
+ int	s_undefbehav_lj_0_width_3(void){return ft_printf("%-03s", s_hidden);}
+ int	s_undefbehav_lj_0_width_9(void){return ft_printf("%-09s", s_hidden);}
+ int	s_undefbehav_as_sp_width_3(void){return ft_printf("%+ 3s", s_hidden);}
+ int	s_undefbehav_as_sp_width_6(void){return ft_printf("%+ 6s", s_hidden);}
 
 //Signed integers - no modifers
 int		i_basic_i_pos(void){return ft_printf("this %i number", 17);}
@@ -613,10 +613,10 @@ int i_prec0val0_was_impl(void){return ft_printf("%+5.i", 0);}
 int i_prec0val0_waslj(void){return ft_printf("%+-5.0i", 0);}
 int i_prec0val0_waslj_impl(void){return ft_printf("%+-5.i", 0);}
 //Signed integers - some out of range h, hh tests from filechecker
-int i_ftfc_hhdoutofrange1_might_be_undefbehav(void){return ft_printf("%hhi", -129);}
-int i_ftfc_hhdoutofrange2_might_be_undefbehav(void){return ft_printf("%hhi", 128);}
-int i_ftfc_hdoutofrange1_might_be_undefbehav(void){return ft_printf("%hi", 32768);}
-int i_ftfc_hdoutofrange2_might_be_undefbehav(void){return ft_printf("%hi", -32769);}
+ int i_ftfc_hhdoutofrange1_might_be_undefbehav(void){return ft_printf("%hhi", -129);}
+ int i_ftfc_hhdoutofrange2_might_be_undefbehav(void){return ft_printf("%hhi", 128);}
+ int i_ftfc_hdoutofrange1_might_be_undefbehav(void){return ft_printf("%hi", 32768);}
+ int i_ftfc_hdoutofrange2_might_be_undefbehav(void){return ft_printf("%hi", -32769);}
 
 
 //Signed integers - no modifers
@@ -1567,10 +1567,10 @@ static void *a12;
 
 int p_null(void){return ft_printf("%p", NULL);}
 
-int	p_ftfc_literal_9w_prec2_undefbehav(void){return ft_printf("%9.2p\n", 1234);}
-int	p_ftfc_literal_2w_prec9_undefbehav(void){return ft_printf("%2.9p\n", 1234);}
-int	p_ftfc_zero_prec5_undefbehav(void){return ft_printf("%.5p", 0);}
-int	p_ftfc_zero_prec0_undefbehav(void){return ft_printf("%.0p", 0);}
+ int	p_ftfc_literal_9w_prec2_undefbehav(void){return ft_printf("%9.2p\n", 1234);}
+ int	p_ftfc_literal_2w_prec9_undefbehav(void){return ft_printf("%2.9p\n", 1234);}
+ int	p_ftfc_zero_prec5_undefbehav(void){return ft_printf("%.5p", 0);}
+ int	p_ftfc_zero_prec0_undefbehav(void){return ft_printf("%.0p", 0);}
 int p_ftfc_5w_throwswarning(void){return ft_printf("%5p", 0);}
 
 int p_basic(void){return ft_printf("%p%p%p%p%p%p%p%p%p%p%p%p",&a01,&a02,&a03,&a04,&a05,&a06,&a07,&a08,&a09,&a10,&a11,&a12);}
@@ -2050,29 +2050,29 @@ int f_asspr_prec1n_ignoreflag(void){return ft_printf("% +.1f", -7.3);}
 int f_asspr_prec3n_ignoreflag(void){return ft_printf("% +.3f", -7.3);}
 int f_asspr_prec6n_ignoreflag(void){return ft_printf("% +.6f", -7.3);}
 //Floats whose precision exceeds their compiled literal precision
-int f_overprec_might_be_undefbehav_100(void){return ft_printf("%.100f", 0.237);}
-int f_overprec_might_be_undefbehav_32(void){return ft_printf("%.32f", 0.237);}
-int f_overprec_might_be_undefbehav_4(void){return ft_printf("%.4f", 0.237);}
-int f_overprec_might_be_undefbehav_1000(void){return ft_printf("%.4f", -0.106577568068517810765107851705167);}
-int f_overprec_might_be_undefbehav_10_from_0(void){return ft_printf("%.10f", 0.0);}
-int f_overprec_might_be_undefbehav_2000(void){return ft_printf("%.2000f", 623.28376510723481);}
-int f_overprec_might_be_undefbehav_dblmin(void){return ft_printf("%.2000f", DBL_MIN);}
-int f_overprec_might_be_undefbehav_ndblmin(void){return ft_printf("%.2000f", -DBL_MIN);}
+ int f_overprec_might_be_undefbehav_100(void){return ft_printf("%.100f", 0.237);}
+ int f_overprec_might_be_undefbehav_32(void){return ft_printf("%.32f", 0.237);}
+ int f_overprec_might_be_undefbehav_4(void){return ft_printf("%.4f", 0.237);}
+ int f_overprec_might_be_undefbehav_1000(void){return ft_printf("%.4f", -0.106577568068517810765107851705167);}
+ int f_overprec_might_be_undefbehav_10_from_0(void){return ft_printf("%.10f", 0.0);}
+ int f_overprec_might_be_undefbehav_2000(void){return ft_printf("%.2000f", 623.28376510723481);}
+ int f_overprec_might_be_undefbehav_dblmin(void){return ft_printf("%.2000f", DBL_MIN);}
+ int f_overprec_might_be_undefbehav_ndblmin(void){return ft_printf("%.2000f", -DBL_MIN);}
 //Floats at double max, double min
-int f_limits_dblmax_prec0_notmandatory(void){return ft_printf("%.0f", DBL_MAX);}
-int f_limits_dblmax_prec3_notmandatory(void){return ft_printf("%.3f", DBL_MAX);}
-int f_limits_dblmax_precd_notmandatory(void){return ft_printf("%f", DBL_MAX);}
-int f_limits_dblmax_prec8_notmandatory(void){return ft_printf("%.8f", DBL_MAX);}
-int f_stress_limits_dblmax_prec12_notmandatory(void){return ft_printf("%.12f", DBL_MAX);}
-int f_stress_limits_dblmax_prec16_notmandatory(void){return ft_printf("%.16f", DBL_MAX);}
-int f_stress_limits_dblmax_prec18_notmandatory(void){return ft_printf("%.18f", DBL_MAX);}
-int f_limits_ndblmax_prec0_notmandatory(void){return ft_printf("%.0f", -DBL_MAX);}
-int f_limits_ndblmax_prec3_notmandatory(void){return ft_printf("%.3f", -DBL_MAX);}
-int f_limits_ndblmax_precd_notmandatory(void){return ft_printf("%f", -DBL_MAX);}
-int f_limits_ndblmax_prec8_notmandatory(void){return ft_printf("%.8f", -DBL_MAX);}
-int f_stress_limits_ndblmax_prec12_notmandatory(void){return ft_printf("%.12f", -DBL_MAX);}
-int f_stress_limits_ndblmax_prec16_notmandatory(void){return ft_printf("%.16f", -DBL_MAX);}
-int f_stress_limits_ndblmax_prec18_notmandatory(void){return ft_printf("%.18f", -DBL_MAX);}
+ int f_limits_dblmax_prec0_notmandatory(void){return ft_printf("%.0f", DBL_MAX);}
+ int f_limits_dblmax_prec3_notmandatory(void){return ft_printf("%.3f", DBL_MAX);}
+ int f_limits_dblmax_precd_notmandatory(void){return ft_printf("%f", DBL_MAX);}
+ int f_limits_dblmax_prec8_notmandatory(void){return ft_printf("%.8f", DBL_MAX);}
+ int f_stress_limits_dblmax_prec12_notmandatory(void){return ft_printf("%.12f", DBL_MAX);}
+ int f_stress_limits_dblmax_prec16_notmandatory(void){return ft_printf("%.16f", DBL_MAX);}
+ int f_stress_limits_dblmax_prec18_notmandatory(void){return ft_printf("%.18f", DBL_MAX);}
+ int f_limits_ndblmax_prec0_notmandatory(void){return ft_printf("%.0f", -DBL_MAX);}
+ int f_limits_ndblmax_prec3_notmandatory(void){return ft_printf("%.3f", -DBL_MAX);}
+ int f_limits_ndblmax_precd_notmandatory(void){return ft_printf("%f", -DBL_MAX);}
+ int f_limits_ndblmax_prec8_notmandatory(void){return ft_printf("%.8f", -DBL_MAX);}
+ int f_stress_limits_ndblmax_prec12_notmandatory(void){return ft_printf("%.12f", -DBL_MAX);}
+ int f_stress_limits_ndblmax_prec16_notmandatory(void){return ft_printf("%.16f", -DBL_MAX);}
+ int f_stress_limits_ndblmax_prec18_notmandatory(void){return ft_printf("%.18f", -DBL_MAX);}
 int f_limits_dblmin_prec0(void){return ft_printf("%.0f", DBL_MIN);}
 int f_limits_dblmin_prec3(void){return ft_printf("%.3f", DBL_MIN);}
 int f_limits_dblmin_precd(void){return ft_printf("%f", DBL_MIN);}
@@ -2089,85 +2089,85 @@ int f_stress_limits_ndblmin_prec16(void){return ft_printf("%.16f", -DBL_MIN);}
 int f_stress_limits_ndblmin_prec18(void){return ft_printf("%.18f", -DBL_MIN);}
 
 //Floats of special values
-int f_reserved_values_inf(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("%f", special);}
-int f_reserved_values_ninf(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("%f", special);}
-int f_reserved_values_nan(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("%f", special);}
-int f_reserved_values_pzero(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("%f", special);}
-int f_reserved_values_nzero(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("%f", special);}
-int f_reserved_values_inf_6w(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf_6w(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("%6f", special);}
-int f_reserved_values_ninf_6w(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf_6w(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("%6f", special);}
-int f_reserved_values_nan_6w(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan_6w(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("%6f", special);}
-int f_reserved_values_pzero_6w(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero_6w(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("%6f", special);}
-int f_reserved_values_nzero_6w(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero_6w(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("%6f", special);}
-int f_reserved_values_inf_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("%-6f", special);}
-int f_reserved_values_ninf_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("%-6f", special);}
-int f_reserved_values_nan_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("%-6f", special);}
-int f_reserved_values_pzero_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("%-6f", special);}
-int f_reserved_values_nzero_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero_6wlj(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("%-6f", special);}
-int f_reserved_values_inf_6was(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf_6was(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("%+6f", special);}
-int f_reserved_values_ninf_6was(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf_6was(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("%+6f", special);}
-int f_reserved_values_nan_6was(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan_6was(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("%+6f", special);}
-int f_reserved_values_pzero_6was(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero_6was(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("%+6f", special);}
-int f_reserved_values_nzero_6was(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero_6was(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("%+6f", special);}
-int f_reserved_values_inf_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("%10.7f", special);}
-int f_reserved_values_ninf_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("%10.7f", special);}
-int f_reserved_values_nan_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("%10.7f", special);}
-int f_reserved_values_pzero_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("%10.7f", special);}
-int f_reserved_values_nzero_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero_10w_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("%10.7f", special);}
-int f_reserved_values_inf_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("% .7f", special);}
-int f_reserved_values_ninf_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("% .7f", special);}
-int f_reserved_values_nan_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("% .7f", special);}
-int f_reserved_values_pzero_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("% .7f", special);}
-int f_reserved_values_nzero_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero_sp_prec7(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("% .7f", special);}
-int f_reserved_values_inf_sp(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf_sp(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("% f", special);}
-int f_reserved_values_ninf_sp(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf_sp(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("% f", special);}
-int f_reserved_values_nan_sp(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan_sp(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("% f", special);}
-int f_reserved_values_pzero_sp(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero_sp(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("% f", special);}
-int f_reserved_values_nzero_sp(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero_sp(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("% f", special);}
-int f_reserved_values_inf_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_INF;
+ int f_reserved_values_inf_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_INF;
 	return ft_printf("%06f", special);}
-int f_reserved_values_ninf_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
+ int f_reserved_values_ninf_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_NINF;
 	return ft_printf("%06f", special);}
-int f_reserved_values_nan_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
+ int f_reserved_values_nan_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_NAN;
 	return ft_printf("%06f", special);}
-int f_reserved_values_pzero_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
+ int f_reserved_values_pzero_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_PZERO;
 	return ft_printf("%06f", special);}
-int f_reserved_values_nzero_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
+ int f_reserved_values_nzero_6wzp(void){double special; *((unsigned long *)(&special)) = DBL_NZERO;
 	return ft_printf("%06f", special);}
 
 //Long Doubles - Basic
@@ -2356,110 +2356,110 @@ int f_L_stress_prec20_rndd(void){return ft_printf("%.20f",        1.025978548534
 int f_L_stress_prec20_limits_tiny(void){return ft_printf("%.20f", 0.000000000000000000010);}
 int f_L_stress_prec20_limits_big(void){return ft_printf("%.20f",  0.999999999999999999990);}
 //Long Doubles of special values
-int f_L_reserved_values_inf(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("%Lf", special);}
-int f_L_reserved_values_ninf(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%Lf", special);}
-int f_L_reserved_values_nan(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%Lf", special);}
-int f_L_reserved_values_pzero(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%Lf", special);}
-int f_L_reserved_values_nzero(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%Lf", special);}
-int f_L_reserved_values_inf_6w(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf_6w(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("%6Lf", special);}
-int f_L_reserved_values_ninf_6w(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf_6w(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%6Lf", special);}
-int f_L_reserved_values_nan_6w(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan_6w(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%6Lf", special);}
-int f_L_reserved_values_pzero_6w(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero_6w(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%6Lf", special);}
-int f_L_reserved_values_nzero_6w(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero_6w(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%6Lf", special);}
-int f_L_reserved_values_inf_6wlj(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf_6wlj(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("%-6Lf", special);}
-int f_L_reserved_values_ninf_6wlj(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf_6wlj(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%-6Lf", special);}
-int f_L_reserved_values_nan_6wlj(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan_6wlj(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%-6Lf", special);}
-int f_L_reserved_values_pzero_6wlj(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero_6wlj(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%-6Lf", special);}
-int f_L_reserved_values_nzero_6wlj(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero_6wlj(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%-6Lf", special);}
-int f_L_reserved_values_inf_6was(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf_6was(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("%+6Lf", special);}
-int f_L_reserved_values_ninf_6was(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf_6was(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%+6Lf", special);}
-int f_L_reserved_values_nan_6was(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan_6was(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%+6Lf", special);}
-int f_L_reserved_values_pzero_6was(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero_6was(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%+6Lf", special);}
-int f_L_reserved_values_nzero_6was(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero_6was(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%+6Lf", special);}
-int f_L_reserved_values_inf_10w_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf_10w_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("%10.7Lf", special);}
-int f_L_reserved_values_ninf_10w_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf_10w_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%10.7Lf", special);}
-int f_L_reserved_values_nan_10w_prec7(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan_10w_prec7(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%10.7Lf", special);}
-int f_L_reserved_values_pzero_10w_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero_10w_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%10.7Lf", special);}
-int f_L_reserved_values_nzero_10w_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero_10w_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%10.7Lf", special);}
-int f_L_reserved_values_inf_sp_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf_sp_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("% .7Lf", special);}
-int f_L_reserved_values_ninf_sp_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf_sp_prec7(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("% .7Lf", special);}
-int f_L_reserved_values_nan_sp_prec7(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan_sp_prec7(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("% .7Lf", special);}
-int f_L_reserved_values_pzero_sp_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero_sp_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("% .7Lf", special);}
-int f_L_reserved_values_nzero_sp_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero_sp_prec7(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("% .7Lf", special);}
-int f_L_reserved_values_inf_sp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf_sp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("% Lf", special);}
-int f_L_reserved_values_ninf_sp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf_sp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("% Lf", special);}
-int f_L_reserved_values_nan_sp(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan_sp(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("% Lf", special);}
-int f_L_reserved_values_pzero_sp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero_sp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("% Lf", special);}
-int f_L_reserved_values_nzero_sp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero_sp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("% Lf", special);}
-int f_L_reserved_values_inf_6wzp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+ int f_L_reserved_values_inf_6wzp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
 	return ft_printf("%06Lf", special);}
-int f_L_reserved_values_ninf_6wzp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_ninf_6wzp(void){long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%06Lf", special);}
-int f_L_reserved_values_nan_6wzp(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+ int f_L_reserved_values_nan_6wzp(void){long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
 	return ft_printf("%06Lf", special);}
-int f_L_reserved_values_pzero_6wzp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_pzero_6wzp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%06Lf", special);}
-int f_L_reserved_values_nzero_6wzp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
+ int f_L_reserved_values_nzero_6wzp(void){long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;
 	return ft_printf("%06Lf", special);}
 ///Long double Floats whose precision exceeds their compiled literal precision
-int f_L_overprec_might_be_undefbehav_100(void){return ft_printf("%.100Lf", 0.237l);}
-int f_L_overprec_might_be_undefbehav_32(void){return ft_printf("%.32Lf", 0.237l);}
-int f_L_overprec_might_be_undefbehav_4(void){return ft_printf("%.4Lf", 0.237l);}
-int f_L_overprec_might_be_undefbehav_1000(void){return ft_printf("%.4Lf", -0.106577568068517810765107851705167l);}
-int f_L_overprec_might_be_undefbehav_10_from_0(void){return ft_printf("%.10Lf", 0.0l);}
-int f_L_overprec_might_be_undefbehav_2000(void){return ft_printf("%.2000Lf", 623.28376510723481l);}
-int f_L_overprec_might_be_undefbehav_dblmin(void){return ft_printf("%.2000Lf", LDBL_MIN);}
-int f_L_overprec_might_be_undefbehav_ndblmin(void){return ft_printf("%.2000Lf", -LDBL_MIN);}
+ int f_L_overprec_might_be_undefbehav_100(void){return ft_printf("%.100Lf", 0.237l);}
+ int f_L_overprec_might_be_undefbehav_32(void){return ft_printf("%.32Lf", 0.237l);}
+ int f_L_overprec_might_be_undefbehav_4(void){return ft_printf("%.4Lf", 0.237l);}
+ int f_L_overprec_might_be_undefbehav_1000(void){return ft_printf("%.4Lf", -0.106577568068517810765107851705167l);}
+ int f_L_overprec_might_be_undefbehav_10_from_0(void){return ft_printf("%.10Lf", 0.0l);}
+ int f_L_overprec_might_be_undefbehav_2000(void){return ft_printf("%.2000Lf", 623.28376510723481l);}
+ int f_L_overprec_might_be_undefbehav_dblmin(void){return ft_printf("%.2000Lf", LDBL_MIN);}
+ int f_L_overprec_might_be_undefbehav_ndblmin(void){return ft_printf("%.2000Lf", -LDBL_MIN);}
 //Long double floats at double max, double min
-int f_L_limits_dblmax_prec0_notmandatory(void){return ft_printf("%.0Lf", LDBL_MAX);}
-int f_L_limits_dblmax_prec3_notmandatory(void){return ft_printf("%.3Lf", LDBL_MAX);}
-int f_L_limits_dblmax_precd_notmandatory(void){return ft_printf("%Lf", LDBL_MAX);}
-int f_L_limits_dblmax_prec8_notmandatory(void){return ft_printf("%.8Lf", LDBL_MAX);}
-int f_L_stress_limits_dblmax_prec12_notmandatory(void){return ft_printf("%.12Lf", LDBL_MAX);}
-int f_L_stress_limits_dblmax_prec16_notmandatory(void){return ft_printf("%.16Lf", LDBL_MAX);}
-int f_L_stress_limits_dblmax_prec18_notmandatory(void){return ft_printf("%.18Lf", LDBL_MAX);}
-int f_L_limits_ndblmax_prec0_notmandatory(void){return ft_printf("%.0Lf", -LDBL_MAX);}
-int f_L_limits_ndblmax_prec3_notmandatory(void){return ft_printf("%.3Lf", -LDBL_MAX);}
-int f_L_limits_ndblmax_precd_notmandatory(void){return ft_printf("%Lf", -LDBL_MAX);}
-int f_L_limits_ndblmax_prec8_notmandatory(void){return ft_printf("%.8Lf", -LDBL_MAX);}
-int f_L_stress_limits_ndblmax_prec12_notmandatory(void){return ft_printf("%.12Lf", -LDBL_MAX);}
-int f_L_stress_limits_ndblmax_prec16_notmandatory(void){return ft_printf("%.16Lf", -LDBL_MAX);}
-int f_L_stress_limits_ndblmax_prec18_notmandatory(void){return ft_printf("%.18Lf", -LDBL_MAX);}
+ int f_L_limits_dblmax_prec0_notmandatory(void){return ft_printf("%.0Lf", LDBL_MAX);}
+ int f_L_limits_dblmax_prec3_notmandatory(void){return ft_printf("%.3Lf", LDBL_MAX);}
+ int f_L_limits_dblmax_precd_notmandatory(void){return ft_printf("%Lf", LDBL_MAX);}
+ int f_L_limits_dblmax_prec8_notmandatory(void){return ft_printf("%.8Lf", LDBL_MAX);}
+ int f_L_stress_limits_dblmax_prec12_notmandatory(void){return ft_printf("%.12Lf", LDBL_MAX);}
+ int f_L_stress_limits_dblmax_prec16_notmandatory(void){return ft_printf("%.16Lf", LDBL_MAX);}
+ int f_L_stress_limits_dblmax_prec18_notmandatory(void){return ft_printf("%.18Lf", LDBL_MAX);}
+ int f_L_limits_ndblmax_prec0_notmandatory(void){return ft_printf("%.0Lf", -LDBL_MAX);}
+ int f_L_limits_ndblmax_prec3_notmandatory(void){return ft_printf("%.3Lf", -LDBL_MAX);}
+ int f_L_limits_ndblmax_precd_notmandatory(void){return ft_printf("%Lf", -LDBL_MAX);}
+ int f_L_limits_ndblmax_prec8_notmandatory(void){return ft_printf("%.8Lf", -LDBL_MAX);}
+ int f_L_stress_limits_ndblmax_prec12_notmandatory(void){return ft_printf("%.12Lf", -LDBL_MAX);}
+ int f_L_stress_limits_ndblmax_prec16_notmandatory(void){return ft_printf("%.16Lf", -LDBL_MAX);}
+ int f_L_stress_limits_ndblmax_prec18_notmandatory(void){return ft_printf("%.18Lf", -LDBL_MAX);}
 int f_L_limits_dblmin_prec0(void){return ft_printf("%.0Lf", LDBL_MIN);}
 int f_L_limits_dblmin_prec3(void){return ft_printf("%.3Lf", LDBL_MIN);}
 int f_L_limits_dblmin_precd(void){return ft_printf("%Lf", LDBL_MIN);}
@@ -2477,23 +2477,23 @@ int f_L_stress_limits_ndblmin_prec18(void){return ft_printf("%.18Lf", -LDBL_MIN)
 
 //Arbitrary argument numbers
 
-int		argnum_simple_swap(void){return ft_printf("%2$s, %1$s!", "world", "hello");} //CAN-SEGFAULT
-int		argnum_swap_around_pct(void){return ft_printf("%2$s %% %1$s!", "world", "hello");} //CAN-SEGFAULT
-int		argnum_swap_strfloat(void){return ft_printf("%2$f, %1$s!", "world", 5.75);} //CAN-SEGFAULT
-int		argnum_swap_floatstr(void){return ft_printf("%2$s, %1$f!", 5.75, "abc");} //CAN-SEGFAULT
-int		argnum_swap_ldblstr(void){return ft_printf("%2$s, %1$Lf!", 5.75L, "abc");} //CAN-SEGFAULT
-int		argnum_swap_strldbl(void){return ft_printf("%2$Lf, %1$s!", "world", 5.75L);} //CAN-SEGFAULT
-int		argnum_swap_ldblchar(void){return ft_printf("%2$c, %1$Lf!", 5.75L, 'c');} //CAN-SEGFAULT
-int		argnum_swap_charldbl(void){return ft_printf("%2$Lf, %1$c!", 'c', 5.75L);} //CAN-SEGFAULT
-int		argnum_swap_floatstr_around_pct(void){return ft_printf("%2$s %% %1$f!", 5.75, "abc");} //CAN-SEGFAULT
-int		argnum_swap_strfloat_around_pct(void){return ft_printf("%2$f %% %1$s!", "world", 5.75);} //CAN-SEGFAULT
-int		argnum_loopback_throwswarning(void){return ft_printf("%i %i %1$i %i %i", 1, 2, 3);} //CAN-SEGFAULT
-int		argnum_onlyone(void){return ft_printf("%1$s %1$s %1$s %1$s %1$s %1$s %1$s %1$s.", "buffalo");} //CAN-SEGFAULT
-int		argnum_start2thentofloatthen1_throwswarning(void){return ft_printf("%2$s %f %1$i", 5, "abc", 5.75f);} //CAN-SEGFAULT
-int		argnum_ultimate_1_throwswarning(void){return ft_printf("%2$s %f %1$i %s %f %2$s %1$i %s %1$i %3$f %1$i %s %f %2$s", 5, "abc", 5.75);} //CAN-SEGFAULT
-int		argnum_ultimate_2_throwswarning(void){return ft_printf("%4$.5s %.4i %lli %1$Lf %c %7$20.6s %5$i %2$c %1$.2Lf %c %i", //CAN-SEGFAULT
+ int		argnum_simple_swap(void){return ft_printf("%2$s, %1$s!", "world", "hello");} //CAN-SEGFAULT
+ int		argnum_swap_around_pct(void){return ft_printf("%2$s %% %1$s!", "world", "hello");} //CAN-SEGFAULT
+ int		argnum_swap_strfloat(void){return ft_printf("%2$f, %1$s!", "world", 5.75);} //CAN-SEGFAULT
+ int		argnum_swap_floatstr(void){return ft_printf("%2$s, %1$f!", 5.75, "abc");} //CAN-SEGFAULT
+ int		argnum_swap_ldblstr(void){return ft_printf("%2$s, %1$Lf!", 5.75L, "abc");} //CAN-SEGFAULT
+ int		argnum_swap_strldbl(void){return ft_printf("%2$Lf, %1$s!", "world", 5.75L);} //CAN-SEGFAULT
+ int		argnum_swap_ldblchar(void){return ft_printf("%2$c, %1$Lf!", 5.75L, 'c');} //CAN-SEGFAULT
+ int		argnum_swap_charldbl(void){return ft_printf("%2$Lf, %1$c!", 'c', 5.75L);} //CAN-SEGFAULT
+ int		argnum_swap_floatstr_around_pct(void){return ft_printf("%2$s %% %1$f!", 5.75, "abc");} //CAN-SEGFAULT
+ int		argnum_swap_strfloat_around_pct(void){return ft_printf("%2$f %% %1$s!", "world", 5.75);} //CAN-SEGFAULT
+ int		argnum_loopback_throwswarning(void){return ft_printf("%i %i %1$i %i %i", 1, 2, 3);} //CAN-SEGFAULT
+ int		argnum_onlyone(void){return ft_printf("%1$s %1$s %1$s %1$s %1$s %1$s %1$s %1$s.", "buffalo");} //CAN-SEGFAULT
+ int		argnum_start2thentofloatthen1_throwswarning(void){return ft_printf("%2$s %f %1$i", 5, "abc", 5.75f);} //CAN-SEGFAULT
+ int		argnum_ultimate_1_throwswarning(void){return ft_printf("%2$s %f %1$i %s %f %2$s %1$i %s %1$i %3$f %1$i %s %f %2$s", 5, "abc", 5.75);} //CAN-SEGFAULT
+ int		argnum_ultimate_2_throwswarning(void){return ft_printf("%4$.5s %.4i %lli %1$Lf %c %7$20.6s %5$i %2$c %1$.2Lf %c %i", //CAN-SEGFAULT
 			5.75l, 'c', -17, "Atlanta, GA", 54, 9879879879879ll, "baby shark");}
-int		argnum_ultimate_2_with_pct_throwswarning(void){return ft_printf("%% %4$.5s %.4i %lli %% %1$Lf %c %7$20.6s %5$i %% %2$c %1$.2Lf %c %i", //CAN-SEGFAULT
+ int		argnum_ultimate_2_with_pct_throwswarning(void){return ft_printf("%% %4$.5s %.4i %lli %% %1$Lf %c %7$20.6s %5$i %% %2$c %1$.2Lf %c %i", //CAN-SEGFAULT
 			5.75l, 'c', -17, "Atlanta, GA", 54, 9879879879879ll, "baby shark");}
 
 //Mix tests
@@ -3216,27 +3216,27 @@ int		mix_successive_70(void){return ( ft_printf("%o", mx_u) + ft_printf("%li", m
 
 
 //No-crash-no-segfault test
-int		nocrash_noarg_1_notmandatory(void){return ft_printf("%1$"); }
-int		nocrash_noarg_2_notmandatory(void){return ft_printf("%0"); }
-int		nocrash_noarg_3_notmandatory(void){return ft_printf("% "); }
-int		nocrash_noarg_4_notmandatory(void){return ft_printf("%#"); }
-int		nocrash_noarg_5_notmandatory(void){return ft_printf("%-"); }
-int		nocrash_noarg_6_notmandatory(void){return ft_printf("%+"); }
-int		nocrash_noarg_9_notmandatory(void){return ft_printf("%23"); }
-int		nocrash_noarg_10_notmandatory(void){return ft_printf("%."); }
-int		nocrash_noarg_11_notmandatory(void){return ft_printf("%hh"); }
-int		nocrash_noarg_12_notmandatory(void){return ft_printf("%h"); }
-int		nocrash_noarg_13_notmandatory(void){return ft_printf("%ll"); }
-int		nocrash_noarg_14_notmandatory(void){return ft_printf("%l"); }
-int		nocrash_noarg_15_notmandatory(void){return ft_printf("%L"); }
-int		nocrash_noarg_16_notmandatory(void){return ft_printf("%p"); }
-int		nocrash_noarg_17_notmandatory(void){return ft_printf("%d"); }
-int		nocrash_noarg_19_notmandatory(void){return ft_printf("%u"); }
-int		nocrash_noarg_20_notmandatory(void){return ft_printf("%x"); }
-int		nocrash_noarg_21_notmandatory(void){return ft_printf("%X"); }
-int		nocrash_noarg_22_notmandatory(void){return ft_printf("%f"); }
-int		nocrash_noarg_24_notmandatory(void){return ft_printf("%c"); }
-int		nocrash_noarg_25_notmandatory(void){return ft_printf("%o"); }
+ int		nocrash_noarg_1_notmandatory(void){return ft_printf("%1$"); }
+ int		nocrash_noarg_2_notmandatory(void){return ft_printf("%0"); }
+ int		nocrash_noarg_3_notmandatory(void){return ft_printf("% "); }
+ int		nocrash_noarg_4_notmandatory(void){return ft_printf("%#"); }
+ int		nocrash_noarg_5_notmandatory(void){return ft_printf("%-"); }
+ int		nocrash_noarg_6_notmandatory(void){return ft_printf("%+"); }
+ int		nocrash_noarg_9_notmandatory(void){return ft_printf("%23"); }
+ int		nocrash_noarg_10_notmandatory(void){return ft_printf("%."); }
+ int		nocrash_noarg_11_notmandatory(void){return ft_printf("%hh"); }
+ int		nocrash_noarg_12_notmandatory(void){return ft_printf("%h"); }
+ int		nocrash_noarg_13_notmandatory(void){return ft_printf("%ll"); }
+ int		nocrash_noarg_14_notmandatory(void){return ft_printf("%l"); }
+ int		nocrash_noarg_15_notmandatory(void){return ft_printf("%L"); }
+ int		nocrash_noarg_16_notmandatory(void){return ft_printf("%p"); }
+ int		nocrash_noarg_17_notmandatory(void){return ft_printf("%d"); }
+ int		nocrash_noarg_19_notmandatory(void){return ft_printf("%u"); }
+ int		nocrash_noarg_20_notmandatory(void){return ft_printf("%x"); }
+ int		nocrash_noarg_21_notmandatory(void){return ft_printf("%X"); }
+ int		nocrash_noarg_22_notmandatory(void){return ft_printf("%f"); }
+ int		nocrash_noarg_24_notmandatory(void){return ft_printf("%c"); }
+ int		nocrash_noarg_25_notmandatory(void){return ft_printf("%o"); }
 
 int		nocrash_nullarg_1(void){return ft_printf("%1$s", NULL); }
 int		nocrash_nullarg_2(void){return ft_printf("%0s", NULL); }
@@ -3497,18 +3497,18 @@ int moul_ld_10_throwswarning(void){return ft_printf("%%ld 0000042 == |%ld|\n", 0
 int moul_ld_11_throwswarning(void){return ft_printf("%%ld \t == |%ld|\n", '\t');}
 int moul_ld_12_throwswarning(void){return ft_printf("%%ld Lydie == |%ld|\n", 'L'+'y'+'d'+'i'+'e');}
 
-int moul_D_1_notmandatory(void){return ft_printf("%D", 42);}
-int moul_D_2_notmandatory(void){return ft_printf("Kashim a %D histoires à raconter", 1001);}
-int moul_D_3_notmandatory(void){return ft_printf("Il fait au moins %D\n", -8000);}
-int moul_D_4_notmandatory(void){return ft_printf("%D", -0);}
-int moul_D_5_notmandatory(void){return ft_printf("%D", 0);}
-int moul_D_6_notmandatory(void){return ft_printf("%D", INT_MAX);}
-int moul_D_7_notmandatory(void){return ft_printf("%D", INT_MIN);}
-int moul_D_8_notmandatory(void){return ft_printf("%D", INT_MIN - 1);}
-int moul_D_9_notmandatory(void){return ft_printf("%D", INT_MAX + 1);}
-int moul_D_10_notmandatory(void){return ft_printf("%%D 0000042 == |%D|\n", 0000042);}
-int moul_D_11_notmandatory(void){return ft_printf("%%D \t == |%D|\n", '\t');}
-int moul_D_12_notmandatory(void){return ft_printf("%%D Lydie == |%D|\n", 'L'+'y'+'d'+'i'+'e');}
+ int moul_D_1_notmandatory(void){return ft_printf("%D", 42);}
+ int moul_D_2_notmandatory(void){return ft_printf("Kashim a %D histoires à raconter", 1001);}
+ int moul_D_3_notmandatory(void){return ft_printf("Il fait au moins %D\n", -8000);}
+ int moul_D_4_notmandatory(void){return ft_printf("%D", -0);}
+ int moul_D_5_notmandatory(void){return ft_printf("%D", 0);}
+ int moul_D_6_notmandatory(void){return ft_printf("%D", INT_MAX);}
+ int moul_D_7_notmandatory(void){return ft_printf("%D", INT_MIN);}
+ int moul_D_8_notmandatory(void){return ft_printf("%D", INT_MIN - 1);}
+ int moul_D_9_notmandatory(void){return ft_printf("%D", INT_MAX + 1);}
+ int moul_D_10_notmandatory(void){return ft_printf("%%D 0000042 == |%D|\n", 0000042);}
+ int moul_D_11_notmandatory(void){return ft_printf("%%D \t == |%D|\n", '\t');}
+ int moul_D_12_notmandatory(void){return ft_printf("%%D Lydie == |%D|\n", 'L'+'y'+'d'+'i'+'e');}
 
 int moul_i_1(void){return ft_printf("%i", 42);}
 int moul_i_2(void){return ft_printf("Kashim a %i histoires à raconter", 1001);}
@@ -3536,20 +3536,20 @@ int moul_f_9(void){return ft_printf("%%f 0000042 == |%f|\n", (double)0000042);}
 int moul_f_10(void){return ft_printf("%%f \t == |%f|\n", (double)'\t');}
 int moul_f_11(void){return ft_printf("%%f Lydie == |%f|\n", (double)'L'+'y'+'d'+'i'+'e');}
 int moul_f_12(void){return ft_printf("%%f 42.42 == |%f|\n", 42.42);}
-int moul_F_1_notmandatory(void){return ft_printf("%F", (double)42);}
-int moul_F_2_notmandatory(void){return ft_printf("Kashim a %F histoires à raconter", (double)1001);}
-int moul_F_3_notmandatory(void){return ft_printf("Il fait au moins %F\n", (double)-8000);}
-int moul_F_4_notmandatory(void){return ft_printf("%F", (double)-0);}
-int moul_F_5_notmandatory(void){return ft_printf("%F", (double)0);}
-int moul_F_6_notmandatory(void){return ft_printf("%F", (double)INT_MAX);}
-int moul_F_7_notmandatory(void){return ft_printf("%F", (double)INT_MIN);}
-int moul_F_8_notmandatory(void){return ft_printf("%F", (double)INT_MIN - 1);}
-int moul_F_9_notmandatory(void){return ft_printf("%F", (double)INT_MAX + 1);}
-int moul_F_10_notmandatory(void){return ft_printf("%%F 0000042 == |%F|\n", (double)0000042);}
-int moul_F_11_notmandatory(void){return ft_printf("%%F \t == |%F|\n", (double)'\t');}
-int moul_F_12_notmandatory(void){return ft_printf("%%F Lydie == |%F|\n", (double)'L'+'y'+'d'+'i'+'e');}
-int moul_F_13_notmandatory(void){return ft_printf("%%F 42.42 == |%F|\n", 42.42);}
-int moul_F_14_notmandatory(void){return ft_printf("%%F 42.42 == |%.2F|\n", 42.42);}
+ int moul_F_1_notmandatory(void){return ft_printf("%F", (double)42);}
+ int moul_F_2_notmandatory(void){return ft_printf("Kashim a %F histoires à raconter", (double)1001);}
+ int moul_F_3_notmandatory(void){return ft_printf("Il fait au moins %F\n", (double)-8000);}
+ int moul_F_4_notmandatory(void){return ft_printf("%F", (double)-0);}
+ int moul_F_5_notmandatory(void){return ft_printf("%F", (double)0);}
+ int moul_F_6_notmandatory(void){return ft_printf("%F", (double)INT_MAX);}
+ int moul_F_7_notmandatory(void){return ft_printf("%F", (double)INT_MIN);}
+ int moul_F_8_notmandatory(void){return ft_printf("%F", (double)INT_MIN - 1);}
+ int moul_F_9_notmandatory(void){return ft_printf("%F", (double)INT_MAX + 1);}
+ int moul_F_10_notmandatory(void){return ft_printf("%%F 0000042 == |%F|\n", (double)0000042);}
+ int moul_F_11_notmandatory(void){return ft_printf("%%F \t == |%F|\n", (double)'\t');}
+ int moul_F_12_notmandatory(void){return ft_printf("%%F Lydie == |%F|\n", (double)'L'+'y'+'d'+'i'+'e');}
+ int moul_F_13_notmandatory(void){return ft_printf("%%F 42.42 == |%F|\n", 42.42);}
+ int moul_F_14_notmandatory(void){return ft_printf("%%F 42.42 == |%.2F|\n", 42.42);}
 
 int moul_o_1(void){return ft_printf("%o", 42);}
 int moul_o_2(void){return ft_printf("Kashim a %o histoires à raconter", 1001);}
@@ -3631,100 +3631,100 @@ int moul_sp_1(void){return ft_printf("%%      i 42 == |%      i|\n", 42);}
 int moul_sp_2(void){return ft_printf("%% i -42 == |% i|\n", -42);}
 int moul_sp_3(void){return ft_printf("%% 4i 42 == |% 4i|\n", 42);}
 
-int moul_notmandatory_e_1(void){return ft_printf("%e", (double)42);}
-int moul_notmandatory_e_2(void){return ft_printf("Kashim a %e histoires à raconter", (double)1001);}
-int moul_notmandatory_e_3(void){return ft_printf("Il fait au moins %e\n", (double)-8000);}
-int moul_notmandatory_e_4(void){return ft_printf("%e", (double)-0);}
-int moul_notmandatory_e_5(void){return ft_printf("%e", (double)0);}
-int moul_notmandatory_e_6(void){return ft_printf("%e", (double)INT_MAX);}
-int moul_notmandatory_e_7(void){return ft_printf("%e", (double)INT_MIN);}
-int moul_notmandatory_e_8(void){return ft_printf("%e", (double)INT_MIN - 1);}
-int moul_notmandatory_e_9(void){return ft_printf("%e", (double)INT_MAX + 1);}
-int moul_notmandatory_e_10(void){return ft_printf("%%e 0000042 == |%e|\n", (double)0000042);}
-int moul_notmandatory_e_11(void){return ft_printf("%%e \t == |%e|\n", (double)'\t');}
-int moul_notmandatory_e_12(void){return ft_printf("%%e Lydie == |%e|\n", (double)'L'+'y'+'d'+'i'+'e');}
-int moul_notmandatory_e_13(void){return ft_printf("%%e 42.42 == |%e|\n", 42.42);}
-int moul_notmandatory_e_14(void){return ft_printf("%E", (double)42);}
-int moul_notmandatory_e_15(void){return ft_printf("Kashim a %E histoires à raconter", (double)1001);}
-int moul_notmandatory_e_16(void){return ft_printf("Il fait au moins %E\n", (double)-8000);}
-int moul_notmandatory_e_17(void){return ft_printf("%E", (double)-0);}
-int moul_notmandatory_e_18(void){return ft_printf("%E", (double)0);}
-int moul_notmandatory_e_19(void){return ft_printf("%E", (double)INT_MAX);}
-int moul_notmandatory_e_20(void){return ft_printf("%E", (double)INT_MIN);}
-int moul_notmandatory_e_21(void){return ft_printf("%E", (double)INT_MIN - 1);}
-int moul_notmandatory_e_22(void){return ft_printf("%E", (double)INT_MAX + 1);}
-int moul_notmandatory_e_23(void){return ft_printf("%%E 0000042 == |%E|\n", (double)0000042);}
-int moul_notmandatory_e_24(void){return ft_printf("%%E \t == |%E|\n", (double)'\t');}
-int moul_notmandatory_e_25(void){return ft_printf("%%E Lydie == |%E|\n", (double)'L'+'y'+'d'+'i'+'e');}
-int moul_notmandatory_e_26(void){return ft_printf("%%E 42.42 == |%E|\n", 42.42);}
-int moul_notmandatory_e_27(void){return ft_printf("%%E 42.42 == |%.2E|\n", 42.42);}
+ int moul_notmandatory_e_1(void){return ft_printf("%e", (double)42);}
+ int moul_notmandatory_e_2(void){return ft_printf("Kashim a %e histoires à raconter", (double)1001);}
+ int moul_notmandatory_e_3(void){return ft_printf("Il fait au moins %e\n", (double)-8000);}
+ int moul_notmandatory_e_4(void){return ft_printf("%e", (double)-0);}
+ int moul_notmandatory_e_5(void){return ft_printf("%e", (double)0);}
+ int moul_notmandatory_e_6(void){return ft_printf("%e", (double)INT_MAX);}
+ int moul_notmandatory_e_7(void){return ft_printf("%e", (double)INT_MIN);}
+ int moul_notmandatory_e_8(void){return ft_printf("%e", (double)INT_MIN - 1);}
+ int moul_notmandatory_e_9(void){return ft_printf("%e", (double)INT_MAX + 1);}
+ int moul_notmandatory_e_10(void){return ft_printf("%%e 0000042 == |%e|\n", (double)0000042);}
+ int moul_notmandatory_e_11(void){return ft_printf("%%e \t == |%e|\n", (double)'\t');}
+ int moul_notmandatory_e_12(void){return ft_printf("%%e Lydie == |%e|\n", (double)'L'+'y'+'d'+'i'+'e');}
+ int moul_notmandatory_e_13(void){return ft_printf("%%e 42.42 == |%e|\n", 42.42);}
+ int moul_notmandatory_e_14(void){return ft_printf("%E", (double)42);}
+ int moul_notmandatory_e_15(void){return ft_printf("Kashim a %E histoires à raconter", (double)1001);}
+ int moul_notmandatory_e_16(void){return ft_printf("Il fait au moins %E\n", (double)-8000);}
+ int moul_notmandatory_e_17(void){return ft_printf("%E", (double)-0);}
+ int moul_notmandatory_e_18(void){return ft_printf("%E", (double)0);}
+ int moul_notmandatory_e_19(void){return ft_printf("%E", (double)INT_MAX);}
+ int moul_notmandatory_e_20(void){return ft_printf("%E", (double)INT_MIN);}
+ int moul_notmandatory_e_21(void){return ft_printf("%E", (double)INT_MIN - 1);}
+ int moul_notmandatory_e_22(void){return ft_printf("%E", (double)INT_MAX + 1);}
+ int moul_notmandatory_e_23(void){return ft_printf("%%E 0000042 == |%E|\n", (double)0000042);}
+ int moul_notmandatory_e_24(void){return ft_printf("%%E \t == |%E|\n", (double)'\t');}
+ int moul_notmandatory_e_25(void){return ft_printf("%%E Lydie == |%E|\n", (double)'L'+'y'+'d'+'i'+'e');}
+ int moul_notmandatory_e_26(void){return ft_printf("%%E 42.42 == |%E|\n", 42.42);}
+ int moul_notmandatory_e_27(void){return ft_printf("%%E 42.42 == |%.2E|\n", 42.42);}
 
-int moul_notmandatory_g_1(void){return ft_printf("%g", (double)42);}
-int moul_notmandatory_g_2(void){return ft_printf("Kashim a %g histoires à raconter", (double)1001);}
-int moul_notmandatory_g_3(void){return ft_printf("Il fait au moins %g\n", (double)-8000);}
-int moul_notmandatory_g_4(void){return ft_printf("%g", (double)-0);}
-int moul_notmandatory_g_5(void){return ft_printf("%g", (double)0);}
-int moul_notmandatory_g_5b(void){return ft_printf("%g", (double)INT_MAX);}
-int moul_notmandatory_g_6(void){return ft_printf("%g", (double)INT_MIN);}
-int moul_notmandatory_g_7(void){return ft_printf("%g", (double)INT_MIN - 1);}
-int moul_notmandatory_g_8(void){return ft_printf("%g", (double)INT_MAX + 1);}
-int moul_notmandatory_g_9(void){return ft_printf("%%g 0000042 == |%g|\n", (double)0000042);}
-int moul_notmandatory_g_10(void){return ft_printf("%%g \t == |%g|\n", (double)'\t');}
-int moul_notmandatory_g_11(void){return ft_printf("%%g Lydie == |%g|\n", (double)'L'+'y'+'d'+'i'+'e');}
-int moul_notmandatory_g_12(void){return ft_printf("%%g 42.42 == |%g|\n", 42.42);}
-int moul_notmandatory_g_13(void){return ft_printf("%G", (double)42);}
-int moul_notmandatory_g_14(void){return ft_printf("Kashim a %G histoires à raconter", (double)1001);}
-int moul_notmandatory_g_15(void){return ft_printf("Il fait au moins %G\n", (double)-8000);}
-int moul_notmandatory_g_16(void){return ft_printf("%G", (double)-0);}
-int moul_notmandatory_g_17(void){return ft_printf("%G", (double)0);}
-int moul_notmandatory_g_18(void){return ft_printf("%G", (double)INT_MAX);}
-int moul_notmandatory_g_19(void){return ft_printf("%G", (double)INT_MIN);}
-int moul_notmandatory_g_20(void){return ft_printf("%G", (double)INT_MIN - 1);}
-int moul_notmandatory_g_21(void){return ft_printf("%G", (double)INT_MAX + 1);}
-int moul_notmandatory_g_22(void){return ft_printf("%%G 0000042 == |%G|\n", (double)0000042);}
-int moul_notmandatory_g_23(void){return ft_printf("%%G \t == |%G|\n", (double)'\t');}
-int moul_notmandatory_g_24(void){return ft_printf("%%G Lydie == |%G|\n", (double)'L'+'y'+'d'+'i'+'e');}
-int moul_notmandatory_g_25(void){return ft_printf("%%G 42.42 == |%G|\n", 42.42);}
-int moul_notmandatory_g_26(void){return ft_printf("%%G 42.42 == |%.2G|\n", 42.42);}
+ int moul_notmandatory_g_1(void){return ft_printf("%g", (double)42);}
+ int moul_notmandatory_g_2(void){return ft_printf("Kashim a %g histoires à raconter", (double)1001);}
+ int moul_notmandatory_g_3(void){return ft_printf("Il fait au moins %g\n", (double)-8000);}
+ int moul_notmandatory_g_4(void){return ft_printf("%g", (double)-0);}
+ int moul_notmandatory_g_5(void){return ft_printf("%g", (double)0);}
+ int moul_notmandatory_g_5b(void){return ft_printf("%g", (double)INT_MAX);}
+ int moul_notmandatory_g_6(void){return ft_printf("%g", (double)INT_MIN);}
+ int moul_notmandatory_g_7(void){return ft_printf("%g", (double)INT_MIN - 1);}
+ int moul_notmandatory_g_8(void){return ft_printf("%g", (double)INT_MAX + 1);}
+ int moul_notmandatory_g_9(void){return ft_printf("%%g 0000042 == |%g|\n", (double)0000042);}
+ int moul_notmandatory_g_10(void){return ft_printf("%%g \t == |%g|\n", (double)'\t');}
+ int moul_notmandatory_g_11(void){return ft_printf("%%g Lydie == |%g|\n", (double)'L'+'y'+'d'+'i'+'e');}
+ int moul_notmandatory_g_12(void){return ft_printf("%%g 42.42 == |%g|\n", 42.42);}
+ int moul_notmandatory_g_13(void){return ft_printf("%G", (double)42);}
+ int moul_notmandatory_g_14(void){return ft_printf("Kashim a %G histoires à raconter", (double)1001);}
+ int moul_notmandatory_g_15(void){return ft_printf("Il fait au moins %G\n", (double)-8000);}
+ int moul_notmandatory_g_16(void){return ft_printf("%G", (double)-0);}
+ int moul_notmandatory_g_17(void){return ft_printf("%G", (double)0);}
+ int moul_notmandatory_g_18(void){return ft_printf("%G", (double)INT_MAX);}
+ int moul_notmandatory_g_19(void){return ft_printf("%G", (double)INT_MIN);}
+ int moul_notmandatory_g_20(void){return ft_printf("%G", (double)INT_MIN - 1);}
+ int moul_notmandatory_g_21(void){return ft_printf("%G", (double)INT_MAX + 1);}
+ int moul_notmandatory_g_22(void){return ft_printf("%%G 0000042 == |%G|\n", (double)0000042);}
+ int moul_notmandatory_g_23(void){return ft_printf("%%G \t == |%G|\n", (double)'\t');}
+ int moul_notmandatory_g_24(void){return ft_printf("%%G Lydie == |%G|\n", (double)'L'+'y'+'d'+'i'+'e');}
+ int moul_notmandatory_g_25(void){return ft_printf("%%G 42.42 == |%G|\n", 42.42);}
+ int moul_notmandatory_g_26(void){return ft_printf("%%G 42.42 == |%.2G|\n", 42.42);}
 
-int moul_notmandatory_a_1(void){return ft_printf("%a", (double)42);}
-int moul_notmandatory_a_2(void){return ft_printf("Kashim a %a histoires à raconter", (double)1001);}
-int moul_notmandatory_a_3(void){return ft_printf("Il fait au moins %a\n", (double)-8000);}
-int moul_notmandatory_a_4(void){return ft_printf("%a", (double)-0);}
-int moul_notmandatory_a_5(void){return ft_printf("%a", (double)0);}
-int moul_notmandatory_a_6(void){return ft_printf("%a", (double)INT_MAX);}
-int moul_notmandatory_a_7(void){return ft_printf("%a", (double)INT_MIN);}
-int moul_notmandatory_a_8(void){return ft_printf("%a", (double)INT_MIN - 1);}
-int moul_notmandatory_a_9(void){return ft_printf("%a", (double)INT_MAX + 1);}
-int moul_notmandatory_a_11(void){return ft_printf("%%a 0000042 == |%a|\n", (double)0000042);}
-int moul_notmandatory_a_12(void){return ft_printf("%%a \t == |%a|\n", (double)'\t');}
-int moul_notmandatory_a_13(void){return ft_printf("%%a Lydie == |%a|\n", (double)'L'+'y'+'d'+'i'+'e');}
-int moul_notmandatory_a_14(void){return ft_printf("%%a 42.42 == |%a|\n", 42.42);}
-int moul_notmandatory_a_15(void){return ft_printf("%A", (double)42);}
-int moul_notmandatory_a_16(void){return ft_printf("Kashim a %A histoires à raconter", (double)1001);}
-int moul_notmandatory_a_17(void){return ft_printf("Il fait au moins %A\n", (double)-8000);}
-int moul_notmandatory_a_18(void){return ft_printf("%A", (double)-0);}
-int moul_notmandatory_a_19(void){return ft_printf("%A", (double)0);}
-int moul_notmandatory_a_20(void){return ft_printf("%A", (double)INT_MAX);}
-int moul_notmandatory_a_21(void){return ft_printf("%A", (double)INT_MIN);}
-int moul_notmandatory_a_22(void){return ft_printf("%A", (double)INT_MIN - 1);}
-int moul_notmandatory_a_23(void){return ft_printf("%A", (double)INT_MAX + 1);}
-int moul_notmandatory_a_24(void){return ft_printf("%%A 0000042 == |%A|\n", (double)0000042);}
-int moul_notmandatory_a_25(void){return ft_printf("%%A \t == |%A|\n", (double)'\t');}
-int moul_notmandatory_a_26(void){return ft_printf("%%A Lydie == |%A|\n", (double)'L'+'y'+'d'+'i'+'e');}
-int moul_notmandatory_a_27(void){return ft_printf("%%A 42.42 == |%A|\n", 42.42);}
-int moul_notmandatory_a_28(void){return ft_printf("%%A 42.42 == |%.2A|\n", 42.42);}
+ int moul_notmandatory_a_1(void){return ft_printf("%a", (double)42);}
+ int moul_notmandatory_a_2(void){return ft_printf("Kashim a %a histoires à raconter", (double)1001);}
+ int moul_notmandatory_a_3(void){return ft_printf("Il fait au moins %a\n", (double)-8000);}
+ int moul_notmandatory_a_4(void){return ft_printf("%a", (double)-0);}
+ int moul_notmandatory_a_5(void){return ft_printf("%a", (double)0);}
+ int moul_notmandatory_a_6(void){return ft_printf("%a", (double)INT_MAX);}
+ int moul_notmandatory_a_7(void){return ft_printf("%a", (double)INT_MIN);}
+ int moul_notmandatory_a_8(void){return ft_printf("%a", (double)INT_MIN - 1);}
+ int moul_notmandatory_a_9(void){return ft_printf("%a", (double)INT_MAX + 1);}
+ int moul_notmandatory_a_11(void){return ft_printf("%%a 0000042 == |%a|\n", (double)0000042);}
+ int moul_notmandatory_a_12(void){return ft_printf("%%a \t == |%a|\n", (double)'\t');}
+ int moul_notmandatory_a_13(void){return ft_printf("%%a Lydie == |%a|\n", (double)'L'+'y'+'d'+'i'+'e');}
+ int moul_notmandatory_a_14(void){return ft_printf("%%a 42.42 == |%a|\n", 42.42);}
+ int moul_notmandatory_a_15(void){return ft_printf("%A", (double)42);}
+ int moul_notmandatory_a_16(void){return ft_printf("Kashim a %A histoires à raconter", (double)1001);}
+ int moul_notmandatory_a_17(void){return ft_printf("Il fait au moins %A\n", (double)-8000);}
+ int moul_notmandatory_a_18(void){return ft_printf("%A", (double)-0);}
+ int moul_notmandatory_a_19(void){return ft_printf("%A", (double)0);}
+ int moul_notmandatory_a_20(void){return ft_printf("%A", (double)INT_MAX);}
+ int moul_notmandatory_a_21(void){return ft_printf("%A", (double)INT_MIN);}
+ int moul_notmandatory_a_22(void){return ft_printf("%A", (double)INT_MIN - 1);}
+ int moul_notmandatory_a_23(void){return ft_printf("%A", (double)INT_MAX + 1);}
+ int moul_notmandatory_a_24(void){return ft_printf("%%A 0000042 == |%A|\n", (double)0000042);}
+ int moul_notmandatory_a_25(void){return ft_printf("%%A \t == |%A|\n", (double)'\t');}
+ int moul_notmandatory_a_26(void){return ft_printf("%%A Lydie == |%A|\n", (double)'L'+'y'+'d'+'i'+'e');}
+ int moul_notmandatory_a_27(void){return ft_printf("%%A 42.42 == |%A|\n", 42.42);}
+ int moul_notmandatory_a_28(void){return ft_printf("%%A 42.42 == |%.2A|\n", 42.42);}
 
-int moul_notmandatory_star_1(void){return ft_printf("%%-*.3s LYDI == |%-*.3s|\n", 5, "LYDI");}
-int moul_notmandatory_star_2(void){return ft_printf("%% *.5i 42 == |% *.5i|\n", 4, 42);}
-int moul_notmandatory_star_3(void){return ft_printf("%%*i 42 == |%*i|\n", 5, 42);}
-int moul_notmandatory_star_4(void){return ft_printf("%%*i 42 == |%*i|\n", 3, 42);}
-int moul_notmandatory_star_5(void){return ft_printf("%%*i 42 == |%*i|\n", 2, 42);}
+ int moul_notmandatory_star_1(void){return ft_printf("%%-*.3s LYDI == |%-*.3s|\n", 5, "LYDI");}
+ int moul_notmandatory_star_2(void){return ft_printf("%% *.5i 42 == |% *.5i|\n", 4, 42);}
+ int moul_notmandatory_star_3(void){return ft_printf("%%*i 42 == |%*i|\n", 5, 42);}
+ int moul_notmandatory_star_4(void){return ft_printf("%%*i 42 == |%*i|\n", 3, 42);}
+ int moul_notmandatory_star_5(void){return ft_printf("%%*i 42 == |%*i|\n", 2, 42);}
 
-int moul_notmandatory_widechar_mix2_throwswarning(void){return ft_printf("Lalalala, %d%% des gens qui parlent %C Ly adorent %s. Ou Presque. %d, %u, %X, %c", 100, L'à', "Ly", 2, 10, 10000, '\n', "ôHohoho");}
-int moul_notmandatory_widechar_basic1(void){wchar_t c = L'\x82'; return ft_printf("%C\n", c);}
-int moul_notmandatory_widechar_basic2(void){return ft_printf("%C\n", L'ø');}
-int moul_notmandatory_widestr_basic2(void){wchar_t wz[3] = L"@@"; return ft_printf("%ls", wz);}
+ int moul_notmandatory_widechar_mix2_throwswarning(void){return ft_printf("Lalalala, %d%% des gens qui parlent %C Ly adorent %s. Ou Presque. %d, %u, %X, %c", 100, L'à', "Ly", 2, 10, 10000, '\n', "ôHohoho");}
+ int moul_notmandatory_widechar_basic1(void){wchar_t c = L'\x82'; return ft_printf("%C\n", c);}
+ int moul_notmandatory_widechar_basic2(void){return ft_printf("%C\n", L'ø');}
+ int moul_notmandatory_widestr_basic2(void){wchar_t wz[3] = L"@@"; return ft_printf("%ls", wz);}
 
 
 
@@ -7519,44 +7519,44 @@ const t_test_entry g_unit_tests[] = {
 	{1, 120, "s_prec_8_lj_width_10_s_null", s_prec_8_lj_width_10_s_null, s_prec_8_lj_width_10_s_null_bench, "{return test(\"%-10.8s\", NULL);}"},
 	{1, 121, "s_prec_00_lj_s_hidden_trunc", s_prec_00_lj_s_hidden_trunc, s_prec_00_lj_s_hidden_trunc_bench, "{return test(\"%-.00s\", s_hidden);}"},
 	{1, 122, "s_prec_09_lj_s_hidden_notrunc", s_prec_09_lj_s_hidden_notrunc, s_prec_09_lj_s_hidden_notrunc_bench, "{return test(\"%-.09s\", s_hidden);}"},
-	{1, 123, "s_undefbehav_4_flags_diff_order_1", s_undefbehav_4_flags_diff_order_1, s_undefbehav_4_flags_diff_order_1_bench, "{return test(\"%+- 06.06s\", s_hidden);}"},
-	{1, 124, "s_undefbehav_4_flags_diff_order_2", s_undefbehav_4_flags_diff_order_2, s_undefbehav_4_flags_diff_order_2_bench, "{return test(\"% 0+-6.06s\", s_hidden);}"},
-	{1, 125, "s_undefbehav_4_flags_diff_order_3", s_undefbehav_4_flags_diff_order_3, s_undefbehav_4_flags_diff_order_3_bench, "{return test(\"%0 +-6.06s\", s_hidden);}"},
-	{1, 126, "s_undefbehav_4_flags_diff_order_4", s_undefbehav_4_flags_diff_order_4, s_undefbehav_4_flags_diff_order_4_bench, "{return test(\"%+-0 6.06s\", s_hidden);}"},
-	{1, 127, "s_undefbehav_4_flags_diff_order_5", s_undefbehav_4_flags_diff_order_5, s_undefbehav_4_flags_diff_order_5_bench, "{return test(\"%-+ 06.06s\", s_hidden);}"},
-	{1, 128, "s_undefbehav_4_flags_diff_order_6", s_undefbehav_4_flags_diff_order_6, s_undefbehav_4_flags_diff_order_6_bench, "{return test(\"% -+06.06s\", s_hidden);}"},
-	{1, 129, "s_undefbehav_4_flags_sp_padded_diff_order_1", s_undefbehav_4_flags_sp_padded_diff_order_1, s_undefbehav_4_flags_sp_padded_diff_order_1_bench, "{return test(\"%+- 07.06s\", s_hidden);}"},
-	{1, 130, "s_undefbehav_4_flags_sp_padded_diff_order_2", s_undefbehav_4_flags_sp_padded_diff_order_2, s_undefbehav_4_flags_sp_padded_diff_order_2_bench, "{return test(\"% 0+-8.06s\", s_hidden);}"},
-	{1, 131, "s_undefbehav_4_flags_sp_padded_diff_order_3", s_undefbehav_4_flags_sp_padded_diff_order_3, s_undefbehav_4_flags_sp_padded_diff_order_3_bench, "{return test(\"%0 +-9.06s\", s_hidden);}"},
-	{1, 132, "s_undefbehav_4_flags_sp_padded_diff_order_4", s_undefbehav_4_flags_sp_padded_diff_order_4, s_undefbehav_4_flags_sp_padded_diff_order_4_bench, "{return test(\"%+-0 10.06s\", s_hidden);}"},
-	{1, 133, "s_undefbehav_4_flags_sp_padded_diff_order_5", s_undefbehav_4_flags_sp_padded_diff_order_5, s_undefbehav_4_flags_sp_padded_diff_order_5_bench, "{return test(\"%-+ 011.06s\", s_hidden);}"},
-	{1, 134, "s_undefbehav_4_flags_sp_padded_diff_order_6", s_undefbehav_4_flags_sp_padded_diff_order_6, s_undefbehav_4_flags_sp_padded_diff_order_6_bench, "{return test(\"% -+012.06s\", s_hidden);}"},
-	{1, 135, "s_undefbehav_4_flags_as_lj_sp_zero_trunc", s_undefbehav_4_flags_as_lj_sp_zero_trunc, s_undefbehav_4_flags_as_lj_sp_zero_trunc_bench, "{return test(\"%+- 06.04s\", s_hidden);}"},
-	{1, 136, "s_undefbehav_4_flags_sp_zero_as_lj_trunc", s_undefbehav_4_flags_sp_zero_as_lj_trunc, s_undefbehav_4_flags_sp_zero_as_lj_trunc_bench, "{return test(\"% 0+-6.04s\", s_hidden);}"},
-	{1, 137, "s_undefbehav_4_flags_zero_sp_as_lj_trunc", s_undefbehav_4_flags_zero_sp_as_lj_trunc, s_undefbehav_4_flags_zero_sp_as_lj_trunc_bench, "{return test(\"%0 +-6.04s\", s_hidden);}"},
-	{1, 138, "s_undefbehav_4_flags_as_lj_zero_sp_trunc", s_undefbehav_4_flags_as_lj_zero_sp_trunc, s_undefbehav_4_flags_as_lj_zero_sp_trunc_bench, "{return test(\"%+-0 6.04s\", s_hidden);}"},
-	{1, 139, "s_undefbehav_4_flags_lj_as_sp_zero_trunc", s_undefbehav_4_flags_lj_as_sp_zero_trunc, s_undefbehav_4_flags_lj_as_sp_zero_trunc_bench, "{return test(\"%-+ 06.04s\", s_hidden);}"},
-	{1, 140, "s_undefbehav_4_flags_sp_zero_lj_as_trunc", s_undefbehav_4_flags_sp_zero_lj_as_trunc, s_undefbehav_4_flags_sp_zero_lj_as_trunc_bench, "{return test(\"% 0-+6.04s\", s_hidden);}"},
-	{1, 141, "s_undefbehav_4_flags_as_lj_sp_zero__pads", s_undefbehav_4_flags_as_lj_sp_zero__pads, s_undefbehav_4_flags_as_lj_sp_zero__pads_bench, "{return test(\"%+- 06.09s\", s_hidden);}"},
-	{1, 142, "s_undefbehav_4_flags_sp_zero_as_lj__pads", s_undefbehav_4_flags_sp_zero_as_lj__pads, s_undefbehav_4_flags_sp_zero_as_lj__pads_bench, "{return test(\"% 0+-6.09s\", s_hidden);}"},
-	{1, 143, "s_undefbehav_4_flags_zero_sp_as_lj__pads", s_undefbehav_4_flags_zero_sp_as_lj__pads, s_undefbehav_4_flags_zero_sp_as_lj__pads_bench, "{return test(\"%0 +-6.09s\", s_hidden);}"},
-	{1, 144, "s_undefbehav_4_flags_as_lj_zero_sp__pads", s_undefbehav_4_flags_as_lj_zero_sp__pads, s_undefbehav_4_flags_as_lj_zero_sp__pads_bench, "{return test(\"%+-0 6.09s\", s_hidden);}"},
-	{1, 145, "s_undefbehav_4_flags_lj_as_sp_zero__pads", s_undefbehav_4_flags_lj_as_sp_zero__pads, s_undefbehav_4_flags_lj_as_sp_zero__pads_bench, "{return test(\"%-+ 06.09s\", s_hidden);}"},
-	{1, 146, "s_undefbehav_4_flags_sp_zero_lj_as__pads", s_undefbehav_4_flags_sp_zero_lj_as__pads, s_undefbehav_4_flags_sp_zero_lj_as__pads_bench, "{return test(\"% 0-+6.09s\", s_hidden);}"},
-	{1, 147, "s_undefbehav_0_2zero", s_undefbehav_0_2zero, s_undefbehav_0_2zero_bench, "{return test(\"%00s\", s_hidden);}"},
-	{1, 148, "s_undefbehav_0_3zero", s_undefbehav_0_3zero, s_undefbehav_0_3zero_bench, "{return test(\"%000s\", s_hidden);}"},
-	{1, 149, "s_undefbehav_0_4zero", s_undefbehav_0_4zero, s_undefbehav_0_4zero_bench, "{return test(\"%0000s\", s_hidden);}"},
-	{1, 150, "s_undefbehav_0_lj_2zero", s_undefbehav_0_lj_2zero, s_undefbehav_0_lj_2zero_bench, "{return test(\"%-00s\", s_hidden);}"},
-	{1, 151, "s_undefbehav_0_zero_lj_zero", s_undefbehav_0_zero_lj_zero, s_undefbehav_0_zero_lj_zero_bench, "{return test(\"%0-0s\", s_hidden);}"},
-	{1, 152, "s_undefbehav_0_2zero_lj", s_undefbehav_0_2zero_lj, s_undefbehav_0_2zero_lj_bench, "{return test(\"%00-s\", s_hidden);}"},
-	{1, 153, "s_undefbehav_0_width_3", s_undefbehav_0_width_3, s_undefbehav_0_width_3_bench, "{return test(\"%03s\", s_hidden);}"},
-	{1, 154, "s_undefbehav_0_width_9", s_undefbehav_0_width_9, s_undefbehav_0_width_9_bench, "{return test(\"%09s\", s_hidden);}"},
-	{1, 155, "s_undefbehav_as_0_width_3", s_undefbehav_as_0_width_3, s_undefbehav_as_0_width_3_bench, "{return test(\"%+03s\", s_hidden);}"},
-	{1, 156, "s_undefbehav_as_0_width_9", s_undefbehav_as_0_width_9, s_undefbehav_as_0_width_9_bench, "{return test(\"%+09s\", s_hidden);}"},
-	{1, 157, "s_undefbehav_lj_0_width_3", s_undefbehav_lj_0_width_3, s_undefbehav_lj_0_width_3_bench, "{return test(\"%-03s\", s_hidden);}"},
-	{1, 158, "s_undefbehav_lj_0_width_9", s_undefbehav_lj_0_width_9, s_undefbehav_lj_0_width_9_bench, "{return test(\"%-09s\", s_hidden);}"},
-	{1, 159, "s_undefbehav_as_sp_width_3", s_undefbehav_as_sp_width_3, s_undefbehav_as_sp_width_3_bench, "{return test(\"%+ 3s\", s_hidden);}"},
-	{1, 160, "s_undefbehav_as_sp_width_6", s_undefbehav_as_sp_width_6, s_undefbehav_as_sp_width_6_bench, "{return test(\"%+ 6s\", s_hidden);}"},
+	{0, 123, "s_undefbehav_4_flags_diff_order_1", s_undefbehav_4_flags_diff_order_1, s_undefbehav_4_flags_diff_order_1_bench, "{return test(\"%+- 06.06s\", s_hidden);}"},
+	{0, 124, "s_undefbehav_4_flags_diff_order_2", s_undefbehav_4_flags_diff_order_2, s_undefbehav_4_flags_diff_order_2_bench, "{return test(\"% 0+-6.06s\", s_hidden);}"},
+	{0, 125, "s_undefbehav_4_flags_diff_order_3", s_undefbehav_4_flags_diff_order_3, s_undefbehav_4_flags_diff_order_3_bench, "{return test(\"%0 +-6.06s\", s_hidden);}"},
+	{0, 126, "s_undefbehav_4_flags_diff_order_4", s_undefbehav_4_flags_diff_order_4, s_undefbehav_4_flags_diff_order_4_bench, "{return test(\"%+-0 6.06s\", s_hidden);}"},
+	{0, 127, "s_undefbehav_4_flags_diff_order_5", s_undefbehav_4_flags_diff_order_5, s_undefbehav_4_flags_diff_order_5_bench, "{return test(\"%-+ 06.06s\", s_hidden);}"},
+	{0, 128, "s_undefbehav_4_flags_diff_order_6", s_undefbehav_4_flags_diff_order_6, s_undefbehav_4_flags_diff_order_6_bench, "{return test(\"% -+06.06s\", s_hidden);}"},
+	{0, 129, "s_undefbehav_4_flags_sp_padded_diff_order_1", s_undefbehav_4_flags_sp_padded_diff_order_1, s_undefbehav_4_flags_sp_padded_diff_order_1_bench, "{return test(\"%+- 07.06s\", s_hidden);}"},
+	{0, 130, "s_undefbehav_4_flags_sp_padded_diff_order_2", s_undefbehav_4_flags_sp_padded_diff_order_2, s_undefbehav_4_flags_sp_padded_diff_order_2_bench, "{return test(\"% 0+-8.06s\", s_hidden);}"},
+	{0, 131, "s_undefbehav_4_flags_sp_padded_diff_order_3", s_undefbehav_4_flags_sp_padded_diff_order_3, s_undefbehav_4_flags_sp_padded_diff_order_3_bench, "{return test(\"%0 +-9.06s\", s_hidden);}"},
+	{0, 132, "s_undefbehav_4_flags_sp_padded_diff_order_4", s_undefbehav_4_flags_sp_padded_diff_order_4, s_undefbehav_4_flags_sp_padded_diff_order_4_bench, "{return test(\"%+-0 10.06s\", s_hidden);}"},
+	{0, 133, "s_undefbehav_4_flags_sp_padded_diff_order_5", s_undefbehav_4_flags_sp_padded_diff_order_5, s_undefbehav_4_flags_sp_padded_diff_order_5_bench, "{return test(\"%-+ 011.06s\", s_hidden);}"},
+	{0, 134, "s_undefbehav_4_flags_sp_padded_diff_order_6", s_undefbehav_4_flags_sp_padded_diff_order_6, s_undefbehav_4_flags_sp_padded_diff_order_6_bench, "{return test(\"% -+012.06s\", s_hidden);}"},
+	{0, 135, "s_undefbehav_4_flags_as_lj_sp_zero_trunc", s_undefbehav_4_flags_as_lj_sp_zero_trunc, s_undefbehav_4_flags_as_lj_sp_zero_trunc_bench, "{return test(\"%+- 06.04s\", s_hidden);}"},
+	{0, 136, "s_undefbehav_4_flags_sp_zero_as_lj_trunc", s_undefbehav_4_flags_sp_zero_as_lj_trunc, s_undefbehav_4_flags_sp_zero_as_lj_trunc_bench, "{return test(\"% 0+-6.04s\", s_hidden);}"},
+	{0, 137, "s_undefbehav_4_flags_zero_sp_as_lj_trunc", s_undefbehav_4_flags_zero_sp_as_lj_trunc, s_undefbehav_4_flags_zero_sp_as_lj_trunc_bench, "{return test(\"%0 +-6.04s\", s_hidden);}"},
+	{0, 138, "s_undefbehav_4_flags_as_lj_zero_sp_trunc", s_undefbehav_4_flags_as_lj_zero_sp_trunc, s_undefbehav_4_flags_as_lj_zero_sp_trunc_bench, "{return test(\"%+-0 6.04s\", s_hidden);}"},
+	{0, 139, "s_undefbehav_4_flags_lj_as_sp_zero_trunc", s_undefbehav_4_flags_lj_as_sp_zero_trunc, s_undefbehav_4_flags_lj_as_sp_zero_trunc_bench, "{return test(\"%-+ 06.04s\", s_hidden);}"},
+	{0, 140, "s_undefbehav_4_flags_sp_zero_lj_as_trunc", s_undefbehav_4_flags_sp_zero_lj_as_trunc, s_undefbehav_4_flags_sp_zero_lj_as_trunc_bench, "{return test(\"% 0-+6.04s\", s_hidden);}"},
+	{0, 141, "s_undefbehav_4_flags_as_lj_sp_zero__pads", s_undefbehav_4_flags_as_lj_sp_zero__pads, s_undefbehav_4_flags_as_lj_sp_zero__pads_bench, "{return test(\"%+- 06.09s\", s_hidden);}"},
+	{0, 142, "s_undefbehav_4_flags_sp_zero_as_lj__pads", s_undefbehav_4_flags_sp_zero_as_lj__pads, s_undefbehav_4_flags_sp_zero_as_lj__pads_bench, "{return test(\"% 0+-6.09s\", s_hidden);}"},
+	{0, 143, "s_undefbehav_4_flags_zero_sp_as_lj__pads", s_undefbehav_4_flags_zero_sp_as_lj__pads, s_undefbehav_4_flags_zero_sp_as_lj__pads_bench, "{return test(\"%0 +-6.09s\", s_hidden);}"},
+	{0, 144, "s_undefbehav_4_flags_as_lj_zero_sp__pads", s_undefbehav_4_flags_as_lj_zero_sp__pads, s_undefbehav_4_flags_as_lj_zero_sp__pads_bench, "{return test(\"%+-0 6.09s\", s_hidden);}"},
+	{0, 145, "s_undefbehav_4_flags_lj_as_sp_zero__pads", s_undefbehav_4_flags_lj_as_sp_zero__pads, s_undefbehav_4_flags_lj_as_sp_zero__pads_bench, "{return test(\"%-+ 06.09s\", s_hidden);}"},
+	{0, 146, "s_undefbehav_4_flags_sp_zero_lj_as__pads", s_undefbehav_4_flags_sp_zero_lj_as__pads, s_undefbehav_4_flags_sp_zero_lj_as__pads_bench, "{return test(\"% 0-+6.09s\", s_hidden);}"},
+	{0, 147, "s_undefbehav_0_2zero", s_undefbehav_0_2zero, s_undefbehav_0_2zero_bench, "{return test(\"%00s\", s_hidden);}"},
+	{0, 148, "s_undefbehav_0_3zero", s_undefbehav_0_3zero, s_undefbehav_0_3zero_bench, "{return test(\"%000s\", s_hidden);}"},
+	{0, 149, "s_undefbehav_0_4zero", s_undefbehav_0_4zero, s_undefbehav_0_4zero_bench, "{return test(\"%0000s\", s_hidden);}"},
+	{0, 150, "s_undefbehav_0_lj_2zero", s_undefbehav_0_lj_2zero, s_undefbehav_0_lj_2zero_bench, "{return test(\"%-00s\", s_hidden);}"},
+	{0, 151, "s_undefbehav_0_zero_lj_zero", s_undefbehav_0_zero_lj_zero, s_undefbehav_0_zero_lj_zero_bench, "{return test(\"%0-0s\", s_hidden);}"},
+	{0, 152, "s_undefbehav_0_2zero_lj", s_undefbehav_0_2zero_lj, s_undefbehav_0_2zero_lj_bench, "{return test(\"%00-s\", s_hidden);}"},
+	{0, 153, "s_undefbehav_0_width_3", s_undefbehav_0_width_3, s_undefbehav_0_width_3_bench, "{return test(\"%03s\", s_hidden);}"},
+	{0, 154, "s_undefbehav_0_width_9", s_undefbehav_0_width_9, s_undefbehav_0_width_9_bench, "{return test(\"%09s\", s_hidden);}"},
+	{0, 155, "s_undefbehav_as_0_width_3", s_undefbehav_as_0_width_3, s_undefbehav_as_0_width_3_bench, "{return test(\"%+03s\", s_hidden);}"},
+	{0, 156, "s_undefbehav_as_0_width_9", s_undefbehav_as_0_width_9, s_undefbehav_as_0_width_9_bench, "{return test(\"%+09s\", s_hidden);}"},
+	{0, 157, "s_undefbehav_lj_0_width_3", s_undefbehav_lj_0_width_3, s_undefbehav_lj_0_width_3_bench, "{return test(\"%-03s\", s_hidden);}"},
+	{0, 158, "s_undefbehav_lj_0_width_9", s_undefbehav_lj_0_width_9, s_undefbehav_lj_0_width_9_bench, "{return test(\"%-09s\", s_hidden);}"},
+	{0, 159, "s_undefbehav_as_sp_width_3", s_undefbehav_as_sp_width_3, s_undefbehav_as_sp_width_3_bench, "{return test(\"%+ 3s\", s_hidden);}"},
+	{0, 160, "s_undefbehav_as_sp_width_6", s_undefbehav_as_sp_width_6, s_undefbehav_as_sp_width_6_bench, "{return test(\"%+ 6s\", s_hidden);}"},
 	{1, 161, "i_basic_i_pos", i_basic_i_pos, i_basic_i_pos_bench, "{return test(\"this %i number\", 17);}"},
 	{1, 162, "i_basic_i_neg", i_basic_i_neg, i_basic_i_neg_bench, "{return test(\"this %i number\", -267);}"},
 	{1, 163, "i_basic_i_zero", i_basic_i_zero, i_basic_i_zero_bench, "{return test(\"this %i number\", 0);}"},
@@ -7884,10 +7884,10 @@ const t_test_entry g_unit_tests[] = {
 	{1, 485, "i_prec0val0_was_impl", i_prec0val0_was_impl, i_prec0val0_was_impl_bench, "{return test(\"%+5.i\", 0);}"},
 	{1, 486, "i_prec0val0_waslj", i_prec0val0_waslj, i_prec0val0_waslj_bench, "{return test(\"%+-5.0i\", 0);}"},
 	{1, 487, "i_prec0val0_waslj_impl", i_prec0val0_waslj_impl, i_prec0val0_waslj_impl_bench, "{return test(\"%+-5.i\", 0);}"},
-	{1, 488, "i_ftfc_hhdoutofrange1_might_be_undefbehav", i_ftfc_hhdoutofrange1_might_be_undefbehav, i_ftfc_hhdoutofrange1_might_be_undefbehav_bench, "{return test(\"%hhi\", -129);}"},
-	{1, 489, "i_ftfc_hhdoutofrange2_might_be_undefbehav", i_ftfc_hhdoutofrange2_might_be_undefbehav, i_ftfc_hhdoutofrange2_might_be_undefbehav_bench, "{return test(\"%hhi\", 128);}"},
-	{1, 490, "i_ftfc_hdoutofrange1_might_be_undefbehav", i_ftfc_hdoutofrange1_might_be_undefbehav, i_ftfc_hdoutofrange1_might_be_undefbehav_bench, "{return test(\"%hi\", 32768);}"},
-	{1, 491, "i_ftfc_hdoutofrange2_might_be_undefbehav", i_ftfc_hdoutofrange2_might_be_undefbehav, i_ftfc_hdoutofrange2_might_be_undefbehav_bench, "{return test(\"%hi\", -32769);}"},
+	{0, 488, "i_ftfc_hhdoutofrange1_might_be_undefbehav", i_ftfc_hhdoutofrange1_might_be_undefbehav, i_ftfc_hhdoutofrange1_might_be_undefbehav_bench, "{return test(\"%hhi\", -129);}"},
+	{0, 489, "i_ftfc_hhdoutofrange2_might_be_undefbehav", i_ftfc_hhdoutofrange2_might_be_undefbehav, i_ftfc_hhdoutofrange2_might_be_undefbehav_bench, "{return test(\"%hhi\", 128);}"},
+	{0, 490, "i_ftfc_hdoutofrange1_might_be_undefbehav", i_ftfc_hdoutofrange1_might_be_undefbehav, i_ftfc_hdoutofrange1_might_be_undefbehav_bench, "{return test(\"%hi\", 32768);}"},
+	{0, 491, "i_ftfc_hdoutofrange2_might_be_undefbehav", i_ftfc_hdoutofrange2_might_be_undefbehav, i_ftfc_hdoutofrange2_might_be_undefbehav_bench, "{return test(\"%hi\", -32769);}"},
 	{1, 492, "d_basic_i_pos", d_basic_i_pos, d_basic_i_pos_bench, "{return test(\"this %d number\", 17);}"},
 	{1, 493, "d_basic_i_neg", d_basic_i_neg, d_basic_i_neg_bench, "{return test(\"this %d number\", -267);}"},
 	{1, 494, "d_basic_i_zero", d_basic_i_zero, d_basic_i_zero_bench, "{return test(\"this %d number\", 0);}"},
@@ -8681,10 +8681,10 @@ const t_test_entry g_unit_tests[] = {
 	{1, 1282, "o_prec0val0_waflj", o_prec0val0_waflj, o_prec0val0_waflj_bench, "{return test(\"%#-5.0o\", 0);}"},
 	{1, 1283, "o_prec0val0_waflj_impl", o_prec0val0_waflj_impl, o_prec0val0_waflj_impl_bench, "{return test(\"%#-5.o\", 0);}"},
 	{1, 1284, "p_null", p_null, p_null_bench, "{return test(\"%p\", NULL);}"},
-	{1, 1285, "p_ftfc_literal_9w_prec2_undefbehav", p_ftfc_literal_9w_prec2_undefbehav, p_ftfc_literal_9w_prec2_undefbehav_bench, "{return test(\"%9.2p\n\", 1234);}"},
-	{1, 1286, "p_ftfc_literal_2w_prec9_undefbehav", p_ftfc_literal_2w_prec9_undefbehav, p_ftfc_literal_2w_prec9_undefbehav_bench, "{return test(\"%2.9p\n\", 1234);}"},
-	{1, 1287, "p_ftfc_zero_prec5_undefbehav", p_ftfc_zero_prec5_undefbehav, p_ftfc_zero_prec5_undefbehav_bench, "{return test(\"%.5p\", 0);}"},
-	{1, 1288, "p_ftfc_zero_prec0_undefbehav", p_ftfc_zero_prec0_undefbehav, p_ftfc_zero_prec0_undefbehav_bench, "{return test(\"%.0p\", 0);}"},
+	{0, 1285, "p_ftfc_literal_9w_prec2_undefbehav", p_ftfc_literal_9w_prec2_undefbehav, p_ftfc_literal_9w_prec2_undefbehav_bench, "{return test(\"%9.2p\n\", 1234);}"},
+	{0, 1286, "p_ftfc_literal_2w_prec9_undefbehav", p_ftfc_literal_2w_prec9_undefbehav, p_ftfc_literal_2w_prec9_undefbehav_bench, "{return test(\"%2.9p\n\", 1234);}"},
+	{0, 1287, "p_ftfc_zero_prec5_undefbehav", p_ftfc_zero_prec5_undefbehav, p_ftfc_zero_prec5_undefbehav_bench, "{return test(\"%.5p\", 0);}"},
+	{0, 1288, "p_ftfc_zero_prec0_undefbehav", p_ftfc_zero_prec0_undefbehav, p_ftfc_zero_prec0_undefbehav_bench, "{return test(\"%.0p\", 0);}"},
 	{1, 1289, "p_ftfc_5w_throwswarning", p_ftfc_5w_throwswarning, p_ftfc_5w_throwswarning_bench, "{return test(\"%5p\", 0);}"},
 	{1, 1290, "p_basic", p_basic, p_basic_bench, "{return test(\"%p%p%p%p%p%p%p%p%p%p%p%p\",&a01,&a02,&a03,&a04,&a05,&a06,&a07,&a08,&a09,&a10,&a11,&a12);}"},
 	{1, 1291, "p_width_fit", p_width_fit, p_width_fit_bench, "{return test(\"%70p%70p%70p%70p%70p%70p%70p%70p%70p%70p%70p%70p\",&a01,&a02,&a03,&a04,&a05,&a06,&a07,&a08,&a09,&a10,&a11,&a12);}"},
@@ -9078,28 +9078,28 @@ const t_test_entry g_unit_tests[] = {
 	{1, 1679, "f_asspr_prec1n_ignoreflag", f_asspr_prec1n_ignoreflag, f_asspr_prec1n_ignoreflag_bench, "{return test(\"% +.1f\", -7.3);}"},
 	{1, 1680, "f_asspr_prec3n_ignoreflag", f_asspr_prec3n_ignoreflag, f_asspr_prec3n_ignoreflag_bench, "{return test(\"% +.3f\", -7.3);}"},
 	{1, 1681, "f_asspr_prec6n_ignoreflag", f_asspr_prec6n_ignoreflag, f_asspr_prec6n_ignoreflag_bench, "{return test(\"% +.6f\", -7.3);}"},
-	{1, 1682, "f_overprec_might_be_undefbehav_100", f_overprec_might_be_undefbehav_100, f_overprec_might_be_undefbehav_100_bench, "{return test(\"%.100f\", 0.237);}"},
-	{1, 1683, "f_overprec_might_be_undefbehav_32", f_overprec_might_be_undefbehav_32, f_overprec_might_be_undefbehav_32_bench, "{return test(\"%.32f\", 0.237);}"},
-	{1, 1684, "f_overprec_might_be_undefbehav_4", f_overprec_might_be_undefbehav_4, f_overprec_might_be_undefbehav_4_bench, "{return test(\"%.4f\", 0.237);}"},
-	{1, 1685, "f_overprec_might_be_undefbehav_1000", f_overprec_might_be_undefbehav_1000, f_overprec_might_be_undefbehav_1000_bench, "{return test(\"%.4f\", -0.106577568068517810765107851705167);}"},
-	{1, 1686, "f_overprec_might_be_undefbehav_10_from_0", f_overprec_might_be_undefbehav_10_from_0, f_overprec_might_be_undefbehav_10_from_0_bench, "{return test(\"%.10f\", 0.0);}"},
-	{1, 1687, "f_overprec_might_be_undefbehav_2000", f_overprec_might_be_undefbehav_2000, f_overprec_might_be_undefbehav_2000_bench, "{return test(\"%.2000f\", 623.28376510723481);}"},
-	{1, 1688, "f_overprec_might_be_undefbehav_dblmin", f_overprec_might_be_undefbehav_dblmin, f_overprec_might_be_undefbehav_dblmin_bench, "{return test(\"%.2000f\", DBL_MIN);}"},
-	{1, 1689, "f_overprec_might_be_undefbehav_ndblmin", f_overprec_might_be_undefbehav_ndblmin, f_overprec_might_be_undefbehav_ndblmin_bench, "{return test(\"%.2000f\", -DBL_MIN);}"},
-	{1, 1690, "f_limits_dblmax_prec0_notmandatory", f_limits_dblmax_prec0_notmandatory, f_limits_dblmax_prec0_notmandatory_bench, "{return test(\"%.0f\", DBL_MAX);}"},
-	{1, 1691, "f_limits_dblmax_prec3_notmandatory", f_limits_dblmax_prec3_notmandatory, f_limits_dblmax_prec3_notmandatory_bench, "{return test(\"%.3f\", DBL_MAX);}"},
-	{1, 1692, "f_limits_dblmax_precd_notmandatory", f_limits_dblmax_precd_notmandatory, f_limits_dblmax_precd_notmandatory_bench, "{return test(\"%f\", DBL_MAX);}"},
-	{1, 1693, "f_limits_dblmax_prec8_notmandatory", f_limits_dblmax_prec8_notmandatory, f_limits_dblmax_prec8_notmandatory_bench, "{return test(\"%.8f\", DBL_MAX);}"},
-	{1, 1694, "f_stress_limits_dblmax_prec12_notmandatory", f_stress_limits_dblmax_prec12_notmandatory, f_stress_limits_dblmax_prec12_notmandatory_bench, "{return test(\"%.12f\", DBL_MAX);}"},
-	{1, 1695, "f_stress_limits_dblmax_prec16_notmandatory", f_stress_limits_dblmax_prec16_notmandatory, f_stress_limits_dblmax_prec16_notmandatory_bench, "{return test(\"%.16f\", DBL_MAX);}"},
-	{1, 1696, "f_stress_limits_dblmax_prec18_notmandatory", f_stress_limits_dblmax_prec18_notmandatory, f_stress_limits_dblmax_prec18_notmandatory_bench, "{return test(\"%.18f\", DBL_MAX);}"},
-	{1, 1697, "f_limits_ndblmax_prec0_notmandatory", f_limits_ndblmax_prec0_notmandatory, f_limits_ndblmax_prec0_notmandatory_bench, "{return test(\"%.0f\", -DBL_MAX);}"},
-	{1, 1698, "f_limits_ndblmax_prec3_notmandatory", f_limits_ndblmax_prec3_notmandatory, f_limits_ndblmax_prec3_notmandatory_bench, "{return test(\"%.3f\", -DBL_MAX);}"},
-	{1, 1699, "f_limits_ndblmax_precd_notmandatory", f_limits_ndblmax_precd_notmandatory, f_limits_ndblmax_precd_notmandatory_bench, "{return test(\"%f\", -DBL_MAX);}"},
-	{1, 1700, "f_limits_ndblmax_prec8_notmandatory", f_limits_ndblmax_prec8_notmandatory, f_limits_ndblmax_prec8_notmandatory_bench, "{return test(\"%.8f\", -DBL_MAX);}"},
-	{1, 1701, "f_stress_limits_ndblmax_prec12_notmandatory", f_stress_limits_ndblmax_prec12_notmandatory, f_stress_limits_ndblmax_prec12_notmandatory_bench, "{return test(\"%.12f\", -DBL_MAX);}"},
-	{1, 1702, "f_stress_limits_ndblmax_prec16_notmandatory", f_stress_limits_ndblmax_prec16_notmandatory, f_stress_limits_ndblmax_prec16_notmandatory_bench, "{return test(\"%.16f\", -DBL_MAX);}"},
-	{1, 1703, "f_stress_limits_ndblmax_prec18_notmandatory", f_stress_limits_ndblmax_prec18_notmandatory, f_stress_limits_ndblmax_prec18_notmandatory_bench, "{return test(\"%.18f\", -DBL_MAX);}"},
+	{0, 1682, "f_overprec_might_be_undefbehav_100", f_overprec_might_be_undefbehav_100, f_overprec_might_be_undefbehav_100_bench, "{return test(\"%.100f\", 0.237);}"},
+	{0, 1683, "f_overprec_might_be_undefbehav_32", f_overprec_might_be_undefbehav_32, f_overprec_might_be_undefbehav_32_bench, "{return test(\"%.32f\", 0.237);}"},
+	{0, 1684, "f_overprec_might_be_undefbehav_4", f_overprec_might_be_undefbehav_4, f_overprec_might_be_undefbehav_4_bench, "{return test(\"%.4f\", 0.237);}"},
+	{0, 1685, "f_overprec_might_be_undefbehav_1000", f_overprec_might_be_undefbehav_1000, f_overprec_might_be_undefbehav_1000_bench, "{return test(\"%.4f\", -0.106577568068517810765107851705167);}"},
+	{0, 1686, "f_overprec_might_be_undefbehav_10_from_0", f_overprec_might_be_undefbehav_10_from_0, f_overprec_might_be_undefbehav_10_from_0_bench, "{return test(\"%.10f\", 0.0);}"},
+	{0, 1687, "f_overprec_might_be_undefbehav_2000", f_overprec_might_be_undefbehav_2000, f_overprec_might_be_undefbehav_2000_bench, "{return test(\"%.2000f\", 623.28376510723481);}"},
+	{0, 1688, "f_overprec_might_be_undefbehav_dblmin", f_overprec_might_be_undefbehav_dblmin, f_overprec_might_be_undefbehav_dblmin_bench, "{return test(\"%.2000f\", DBL_MIN);}"},
+	{0, 1689, "f_overprec_might_be_undefbehav_ndblmin", f_overprec_might_be_undefbehav_ndblmin, f_overprec_might_be_undefbehav_ndblmin_bench, "{return test(\"%.2000f\", -DBL_MIN);}"},
+	{0, 1690, "f_limits_dblmax_prec0_notmandatory", f_limits_dblmax_prec0_notmandatory, f_limits_dblmax_prec0_notmandatory_bench, "{return test(\"%.0f\", DBL_MAX);}"},
+	{0, 1691, "f_limits_dblmax_prec3_notmandatory", f_limits_dblmax_prec3_notmandatory, f_limits_dblmax_prec3_notmandatory_bench, "{return test(\"%.3f\", DBL_MAX);}"},
+	{0, 1692, "f_limits_dblmax_precd_notmandatory", f_limits_dblmax_precd_notmandatory, f_limits_dblmax_precd_notmandatory_bench, "{return test(\"%f\", DBL_MAX);}"},
+	{0, 1693, "f_limits_dblmax_prec8_notmandatory", f_limits_dblmax_prec8_notmandatory, f_limits_dblmax_prec8_notmandatory_bench, "{return test(\"%.8f\", DBL_MAX);}"},
+	{0, 1694, "f_stress_limits_dblmax_prec12_notmandatory", f_stress_limits_dblmax_prec12_notmandatory, f_stress_limits_dblmax_prec12_notmandatory_bench, "{return test(\"%.12f\", DBL_MAX);}"},
+	{0, 1695, "f_stress_limits_dblmax_prec16_notmandatory", f_stress_limits_dblmax_prec16_notmandatory, f_stress_limits_dblmax_prec16_notmandatory_bench, "{return test(\"%.16f\", DBL_MAX);}"},
+	{0, 1696, "f_stress_limits_dblmax_prec18_notmandatory", f_stress_limits_dblmax_prec18_notmandatory, f_stress_limits_dblmax_prec18_notmandatory_bench, "{return test(\"%.18f\", DBL_MAX);}"},
+	{0, 1697, "f_limits_ndblmax_prec0_notmandatory", f_limits_ndblmax_prec0_notmandatory, f_limits_ndblmax_prec0_notmandatory_bench, "{return test(\"%.0f\", -DBL_MAX);}"},
+	{0, 1698, "f_limits_ndblmax_prec3_notmandatory", f_limits_ndblmax_prec3_notmandatory, f_limits_ndblmax_prec3_notmandatory_bench, "{return test(\"%.3f\", -DBL_MAX);}"},
+	{0, 1699, "f_limits_ndblmax_precd_notmandatory", f_limits_ndblmax_precd_notmandatory, f_limits_ndblmax_precd_notmandatory_bench, "{return test(\"%f\", -DBL_MAX);}"},
+	{0, 1700, "f_limits_ndblmax_prec8_notmandatory", f_limits_ndblmax_prec8_notmandatory, f_limits_ndblmax_prec8_notmandatory_bench, "{return test(\"%.8f\", -DBL_MAX);}"},
+	{0, 1701, "f_stress_limits_ndblmax_prec12_notmandatory", f_stress_limits_ndblmax_prec12_notmandatory, f_stress_limits_ndblmax_prec12_notmandatory_bench, "{return test(\"%.12f\", -DBL_MAX);}"},
+	{0, 1702, "f_stress_limits_ndblmax_prec16_notmandatory", f_stress_limits_ndblmax_prec16_notmandatory, f_stress_limits_ndblmax_prec16_notmandatory_bench, "{return test(\"%.16f\", -DBL_MAX);}"},
+	{0, 1703, "f_stress_limits_ndblmax_prec18_notmandatory", f_stress_limits_ndblmax_prec18_notmandatory, f_stress_limits_ndblmax_prec18_notmandatory_bench, "{return test(\"%.18f\", -DBL_MAX);}"},
 	{1, 1704, "f_limits_dblmin_prec0", f_limits_dblmin_prec0, f_limits_dblmin_prec0_bench, "{return test(\"%.0f\", DBL_MIN);}"},
 	{1, 1705, "f_limits_dblmin_prec3", f_limits_dblmin_prec3, f_limits_dblmin_prec3_bench, "{return test(\"%.3f\", DBL_MIN);}"},
 	{1, 1706, "f_limits_dblmin_precd", f_limits_dblmin_precd, f_limits_dblmin_precd_bench, "{return test(\"%f\", DBL_MIN);}"},
@@ -9114,46 +9114,46 @@ const t_test_entry g_unit_tests[] = {
 	{1, 1715, "f_stress_limits_ndblmin_prec12", f_stress_limits_ndblmin_prec12, f_stress_limits_ndblmin_prec12_bench, "{return test(\"%.12f\", -DBL_MIN);}"},
 	{1, 1716, "f_stress_limits_ndblmin_prec16", f_stress_limits_ndblmin_prec16, f_stress_limits_ndblmin_prec16_bench, "{return test(\"%.16f\", -DBL_MIN);}"},
 	{1, 1717, "f_stress_limits_ndblmin_prec18", f_stress_limits_ndblmin_prec18, f_stress_limits_ndblmin_prec18_bench, "{return test(\"%.18f\", -DBL_MIN);}"},
-	{1, 1718, "f_reserved_values_inf", f_reserved_values_inf, f_reserved_values_inf_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1719, "f_reserved_values_ninf", f_reserved_values_ninf, f_reserved_values_ninf_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1720, "f_reserved_values_nan", f_reserved_values_nan, f_reserved_values_nan_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1721, "f_reserved_values_pzero", f_reserved_values_pzero, f_reserved_values_pzero_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1722, "f_reserved_values_nzero", f_reserved_values_nzero, f_reserved_values_nzero_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
-	{1, 1723, "f_reserved_values_inf_6w", f_reserved_values_inf_6w, f_reserved_values_inf_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1724, "f_reserved_values_ninf_6w", f_reserved_values_ninf_6w, f_reserved_values_ninf_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1725, "f_reserved_values_nan_6w", f_reserved_values_nan_6w, f_reserved_values_nan_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1726, "f_reserved_values_pzero_6w", f_reserved_values_pzero_6w, f_reserved_values_pzero_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1727, "f_reserved_values_nzero_6w", f_reserved_values_nzero_6w, f_reserved_values_nzero_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
-	{1, 1728, "f_reserved_values_inf_6wlj", f_reserved_values_inf_6wlj, f_reserved_values_inf_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1729, "f_reserved_values_ninf_6wlj", f_reserved_values_ninf_6wlj, f_reserved_values_ninf_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1730, "f_reserved_values_nan_6wlj", f_reserved_values_nan_6wlj, f_reserved_values_nan_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1731, "f_reserved_values_pzero_6wlj", f_reserved_values_pzero_6wlj, f_reserved_values_pzero_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1732, "f_reserved_values_nzero_6wlj", f_reserved_values_nzero_6wlj, f_reserved_values_nzero_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
-	{1, 1733, "f_reserved_values_inf_6was", f_reserved_values_inf_6was, f_reserved_values_inf_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1734, "f_reserved_values_ninf_6was", f_reserved_values_ninf_6was, f_reserved_values_ninf_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1735, "f_reserved_values_nan_6was", f_reserved_values_nan_6was, f_reserved_values_nan_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1736, "f_reserved_values_pzero_6was", f_reserved_values_pzero_6was, f_reserved_values_pzero_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1737, "f_reserved_values_nzero_6was", f_reserved_values_nzero_6was, f_reserved_values_nzero_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
-	{1, 1738, "f_reserved_values_inf_10w_prec7", f_reserved_values_inf_10w_prec7, f_reserved_values_inf_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1739, "f_reserved_values_ninf_10w_prec7", f_reserved_values_ninf_10w_prec7, f_reserved_values_ninf_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1740, "f_reserved_values_nan_10w_prec7", f_reserved_values_nan_10w_prec7, f_reserved_values_nan_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1741, "f_reserved_values_pzero_10w_prec7", f_reserved_values_pzero_10w_prec7, f_reserved_values_pzero_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1742, "f_reserved_values_nzero_10w_prec7", f_reserved_values_nzero_10w_prec7, f_reserved_values_nzero_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
-	{1, 1743, "f_reserved_values_inf_sp_prec7", f_reserved_values_inf_sp_prec7, f_reserved_values_inf_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1744, "f_reserved_values_ninf_sp_prec7", f_reserved_values_ninf_sp_prec7, f_reserved_values_ninf_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1745, "f_reserved_values_nan_sp_prec7", f_reserved_values_nan_sp_prec7, f_reserved_values_nan_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1746, "f_reserved_values_pzero_sp_prec7", f_reserved_values_pzero_sp_prec7, f_reserved_values_pzero_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1747, "f_reserved_values_nzero_sp_prec7", f_reserved_values_nzero_sp_prec7, f_reserved_values_nzero_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
-	{1, 1748, "f_reserved_values_inf_sp", f_reserved_values_inf_sp, f_reserved_values_inf_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1749, "f_reserved_values_ninf_sp", f_reserved_values_ninf_sp, f_reserved_values_ninf_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1750, "f_reserved_values_nan_sp", f_reserved_values_nan_sp, f_reserved_values_nan_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1751, "f_reserved_values_pzero_sp", f_reserved_values_pzero_sp, f_reserved_values_pzero_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1752, "f_reserved_values_nzero_sp", f_reserved_values_nzero_sp, f_reserved_values_nzero_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
-	{1, 1753, "f_reserved_values_inf_6wzp", f_reserved_values_inf_6wzp, f_reserved_values_inf_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
-	{1, 1754, "f_reserved_values_ninf_6wzp", f_reserved_values_ninf_6wzp, f_reserved_values_ninf_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
-	{1, 1755, "f_reserved_values_nan_6wzp", f_reserved_values_nan_6wzp, f_reserved_values_nan_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
-	{1, 1756, "f_reserved_values_pzero_6wzp", f_reserved_values_pzero_6wzp, f_reserved_values_pzero_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
-	{1, 1757, "f_reserved_values_nzero_6wzp", f_reserved_values_nzero_6wzp, f_reserved_values_nzero_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1718, "f_reserved_values_inf", f_reserved_values_inf, f_reserved_values_inf_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1719, "f_reserved_values_ninf", f_reserved_values_ninf, f_reserved_values_ninf_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1720, "f_reserved_values_nan", f_reserved_values_nan, f_reserved_values_nan_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1721, "f_reserved_values_pzero", f_reserved_values_pzero, f_reserved_values_pzero_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1722, "f_reserved_values_nzero", f_reserved_values_nzero, f_reserved_values_nzero_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1723, "f_reserved_values_inf_6w", f_reserved_values_inf_6w, f_reserved_values_inf_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1724, "f_reserved_values_ninf_6w", f_reserved_values_ninf_6w, f_reserved_values_ninf_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1725, "f_reserved_values_nan_6w", f_reserved_values_nan_6w, f_reserved_values_nan_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1726, "f_reserved_values_pzero_6w", f_reserved_values_pzero_6w, f_reserved_values_pzero_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1727, "f_reserved_values_nzero_6w", f_reserved_values_nzero_6w, f_reserved_values_nzero_6w_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1728, "f_reserved_values_inf_6wlj", f_reserved_values_inf_6wlj, f_reserved_values_inf_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1729, "f_reserved_values_ninf_6wlj", f_reserved_values_ninf_6wlj, f_reserved_values_ninf_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1730, "f_reserved_values_nan_6wlj", f_reserved_values_nan_6wlj, f_reserved_values_nan_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1731, "f_reserved_values_pzero_6wlj", f_reserved_values_pzero_6wlj, f_reserved_values_pzero_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1732, "f_reserved_values_nzero_6wlj", f_reserved_values_nzero_6wlj, f_reserved_values_nzero_6wlj_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1733, "f_reserved_values_inf_6was", f_reserved_values_inf_6was, f_reserved_values_inf_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1734, "f_reserved_values_ninf_6was", f_reserved_values_ninf_6was, f_reserved_values_ninf_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1735, "f_reserved_values_nan_6was", f_reserved_values_nan_6was, f_reserved_values_nan_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1736, "f_reserved_values_pzero_6was", f_reserved_values_pzero_6was, f_reserved_values_pzero_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1737, "f_reserved_values_nzero_6was", f_reserved_values_nzero_6was, f_reserved_values_nzero_6was_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1738, "f_reserved_values_inf_10w_prec7", f_reserved_values_inf_10w_prec7, f_reserved_values_inf_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1739, "f_reserved_values_ninf_10w_prec7", f_reserved_values_ninf_10w_prec7, f_reserved_values_ninf_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1740, "f_reserved_values_nan_10w_prec7", f_reserved_values_nan_10w_prec7, f_reserved_values_nan_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1741, "f_reserved_values_pzero_10w_prec7", f_reserved_values_pzero_10w_prec7, f_reserved_values_pzero_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1742, "f_reserved_values_nzero_10w_prec7", f_reserved_values_nzero_10w_prec7, f_reserved_values_nzero_10w_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1743, "f_reserved_values_inf_sp_prec7", f_reserved_values_inf_sp_prec7, f_reserved_values_inf_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1744, "f_reserved_values_ninf_sp_prec7", f_reserved_values_ninf_sp_prec7, f_reserved_values_ninf_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1745, "f_reserved_values_nan_sp_prec7", f_reserved_values_nan_sp_prec7, f_reserved_values_nan_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1746, "f_reserved_values_pzero_sp_prec7", f_reserved_values_pzero_sp_prec7, f_reserved_values_pzero_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1747, "f_reserved_values_nzero_sp_prec7", f_reserved_values_nzero_sp_prec7, f_reserved_values_nzero_sp_prec7_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1748, "f_reserved_values_inf_sp", f_reserved_values_inf_sp, f_reserved_values_inf_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1749, "f_reserved_values_ninf_sp", f_reserved_values_ninf_sp, f_reserved_values_ninf_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1750, "f_reserved_values_nan_sp", f_reserved_values_nan_sp, f_reserved_values_nan_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1751, "f_reserved_values_pzero_sp", f_reserved_values_pzero_sp, f_reserved_values_pzero_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1752, "f_reserved_values_nzero_sp", f_reserved_values_nzero_sp, f_reserved_values_nzero_sp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
+	{0, 1753, "f_reserved_values_inf_6wzp", f_reserved_values_inf_6wzp, f_reserved_values_inf_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_INF;"},
+	{0, 1754, "f_reserved_values_ninf_6wzp", f_reserved_values_ninf_6wzp, f_reserved_values_ninf_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NINF;"},
+	{0, 1755, "f_reserved_values_nan_6wzp", f_reserved_values_nan_6wzp, f_reserved_values_nan_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NAN;"},
+	{0, 1756, "f_reserved_values_pzero_6wzp", f_reserved_values_pzero_6wzp, f_reserved_values_pzero_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_PZERO;"},
+	{0, 1757, "f_reserved_values_nzero_6wzp", f_reserved_values_nzero_6wzp, f_reserved_values_nzero_6wzp_bench, "{double special; *((unsigned long *)(&special)) = DBL_NZERO;"},
 	{1, 1758, "f_L_basic_1", f_L_basic_1, f_L_basic_1_bench, "{return test(\"this %Lf float\", 1.5l);}"},
 	{1, 1759, "f_L_basic_fltonly", f_L_basic_fltonly, f_L_basic_fltonly_bench, "{return test(\"%Lf\", 7.5l);}"},
 	{1, 1760, "f_L_basic_whole", f_L_basic_whole, f_L_basic_whole_bench, "{return test(\"%Lf\", 1.0l);}"},
@@ -9323,68 +9323,68 @@ const t_test_entry g_unit_tests[] = {
 	{1, 1924, "f_L_stress_prec20_rndd", f_L_stress_prec20_rndd, f_L_stress_prec20_rndd_bench, "{return test(\"%.20f\",        1.025978548534310422034);}"},
 	{1, 1925, "f_L_stress_prec20_limits_tiny", f_L_stress_prec20_limits_tiny, f_L_stress_prec20_limits_tiny_bench, "{return test(\"%.20f\", 0.000000000000000000010);}"},
 	{1, 1926, "f_L_stress_prec20_limits_big", f_L_stress_prec20_limits_big, f_L_stress_prec20_limits_big_bench, "{return test(\"%.20f\",  0.999999999999999999990);}"},
-	{1, 1927, "f_L_reserved_values_inf", f_L_reserved_values_inf, f_L_reserved_values_inf_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1928, "f_L_reserved_values_ninf", f_L_reserved_values_ninf, f_L_reserved_values_ninf_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1929, "f_L_reserved_values_nan", f_L_reserved_values_nan, f_L_reserved_values_nan_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1930, "f_L_reserved_values_pzero", f_L_reserved_values_pzero, f_L_reserved_values_pzero_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1931, "f_L_reserved_values_nzero", f_L_reserved_values_nzero, f_L_reserved_values_nzero_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1932, "f_L_reserved_values_inf_6w", f_L_reserved_values_inf_6w, f_L_reserved_values_inf_6w_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1933, "f_L_reserved_values_ninf_6w", f_L_reserved_values_ninf_6w, f_L_reserved_values_ninf_6w_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1934, "f_L_reserved_values_nan_6w", f_L_reserved_values_nan_6w, f_L_reserved_values_nan_6w_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1935, "f_L_reserved_values_pzero_6w", f_L_reserved_values_pzero_6w, f_L_reserved_values_pzero_6w_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1936, "f_L_reserved_values_nzero_6w", f_L_reserved_values_nzero_6w, f_L_reserved_values_nzero_6w_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1937, "f_L_reserved_values_inf_6wlj", f_L_reserved_values_inf_6wlj, f_L_reserved_values_inf_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1938, "f_L_reserved_values_ninf_6wlj", f_L_reserved_values_ninf_6wlj, f_L_reserved_values_ninf_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1939, "f_L_reserved_values_nan_6wlj", f_L_reserved_values_nan_6wlj, f_L_reserved_values_nan_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1940, "f_L_reserved_values_pzero_6wlj", f_L_reserved_values_pzero_6wlj, f_L_reserved_values_pzero_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1941, "f_L_reserved_values_nzero_6wlj", f_L_reserved_values_nzero_6wlj, f_L_reserved_values_nzero_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1942, "f_L_reserved_values_inf_6was", f_L_reserved_values_inf_6was, f_L_reserved_values_inf_6was_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1943, "f_L_reserved_values_ninf_6was", f_L_reserved_values_ninf_6was, f_L_reserved_values_ninf_6was_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1944, "f_L_reserved_values_nan_6was", f_L_reserved_values_nan_6was, f_L_reserved_values_nan_6was_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1945, "f_L_reserved_values_pzero_6was", f_L_reserved_values_pzero_6was, f_L_reserved_values_pzero_6was_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1946, "f_L_reserved_values_nzero_6was", f_L_reserved_values_nzero_6was, f_L_reserved_values_nzero_6was_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1947, "f_L_reserved_values_inf_10w_prec7", f_L_reserved_values_inf_10w_prec7, f_L_reserved_values_inf_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1948, "f_L_reserved_values_ninf_10w_prec7", f_L_reserved_values_ninf_10w_prec7, f_L_reserved_values_ninf_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1949, "f_L_reserved_values_nan_10w_prec7", f_L_reserved_values_nan_10w_prec7, f_L_reserved_values_nan_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1950, "f_L_reserved_values_pzero_10w_prec7", f_L_reserved_values_pzero_10w_prec7, f_L_reserved_values_pzero_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1951, "f_L_reserved_values_nzero_10w_prec7", f_L_reserved_values_nzero_10w_prec7, f_L_reserved_values_nzero_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1952, "f_L_reserved_values_inf_sp_prec7", f_L_reserved_values_inf_sp_prec7, f_L_reserved_values_inf_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1953, "f_L_reserved_values_ninf_sp_prec7", f_L_reserved_values_ninf_sp_prec7, f_L_reserved_values_ninf_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1954, "f_L_reserved_values_nan_sp_prec7", f_L_reserved_values_nan_sp_prec7, f_L_reserved_values_nan_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1955, "f_L_reserved_values_pzero_sp_prec7", f_L_reserved_values_pzero_sp_prec7, f_L_reserved_values_pzero_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1956, "f_L_reserved_values_nzero_sp_prec7", f_L_reserved_values_nzero_sp_prec7, f_L_reserved_values_nzero_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1957, "f_L_reserved_values_inf_sp", f_L_reserved_values_inf_sp, f_L_reserved_values_inf_sp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1958, "f_L_reserved_values_ninf_sp", f_L_reserved_values_ninf_sp, f_L_reserved_values_ninf_sp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1959, "f_L_reserved_values_nan_sp", f_L_reserved_values_nan_sp, f_L_reserved_values_nan_sp_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1960, "f_L_reserved_values_pzero_sp", f_L_reserved_values_pzero_sp, f_L_reserved_values_pzero_sp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1961, "f_L_reserved_values_nzero_sp", f_L_reserved_values_nzero_sp, f_L_reserved_values_nzero_sp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1962, "f_L_reserved_values_inf_6wzp", f_L_reserved_values_inf_6wzp, f_L_reserved_values_inf_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
-	{1, 1963, "f_L_reserved_values_ninf_6wzp", f_L_reserved_values_ninf_6wzp, f_L_reserved_values_ninf_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1964, "f_L_reserved_values_nan_6wzp", f_L_reserved_values_nan_6wzp, f_L_reserved_values_nan_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
-	{1, 1965, "f_L_reserved_values_pzero_6wzp", f_L_reserved_values_pzero_6wzp, f_L_reserved_values_pzero_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1966, "f_L_reserved_values_nzero_6wzp", f_L_reserved_values_nzero_6wzp, f_L_reserved_values_nzero_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
-	{1, 1967, "f_L_overprec_might_be_undefbehav_100", f_L_overprec_might_be_undefbehav_100, f_L_overprec_might_be_undefbehav_100_bench, "{return test(\"%.100Lf\", 0.237l);}"},
-	{1, 1968, "f_L_overprec_might_be_undefbehav_32", f_L_overprec_might_be_undefbehav_32, f_L_overprec_might_be_undefbehav_32_bench, "{return test(\"%.32Lf\", 0.237l);}"},
-	{1, 1969, "f_L_overprec_might_be_undefbehav_4", f_L_overprec_might_be_undefbehav_4, f_L_overprec_might_be_undefbehav_4_bench, "{return test(\"%.4Lf\", 0.237l);}"},
-	{1, 1970, "f_L_overprec_might_be_undefbehav_1000", f_L_overprec_might_be_undefbehav_1000, f_L_overprec_might_be_undefbehav_1000_bench, "{return test(\"%.4Lf\", -0.106577568068517810765107851705167l);}"},
-	{1, 1971, "f_L_overprec_might_be_undefbehav_10_from_0", f_L_overprec_might_be_undefbehav_10_from_0, f_L_overprec_might_be_undefbehav_10_from_0_bench, "{return test(\"%.10Lf\", 0.0l);}"},
-	{1, 1972, "f_L_overprec_might_be_undefbehav_2000", f_L_overprec_might_be_undefbehav_2000, f_L_overprec_might_be_undefbehav_2000_bench, "{return test(\"%.2000Lf\", 623.28376510723481l);}"},
-	{1, 1973, "f_L_overprec_might_be_undefbehav_dblmin", f_L_overprec_might_be_undefbehav_dblmin, f_L_overprec_might_be_undefbehav_dblmin_bench, "{return test(\"%.2000Lf\", LDBL_MIN);}"},
-	{1, 1974, "f_L_overprec_might_be_undefbehav_ndblmin", f_L_overprec_might_be_undefbehav_ndblmin, f_L_overprec_might_be_undefbehav_ndblmin_bench, "{return test(\"%.2000Lf\", -LDBL_MIN);}"},
-	{1, 1975, "f_L_limits_dblmax_prec0_notmandatory", f_L_limits_dblmax_prec0_notmandatory, f_L_limits_dblmax_prec0_notmandatory_bench, "{return test(\"%.0Lf\", LDBL_MAX);}"},
-	{1, 1976, "f_L_limits_dblmax_prec3_notmandatory", f_L_limits_dblmax_prec3_notmandatory, f_L_limits_dblmax_prec3_notmandatory_bench, "{return test(\"%.3Lf\", LDBL_MAX);}"},
-	{1, 1977, "f_L_limits_dblmax_precd_notmandatory", f_L_limits_dblmax_precd_notmandatory, f_L_limits_dblmax_precd_notmandatory_bench, "{return test(\"%Lf\", LDBL_MAX);}"},
-	{1, 1978, "f_L_limits_dblmax_prec8_notmandatory", f_L_limits_dblmax_prec8_notmandatory, f_L_limits_dblmax_prec8_notmandatory_bench, "{return test(\"%.8Lf\", LDBL_MAX);}"},
-	{1, 1979, "f_L_stress_limits_dblmax_prec12_notmandatory", f_L_stress_limits_dblmax_prec12_notmandatory, f_L_stress_limits_dblmax_prec12_notmandatory_bench, "{return test(\"%.12Lf\", LDBL_MAX);}"},
-	{1, 1980, "f_L_stress_limits_dblmax_prec16_notmandatory", f_L_stress_limits_dblmax_prec16_notmandatory, f_L_stress_limits_dblmax_prec16_notmandatory_bench, "{return test(\"%.16Lf\", LDBL_MAX);}"},
-	{1, 1981, "f_L_stress_limits_dblmax_prec18_notmandatory", f_L_stress_limits_dblmax_prec18_notmandatory, f_L_stress_limits_dblmax_prec18_notmandatory_bench, "{return test(\"%.18Lf\", LDBL_MAX);}"},
-	{1, 1982, "f_L_limits_ndblmax_prec0_notmandatory", f_L_limits_ndblmax_prec0_notmandatory, f_L_limits_ndblmax_prec0_notmandatory_bench, "{return test(\"%.0Lf\", -LDBL_MAX);}"},
-	{1, 1983, "f_L_limits_ndblmax_prec3_notmandatory", f_L_limits_ndblmax_prec3_notmandatory, f_L_limits_ndblmax_prec3_notmandatory_bench, "{return test(\"%.3Lf\", -LDBL_MAX);}"},
-	{1, 1984, "f_L_limits_ndblmax_precd_notmandatory", f_L_limits_ndblmax_precd_notmandatory, f_L_limits_ndblmax_precd_notmandatory_bench, "{return test(\"%Lf\", -LDBL_MAX);}"},
-	{1, 1985, "f_L_limits_ndblmax_prec8_notmandatory", f_L_limits_ndblmax_prec8_notmandatory, f_L_limits_ndblmax_prec8_notmandatory_bench, "{return test(\"%.8Lf\", -LDBL_MAX);}"},
-	{1, 1986, "f_L_stress_limits_ndblmax_prec12_notmandatory", f_L_stress_limits_ndblmax_prec12_notmandatory, f_L_stress_limits_ndblmax_prec12_notmandatory_bench, "{return test(\"%.12Lf\", -LDBL_MAX);}"},
-	{1, 1987, "f_L_stress_limits_ndblmax_prec16_notmandatory", f_L_stress_limits_ndblmax_prec16_notmandatory, f_L_stress_limits_ndblmax_prec16_notmandatory_bench, "{return test(\"%.16Lf\", -LDBL_MAX);}"},
-	{1, 1988, "f_L_stress_limits_ndblmax_prec18_notmandatory", f_L_stress_limits_ndblmax_prec18_notmandatory, f_L_stress_limits_ndblmax_prec18_notmandatory_bench, "{return test(\"%.18Lf\", -LDBL_MAX);}"},
+	{0, 1927, "f_L_reserved_values_inf", f_L_reserved_values_inf, f_L_reserved_values_inf_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1928, "f_L_reserved_values_ninf", f_L_reserved_values_ninf, f_L_reserved_values_ninf_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1929, "f_L_reserved_values_nan", f_L_reserved_values_nan, f_L_reserved_values_nan_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1930, "f_L_reserved_values_pzero", f_L_reserved_values_pzero, f_L_reserved_values_pzero_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1931, "f_L_reserved_values_nzero", f_L_reserved_values_nzero, f_L_reserved_values_nzero_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1932, "f_L_reserved_values_inf_6w", f_L_reserved_values_inf_6w, f_L_reserved_values_inf_6w_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1933, "f_L_reserved_values_ninf_6w", f_L_reserved_values_ninf_6w, f_L_reserved_values_ninf_6w_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1934, "f_L_reserved_values_nan_6w", f_L_reserved_values_nan_6w, f_L_reserved_values_nan_6w_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1935, "f_L_reserved_values_pzero_6w", f_L_reserved_values_pzero_6w, f_L_reserved_values_pzero_6w_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1936, "f_L_reserved_values_nzero_6w", f_L_reserved_values_nzero_6w, f_L_reserved_values_nzero_6w_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1937, "f_L_reserved_values_inf_6wlj", f_L_reserved_values_inf_6wlj, f_L_reserved_values_inf_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1938, "f_L_reserved_values_ninf_6wlj", f_L_reserved_values_ninf_6wlj, f_L_reserved_values_ninf_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1939, "f_L_reserved_values_nan_6wlj", f_L_reserved_values_nan_6wlj, f_L_reserved_values_nan_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1940, "f_L_reserved_values_pzero_6wlj", f_L_reserved_values_pzero_6wlj, f_L_reserved_values_pzero_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1941, "f_L_reserved_values_nzero_6wlj", f_L_reserved_values_nzero_6wlj, f_L_reserved_values_nzero_6wlj_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1942, "f_L_reserved_values_inf_6was", f_L_reserved_values_inf_6was, f_L_reserved_values_inf_6was_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1943, "f_L_reserved_values_ninf_6was", f_L_reserved_values_ninf_6was, f_L_reserved_values_ninf_6was_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1944, "f_L_reserved_values_nan_6was", f_L_reserved_values_nan_6was, f_L_reserved_values_nan_6was_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1945, "f_L_reserved_values_pzero_6was", f_L_reserved_values_pzero_6was, f_L_reserved_values_pzero_6was_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1946, "f_L_reserved_values_nzero_6was", f_L_reserved_values_nzero_6was, f_L_reserved_values_nzero_6was_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1947, "f_L_reserved_values_inf_10w_prec7", f_L_reserved_values_inf_10w_prec7, f_L_reserved_values_inf_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1948, "f_L_reserved_values_ninf_10w_prec7", f_L_reserved_values_ninf_10w_prec7, f_L_reserved_values_ninf_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1949, "f_L_reserved_values_nan_10w_prec7", f_L_reserved_values_nan_10w_prec7, f_L_reserved_values_nan_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1950, "f_L_reserved_values_pzero_10w_prec7", f_L_reserved_values_pzero_10w_prec7, f_L_reserved_values_pzero_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1951, "f_L_reserved_values_nzero_10w_prec7", f_L_reserved_values_nzero_10w_prec7, f_L_reserved_values_nzero_10w_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1952, "f_L_reserved_values_inf_sp_prec7", f_L_reserved_values_inf_sp_prec7, f_L_reserved_values_inf_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1953, "f_L_reserved_values_ninf_sp_prec7", f_L_reserved_values_ninf_sp_prec7, f_L_reserved_values_ninf_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1954, "f_L_reserved_values_nan_sp_prec7", f_L_reserved_values_nan_sp_prec7, f_L_reserved_values_nan_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1955, "f_L_reserved_values_pzero_sp_prec7", f_L_reserved_values_pzero_sp_prec7, f_L_reserved_values_pzero_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1956, "f_L_reserved_values_nzero_sp_prec7", f_L_reserved_values_nzero_sp_prec7, f_L_reserved_values_nzero_sp_prec7_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1957, "f_L_reserved_values_inf_sp", f_L_reserved_values_inf_sp, f_L_reserved_values_inf_sp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1958, "f_L_reserved_values_ninf_sp", f_L_reserved_values_ninf_sp, f_L_reserved_values_ninf_sp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1959, "f_L_reserved_values_nan_sp", f_L_reserved_values_nan_sp, f_L_reserved_values_nan_sp_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1960, "f_L_reserved_values_pzero_sp", f_L_reserved_values_pzero_sp, f_L_reserved_values_pzero_sp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1961, "f_L_reserved_values_nzero_sp", f_L_reserved_values_nzero_sp, f_L_reserved_values_nzero_sp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1962, "f_L_reserved_values_inf_6wzp", f_L_reserved_values_inf_6wzp, f_L_reserved_values_inf_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;"},
+	{0, 1963, "f_L_reserved_values_ninf_6wzp", f_L_reserved_values_ninf_6wzp, f_L_reserved_values_ninf_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1964, "f_L_reserved_values_nan_6wzp", f_L_reserved_values_nan_6wzp, f_L_reserved_values_nan_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;"},
+	{0, 1965, "f_L_reserved_values_pzero_6wzp", f_L_reserved_values_pzero_6wzp, f_L_reserved_values_pzero_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1966, "f_L_reserved_values_nzero_6wzp", f_L_reserved_values_nzero_6wzp, f_L_reserved_values_nzero_6wzp_bench, "{long double special; *((unsigned long *)(&special)) = 0ull;FTPF_LDBL_BYTE5(special) = 0;"},
+	{0, 1967, "f_L_overprec_might_be_undefbehav_100", f_L_overprec_might_be_undefbehav_100, f_L_overprec_might_be_undefbehav_100_bench, "{return test(\"%.100Lf\", 0.237l);}"},
+	{0, 1968, "f_L_overprec_might_be_undefbehav_32", f_L_overprec_might_be_undefbehav_32, f_L_overprec_might_be_undefbehav_32_bench, "{return test(\"%.32Lf\", 0.237l);}"},
+	{0, 1969, "f_L_overprec_might_be_undefbehav_4", f_L_overprec_might_be_undefbehav_4, f_L_overprec_might_be_undefbehav_4_bench, "{return test(\"%.4Lf\", 0.237l);}"},
+	{0, 1970, "f_L_overprec_might_be_undefbehav_1000", f_L_overprec_might_be_undefbehav_1000, f_L_overprec_might_be_undefbehav_1000_bench, "{return test(\"%.4Lf\", -0.106577568068517810765107851705167l);}"},
+	{0, 1971, "f_L_overprec_might_be_undefbehav_10_from_0", f_L_overprec_might_be_undefbehav_10_from_0, f_L_overprec_might_be_undefbehav_10_from_0_bench, "{return test(\"%.10Lf\", 0.0l);}"},
+	{0, 1972, "f_L_overprec_might_be_undefbehav_2000", f_L_overprec_might_be_undefbehav_2000, f_L_overprec_might_be_undefbehav_2000_bench, "{return test(\"%.2000Lf\", 623.28376510723481l);}"},
+	{0, 1973, "f_L_overprec_might_be_undefbehav_dblmin", f_L_overprec_might_be_undefbehav_dblmin, f_L_overprec_might_be_undefbehav_dblmin_bench, "{return test(\"%.2000Lf\", LDBL_MIN);}"},
+	{0, 1974, "f_L_overprec_might_be_undefbehav_ndblmin", f_L_overprec_might_be_undefbehav_ndblmin, f_L_overprec_might_be_undefbehav_ndblmin_bench, "{return test(\"%.2000Lf\", -LDBL_MIN);}"},
+	{0, 1975, "f_L_limits_dblmax_prec0_notmandatory", f_L_limits_dblmax_prec0_notmandatory, f_L_limits_dblmax_prec0_notmandatory_bench, "{return test(\"%.0Lf\", LDBL_MAX);}"},
+	{0, 1976, "f_L_limits_dblmax_prec3_notmandatory", f_L_limits_dblmax_prec3_notmandatory, f_L_limits_dblmax_prec3_notmandatory_bench, "{return test(\"%.3Lf\", LDBL_MAX);}"},
+	{0, 1977, "f_L_limits_dblmax_precd_notmandatory", f_L_limits_dblmax_precd_notmandatory, f_L_limits_dblmax_precd_notmandatory_bench, "{return test(\"%Lf\", LDBL_MAX);}"},
+	{0, 1978, "f_L_limits_dblmax_prec8_notmandatory", f_L_limits_dblmax_prec8_notmandatory, f_L_limits_dblmax_prec8_notmandatory_bench, "{return test(\"%.8Lf\", LDBL_MAX);}"},
+	{0, 1979, "f_L_stress_limits_dblmax_prec12_notmandatory", f_L_stress_limits_dblmax_prec12_notmandatory, f_L_stress_limits_dblmax_prec12_notmandatory_bench, "{return test(\"%.12Lf\", LDBL_MAX);}"},
+	{0, 1980, "f_L_stress_limits_dblmax_prec16_notmandatory", f_L_stress_limits_dblmax_prec16_notmandatory, f_L_stress_limits_dblmax_prec16_notmandatory_bench, "{return test(\"%.16Lf\", LDBL_MAX);}"},
+	{0, 1981, "f_L_stress_limits_dblmax_prec18_notmandatory", f_L_stress_limits_dblmax_prec18_notmandatory, f_L_stress_limits_dblmax_prec18_notmandatory_bench, "{return test(\"%.18Lf\", LDBL_MAX);}"},
+	{0, 1982, "f_L_limits_ndblmax_prec0_notmandatory", f_L_limits_ndblmax_prec0_notmandatory, f_L_limits_ndblmax_prec0_notmandatory_bench, "{return test(\"%.0Lf\", -LDBL_MAX);}"},
+	{0, 1983, "f_L_limits_ndblmax_prec3_notmandatory", f_L_limits_ndblmax_prec3_notmandatory, f_L_limits_ndblmax_prec3_notmandatory_bench, "{return test(\"%.3Lf\", -LDBL_MAX);}"},
+	{0, 1984, "f_L_limits_ndblmax_precd_notmandatory", f_L_limits_ndblmax_precd_notmandatory, f_L_limits_ndblmax_precd_notmandatory_bench, "{return test(\"%Lf\", -LDBL_MAX);}"},
+	{0, 1985, "f_L_limits_ndblmax_prec8_notmandatory", f_L_limits_ndblmax_prec8_notmandatory, f_L_limits_ndblmax_prec8_notmandatory_bench, "{return test(\"%.8Lf\", -LDBL_MAX);}"},
+	{0, 1986, "f_L_stress_limits_ndblmax_prec12_notmandatory", f_L_stress_limits_ndblmax_prec12_notmandatory, f_L_stress_limits_ndblmax_prec12_notmandatory_bench, "{return test(\"%.12Lf\", -LDBL_MAX);}"},
+	{0, 1987, "f_L_stress_limits_ndblmax_prec16_notmandatory", f_L_stress_limits_ndblmax_prec16_notmandatory, f_L_stress_limits_ndblmax_prec16_notmandatory_bench, "{return test(\"%.16Lf\", -LDBL_MAX);}"},
+	{0, 1988, "f_L_stress_limits_ndblmax_prec18_notmandatory", f_L_stress_limits_ndblmax_prec18_notmandatory, f_L_stress_limits_ndblmax_prec18_notmandatory_bench, "{return test(\"%.18Lf\", -LDBL_MAX);}"},
 	{1, 1989, "f_L_limits_dblmin_prec0", f_L_limits_dblmin_prec0, f_L_limits_dblmin_prec0_bench, "{return test(\"%.0Lf\", LDBL_MIN);}"},
 	{1, 1990, "f_L_limits_dblmin_prec3", f_L_limits_dblmin_prec3, f_L_limits_dblmin_prec3_bench, "{return test(\"%.3Lf\", LDBL_MIN);}"},
 	{1, 1991, "f_L_limits_dblmin_precd", f_L_limits_dblmin_precd, f_L_limits_dblmin_precd_bench, "{return test(\"%Lf\", LDBL_MIN);}"},
@@ -9399,22 +9399,22 @@ const t_test_entry g_unit_tests[] = {
 	{1, 2000, "f_L_stress_limits_ndblmin_prec12", f_L_stress_limits_ndblmin_prec12, f_L_stress_limits_ndblmin_prec12_bench, "{return test(\"%.12Lf\", -LDBL_MIN);}"},
 	{1, 2001, "f_L_stress_limits_ndblmin_prec16", f_L_stress_limits_ndblmin_prec16, f_L_stress_limits_ndblmin_prec16_bench, "{return test(\"%.16Lf\", -LDBL_MIN);}"},
 	{1, 2002, "f_L_stress_limits_ndblmin_prec18", f_L_stress_limits_ndblmin_prec18, f_L_stress_limits_ndblmin_prec18_bench, "{return test(\"%.18Lf\", -LDBL_MIN);}"},
-	{1, 2003, "argnum_simple_swap", argnum_simple_swap, argnum_simple_swap_bench, "{return test(\"%2$s, %1$s!\", \"world\", \"hello\");} //CAN-SEGFAULT"},
-	{1, 2004, "argnum_swap_around_pct", argnum_swap_around_pct, argnum_swap_around_pct_bench, "{return test(\"%2$s %% %1$s!\", \"world\", \"hello\");} //CAN-SEGFAULT"},
-	{1, 2005, "argnum_swap_strfloat", argnum_swap_strfloat, argnum_swap_strfloat_bench, "{return test(\"%2$f, %1$s!\", \"world\", 5.75);} //CAN-SEGFAULT"},
-	{1, 2006, "argnum_swap_floatstr", argnum_swap_floatstr, argnum_swap_floatstr_bench, "{return test(\"%2$s, %1$f!\", 5.75, \"abc\");} //CAN-SEGFAULT"},
-	{1, 2007, "argnum_swap_ldblstr", argnum_swap_ldblstr, argnum_swap_ldblstr_bench, "{return test(\"%2$s, %1$Lf!\", 5.75L, \"abc\");} //CAN-SEGFAULT"},
-	{1, 2008, "argnum_swap_strldbl", argnum_swap_strldbl, argnum_swap_strldbl_bench, "{return test(\"%2$Lf, %1$s!\", \"world\", 5.75L);} //CAN-SEGFAULT"},
-	{1, 2009, "argnum_swap_ldblchar", argnum_swap_ldblchar, argnum_swap_ldblchar_bench, "{return test(\"%2$c, %1$Lf!\", 5.75L, 'c');} //CAN-SEGFAULT"},
-	{1, 2010, "argnum_swap_charldbl", argnum_swap_charldbl, argnum_swap_charldbl_bench, "{return test(\"%2$Lf, %1$c!\", 'c', 5.75L);} //CAN-SEGFAULT"},
-	{1, 2011, "argnum_swap_floatstr_around_pct", argnum_swap_floatstr_around_pct, argnum_swap_floatstr_around_pct_bench, "{return test(\"%2$s %% %1$f!\", 5.75, \"abc\");} //CAN-SEGFAULT"},
-	{1, 2012, "argnum_swap_strfloat_around_pct", argnum_swap_strfloat_around_pct, argnum_swap_strfloat_around_pct_bench, "{return test(\"%2$f %% %1$s!\", \"world\", 5.75);} //CAN-SEGFAULT"},
-	{1, 2013, "argnum_loopback_throwswarning", argnum_loopback_throwswarning, argnum_loopback_throwswarning_bench, "{return test(\"%i %i %1$i %i %i\", 1, 2, 3);} //CAN-SEGFAULT"},
-	{1, 2014, "argnum_onlyone", argnum_onlyone, argnum_onlyone_bench, "{return test(\"%1$s %1$s %1$s %1$s %1$s %1$s %1$s %1$s.\", \"buffalo\");} //CAN-SEGFAULT"},
-	{1, 2015, "argnum_start2thentofloatthen1_throwswarning", argnum_start2thentofloatthen1_throwswarning, argnum_start2thentofloatthen1_throwswarning_bench, "{return test(\"%2$s %f %1$i\", 5, \"abc\", 5.75f);} //CAN-SEGFAULT"},
-	{1, 2016, "argnum_ultimate_1_throwswarning", argnum_ultimate_1_throwswarning, argnum_ultimate_1_throwswarning_bench, "{return test(\"%2$s %f %1$i %s %f %2$s %1$i %s %1$i %3$f %1$i %s %f %2$s\", 5, \"abc\", 5.75);} //CAN-SEGFAULT"},
-	{1, 2017, "argnum_ultimate_2_throwswarning", argnum_ultimate_2_throwswarning, argnum_ultimate_2_throwswarning_bench, "{return test(\"%4$.5s %.4i %lli %1$Lf %c %7$20.6s %5$i %2$c %1$.2Lf %c %i\", //CAN-SEGFAULT"},
-	{1, 2018, "argnum_ultimate_2_with_pct_throwswarning", argnum_ultimate_2_with_pct_throwswarning, argnum_ultimate_2_with_pct_throwswarning_bench, "{return test(\"%% %4$.5s %.4i %lli %% %1$Lf %c %7$20.6s %5$i %% %2$c %1$.2Lf %c %i\", //CAN-SEGFAULT"},
+	{0, 2003, "argnum_simple_swap", argnum_simple_swap, argnum_simple_swap_bench, "{return test(\"%2$s, %1$s!\", \"world\", \"hello\");} //CAN-SEGFAULT"},
+	{0, 2004, "argnum_swap_around_pct", argnum_swap_around_pct, argnum_swap_around_pct_bench, "{return test(\"%2$s %% %1$s!\", \"world\", \"hello\");} //CAN-SEGFAULT"},
+	{0, 2005, "argnum_swap_strfloat", argnum_swap_strfloat, argnum_swap_strfloat_bench, "{return test(\"%2$f, %1$s!\", \"world\", 5.75);} //CAN-SEGFAULT"},
+	{0, 2006, "argnum_swap_floatstr", argnum_swap_floatstr, argnum_swap_floatstr_bench, "{return test(\"%2$s, %1$f!\", 5.75, \"abc\");} //CAN-SEGFAULT"},
+	{0, 2007, "argnum_swap_ldblstr", argnum_swap_ldblstr, argnum_swap_ldblstr_bench, "{return test(\"%2$s, %1$Lf!\", 5.75L, \"abc\");} //CAN-SEGFAULT"},
+	{0, 2008, "argnum_swap_strldbl", argnum_swap_strldbl, argnum_swap_strldbl_bench, "{return test(\"%2$Lf, %1$s!\", \"world\", 5.75L);} //CAN-SEGFAULT"},
+	{0, 2009, "argnum_swap_ldblchar", argnum_swap_ldblchar, argnum_swap_ldblchar_bench, "{return test(\"%2$c, %1$Lf!\", 5.75L, 'c');} //CAN-SEGFAULT"},
+	{0, 2010, "argnum_swap_charldbl", argnum_swap_charldbl, argnum_swap_charldbl_bench, "{return test(\"%2$Lf, %1$c!\", 'c', 5.75L);} //CAN-SEGFAULT"},
+	{0, 2011, "argnum_swap_floatstr_around_pct", argnum_swap_floatstr_around_pct, argnum_swap_floatstr_around_pct_bench, "{return test(\"%2$s %% %1$f!\", 5.75, \"abc\");} //CAN-SEGFAULT"},
+	{0, 2012, "argnum_swap_strfloat_around_pct", argnum_swap_strfloat_around_pct, argnum_swap_strfloat_around_pct_bench, "{return test(\"%2$f %% %1$s!\", \"world\", 5.75);} //CAN-SEGFAULT"},
+	{0, 2013, "argnum_loopback_throwswarning", argnum_loopback_throwswarning, argnum_loopback_throwswarning_bench, "{return test(\"%i %i %1$i %i %i\", 1, 2, 3);} //CAN-SEGFAULT"},
+	{0, 2014, "argnum_onlyone", argnum_onlyone, argnum_onlyone_bench, "{return test(\"%1$s %1$s %1$s %1$s %1$s %1$s %1$s %1$s.\", \"buffalo\");} //CAN-SEGFAULT"},
+	{0, 2015, "argnum_start2thentofloatthen1_throwswarning", argnum_start2thentofloatthen1_throwswarning, argnum_start2thentofloatthen1_throwswarning_bench, "{return test(\"%2$s %f %1$i\", 5, \"abc\", 5.75f);} //CAN-SEGFAULT"},
+	{0, 2016, "argnum_ultimate_1_throwswarning", argnum_ultimate_1_throwswarning, argnum_ultimate_1_throwswarning_bench, "{return test(\"%2$s %f %1$i %s %f %2$s %1$i %s %1$i %3$f %1$i %s %f %2$s\", 5, \"abc\", 5.75);} //CAN-SEGFAULT"},
+	{0, 2017, "argnum_ultimate_2_throwswarning", argnum_ultimate_2_throwswarning, argnum_ultimate_2_throwswarning_bench, "{return test(\"%4$.5s %.4i %lli %1$Lf %c %7$20.6s %5$i %2$c %1$.2Lf %c %i\", //CAN-SEGFAULT"},
+	{0, 2018, "argnum_ultimate_2_with_pct_throwswarning", argnum_ultimate_2_with_pct_throwswarning, argnum_ultimate_2_with_pct_throwswarning_bench, "{return test(\"%% %4$.5s %.4i %lli %% %1$Lf %c %7$20.6s %5$i %% %2$c %1$.2Lf %c %i\", //CAN-SEGFAULT"},
 	{1, 2019, "mix_test_0", mix_test_0, mix_test_0_bench, "{return test("},
 	{1, 2020, "mix_test_1", mix_test_1, mix_test_1_bench, "{return test("},
 	{1, 2021, "mix_test_2", mix_test_2, mix_test_2_bench, "{return test("},
@@ -9696,27 +9696,27 @@ const t_test_entry g_unit_tests[] = {
 	{1, 2297, "mix_successive_68", mix_successive_68, mix_successive_68_bench, "{return ( test(\"%i\", mx_i) + test(\"%hi\", mx_hi));}"},
 	{1, 2298, "mix_successive_69", mix_successive_69, mix_successive_69_bench, "{return ( test(\"%Lf\", mx_Lf) + test(\"%li\", mx_li));}"},
 	{1, 2299, "mix_successive_70", mix_successive_70, mix_successive_70_bench, "{return ( test(\"%o\", mx_u) + test(\"%li\", mx_li));}"},
-	{1, 2300, "nocrash_noarg_1_notmandatory", nocrash_noarg_1_notmandatory, nocrash_noarg_1_notmandatory_bench, "{return test(\"%1$\"); }"},
-	{1, 2301, "nocrash_noarg_2_notmandatory", nocrash_noarg_2_notmandatory, nocrash_noarg_2_notmandatory_bench, "{return test(\"%0\"); }"},
-	{1, 2302, "nocrash_noarg_3_notmandatory", nocrash_noarg_3_notmandatory, nocrash_noarg_3_notmandatory_bench, "{return test(\"% \"); }"},
-	{1, 2303, "nocrash_noarg_4_notmandatory", nocrash_noarg_4_notmandatory, nocrash_noarg_4_notmandatory_bench, "{return test(\"%#\"); }"},
-	{1, 2304, "nocrash_noarg_5_notmandatory", nocrash_noarg_5_notmandatory, nocrash_noarg_5_notmandatory_bench, "{return test(\"%-\"); }"},
-	{1, 2305, "nocrash_noarg_6_notmandatory", nocrash_noarg_6_notmandatory, nocrash_noarg_6_notmandatory_bench, "{return test(\"%+\"); }"},
-	{1, 2306, "nocrash_noarg_9_notmandatory", nocrash_noarg_9_notmandatory, nocrash_noarg_9_notmandatory_bench, "{return test(\"%23\"); }"},
-	{1, 2307, "nocrash_noarg_10_notmandatory", nocrash_noarg_10_notmandatory, nocrash_noarg_10_notmandatory_bench, "{return test(\"%.\"); }"},
-	{1, 2308, "nocrash_noarg_11_notmandatory", nocrash_noarg_11_notmandatory, nocrash_noarg_11_notmandatory_bench, "{return test(\"%hh\"); }"},
-	{1, 2309, "nocrash_noarg_12_notmandatory", nocrash_noarg_12_notmandatory, nocrash_noarg_12_notmandatory_bench, "{return test(\"%h\"); }"},
-	{1, 2310, "nocrash_noarg_13_notmandatory", nocrash_noarg_13_notmandatory, nocrash_noarg_13_notmandatory_bench, "{return test(\"%ll\"); }"},
-	{1, 2311, "nocrash_noarg_14_notmandatory", nocrash_noarg_14_notmandatory, nocrash_noarg_14_notmandatory_bench, "{return test(\"%l\"); }"},
-	{1, 2312, "nocrash_noarg_15_notmandatory", nocrash_noarg_15_notmandatory, nocrash_noarg_15_notmandatory_bench, "{return test(\"%L\"); }"},
-	{1, 2313, "nocrash_noarg_16_notmandatory", nocrash_noarg_16_notmandatory, nocrash_noarg_16_notmandatory_bench, "{return test(\"%p\"); }"},
-	{1, 2314, "nocrash_noarg_17_notmandatory", nocrash_noarg_17_notmandatory, nocrash_noarg_17_notmandatory_bench, "{return test(\"%d\"); }"},
-	{1, 2315, "nocrash_noarg_19_notmandatory", nocrash_noarg_19_notmandatory, nocrash_noarg_19_notmandatory_bench, "{return test(\"%u\"); }"},
-	{1, 2316, "nocrash_noarg_20_notmandatory", nocrash_noarg_20_notmandatory, nocrash_noarg_20_notmandatory_bench, "{return test(\"%x\"); }"},
-	{1, 2317, "nocrash_noarg_21_notmandatory", nocrash_noarg_21_notmandatory, nocrash_noarg_21_notmandatory_bench, "{return test(\"%X\"); }"},
-	{1, 2318, "nocrash_noarg_22_notmandatory", nocrash_noarg_22_notmandatory, nocrash_noarg_22_notmandatory_bench, "{return test(\"%f\"); }"},
-	{1, 2319, "nocrash_noarg_24_notmandatory", nocrash_noarg_24_notmandatory, nocrash_noarg_24_notmandatory_bench, "{return test(\"%c\"); }"},
-	{1, 2320, "nocrash_noarg_25_notmandatory", nocrash_noarg_25_notmandatory, nocrash_noarg_25_notmandatory_bench, "{return test(\"%o\"); }"},
+	{0, 2300, "nocrash_noarg_1_notmandatory", nocrash_noarg_1_notmandatory, nocrash_noarg_1_notmandatory_bench, "{return test(\"%1$\"); }"},
+	{0, 2301, "nocrash_noarg_2_notmandatory", nocrash_noarg_2_notmandatory, nocrash_noarg_2_notmandatory_bench, "{return test(\"%0\"); }"},
+	{0, 2302, "nocrash_noarg_3_notmandatory", nocrash_noarg_3_notmandatory, nocrash_noarg_3_notmandatory_bench, "{return test(\"% \"); }"},
+	{0, 2303, "nocrash_noarg_4_notmandatory", nocrash_noarg_4_notmandatory, nocrash_noarg_4_notmandatory_bench, "{return test(\"%#\"); }"},
+	{0, 2304, "nocrash_noarg_5_notmandatory", nocrash_noarg_5_notmandatory, nocrash_noarg_5_notmandatory_bench, "{return test(\"%-\"); }"},
+	{0, 2305, "nocrash_noarg_6_notmandatory", nocrash_noarg_6_notmandatory, nocrash_noarg_6_notmandatory_bench, "{return test(\"%+\"); }"},
+	{0, 2306, "nocrash_noarg_9_notmandatory", nocrash_noarg_9_notmandatory, nocrash_noarg_9_notmandatory_bench, "{return test(\"%23\"); }"},
+	{0, 2307, "nocrash_noarg_10_notmandatory", nocrash_noarg_10_notmandatory, nocrash_noarg_10_notmandatory_bench, "{return test(\"%.\"); }"},
+	{0, 2308, "nocrash_noarg_11_notmandatory", nocrash_noarg_11_notmandatory, nocrash_noarg_11_notmandatory_bench, "{return test(\"%hh\"); }"},
+	{0, 2309, "nocrash_noarg_12_notmandatory", nocrash_noarg_12_notmandatory, nocrash_noarg_12_notmandatory_bench, "{return test(\"%h\"); }"},
+	{0, 2310, "nocrash_noarg_13_notmandatory", nocrash_noarg_13_notmandatory, nocrash_noarg_13_notmandatory_bench, "{return test(\"%ll\"); }"},
+	{0, 2311, "nocrash_noarg_14_notmandatory", nocrash_noarg_14_notmandatory, nocrash_noarg_14_notmandatory_bench, "{return test(\"%l\"); }"},
+	{0, 2312, "nocrash_noarg_15_notmandatory", nocrash_noarg_15_notmandatory, nocrash_noarg_15_notmandatory_bench, "{return test(\"%L\"); }"},
+	{0, 2313, "nocrash_noarg_16_notmandatory", nocrash_noarg_16_notmandatory, nocrash_noarg_16_notmandatory_bench, "{return test(\"%p\"); }"},
+	{0, 2314, "nocrash_noarg_17_notmandatory", nocrash_noarg_17_notmandatory, nocrash_noarg_17_notmandatory_bench, "{return test(\"%d\"); }"},
+	{0, 2315, "nocrash_noarg_19_notmandatory", nocrash_noarg_19_notmandatory, nocrash_noarg_19_notmandatory_bench, "{return test(\"%u\"); }"},
+	{0, 2316, "nocrash_noarg_20_notmandatory", nocrash_noarg_20_notmandatory, nocrash_noarg_20_notmandatory_bench, "{return test(\"%x\"); }"},
+	{0, 2317, "nocrash_noarg_21_notmandatory", nocrash_noarg_21_notmandatory, nocrash_noarg_21_notmandatory_bench, "{return test(\"%X\"); }"},
+	{0, 2318, "nocrash_noarg_22_notmandatory", nocrash_noarg_22_notmandatory, nocrash_noarg_22_notmandatory_bench, "{return test(\"%f\"); }"},
+	{0, 2319, "nocrash_noarg_24_notmandatory", nocrash_noarg_24_notmandatory, nocrash_noarg_24_notmandatory_bench, "{return test(\"%c\"); }"},
+	{0, 2320, "nocrash_noarg_25_notmandatory", nocrash_noarg_25_notmandatory, nocrash_noarg_25_notmandatory_bench, "{return test(\"%o\"); }"},
 	{1, 2321, "nocrash_nullarg_1", nocrash_nullarg_1, nocrash_nullarg_1_bench, "{return test(\"%1$s\", NULL); }"},
 	{1, 2322, "nocrash_nullarg_2", nocrash_nullarg_2, nocrash_nullarg_2_bench, "{return test(\"%0s\", NULL); }"},
 	{1, 2323, "nocrash_nullarg_3", nocrash_nullarg_3, nocrash_nullarg_3_bench, "{return test(\"% s\", NULL); }"},
@@ -9944,18 +9944,18 @@ const t_test_entry g_unit_tests[] = {
 	{1, 2545, "moul_ld_10_throwswarning", moul_ld_10_throwswarning, moul_ld_10_throwswarning_bench, "{return test(\"%%ld 0000042 == |%ld|\n\", 0000042);}"},
 	{1, 2546, "moul_ld_11_throwswarning", moul_ld_11_throwswarning, moul_ld_11_throwswarning_bench, "{return test(\"%%ld \t == |%ld|\n\", '\t');}"},
 	{1, 2547, "moul_ld_12_throwswarning", moul_ld_12_throwswarning, moul_ld_12_throwswarning_bench, "{return test(\"%%ld Lydie == |%ld|\n\", 'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2548, "moul_D_1_notmandatory", moul_D_1_notmandatory, moul_D_1_notmandatory_bench, "{return test(\"%D\", 42);}"},
-	{1, 2549, "moul_D_2_notmandatory", moul_D_2_notmandatory, moul_D_2_notmandatory_bench, "{return test(\"Kashim a %D histoires à raconter\", 1001);}"},
-	{1, 2550, "moul_D_3_notmandatory", moul_D_3_notmandatory, moul_D_3_notmandatory_bench, "{return test(\"Il fait au moins %D\n\", -8000);}"},
-	{1, 2551, "moul_D_4_notmandatory", moul_D_4_notmandatory, moul_D_4_notmandatory_bench, "{return test(\"%D\", -0);}"},
-	{1, 2552, "moul_D_5_notmandatory", moul_D_5_notmandatory, moul_D_5_notmandatory_bench, "{return test(\"%D\", 0);}"},
-	{1, 2553, "moul_D_6_notmandatory", moul_D_6_notmandatory, moul_D_6_notmandatory_bench, "{return test(\"%D\", INT_MAX);}"},
-	{1, 2554, "moul_D_7_notmandatory", moul_D_7_notmandatory, moul_D_7_notmandatory_bench, "{return test(\"%D\", INT_MIN);}"},
-	{1, 2555, "moul_D_8_notmandatory", moul_D_8_notmandatory, moul_D_8_notmandatory_bench, "{return test(\"%D\", INT_MIN - 1);}"},
-	{1, 2556, "moul_D_9_notmandatory", moul_D_9_notmandatory, moul_D_9_notmandatory_bench, "{return test(\"%D\", INT_MAX + 1);}"},
-	{1, 2557, "moul_D_10_notmandatory", moul_D_10_notmandatory, moul_D_10_notmandatory_bench, "{return test(\"%%D 0000042 == |%D|\n\", 0000042);}"},
-	{1, 2558, "moul_D_11_notmandatory", moul_D_11_notmandatory, moul_D_11_notmandatory_bench, "{return test(\"%%D \t == |%D|\n\", '\t');}"},
-	{1, 2559, "moul_D_12_notmandatory", moul_D_12_notmandatory, moul_D_12_notmandatory_bench, "{return test(\"%%D Lydie == |%D|\n\", 'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2548, "moul_D_1_notmandatory", moul_D_1_notmandatory, moul_D_1_notmandatory_bench, "{return test(\"%D\", 42);}"},
+	{0, 2549, "moul_D_2_notmandatory", moul_D_2_notmandatory, moul_D_2_notmandatory_bench, "{return test(\"Kashim a %D histoires à raconter\", 1001);}"},
+	{0, 2550, "moul_D_3_notmandatory", moul_D_3_notmandatory, moul_D_3_notmandatory_bench, "{return test(\"Il fait au moins %D\n\", -8000);}"},
+	{0, 2551, "moul_D_4_notmandatory", moul_D_4_notmandatory, moul_D_4_notmandatory_bench, "{return test(\"%D\", -0);}"},
+	{0, 2552, "moul_D_5_notmandatory", moul_D_5_notmandatory, moul_D_5_notmandatory_bench, "{return test(\"%D\", 0);}"},
+	{0, 2553, "moul_D_6_notmandatory", moul_D_6_notmandatory, moul_D_6_notmandatory_bench, "{return test(\"%D\", INT_MAX);}"},
+	{0, 2554, "moul_D_7_notmandatory", moul_D_7_notmandatory, moul_D_7_notmandatory_bench, "{return test(\"%D\", INT_MIN);}"},
+	{0, 2555, "moul_D_8_notmandatory", moul_D_8_notmandatory, moul_D_8_notmandatory_bench, "{return test(\"%D\", INT_MIN - 1);}"},
+	{0, 2556, "moul_D_9_notmandatory", moul_D_9_notmandatory, moul_D_9_notmandatory_bench, "{return test(\"%D\", INT_MAX + 1);}"},
+	{0, 2557, "moul_D_10_notmandatory", moul_D_10_notmandatory, moul_D_10_notmandatory_bench, "{return test(\"%%D 0000042 == |%D|\n\", 0000042);}"},
+	{0, 2558, "moul_D_11_notmandatory", moul_D_11_notmandatory, moul_D_11_notmandatory_bench, "{return test(\"%%D \t == |%D|\n\", '\t');}"},
+	{0, 2559, "moul_D_12_notmandatory", moul_D_12_notmandatory, moul_D_12_notmandatory_bench, "{return test(\"%%D Lydie == |%D|\n\", 'L'+'y'+'d'+'i'+'e');}"},
 	{1, 2560, "moul_i_1", moul_i_1, moul_i_1_bench, "{return test(\"%i\", 42);}"},
 	{1, 2561, "moul_i_2", moul_i_2, moul_i_2_bench, "{return test(\"Kashim a %i histoires à raconter\", 1001);}"},
 	{1, 2562, "moul_i_3", moul_i_3, moul_i_3_bench, "{return test(\"Il fait au moins %i\n\", -8000);}"},
@@ -9981,20 +9981,20 @@ const t_test_entry g_unit_tests[] = {
 	{1, 2582, "moul_f_10", moul_f_10, moul_f_10_bench, "{return test(\"%%f \t == |%f|\n\", (double)'\t');}"},
 	{1, 2583, "moul_f_11", moul_f_11, moul_f_11_bench, "{return test(\"%%f Lydie == |%f|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
 	{1, 2584, "moul_f_12", moul_f_12, moul_f_12_bench, "{return test(\"%%f 42.42 == |%f|\n\", 42.42);}"},
-	{1, 2585, "moul_F_1_notmandatory", moul_F_1_notmandatory, moul_F_1_notmandatory_bench, "{return test(\"%F\", (double)42);}"},
-	{1, 2586, "moul_F_2_notmandatory", moul_F_2_notmandatory, moul_F_2_notmandatory_bench, "{return test(\"Kashim a %F histoires à raconter\", (double)1001);}"},
-	{1, 2587, "moul_F_3_notmandatory", moul_F_3_notmandatory, moul_F_3_notmandatory_bench, "{return test(\"Il fait au moins %F\n\", (double)-8000);}"},
-	{1, 2588, "moul_F_4_notmandatory", moul_F_4_notmandatory, moul_F_4_notmandatory_bench, "{return test(\"%F\", (double)-0);}"},
-	{1, 2589, "moul_F_5_notmandatory", moul_F_5_notmandatory, moul_F_5_notmandatory_bench, "{return test(\"%F\", (double)0);}"},
-	{1, 2590, "moul_F_6_notmandatory", moul_F_6_notmandatory, moul_F_6_notmandatory_bench, "{return test(\"%F\", (double)INT_MAX);}"},
-	{1, 2591, "moul_F_7_notmandatory", moul_F_7_notmandatory, moul_F_7_notmandatory_bench, "{return test(\"%F\", (double)INT_MIN);}"},
-	{1, 2592, "moul_F_8_notmandatory", moul_F_8_notmandatory, moul_F_8_notmandatory_bench, "{return test(\"%F\", (double)INT_MIN - 1);}"},
-	{1, 2593, "moul_F_9_notmandatory", moul_F_9_notmandatory, moul_F_9_notmandatory_bench, "{return test(\"%F\", (double)INT_MAX + 1);}"},
-	{1, 2594, "moul_F_10_notmandatory", moul_F_10_notmandatory, moul_F_10_notmandatory_bench, "{return test(\"%%F 0000042 == |%F|\n\", (double)0000042);}"},
-	{1, 2595, "moul_F_11_notmandatory", moul_F_11_notmandatory, moul_F_11_notmandatory_bench, "{return test(\"%%F \t == |%F|\n\", (double)'\t');}"},
-	{1, 2596, "moul_F_12_notmandatory", moul_F_12_notmandatory, moul_F_12_notmandatory_bench, "{return test(\"%%F Lydie == |%F|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2597, "moul_F_13_notmandatory", moul_F_13_notmandatory, moul_F_13_notmandatory_bench, "{return test(\"%%F 42.42 == |%F|\n\", 42.42);}"},
-	{1, 2598, "moul_F_14_notmandatory", moul_F_14_notmandatory, moul_F_14_notmandatory_bench, "{return test(\"%%F 42.42 == |%.2F|\n\", 42.42);}"},
+	{0, 2585, "moul_F_1_notmandatory", moul_F_1_notmandatory, moul_F_1_notmandatory_bench, "{return test(\"%F\", (double)42);}"},
+	{0, 2586, "moul_F_2_notmandatory", moul_F_2_notmandatory, moul_F_2_notmandatory_bench, "{return test(\"Kashim a %F histoires à raconter\", (double)1001);}"},
+	{0, 2587, "moul_F_3_notmandatory", moul_F_3_notmandatory, moul_F_3_notmandatory_bench, "{return test(\"Il fait au moins %F\n\", (double)-8000);}"},
+	{0, 2588, "moul_F_4_notmandatory", moul_F_4_notmandatory, moul_F_4_notmandatory_bench, "{return test(\"%F\", (double)-0);}"},
+	{0, 2589, "moul_F_5_notmandatory", moul_F_5_notmandatory, moul_F_5_notmandatory_bench, "{return test(\"%F\", (double)0);}"},
+	{0, 2590, "moul_F_6_notmandatory", moul_F_6_notmandatory, moul_F_6_notmandatory_bench, "{return test(\"%F\", (double)INT_MAX);}"},
+	{0, 2591, "moul_F_7_notmandatory", moul_F_7_notmandatory, moul_F_7_notmandatory_bench, "{return test(\"%F\", (double)INT_MIN);}"},
+	{0, 2592, "moul_F_8_notmandatory", moul_F_8_notmandatory, moul_F_8_notmandatory_bench, "{return test(\"%F\", (double)INT_MIN - 1);}"},
+	{0, 2593, "moul_F_9_notmandatory", moul_F_9_notmandatory, moul_F_9_notmandatory_bench, "{return test(\"%F\", (double)INT_MAX + 1);}"},
+	{0, 2594, "moul_F_10_notmandatory", moul_F_10_notmandatory, moul_F_10_notmandatory_bench, "{return test(\"%%F 0000042 == |%F|\n\", (double)0000042);}"},
+	{0, 2595, "moul_F_11_notmandatory", moul_F_11_notmandatory, moul_F_11_notmandatory_bench, "{return test(\"%%F \t == |%F|\n\", (double)'\t');}"},
+	{0, 2596, "moul_F_12_notmandatory", moul_F_12_notmandatory, moul_F_12_notmandatory_bench, "{return test(\"%%F Lydie == |%F|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2597, "moul_F_13_notmandatory", moul_F_13_notmandatory, moul_F_13_notmandatory_bench, "{return test(\"%%F 42.42 == |%F|\n\", 42.42);}"},
+	{0, 2598, "moul_F_14_notmandatory", moul_F_14_notmandatory, moul_F_14_notmandatory_bench, "{return test(\"%%F 42.42 == |%.2F|\n\", 42.42);}"},
 	{1, 2599, "moul_o_1", moul_o_1, moul_o_1_bench, "{return test(\"%o\", 42);}"},
 	{1, 2600, "moul_o_2", moul_o_2, moul_o_2_bench, "{return test(\"Kashim a %o histoires à raconter\", 1001);}"},
 	{1, 2601, "moul_o_3", moul_o_3, moul_o_3_bench, "{return test(\"Il fait au moins %o\n\", -8000);}"},
@@ -10066,96 +10066,96 @@ const t_test_entry g_unit_tests[] = {
 	{1, 2667, "moul_sp_1", moul_sp_1, moul_sp_1_bench, "{return test(\"%%      i 42 == |%      i|\n\", 42);}"},
 	{1, 2668, "moul_sp_2", moul_sp_2, moul_sp_2_bench, "{return test(\"%% i -42 == |% i|\n\", -42);}"},
 	{1, 2669, "moul_sp_3", moul_sp_3, moul_sp_3_bench, "{return test(\"%% 4i 42 == |% 4i|\n\", 42);}"},
-	{1, 2670, "moul_notmandatory_e_1", moul_notmandatory_e_1, moul_notmandatory_e_1_bench, "{return test(\"%e\", (double)42);}"},
-	{1, 2671, "moul_notmandatory_e_2", moul_notmandatory_e_2, moul_notmandatory_e_2_bench, "{return test(\"Kashim a %e histoires à raconter\", (double)1001);}"},
-	{1, 2672, "moul_notmandatory_e_3", moul_notmandatory_e_3, moul_notmandatory_e_3_bench, "{return test(\"Il fait au moins %e\n\", (double)-8000);}"},
-	{1, 2673, "moul_notmandatory_e_4", moul_notmandatory_e_4, moul_notmandatory_e_4_bench, "{return test(\"%e\", (double)-0);}"},
-	{1, 2674, "moul_notmandatory_e_5", moul_notmandatory_e_5, moul_notmandatory_e_5_bench, "{return test(\"%e\", (double)0);}"},
-	{1, 2675, "moul_notmandatory_e_6", moul_notmandatory_e_6, moul_notmandatory_e_6_bench, "{return test(\"%e\", (double)INT_MAX);}"},
-	{1, 2676, "moul_notmandatory_e_7", moul_notmandatory_e_7, moul_notmandatory_e_7_bench, "{return test(\"%e\", (double)INT_MIN);}"},
-	{1, 2677, "moul_notmandatory_e_8", moul_notmandatory_e_8, moul_notmandatory_e_8_bench, "{return test(\"%e\", (double)INT_MIN - 1);}"},
-	{1, 2678, "moul_notmandatory_e_9", moul_notmandatory_e_9, moul_notmandatory_e_9_bench, "{return test(\"%e\", (double)INT_MAX + 1);}"},
-	{1, 2679, "moul_notmandatory_e_10", moul_notmandatory_e_10, moul_notmandatory_e_10_bench, "{return test(\"%%e 0000042 == |%e|\n\", (double)0000042);}"},
-	{1, 2680, "moul_notmandatory_e_11", moul_notmandatory_e_11, moul_notmandatory_e_11_bench, "{return test(\"%%e \t == |%e|\n\", (double)'\t');}"},
-	{1, 2681, "moul_notmandatory_e_12", moul_notmandatory_e_12, moul_notmandatory_e_12_bench, "{return test(\"%%e Lydie == |%e|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2682, "moul_notmandatory_e_13", moul_notmandatory_e_13, moul_notmandatory_e_13_bench, "{return test(\"%%e 42.42 == |%e|\n\", 42.42);}"},
-	{1, 2683, "moul_notmandatory_e_14", moul_notmandatory_e_14, moul_notmandatory_e_14_bench, "{return test(\"%E\", (double)42);}"},
-	{1, 2684, "moul_notmandatory_e_15", moul_notmandatory_e_15, moul_notmandatory_e_15_bench, "{return test(\"Kashim a %E histoires à raconter\", (double)1001);}"},
-	{1, 2685, "moul_notmandatory_e_16", moul_notmandatory_e_16, moul_notmandatory_e_16_bench, "{return test(\"Il fait au moins %E\n\", (double)-8000);}"},
-	{1, 2686, "moul_notmandatory_e_17", moul_notmandatory_e_17, moul_notmandatory_e_17_bench, "{return test(\"%E\", (double)-0);}"},
-	{1, 2687, "moul_notmandatory_e_18", moul_notmandatory_e_18, moul_notmandatory_e_18_bench, "{return test(\"%E\", (double)0);}"},
-	{1, 2688, "moul_notmandatory_e_19", moul_notmandatory_e_19, moul_notmandatory_e_19_bench, "{return test(\"%E\", (double)INT_MAX);}"},
-	{1, 2689, "moul_notmandatory_e_20", moul_notmandatory_e_20, moul_notmandatory_e_20_bench, "{return test(\"%E\", (double)INT_MIN);}"},
-	{1, 2690, "moul_notmandatory_e_21", moul_notmandatory_e_21, moul_notmandatory_e_21_bench, "{return test(\"%E\", (double)INT_MIN - 1);}"},
-	{1, 2691, "moul_notmandatory_e_22", moul_notmandatory_e_22, moul_notmandatory_e_22_bench, "{return test(\"%E\", (double)INT_MAX + 1);}"},
-	{1, 2692, "moul_notmandatory_e_23", moul_notmandatory_e_23, moul_notmandatory_e_23_bench, "{return test(\"%%E 0000042 == |%E|\n\", (double)0000042);}"},
-	{1, 2693, "moul_notmandatory_e_24", moul_notmandatory_e_24, moul_notmandatory_e_24_bench, "{return test(\"%%E \t == |%E|\n\", (double)'\t');}"},
-	{1, 2694, "moul_notmandatory_e_25", moul_notmandatory_e_25, moul_notmandatory_e_25_bench, "{return test(\"%%E Lydie == |%E|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2695, "moul_notmandatory_e_26", moul_notmandatory_e_26, moul_notmandatory_e_26_bench, "{return test(\"%%E 42.42 == |%E|\n\", 42.42);}"},
-	{1, 2696, "moul_notmandatory_e_27", moul_notmandatory_e_27, moul_notmandatory_e_27_bench, "{return test(\"%%E 42.42 == |%.2E|\n\", 42.42);}"},
-	{1, 2697, "moul_notmandatory_g_1", moul_notmandatory_g_1, moul_notmandatory_g_1_bench, "{return test(\"%g\", (double)42);}"},
-	{1, 2698, "moul_notmandatory_g_2", moul_notmandatory_g_2, moul_notmandatory_g_2_bench, "{return test(\"Kashim a %g histoires à raconter\", (double)1001);}"},
-	{1, 2699, "moul_notmandatory_g_3", moul_notmandatory_g_3, moul_notmandatory_g_3_bench, "{return test(\"Il fait au moins %g\n\", (double)-8000);}"},
-	{1, 2700, "moul_notmandatory_g_4", moul_notmandatory_g_4, moul_notmandatory_g_4_bench, "{return test(\"%g\", (double)-0);}"},
-	{1, 2701, "moul_notmandatory_g_5", moul_notmandatory_g_5, moul_notmandatory_g_5_bench, "{return test(\"%g\", (double)0);}"},
-	{1, 2702, "moul_notmandatory_g_5b", moul_notmandatory_g_5b, moul_notmandatory_g_5b_bench, "{return test(\"%g\", (double)INT_MAX);}"},
-	{1, 2703, "moul_notmandatory_g_6", moul_notmandatory_g_6, moul_notmandatory_g_6_bench, "{return test(\"%g\", (double)INT_MIN);}"},
-	{1, 2704, "moul_notmandatory_g_7", moul_notmandatory_g_7, moul_notmandatory_g_7_bench, "{return test(\"%g\", (double)INT_MIN - 1);}"},
-	{1, 2705, "moul_notmandatory_g_8", moul_notmandatory_g_8, moul_notmandatory_g_8_bench, "{return test(\"%g\", (double)INT_MAX + 1);}"},
-	{1, 2706, "moul_notmandatory_g_9", moul_notmandatory_g_9, moul_notmandatory_g_9_bench, "{return test(\"%%g 0000042 == |%g|\n\", (double)0000042);}"},
-	{1, 2707, "moul_notmandatory_g_10", moul_notmandatory_g_10, moul_notmandatory_g_10_bench, "{return test(\"%%g \t == |%g|\n\", (double)'\t');}"},
-	{1, 2708, "moul_notmandatory_g_11", moul_notmandatory_g_11, moul_notmandatory_g_11_bench, "{return test(\"%%g Lydie == |%g|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2709, "moul_notmandatory_g_12", moul_notmandatory_g_12, moul_notmandatory_g_12_bench, "{return test(\"%%g 42.42 == |%g|\n\", 42.42);}"},
-	{1, 2710, "moul_notmandatory_g_13", moul_notmandatory_g_13, moul_notmandatory_g_13_bench, "{return test(\"%G\", (double)42);}"},
-	{1, 2711, "moul_notmandatory_g_14", moul_notmandatory_g_14, moul_notmandatory_g_14_bench, "{return test(\"Kashim a %G histoires à raconter\", (double)1001);}"},
-	{1, 2712, "moul_notmandatory_g_15", moul_notmandatory_g_15, moul_notmandatory_g_15_bench, "{return test(\"Il fait au moins %G\n\", (double)-8000);}"},
-	{1, 2713, "moul_notmandatory_g_16", moul_notmandatory_g_16, moul_notmandatory_g_16_bench, "{return test(\"%G\", (double)-0);}"},
-	{1, 2714, "moul_notmandatory_g_17", moul_notmandatory_g_17, moul_notmandatory_g_17_bench, "{return test(\"%G\", (double)0);}"},
-	{1, 2715, "moul_notmandatory_g_18", moul_notmandatory_g_18, moul_notmandatory_g_18_bench, "{return test(\"%G\", (double)INT_MAX);}"},
-	{1, 2716, "moul_notmandatory_g_19", moul_notmandatory_g_19, moul_notmandatory_g_19_bench, "{return test(\"%G\", (double)INT_MIN);}"},
-	{1, 2717, "moul_notmandatory_g_20", moul_notmandatory_g_20, moul_notmandatory_g_20_bench, "{return test(\"%G\", (double)INT_MIN - 1);}"},
-	{1, 2718, "moul_notmandatory_g_21", moul_notmandatory_g_21, moul_notmandatory_g_21_bench, "{return test(\"%G\", (double)INT_MAX + 1);}"},
-	{1, 2719, "moul_notmandatory_g_22", moul_notmandatory_g_22, moul_notmandatory_g_22_bench, "{return test(\"%%G 0000042 == |%G|\n\", (double)0000042);}"},
-	{1, 2720, "moul_notmandatory_g_23", moul_notmandatory_g_23, moul_notmandatory_g_23_bench, "{return test(\"%%G \t == |%G|\n\", (double)'\t');}"},
-	{1, 2721, "moul_notmandatory_g_24", moul_notmandatory_g_24, moul_notmandatory_g_24_bench, "{return test(\"%%G Lydie == |%G|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2722, "moul_notmandatory_g_25", moul_notmandatory_g_25, moul_notmandatory_g_25_bench, "{return test(\"%%G 42.42 == |%G|\n\", 42.42);}"},
-	{1, 2723, "moul_notmandatory_g_26", moul_notmandatory_g_26, moul_notmandatory_g_26_bench, "{return test(\"%%G 42.42 == |%.2G|\n\", 42.42);}"},
-	{1, 2724, "moul_notmandatory_a_1", moul_notmandatory_a_1, moul_notmandatory_a_1_bench, "{return test(\"%a\", (double)42);}"},
-	{1, 2725, "moul_notmandatory_a_2", moul_notmandatory_a_2, moul_notmandatory_a_2_bench, "{return test(\"Kashim a %a histoires à raconter\", (double)1001);}"},
-	{1, 2726, "moul_notmandatory_a_3", moul_notmandatory_a_3, moul_notmandatory_a_3_bench, "{return test(\"Il fait au moins %a\n\", (double)-8000);}"},
-	{1, 2727, "moul_notmandatory_a_4", moul_notmandatory_a_4, moul_notmandatory_a_4_bench, "{return test(\"%a\", (double)-0);}"},
-	{1, 2728, "moul_notmandatory_a_5", moul_notmandatory_a_5, moul_notmandatory_a_5_bench, "{return test(\"%a\", (double)0);}"},
-	{1, 2729, "moul_notmandatory_a_6", moul_notmandatory_a_6, moul_notmandatory_a_6_bench, "{return test(\"%a\", (double)INT_MAX);}"},
-	{1, 2730, "moul_notmandatory_a_7", moul_notmandatory_a_7, moul_notmandatory_a_7_bench, "{return test(\"%a\", (double)INT_MIN);}"},
-	{1, 2731, "moul_notmandatory_a_8", moul_notmandatory_a_8, moul_notmandatory_a_8_bench, "{return test(\"%a\", (double)INT_MIN - 1);}"},
-	{1, 2732, "moul_notmandatory_a_9", moul_notmandatory_a_9, moul_notmandatory_a_9_bench, "{return test(\"%a\", (double)INT_MAX + 1);}"},
-	{1, 2733, "moul_notmandatory_a_11", moul_notmandatory_a_11, moul_notmandatory_a_11_bench, "{return test(\"%%a 0000042 == |%a|\n\", (double)0000042);}"},
-	{1, 2734, "moul_notmandatory_a_12", moul_notmandatory_a_12, moul_notmandatory_a_12_bench, "{return test(\"%%a \t == |%a|\n\", (double)'\t');}"},
-	{1, 2735, "moul_notmandatory_a_13", moul_notmandatory_a_13, moul_notmandatory_a_13_bench, "{return test(\"%%a Lydie == |%a|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2736, "moul_notmandatory_a_14", moul_notmandatory_a_14, moul_notmandatory_a_14_bench, "{return test(\"%%a 42.42 == |%a|\n\", 42.42);}"},
-	{1, 2737, "moul_notmandatory_a_15", moul_notmandatory_a_15, moul_notmandatory_a_15_bench, "{return test(\"%A\", (double)42);}"},
-	{1, 2738, "moul_notmandatory_a_16", moul_notmandatory_a_16, moul_notmandatory_a_16_bench, "{return test(\"Kashim a %A histoires à raconter\", (double)1001);}"},
-	{1, 2739, "moul_notmandatory_a_17", moul_notmandatory_a_17, moul_notmandatory_a_17_bench, "{return test(\"Il fait au moins %A\n\", (double)-8000);}"},
-	{1, 2740, "moul_notmandatory_a_18", moul_notmandatory_a_18, moul_notmandatory_a_18_bench, "{return test(\"%A\", (double)-0);}"},
-	{1, 2741, "moul_notmandatory_a_19", moul_notmandatory_a_19, moul_notmandatory_a_19_bench, "{return test(\"%A\", (double)0);}"},
-	{1, 2742, "moul_notmandatory_a_20", moul_notmandatory_a_20, moul_notmandatory_a_20_bench, "{return test(\"%A\", (double)INT_MAX);}"},
-	{1, 2743, "moul_notmandatory_a_21", moul_notmandatory_a_21, moul_notmandatory_a_21_bench, "{return test(\"%A\", (double)INT_MIN);}"},
-	{1, 2744, "moul_notmandatory_a_22", moul_notmandatory_a_22, moul_notmandatory_a_22_bench, "{return test(\"%A\", (double)INT_MIN - 1);}"},
-	{1, 2745, "moul_notmandatory_a_23", moul_notmandatory_a_23, moul_notmandatory_a_23_bench, "{return test(\"%A\", (double)INT_MAX + 1);}"},
-	{1, 2746, "moul_notmandatory_a_24", moul_notmandatory_a_24, moul_notmandatory_a_24_bench, "{return test(\"%%A 0000042 == |%A|\n\", (double)0000042);}"},
-	{1, 2747, "moul_notmandatory_a_25", moul_notmandatory_a_25, moul_notmandatory_a_25_bench, "{return test(\"%%A \t == |%A|\n\", (double)'\t');}"},
-	{1, 2748, "moul_notmandatory_a_26", moul_notmandatory_a_26, moul_notmandatory_a_26_bench, "{return test(\"%%A Lydie == |%A|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
-	{1, 2749, "moul_notmandatory_a_27", moul_notmandatory_a_27, moul_notmandatory_a_27_bench, "{return test(\"%%A 42.42 == |%A|\n\", 42.42);}"},
-	{1, 2750, "moul_notmandatory_a_28", moul_notmandatory_a_28, moul_notmandatory_a_28_bench, "{return test(\"%%A 42.42 == |%.2A|\n\", 42.42);}"},
-	{1, 2751, "moul_notmandatory_star_1", moul_notmandatory_star_1, moul_notmandatory_star_1_bench, "{return test(\"%%-*.3s LYDI == |%-*.3s|\n\", 5, \"LYDI\");}"},
-	{1, 2752, "moul_notmandatory_star_2", moul_notmandatory_star_2, moul_notmandatory_star_2_bench, "{return test(\"%% *.5i 42 == |% *.5i|\n\", 4, 42);}"},
-	{1, 2753, "moul_notmandatory_star_3", moul_notmandatory_star_3, moul_notmandatory_star_3_bench, "{return test(\"%%*i 42 == |%*i|\n\", 5, 42);}"},
-	{1, 2754, "moul_notmandatory_star_4", moul_notmandatory_star_4, moul_notmandatory_star_4_bench, "{return test(\"%%*i 42 == |%*i|\n\", 3, 42);}"},
-	{1, 2755, "moul_notmandatory_star_5", moul_notmandatory_star_5, moul_notmandatory_star_5_bench, "{return test(\"%%*i 42 == |%*i|\n\", 2, 42);}"},
-	{1, 2756, "moul_notmandatory_widechar_mix2_throwswarning", moul_notmandatory_widechar_mix2_throwswarning, moul_notmandatory_widechar_mix2_throwswarning_bench, "{return test(\"Lalalala, %d%% des gens qui parlent %C Ly adorent %s. Ou Presque. %d, %u, %X, %c\", 100, L'à', \"Ly\", 2, 10, 10000, '\n', \"ôHohoho\");}"},
-	{1, 2757, "moul_notmandatory_widechar_basic1", moul_notmandatory_widechar_basic1, moul_notmandatory_widechar_basic1_bench, "{wchar_t c = L'\x82'; return test(\"%C\n\", c);}"},
-	{1, 2758, "moul_notmandatory_widechar_basic2", moul_notmandatory_widechar_basic2, moul_notmandatory_widechar_basic2_bench, "{return test(\"%C\n\", L'ø');}"},
-	{1, 2759, "moul_notmandatory_widestr_basic2", moul_notmandatory_widestr_basic2, moul_notmandatory_widestr_basic2_bench, "{wchar_t wz[3] = L\"@@\"; return test(\"%ls\", wz);}"},
+	{0, 2670, "moul_notmandatory_e_1", moul_notmandatory_e_1, moul_notmandatory_e_1_bench, "{return test(\"%e\", (double)42);}"},
+	{0, 2671, "moul_notmandatory_e_2", moul_notmandatory_e_2, moul_notmandatory_e_2_bench, "{return test(\"Kashim a %e histoires à raconter\", (double)1001);}"},
+	{0, 2672, "moul_notmandatory_e_3", moul_notmandatory_e_3, moul_notmandatory_e_3_bench, "{return test(\"Il fait au moins %e\n\", (double)-8000);}"},
+	{0, 2673, "moul_notmandatory_e_4", moul_notmandatory_e_4, moul_notmandatory_e_4_bench, "{return test(\"%e\", (double)-0);}"},
+	{0, 2674, "moul_notmandatory_e_5", moul_notmandatory_e_5, moul_notmandatory_e_5_bench, "{return test(\"%e\", (double)0);}"},
+	{0, 2675, "moul_notmandatory_e_6", moul_notmandatory_e_6, moul_notmandatory_e_6_bench, "{return test(\"%e\", (double)INT_MAX);}"},
+	{0, 2676, "moul_notmandatory_e_7", moul_notmandatory_e_7, moul_notmandatory_e_7_bench, "{return test(\"%e\", (double)INT_MIN);}"},
+	{0, 2677, "moul_notmandatory_e_8", moul_notmandatory_e_8, moul_notmandatory_e_8_bench, "{return test(\"%e\", (double)INT_MIN - 1);}"},
+	{0, 2678, "moul_notmandatory_e_9", moul_notmandatory_e_9, moul_notmandatory_e_9_bench, "{return test(\"%e\", (double)INT_MAX + 1);}"},
+	{0, 2679, "moul_notmandatory_e_10", moul_notmandatory_e_10, moul_notmandatory_e_10_bench, "{return test(\"%%e 0000042 == |%e|\n\", (double)0000042);}"},
+	{0, 2680, "moul_notmandatory_e_11", moul_notmandatory_e_11, moul_notmandatory_e_11_bench, "{return test(\"%%e \t == |%e|\n\", (double)'\t');}"},
+	{0, 2681, "moul_notmandatory_e_12", moul_notmandatory_e_12, moul_notmandatory_e_12_bench, "{return test(\"%%e Lydie == |%e|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2682, "moul_notmandatory_e_13", moul_notmandatory_e_13, moul_notmandatory_e_13_bench, "{return test(\"%%e 42.42 == |%e|\n\", 42.42);}"},
+	{0, 2683, "moul_notmandatory_e_14", moul_notmandatory_e_14, moul_notmandatory_e_14_bench, "{return test(\"%E\", (double)42);}"},
+	{0, 2684, "moul_notmandatory_e_15", moul_notmandatory_e_15, moul_notmandatory_e_15_bench, "{return test(\"Kashim a %E histoires à raconter\", (double)1001);}"},
+	{0, 2685, "moul_notmandatory_e_16", moul_notmandatory_e_16, moul_notmandatory_e_16_bench, "{return test(\"Il fait au moins %E\n\", (double)-8000);}"},
+	{0, 2686, "moul_notmandatory_e_17", moul_notmandatory_e_17, moul_notmandatory_e_17_bench, "{return test(\"%E\", (double)-0);}"},
+	{0, 2687, "moul_notmandatory_e_18", moul_notmandatory_e_18, moul_notmandatory_e_18_bench, "{return test(\"%E\", (double)0);}"},
+	{0, 2688, "moul_notmandatory_e_19", moul_notmandatory_e_19, moul_notmandatory_e_19_bench, "{return test(\"%E\", (double)INT_MAX);}"},
+	{0, 2689, "moul_notmandatory_e_20", moul_notmandatory_e_20, moul_notmandatory_e_20_bench, "{return test(\"%E\", (double)INT_MIN);}"},
+	{0, 2690, "moul_notmandatory_e_21", moul_notmandatory_e_21, moul_notmandatory_e_21_bench, "{return test(\"%E\", (double)INT_MIN - 1);}"},
+	{0, 2691, "moul_notmandatory_e_22", moul_notmandatory_e_22, moul_notmandatory_e_22_bench, "{return test(\"%E\", (double)INT_MAX + 1);}"},
+	{0, 2692, "moul_notmandatory_e_23", moul_notmandatory_e_23, moul_notmandatory_e_23_bench, "{return test(\"%%E 0000042 == |%E|\n\", (double)0000042);}"},
+	{0, 2693, "moul_notmandatory_e_24", moul_notmandatory_e_24, moul_notmandatory_e_24_bench, "{return test(\"%%E \t == |%E|\n\", (double)'\t');}"},
+	{0, 2694, "moul_notmandatory_e_25", moul_notmandatory_e_25, moul_notmandatory_e_25_bench, "{return test(\"%%E Lydie == |%E|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2695, "moul_notmandatory_e_26", moul_notmandatory_e_26, moul_notmandatory_e_26_bench, "{return test(\"%%E 42.42 == |%E|\n\", 42.42);}"},
+	{0, 2696, "moul_notmandatory_e_27", moul_notmandatory_e_27, moul_notmandatory_e_27_bench, "{return test(\"%%E 42.42 == |%.2E|\n\", 42.42);}"},
+	{0, 2697, "moul_notmandatory_g_1", moul_notmandatory_g_1, moul_notmandatory_g_1_bench, "{return test(\"%g\", (double)42);}"},
+	{0, 2698, "moul_notmandatory_g_2", moul_notmandatory_g_2, moul_notmandatory_g_2_bench, "{return test(\"Kashim a %g histoires à raconter\", (double)1001);}"},
+	{0, 2699, "moul_notmandatory_g_3", moul_notmandatory_g_3, moul_notmandatory_g_3_bench, "{return test(\"Il fait au moins %g\n\", (double)-8000);}"},
+	{0, 2700, "moul_notmandatory_g_4", moul_notmandatory_g_4, moul_notmandatory_g_4_bench, "{return test(\"%g\", (double)-0);}"},
+	{0, 2701, "moul_notmandatory_g_5", moul_notmandatory_g_5, moul_notmandatory_g_5_bench, "{return test(\"%g\", (double)0);}"},
+	{0, 2702, "moul_notmandatory_g_5b", moul_notmandatory_g_5b, moul_notmandatory_g_5b_bench, "{return test(\"%g\", (double)INT_MAX);}"},
+	{0, 2703, "moul_notmandatory_g_6", moul_notmandatory_g_6, moul_notmandatory_g_6_bench, "{return test(\"%g\", (double)INT_MIN);}"},
+	{0, 2704, "moul_notmandatory_g_7", moul_notmandatory_g_7, moul_notmandatory_g_7_bench, "{return test(\"%g\", (double)INT_MIN - 1);}"},
+	{0, 2705, "moul_notmandatory_g_8", moul_notmandatory_g_8, moul_notmandatory_g_8_bench, "{return test(\"%g\", (double)INT_MAX + 1);}"},
+	{0, 2706, "moul_notmandatory_g_9", moul_notmandatory_g_9, moul_notmandatory_g_9_bench, "{return test(\"%%g 0000042 == |%g|\n\", (double)0000042);}"},
+	{0, 2707, "moul_notmandatory_g_10", moul_notmandatory_g_10, moul_notmandatory_g_10_bench, "{return test(\"%%g \t == |%g|\n\", (double)'\t');}"},
+	{0, 2708, "moul_notmandatory_g_11", moul_notmandatory_g_11, moul_notmandatory_g_11_bench, "{return test(\"%%g Lydie == |%g|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2709, "moul_notmandatory_g_12", moul_notmandatory_g_12, moul_notmandatory_g_12_bench, "{return test(\"%%g 42.42 == |%g|\n\", 42.42);}"},
+	{0, 2710, "moul_notmandatory_g_13", moul_notmandatory_g_13, moul_notmandatory_g_13_bench, "{return test(\"%G\", (double)42);}"},
+	{0, 2711, "moul_notmandatory_g_14", moul_notmandatory_g_14, moul_notmandatory_g_14_bench, "{return test(\"Kashim a %G histoires à raconter\", (double)1001);}"},
+	{0, 2712, "moul_notmandatory_g_15", moul_notmandatory_g_15, moul_notmandatory_g_15_bench, "{return test(\"Il fait au moins %G\n\", (double)-8000);}"},
+	{0, 2713, "moul_notmandatory_g_16", moul_notmandatory_g_16, moul_notmandatory_g_16_bench, "{return test(\"%G\", (double)-0);}"},
+	{0, 2714, "moul_notmandatory_g_17", moul_notmandatory_g_17, moul_notmandatory_g_17_bench, "{return test(\"%G\", (double)0);}"},
+	{0, 2715, "moul_notmandatory_g_18", moul_notmandatory_g_18, moul_notmandatory_g_18_bench, "{return test(\"%G\", (double)INT_MAX);}"},
+	{0, 2716, "moul_notmandatory_g_19", moul_notmandatory_g_19, moul_notmandatory_g_19_bench, "{return test(\"%G\", (double)INT_MIN);}"},
+	{0, 2717, "moul_notmandatory_g_20", moul_notmandatory_g_20, moul_notmandatory_g_20_bench, "{return test(\"%G\", (double)INT_MIN - 1);}"},
+	{0, 2718, "moul_notmandatory_g_21", moul_notmandatory_g_21, moul_notmandatory_g_21_bench, "{return test(\"%G\", (double)INT_MAX + 1);}"},
+	{0, 2719, "moul_notmandatory_g_22", moul_notmandatory_g_22, moul_notmandatory_g_22_bench, "{return test(\"%%G 0000042 == |%G|\n\", (double)0000042);}"},
+	{0, 2720, "moul_notmandatory_g_23", moul_notmandatory_g_23, moul_notmandatory_g_23_bench, "{return test(\"%%G \t == |%G|\n\", (double)'\t');}"},
+	{0, 2721, "moul_notmandatory_g_24", moul_notmandatory_g_24, moul_notmandatory_g_24_bench, "{return test(\"%%G Lydie == |%G|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2722, "moul_notmandatory_g_25", moul_notmandatory_g_25, moul_notmandatory_g_25_bench, "{return test(\"%%G 42.42 == |%G|\n\", 42.42);}"},
+	{0, 2723, "moul_notmandatory_g_26", moul_notmandatory_g_26, moul_notmandatory_g_26_bench, "{return test(\"%%G 42.42 == |%.2G|\n\", 42.42);}"},
+	{0, 2724, "moul_notmandatory_a_1", moul_notmandatory_a_1, moul_notmandatory_a_1_bench, "{return test(\"%a\", (double)42);}"},
+	{0, 2725, "moul_notmandatory_a_2", moul_notmandatory_a_2, moul_notmandatory_a_2_bench, "{return test(\"Kashim a %a histoires à raconter\", (double)1001);}"},
+	{0, 2726, "moul_notmandatory_a_3", moul_notmandatory_a_3, moul_notmandatory_a_3_bench, "{return test(\"Il fait au moins %a\n\", (double)-8000);}"},
+	{0, 2727, "moul_notmandatory_a_4", moul_notmandatory_a_4, moul_notmandatory_a_4_bench, "{return test(\"%a\", (double)-0);}"},
+	{0, 2728, "moul_notmandatory_a_5", moul_notmandatory_a_5, moul_notmandatory_a_5_bench, "{return test(\"%a\", (double)0);}"},
+	{0, 2729, "moul_notmandatory_a_6", moul_notmandatory_a_6, moul_notmandatory_a_6_bench, "{return test(\"%a\", (double)INT_MAX);}"},
+	{0, 2730, "moul_notmandatory_a_7", moul_notmandatory_a_7, moul_notmandatory_a_7_bench, "{return test(\"%a\", (double)INT_MIN);}"},
+	{0, 2731, "moul_notmandatory_a_8", moul_notmandatory_a_8, moul_notmandatory_a_8_bench, "{return test(\"%a\", (double)INT_MIN - 1);}"},
+	{0, 2732, "moul_notmandatory_a_9", moul_notmandatory_a_9, moul_notmandatory_a_9_bench, "{return test(\"%a\", (double)INT_MAX + 1);}"},
+	{0, 2733, "moul_notmandatory_a_11", moul_notmandatory_a_11, moul_notmandatory_a_11_bench, "{return test(\"%%a 0000042 == |%a|\n\", (double)0000042);}"},
+	{0, 2734, "moul_notmandatory_a_12", moul_notmandatory_a_12, moul_notmandatory_a_12_bench, "{return test(\"%%a \t == |%a|\n\", (double)'\t');}"},
+	{0, 2735, "moul_notmandatory_a_13", moul_notmandatory_a_13, moul_notmandatory_a_13_bench, "{return test(\"%%a Lydie == |%a|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2736, "moul_notmandatory_a_14", moul_notmandatory_a_14, moul_notmandatory_a_14_bench, "{return test(\"%%a 42.42 == |%a|\n\", 42.42);}"},
+	{0, 2737, "moul_notmandatory_a_15", moul_notmandatory_a_15, moul_notmandatory_a_15_bench, "{return test(\"%A\", (double)42);}"},
+	{0, 2738, "moul_notmandatory_a_16", moul_notmandatory_a_16, moul_notmandatory_a_16_bench, "{return test(\"Kashim a %A histoires à raconter\", (double)1001);}"},
+	{0, 2739, "moul_notmandatory_a_17", moul_notmandatory_a_17, moul_notmandatory_a_17_bench, "{return test(\"Il fait au moins %A\n\", (double)-8000);}"},
+	{0, 2740, "moul_notmandatory_a_18", moul_notmandatory_a_18, moul_notmandatory_a_18_bench, "{return test(\"%A\", (double)-0);}"},
+	{0, 2741, "moul_notmandatory_a_19", moul_notmandatory_a_19, moul_notmandatory_a_19_bench, "{return test(\"%A\", (double)0);}"},
+	{0, 2742, "moul_notmandatory_a_20", moul_notmandatory_a_20, moul_notmandatory_a_20_bench, "{return test(\"%A\", (double)INT_MAX);}"},
+	{0, 2743, "moul_notmandatory_a_21", moul_notmandatory_a_21, moul_notmandatory_a_21_bench, "{return test(\"%A\", (double)INT_MIN);}"},
+	{0, 2744, "moul_notmandatory_a_22", moul_notmandatory_a_22, moul_notmandatory_a_22_bench, "{return test(\"%A\", (double)INT_MIN - 1);}"},
+	{0, 2745, "moul_notmandatory_a_23", moul_notmandatory_a_23, moul_notmandatory_a_23_bench, "{return test(\"%A\", (double)INT_MAX + 1);}"},
+	{0, 2746, "moul_notmandatory_a_24", moul_notmandatory_a_24, moul_notmandatory_a_24_bench, "{return test(\"%%A 0000042 == |%A|\n\", (double)0000042);}"},
+	{0, 2747, "moul_notmandatory_a_25", moul_notmandatory_a_25, moul_notmandatory_a_25_bench, "{return test(\"%%A \t == |%A|\n\", (double)'\t');}"},
+	{0, 2748, "moul_notmandatory_a_26", moul_notmandatory_a_26, moul_notmandatory_a_26_bench, "{return test(\"%%A Lydie == |%A|\n\", (double)'L'+'y'+'d'+'i'+'e');}"},
+	{0, 2749, "moul_notmandatory_a_27", moul_notmandatory_a_27, moul_notmandatory_a_27_bench, "{return test(\"%%A 42.42 == |%A|\n\", 42.42);}"},
+	{0, 2750, "moul_notmandatory_a_28", moul_notmandatory_a_28, moul_notmandatory_a_28_bench, "{return test(\"%%A 42.42 == |%.2A|\n\", 42.42);}"},
+	{0, 2751, "moul_notmandatory_star_1", moul_notmandatory_star_1, moul_notmandatory_star_1_bench, "{return test(\"%%-*.3s LYDI == |%-*.3s|\n\", 5, \"LYDI\");}"},
+	{0, 2752, "moul_notmandatory_star_2", moul_notmandatory_star_2, moul_notmandatory_star_2_bench, "{return test(\"%% *.5i 42 == |% *.5i|\n\", 4, 42);}"},
+	{0, 2753, "moul_notmandatory_star_3", moul_notmandatory_star_3, moul_notmandatory_star_3_bench, "{return test(\"%%*i 42 == |%*i|\n\", 5, 42);}"},
+	{0, 2754, "moul_notmandatory_star_4", moul_notmandatory_star_4, moul_notmandatory_star_4_bench, "{return test(\"%%*i 42 == |%*i|\n\", 3, 42);}"},
+	{0, 2755, "moul_notmandatory_star_5", moul_notmandatory_star_5, moul_notmandatory_star_5_bench, "{return test(\"%%*i 42 == |%*i|\n\", 2, 42);}"},
+	{0, 2756, "moul_notmandatory_widechar_mix2_throwswarning", moul_notmandatory_widechar_mix2_throwswarning, moul_notmandatory_widechar_mix2_throwswarning_bench, "{return test(\"Lalalala, %d%% des gens qui parlent %C Ly adorent %s. Ou Presque. %d, %u, %X, %c\", 100, L'à', \"Ly\", 2, 10, 10000, '\n', \"ôHohoho\");}"},
+	{0, 2757, "moul_notmandatory_widechar_basic1", moul_notmandatory_widechar_basic1, moul_notmandatory_widechar_basic1_bench, "{wchar_t c = L'\x82'; return test(\"%C\n\", c);}"},
+	{0, 2758, "moul_notmandatory_widechar_basic2", moul_notmandatory_widechar_basic2, moul_notmandatory_widechar_basic2_bench, "{return test(\"%C\n\", L'ø');}"},
+	{0, 2759, "moul_notmandatory_widestr_basic2", moul_notmandatory_widestr_basic2, moul_notmandatory_widestr_basic2_bench, "{wchar_t wz[3] = L\"@@\"; return test(\"%ls\", wz);}"},
 	{0, 2147483647, NULL, NULL, NULL, NULL}
 };
 

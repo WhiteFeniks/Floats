@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 18:55:18 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/17 18:02:43 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,19 +18,6 @@
 # include <stdio.h>                     //
 # include <stdlib.h>
 # include "libft/libft.h"
-# include <float.h>
-#define DBL_INF    0x7FF0000000000000
-#define DBL_NINF   0xFFF0000000000000
-#define DBL_NAN    0x7FF0000000100000
-#define DBL_PZERO  0x0000000000000000
-#define DBL_NZERO  0x8000000000000000
-
-#define LDBL_INF   0x7FFF0000000000000000L
-#define LDBL_NINF  0xFFFF0000000000000000L
-#define LDBL_NAN   0x7FFF0000000001000000L
-#define LDBL_PZERO 0x00000000000000000000L
-#define LDBL_NZERO 0x80000000000000000000L
-
 
 
 /*
@@ -38,21 +25,23 @@
 */
 typedef struct              s_data
 {
-    char					percent;
-    char					plus_space;
-    char					minus_null;
-    char					hash;
-    char					point;
-    char					type;
-    long long int			width;
-    long long int			accuracy;
-    int						length;
-    long long int			ret;
-    long long int			len;
-    long long int			i;
-    long long int			j;
-    long long int			tmp;
-    int						nol;
+	char					percent;
+	char					plus_space;
+	char					minus_null;
+	char					hash;
+	char					point;
+	char					type;
+	long long int			width;
+	long long int			accuracy;
+	int						length;
+	long long int			ret;
+	long long int			len;
+	long long int			i;
+	long long int			j;
+	long long int			tmp;
+	int						nol;
+    int						hf;
+	int                     a;
 }                           t_data;
 
 typedef struct              f_struct
@@ -68,15 +57,15 @@ typedef struct              f_struct
 int							main();
 int							ft_printf(const char *format, ...);
 int							rem_width_accuracy(const char *format, va_list arg,
-                                                  int i, t_data *list);
+							int i, t_data *list);
 int							rem_length(const char *format, int i, t_data *list);
 int							ft_take_digit(const char *format, int i,
-                                             t_data *list);
+							t_data *list);
 int							ft_l(const char *format, int i, t_data *list);
 int							ft_h(const char *format, int i, t_data *list);
 int							ft_procent(t_data *list, int i);
 int							ft_precent(const char *format, va_list arg,
-                                          t_data *list, int i);
+							t_data *list, int i);
 void						ft_allocation(t_data *list, va_list arg);
 void						rem_type(const char *format, int i, t_data *list);
 void						rem_flag(const char *format, int i, t_data *list);
@@ -127,5 +116,6 @@ char                        *make_inf(f_floats **new);
 char						*ft_width_f(t_data *list, char *tmp);
 char						*ft_accuracy_f2(t_data *list, char *tmp, char *ret);
 char						*ft_Lf(t_data *list, va_list arg);
+
 
 #endif

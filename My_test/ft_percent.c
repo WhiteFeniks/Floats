@@ -26,7 +26,10 @@ void		ft_first_procent(t_data *list, char *s, int x)
 	s[x] = '\0';
 	x = 0;
 	while (s[x])
-		write(1, &s[x++], 1);
+    {
+	    write(1, &s[x++], 1);
+	    list->ret++;
+    }
 }
 
 void		ft_second_procent(t_data *list, char *s, int x)
@@ -43,7 +46,10 @@ void		ft_second_procent(t_data *list, char *s, int x)
 	s[x] = '\0';
 	x = 0;
 	while (s[x])
-		write(1, &s[x++], 1);
+    {
+	    write(1, &s[x++], 1);
+        list->ret++;
+    }
 }
 
 void		ft_third_procent(t_data *list, char *s, int x)
@@ -60,7 +66,10 @@ void		ft_third_procent(t_data *list, char *s, int x)
 	s[x] = '\0';
 	x = 0;
 	while (s[x])
-		write(1, &s[x++], 1);
+    {
+	    write(1, &s[x++], 1);
+        list->ret++;
+    }
 }
 
 int			ft_procent(t_data *list, int i)
