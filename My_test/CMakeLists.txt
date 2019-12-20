@@ -83,7 +83,6 @@ add_executable(My_test
         ft_exp_long_arithmetic.c
         ft_f.c
         ft_floats.c
-        ft_Lf_floats.c
         ft_floats_2.c
         ft_floats_3.c
         ft_floats_4.c
@@ -91,9 +90,7 @@ add_executable(My_test
         ft_help_s.c
         ft_help_s2.c
         ft_Lf.c
-        ft_lib1.c
-        ft_lib2.c
-        ft_lib3.c
+        ft_Lf_floats.c
         ft_make_zero_str.c
         ft_null.c
         ft_null_s.c

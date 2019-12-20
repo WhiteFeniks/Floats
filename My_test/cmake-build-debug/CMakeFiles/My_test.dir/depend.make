@@ -73,14 +73,6 @@ CMakeFiles/My_test.dir/ft_help_s2.c.o: ../ft_help_s2.c
 CMakeFiles/My_test.dir/ft_help_s2.c.o: ../ft_printf.h
 CMakeFiles/My_test.dir/ft_help_s2.c.o: ../libft/libft.h
 
-CMakeFiles/My_test.dir/ft_lib1.c.o: ../ft_lib1.c
-CMakeFiles/My_test.dir/ft_lib1.c.o: ../ft_printf.h
-CMakeFiles/My_test.dir/ft_lib1.c.o: ../libft/libft.h
-
-CMakeFiles/My_test.dir/ft_lib2.c.o: ../ft_lib2.c
-
-CMakeFiles/My_test.dir/ft_lib3.c.o: ../ft_lib3.c
-
 CMakeFiles/My_test.dir/ft_make_zero_str.c.o: ../ft_make_zero_str.c
 CMakeFiles/My_test.dir/ft_make_zero_str.c.o: ../ft_printf.h
 CMakeFiles/My_test.dir/ft_make_zero_str.c.o: ../libft/libft.h

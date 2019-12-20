@@ -43,6 +43,7 @@
 #define LDBL_NAN   0x7FFF0000000001000000L
 #define LDBL_PZERO 0x00000000000000000000L
 #define LDBL_NZERO 0x80000000000000000000L
+
 int		main(void)
 {
     int i;
@@ -59,9 +60,37 @@ int		main(void)
 
 */
 
-    printf("lib точность = %.0Lf\n", -LDBL_MIN);
-    i = ft_printf("my точность = %.0Lf\n", -LDBL_MIN);
-    printf("\n");
+    printf("lib точность = %f\n", DBL_NAN);
+    i = ft_printf("my точность  = %f\n", DBL_NAN);
+
+    printf("lib точность = %-6f\n", DBL_NAN);
+    i = ft_printf("my точность  = %-6f\n", DBL_NAN);
+
+    printf("lib точность = %-9f\n", DBL_NAN);
+    i = ft_printf("my точность  = %-9f\n", DBL_NAN);
+
+    printf("lib точность = %+9f\n", DBL_NAN);
+    i = ft_printf("my точность  = %+9f\n", DBL_NAN);
+
+    printf("lib точность = %+10.7f\n", DBL_NAN);
+    i = ft_printf("my точность  = %+10.7f\n", DBL_NAN);
+
+    printf("lib точность = % .7f\n", DBL_NAN);
+    i = ft_printf("my точность  = % .7f\n", DBL_NAN);
+
+    printf("lib точность = % f\n", DBL_NAN);
+    i = ft_printf("my точность  = % f\n", DBL_NAN);
+
+   printf("lib точность = %06f\n", DBL_NAN);
+   i = ft_printf("my точность  = %06f\n", DBL_NAN);
+/*
+    int x;
+    x = 0;
+    while(i = ft_printf("my точность  = %06f\n", DBL_NAN))
+    {
+        x++;
+    }*/
+    //printf("\n");
 /*
     printf("lib точность =  INF, %.700f\n", 1.0/0.0);
     i = ft_printf("my точность =   INF, %.700f\n", 1.0/0.0);

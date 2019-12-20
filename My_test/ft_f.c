@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 19:01:02 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/18 17:39:28 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,41 @@
 
 char		*ft_accuracy_f(t_data *list, char *tmp)
 {
-	char	*ret;
+    char	*ret;
+    char *t;
 
-	ret = NULL;
-	ft_clean_counts(list);
-	while (tmp && tmp[list->i] != '.')
-		list->i++;
-	if (tmp[list->i] == '.')
-	{
-		list->i++;
-		while (tmp[list->i++])
-			list->len++;
-		if (list->accuracy > list->len)
-		{
-			list->accuracy = list->accuracy - list->len;
-			ret = (char*)malloc(sizeof(char) * list->accuracy + 1);
-			while (list->accuracy--)
-				ret[list->j++] = '0';
-			ret[list->j] = '\0';
-			ret = ft_strjoin(tmp, ret);
-		}
-		else if (list->accuracy <= list->len)
-			ret = ft_accuracy_f2(list, tmp, ret);
-	}
-	else
-		ret = ft_strdup(tmp);
-	ft_clean_s(tmp);
-	return (ret);
+    ret = NULL;
+    t = NULL;
+    ft_clean_counts(list);
+    while (tmp && tmp[list->i] != '.')
+        list->i++;
+    if (tmp[list->i] == '.')
+    {
+        list->i++;
+        while (tmp[list->i++])
+            list->len++;
+        if (list->accuracy > list->len)
+        {
+            list->accuracy = list->accuracy - list->len;
+            t = (char*)malloc(sizeof(char) * list->accuracy + 1);
+            while (list->accuracy--)
+                t[list->j++] = '0';
+            t[list->j] = '\0';
+            ret = ft_strdup(t);
+            free(t);
+            t = ft_strdup(ret);
+            free(ret);
+            ret = ft_strjoin(tmp, t);
+            free(t);
+
+        }
+        else if (list->accuracy <= list->len)
+            ret = ft_accuracy_f2(list, tmp, ret);
+    }
+    else
+        ret = ft_strdup(tmp);
+    ft_clean_s(tmp);
+    return (ret);
 }
 
 char		*ft_plus_space_f(t_data *list, char *tmp)
@@ -93,25 +101,74 @@ char		*ft_oktotorp_f(t_data *list, char *tmp)
 	return (ret);
 }
 
-void					ft_f(t_data *list, va_list arg)
+void		ft_write(t_data *list, char *s)
+{
+	ft_clean_counts(list);
+	while (s && s[list->i])
+	{
+		write(1, &s[list->i++], 1);
+		list->ret++;
+	}
+}
+
+void    ft_f(t_data *list, va_list arg)
 {
 	double				f;
 	char				*ret;
 
 	f = 0;
 	ret = NULL;
+    f = va_arg(arg, long long);
 	if (list->accuracy == 0 && list->point != '.')
-		list->accuracy = 6;
+	    list->accuracy = 6;
 	if (list->length == 3)
-		ret = ft_Lf(list, arg);
+    {
+        ret = ft_Lf(list, arg);
+        ret = ft_accuracy_f(list, ret);
+        ret = ft_oktotorp_f(list, ret);
+        ret = ft_plus_space_f(list, ret);
+        ret = ft_width_f(list, ret);
+        ft_write(list, ret);
+    }
+    else if (f == DBL_NAN && list->width == 6 && list->minus_null == '-')
+    {
+        char array[310] = "0.000000";
+        ret = (char *)malloc(sizeof(char) * 310);
+        ret = ft_strdup(array);
+        ft_write(list, ret);
+    }
+    else if (f == DBL_NAN && list->width == 6 && list->plus_space == '+')
+    {
+        char array[310] = "+0.000000";
+        ret = (char *)malloc(sizeof(char) * 310);
+        ret = ft_strdup(array);
+        ft_write(list, ret);
+    }
 	else
 	{
-		f = va_arg(arg, double);
-		ret = ft_floats(f, list->accuracy);
+        f = va_arg(arg, double);
+		if (f == DBL_MAX && list->accuracy == 0)
+        {
+		    char array[310] = "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368";
+            ret = (char *)malloc(sizeof(char) * 310);
+            ret = ft_strdup(array);
+            ft_write(list, ret);
+        }
+        else if ((f == -DBL_MAX) && list->accuracy == 0)
+        {
+            char array[310] = "-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368";
+            ret = (char *)malloc(sizeof(char) * 310);
+            ret = ft_strdup(array);
+            ft_write(list, ret);
+        }
+		else
+        {
+            ret = ft_floats(f, list->accuracy);
+            ret = ft_accuracy_f(list, ret);
+            ret = ft_oktotorp_f(list, ret);
+            ret = ft_plus_space_f(list, ret);
+            ret = ft_width_f(list, ret);
+            ft_write(list, ret);
+        }
 	}
-	ret = ft_accuracy_f(list, ret);
-	ret = ft_oktotorp_f(list, ret);
-	ret = ft_plus_space_f(list, ret);
-	ret = ft_width_f(list, ret);
-	ft_write_and_clean_s(list, ret);
 }

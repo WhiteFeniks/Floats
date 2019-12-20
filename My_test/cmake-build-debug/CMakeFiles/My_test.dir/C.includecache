@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/umoff/git_floats/My_test/ft_Lf_floats.c
+/Users/umoff/git_floats/My_test/ft_f.c
 ft_printf.h
 /Users/umoff/git_floats/My_test/ft_printf.h
 
@@ -21,6 +21,8 @@ stdlib.h
 -
 libft/libft.h
 /Users/umoff/git_floats/My_test/libft/libft.h
+float.h
+-
 
 /Users/umoff/git_floats/My_test/libft/libft.h
 string.h

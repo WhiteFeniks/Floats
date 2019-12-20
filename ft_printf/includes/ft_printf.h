@@ -18,7 +18,19 @@
 # include <stdio.h>                     //
 # include <stdlib.h>
 # include "../includes/libft.h"
+# include <float.h>
 
+#define DBL_INF    0x7FF0000000000000
+#define DBL_NINF   0xFFF0000000000000
+#define DBL_NAN    0x7FF0000000100000
+#define DBL_PZERO  0x0000000000000000
+#define DBL_NZERO  0x8000000000000000
+
+#define LDBL_INF   0x7FFF0000000000000000L
+#define LDBL_NINF  0xFFFF0000000000000000L
+#define LDBL_NAN   0x7FFF0000000001000000L
+#define LDBL_PZERO 0x00000000000000000000L
+#define LDBL_NZERO 0x80000000000000000000L
 
 /*
 ** 1 = l;2 = h;3 = L;4 = ll;5 = hh;

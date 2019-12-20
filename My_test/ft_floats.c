@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 18:13:39 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/18 15:28:26 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/18 17:41:07 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,18 +94,18 @@ char *ft_floats(double num, long long int accuracy)
 
     if (num != num)
     {
-        result = ft_make_zero_char(3);
+        result = ft_make_zero_char(4);
         temp = result;
         free(temp);
         result[0] = 'n';
         result[1] = 'a';
-        result[2] = 'n';
+        result[2] = 'n';        
+        result[3] = '\0';        
         return(result);
     }
     new = (f_floats*)malloc(sizeof(f_floats));
     new->accuracy = accuracy;
     result = write_number(num, &new);
-    free(new->stroka);
     free(new);
     if (new->sign == 1)
         result = ft_strjoin("-", result);

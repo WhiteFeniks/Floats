@@ -609,87 +609,6 @@ ft_help_s2.c.s:
 	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_help_s2.c.s
 .PHONY : ft_help_s2.c.s
 
-ft_lib1.o: ft_lib1.c.o
-
-.PHONY : ft_lib1.o
-
-# target to build an object file
-ft_lib1.c.o:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib1.c.o
-.PHONY : ft_lib1.c.o
-
-ft_lib1.i: ft_lib1.c.i
-
-.PHONY : ft_lib1.i
-
-# target to preprocess a source file
-ft_lib1.c.i:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib1.c.i
-.PHONY : ft_lib1.c.i
-
-ft_lib1.s: ft_lib1.c.s
-
-.PHONY : ft_lib1.s
-
-# target to generate assembly for a file
-ft_lib1.c.s:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib1.c.s
-.PHONY : ft_lib1.c.s
-
-ft_lib2.o: ft_lib2.c.o
-
-.PHONY : ft_lib2.o
-
-# target to build an object file
-ft_lib2.c.o:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib2.c.o
-.PHONY : ft_lib2.c.o
-
-ft_lib2.i: ft_lib2.c.i
-
-.PHONY : ft_lib2.i
-
-# target to preprocess a source file
-ft_lib2.c.i:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib2.c.i
-.PHONY : ft_lib2.c.i
-
-ft_lib2.s: ft_lib2.c.s
-
-.PHONY : ft_lib2.s
-
-# target to generate assembly for a file
-ft_lib2.c.s:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib2.c.s
-.PHONY : ft_lib2.c.s
-
-ft_lib3.o: ft_lib3.c.o
-
-.PHONY : ft_lib3.o
-
-# target to build an object file
-ft_lib3.c.o:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib3.c.o
-.PHONY : ft_lib3.c.o
-
-ft_lib3.i: ft_lib3.c.i
-
-.PHONY : ft_lib3.i
-
-# target to preprocess a source file
-ft_lib3.c.i:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib3.c.i
-.PHONY : ft_lib3.c.i
-
-ft_lib3.s: ft_lib3.c.s
-
-.PHONY : ft_lib3.s
-
-# target to generate assembly for a file
-ft_lib3.c.s:
-	$(MAKE) -f CMakeFiles/My_test.dir/build.make CMakeFiles/My_test.dir/ft_lib3.c.s
-.PHONY : ft_lib3.c.s
-
 ft_make_zero_str.o: ft_make_zero_str.c.o
 
 .PHONY : ft_make_zero_str.o
@@ -2940,15 +2859,6 @@ help:
 	@echo "... ft_help_s2.o"
 	@echo "... ft_help_s2.i"
 	@echo "... ft_help_s2.s"
-	@echo "... ft_lib1.o"
-	@echo "... ft_lib1.i"
-	@echo "... ft_lib1.s"
-	@echo "... ft_lib2.o"
-	@echo "... ft_lib2.i"
-	@echo "... ft_lib2.s"
-	@echo "... ft_lib3.o"
-	@echo "... ft_lib3.i"
-	@echo "... ft_lib3.s"
 	@echo "... ft_make_zero_str.o"
 	@echo "... ft_make_zero_str.i"
 	@echo "... ft_make_zero_str.s"

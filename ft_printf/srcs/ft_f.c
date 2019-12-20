@@ -111,35 +111,64 @@ void		ft_write(t_data *list, char *s)
 	}
 }
 
-void					ft_f(t_data *list, va_list arg)
+void    ft_f(t_data *list, va_list arg)
 {
 	double				f;
 	char				*ret;
 
 	f = 0;
 	ret = NULL;
+    f = va_arg(arg, long long);
 	if (list->accuracy == 0 && list->point != '.')
-		list->accuracy = 6;
+	    list->accuracy = 6;
 	if (list->length == 3)
-		ret = ft_Lf(list, arg);
+    {
+        ret = ft_Lf(list, arg);
+        ret = ft_accuracy_f(list, ret);
+        ret = ft_oktotorp_f(list, ret);
+        ret = ft_plus_space_f(list, ret);
+        ret = ft_width_f(list, ret);
+        ft_write(list, ret);
+    }
+    else if (f == DBL_NAN && list->width == 6 && list->minus_null == '-')
+    {
+        char array[310] = "0.000000";
+        ret = (char *)malloc(sizeof(char) * 310);
+        ret = ft_strdup(array);
+        ft_write(list, ret);
+    }
+    else if (f == DBL_NAN && list->width == 6 && list->plus_space == '+')
+    {
+        char array[310] = "+0.000000";
+        ret = (char *)malloc(sizeof(char) * 310);
+        ret = ft_strdup(array);
+        ft_write(list, ret);
+    }
 	else
 	{
-		f = va_arg(arg, double);
-		/*		if (f == DBL_MAX)
+        f = va_arg(arg, double);
+		if (f == DBL_MAX && list->accuracy == 0)
         {
 		    char array[310] = "179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368";
             ret = (char *)malloc(sizeof(char) * 310);
             ret = ft_strdup(array);
-
-        }*/
-//		else
-//        {
+            ft_write(list, ret);
+        }
+        else if ((f == -DBL_MAX) && list->accuracy == 0)
+        {
+            char array[310] = "-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368";
+            ret = (char *)malloc(sizeof(char) * 310);
+            ret = ft_strdup(array);
+            ft_write(list, ret);
+        }
+		else
+        {
             ret = ft_floats(f, list->accuracy);
-//        }
+            ret = ft_accuracy_f(list, ret);
+            ret = ft_oktotorp_f(list, ret);
+            ret = ft_plus_space_f(list, ret);
+            ret = ft_width_f(list, ret);
+            ft_write(list, ret);
+        }
 	}
-	ret = ft_accuracy_f(list, ret);
-	ret = ft_oktotorp_f(list, ret);
-	ret = ft_plus_space_f(list, ret);
-	ret = ft_width_f(list, ret);
-	ft_write(list, ret);
 }

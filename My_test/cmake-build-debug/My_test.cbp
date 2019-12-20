@@ -138,15 +138,6 @@
 		<Unit filename="/Users/umoff/git_floats/My_test/ft_help_s2.c">
 			<Option target="My_test"/>
 		</Unit>
-		<Unit filename="/Users/umoff/git_floats/My_test/ft_lib1.c">
-			<Option target="My_test"/>
-		</Unit>
-		<Unit filename="/Users/umoff/git_floats/My_test/ft_lib2.c">
-			<Option target="My_test"/>
-		</Unit>
-		<Unit filename="/Users/umoff/git_floats/My_test/ft_lib3.c">
-			<Option target="My_test"/>
-		</Unit>
 		<Unit filename="/Users/umoff/git_floats/My_test/ft_make_zero_str.c">
 			<Option target="My_test"/>
 		</Unit>

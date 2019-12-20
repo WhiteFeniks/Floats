@@ -1,0 +1,295 @@
+Test 1718 (f_reserved_values_inf) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "inf"
+      actual   (nonprintable as hex) : "inf000000"
+
+Test 1719 (f_reserved_values_ninf) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
+      expected output : "-inf"
+      your output     : "-inf000000"
+      expected (nonprintable as hex) : "-inf"
+      actual   (nonprintable as hex) : "-inf000000"
+
+Test 1720 (f_reserved_values_nan) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1723 (f_reserved_values_inf_6w) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "   inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : "inf000000"
+
+Test 1724 (f_reserved_values_ninf_6w) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
+      expected output : "  -inf"
+      your output     : "-inf00"
+      expected (nonprintable as hex) : "  -inf"
+      actual   (nonprintable as hex) : "-inf00"
+
+Test 1725 (f_reserved_values_nan_6w) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1730 (f_reserved_values_nan_6wlj) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1733 (f_reserved_values_inf_6was) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "  +inf"
+      your output     : "+inf000000"
+      expected (nonprintable as hex) : "  +inf"
+      actual   (nonprintable as hex) : "+inf000000"
+
+Test 1734 (f_reserved_values_ninf_6was) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
+      expected output : "  -inf"
+      your output     : "-inf00"
+      expected (nonprintable as hex) : "  -inf"
+      actual   (nonprintable as hex) : "-inf00"
+
+Test 1735 (f_reserved_values_nan_6was) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1738 (f_reserved_values_inf_10w_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "       inf"
+      your output     : "inf0000000"
+      expected (nonprintable as hex) : "       inf"
+      actual   (nonprintable as hex) : "inf0000000"
+
+Test 1739 (f_reserved_values_ninf_10w_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
+      expected output : "      -inf"
+      your output     : "   -inf000"
+      expected (nonprintable as hex) : "      -inf"
+      actual   (nonprintable as hex) : "   -inf000"
+
+Test 1740 (f_reserved_values_nan_10w_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1744 (f_reserved_values_ninf_sp_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
+      expected output : "-inf"
+      your output     : "-inf000"
+      expected (nonprintable as hex) : "-inf"
+      actual   (nonprintable as hex) : "-inf000"
+
+Test 1745 (f_reserved_values_nan_sp_prec7) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1748 (f_reserved_values_inf_sp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : " inf"
+      your output     : " inf000000"
+      expected (nonprintable as hex) : " inf"
+      actual   (nonprintable as hex) : " inf000000"
+
+Test 1750 (f_reserved_values_nan_sp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1753 (f_reserved_values_inf_6wzp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_INF;
+      expected output : "   inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : "inf000000"
+
+Test 1754 (f_reserved_values_ninf_6wzp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NINF;
+      expected output : "  -inf"
+      your output     : "-inf00"
+      expected (nonprintable as hex) : "  -inf"
+      actual   (nonprintable as hex) : "-inf00"
+
+Test 1755 (f_reserved_values_nan_6wzp) : FAILED.
+    First line of code: {double special; *((unsigned long *)(&special)) = DBL_NAN;
+    SIGABRT
+
+Test 1929 (f_L_reserved_values_nan) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1932 (f_L_reserved_values_inf_6w) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "   inf"
+      your output     : " inf00"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : " inf00"
+
+Test 1933 (f_L_reserved_values_ninf_6w) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "  -inf"
+      your output     : "-inf00"
+      expected (nonprintable as hex) : "  -inf"
+      actual   (nonprintable as hex) : "-inf00"
+
+Test 1934 (f_L_reserved_values_nan_6w) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1937 (f_L_reserved_values_inf_6wlj) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "inf   "
+      your output     : "inf00 "
+      expected (nonprintable as hex) : "inf   "
+      actual   (nonprintable as hex) : "inf00 "
+
+Test 1939 (f_L_reserved_values_nan_6wlj) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1942 (f_L_reserved_values_inf_6was) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "  +inf"
+      your output     : "+inf00"
+      expected (nonprintable as hex) : "  +inf"
+      actual   (nonprintable as hex) : "+inf00"
+
+Test 1943 (f_L_reserved_values_ninf_6was) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "  -inf"
+      your output     : "-inf00"
+      expected (nonprintable as hex) : "  -inf"
+      actual   (nonprintable as hex) : "-inf00"
+
+Test 1944 (f_L_reserved_values_nan_6was) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1947 (f_L_reserved_values_inf_10w_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "       inf"
+      your output     : "    inf000"
+      expected (nonprintable as hex) : "       inf"
+      actual   (nonprintable as hex) : "    inf000"
+
+Test 1948 (f_L_reserved_values_ninf_10w_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "      -inf"
+      your output     : "   -inf000"
+      expected (nonprintable as hex) : "      -inf"
+      actual   (nonprintable as hex) : "   -inf000"
+
+Test 1949 (f_L_reserved_values_nan_10w_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1952 (f_L_reserved_values_inf_sp_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;  FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : " inf"
+      your output     : " inf0000000"
+      expected (nonprintable as hex) : " inf"
+      actual   (nonprintable as hex) : " inf0000000"
+
+Test 1954 (f_L_reserved_values_nan_sp_prec7) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1957 (f_L_reserved_values_inf_sp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : " inf"
+      your output     : " inf00"
+      expected (nonprintable as hex) : " inf"
+      actual   (nonprintable as hex) : " inf00"
+
+Test 1958 (f_L_reserved_values_ninf_sp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "-inf"
+      your output     : "-inf000000"
+      expected (nonprintable as hex) : "-inf"
+      actual   (nonprintable as hex) : "-inf000000"
+
+Test 1959 (f_L_reserved_values_nan_sp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1962 (f_L_reserved_values_inf_6wzp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF; FTPF_LDBL_BYTE5(special) = 0x7FFF;
+      expected output : "   inf"
+      your output     : "inf000000"
+      expected (nonprintable as hex) : "   inf"
+      actual   (nonprintable as hex) : "inf000000"
+
+Test 1963 (f_L_reserved_values_ninf_6wzp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = FTPF_LDBL_INF;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+      expected output : "  -inf"
+      your output     : "-inf000000"
+      expected (nonprintable as hex) : "  -inf"
+      actual   (nonprintable as hex) : "-inf000000"
+
+Test 1964 (f_L_reserved_values_nan_6wzp) : FAILED.
+    First line of code: {long double special; *((unsigned long *)(&special)) = 8ull;FTPF_LDBL_BYTE5(special) = 0xFFFF;
+    SIGABRT
+
+Test 1972 (f_L_overprec_might_be_undefbehav_2000) : FAILED.
+    First line of code: {return test("%.2000Lf", 623.28376510723481l);}
+      expected output : "623.28376510723481002118617766427632886916399002075195312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      your output     : "623.28376510723481002118617766427632886916399002075195312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      expected (nonprintable as hex) : "623.28376510723481002118617766427632886916399002075195312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      actual   (nonprintable as hex) : "623.28376510723481002118617766427632886916399002075195312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+
+Test 1975 (f_L_limits_dblmax_prec0_notmandatory) : FAILED.
+    First line of code: {return test("%.0Lf", LDBL_MAX);}
+    Timed out
+
+Test 1976 (f_L_limits_dblmax_prec3_notmandatory) : FAILED.
+    First line of code: {return test("%.3Lf", LDBL_MAX);}
+    Timed out
+
+Test 1977 (f_L_limits_dblmax_precd_notmandatory) : FAILED.
+    First line of code: {return test("%Lf", LDBL_MAX);}
+    Timed out
+
+Test 1978 (f_L_limits_dblmax_prec8_notmandatory) : FAILED.
+    First line of code: {return test("%.8Lf", LDBL_MAX);}
+    Timed out
+
+Test 1979 (f_L_stress_limits_dblmax_prec12_notmandatory) : FAILED.
+    First line of code: {return test("%.12Lf", LDBL_MAX);}
+    Timed out
+
+Test 1980 (f_L_stress_limits_dblmax_prec16_notmandatory) : FAILED.
+    First line of code: {return test("%.16Lf", LDBL_MAX);}
+    Timed out
+
+Test 1981 (f_L_stress_limits_dblmax_prec18_notmandatory) : FAILED.
+    First line of code: {return test("%.18Lf", LDBL_MAX);}
+    Timed out
+
+Test 1982 (f_L_limits_ndblmax_prec0_notmandatory) : FAILED.
+    First line of code: {return test("%.0Lf", -LDBL_MAX);}
+    Timed out
+
+Test 1983 (f_L_limits_ndblmax_prec3_notmandatory) : FAILED.
+    First line of code: {return test("%.3Lf", -LDBL_MAX);}
+    Timed out
+
+Test 1984 (f_L_limits_ndblmax_precd_notmandatory) : FAILED.
+    First line of code: {return test("%Lf", -LDBL_MAX);}
+    Timed out
+
+Test 1985 (f_L_limits_ndblmax_prec8_notmandatory) : FAILED.
+    First line of code: {return test("%.8Lf", -LDBL_MAX);}
+    Timed out
+
+Test 1986 (f_L_stress_limits_ndblmax_prec12_notmandatory) : FAILED.
+    First line of code: {return test("%.12Lf", -LDBL_MAX);}
+    Timed out
+
+Test 1987 (f_L_stress_limits_ndblmax_prec16_notmandatory) : FAILED.
+    First line of code: {return test("%.16Lf", -LDBL_MAX);}
+    Timed out
+
+Test 1988 (f_L_stress_limits_ndblmax_prec18_notmandatory) : FAILED.
+    First line of code: {return test("%.18Lf", -LDBL_MAX);}
+    Timed out
+
