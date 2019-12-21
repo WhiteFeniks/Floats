@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/21 13:35:42 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/10 14:04:05 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 13:20:20 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,9 @@ int	ft_h(const char *format, int i, t_data *list)
 		i++;
 	}
 	else if (format[i] == 'h' && format[i + 1] != 'h')
-		list->length = 3;
+    {
+	    list->length = 3;
+        list->hf = 1;
+    }
 	return (i);
 }

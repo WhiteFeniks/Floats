@@ -47,6 +47,9 @@ int	ft_h(const char *format, int i, t_data *list)
 		i++;
 	}
 	else if (format[i] == 'h' && format[i + 1] != 'h')
-		list->length = 3;
+    {
+	    list->length = 3;
+        list->hf = 1;
+    }
 	return (i);
 }

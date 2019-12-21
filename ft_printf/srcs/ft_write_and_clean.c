@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 19:43:06 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/10 15:46:43 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 13:20:29 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void		ft_clean_list(t_data *list)
 	list->tmp = 0;
 	list->nol = 0;
 	list->hf = 0;
+    list->L = 0;
+	list->Polina = 0;
 	list->ret = 0;
 }
 

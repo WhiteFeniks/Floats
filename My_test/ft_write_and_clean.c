@@ -36,6 +36,8 @@ void		ft_clean_list(t_data *list)
 	list->tmp = 0;
 	list->nol = 0;
 	list->hf = 0;
+    list->L = 0;
+    list->Polina = 0;
 	list->ret = 0;
 }
 

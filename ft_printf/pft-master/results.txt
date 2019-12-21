@@ -5,18 +5,8 @@ Test 887 (mixed_test_0001) : FAILED.
       expected (nonprintable as hex) : "abc-8875hello22337203685477   -2233720368547700003047wassup             nopesomestuff3276700000000000223372036854770878023no22337203685477"
       actual   (nonprintable as hex) : "abc-8875hello22337203685477   -2233720368547700003047wassup             nopesomestuff32767000000000002233720368547704295845319no22337203685477"
 
-Test 2481 (nocrash_mandatory_f_size_h) : FAILED.
+Test 2340 (nocrash_nullarg_22) : FAILED.
     (nocrash test: automatically passes provided no unexpected failure)
-    First line of code: {return test("%hf", 42.5);}
-    SIGABRT
-
-Test 2485 (nocrash_mandatory_f_size_LL) : FAILED.
-    (nocrash test: automatically passes provided no unexpected failure)
-    First line of code: {return test("%LLf", 42.5);}
-    SIGABRT
-
-Test 2486 (nocrash_mandatory_f_size_Ll) : FAILED.
-    (nocrash test: automatically passes provided no unexpected failure)
-    First line of code: {return test("%Llf", 42.5);}
-    SIGABRT
+    First line of code: {return test("%f", NULL); }
+    Timed out
 

@@ -40,7 +40,9 @@ typedef struct              s_data
 	long long int			j;
 	long long int			tmp;
 	int						nol;
-	int						hf;
+    int						hf;
+    int                     L;
+	int                     Polina;
 	int                     res;
 }                           t_data;
 

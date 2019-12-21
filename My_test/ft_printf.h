@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf.L                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -21,7 +21,7 @@
 
 
 /*
-** 1 = l;2 = h;3 = L;4 = ll;5 = hh;
+** 1 = l;2 = L;3 = L;4 = ll;5 = hh;
 */
 typedef struct              s_data
 {
@@ -41,6 +41,8 @@ typedef struct              s_data
 	long long int			tmp;
 	int						nol;
     int						hf;
+    int                     L;
+    int                     Polina;
 	int                     res;
 }                           t_data;
 

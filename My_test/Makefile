@@ -22,7 +22,7 @@ DIR_S = srcs
 
 DIR_O = temporary
 
-HEADER = includes/ft_printf.h
+HEADER = includes/ft_printf.L
 
 SOURCES = *.c
 

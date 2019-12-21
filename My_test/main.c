@@ -48,11 +48,19 @@ int		main(void)
     int i;
 
     i = 0;
-/*
-    printf("lib  = %Llf\n", 42.5);
-    i = ft_printf("my   = %Llf\n", 42.5);
+
+ /*   printf("lib %Llf\n", 42.5);
+    i = ft_printf("my  %Llf\n", 42.5);
     printf("\n");
- */
+
+    printf("lib %Llf\n", 42.5);
+    i = ft_printf("my  %Llf\n", 42.5);
+    printf("\n");*/
+/*
+    printf("Lib %Lf\n", 42.5l);
+    i = ft_printf("My  %Lf\n", 42.5l);
+    printf("\n");
+*/
   /*  printf("l %d \n", printf("@moulitest: %#.x %#.0x", 0, 0));
     printf("m %d \n", ft_printf("@moulitest: %#.x %#.0x", 0, 0));
     printf("\n");
@@ -71,7 +79,8 @@ int		main(void)
     printf("l %d \n", printf("@moulitest: %5.d %5.0d\n", 0, 0));
     printf("m %d \n", ft_printf("@moulitest: %5.d %5.0d\n", 0, 0));
 */
-//tests good
+//tests good Polina
+/*
 ft_printf("m0 %x\n", -42);
 ft_printf("l0 %x\n", -42);
 printf("\n");
@@ -89,7 +98,7 @@ printf("l4 %lx\n", 4294967296);
 printf("\n");
 ft_printf("m5 %hhX\n", 4294967296);
 printf("l5 %lX\n", 4294967296);
-printf("\n");
+printf("\n");*/
 
 
 
@@ -97,10 +106,25 @@ printf("\n");
     int x;
 
     x = 0;
-    while(i = ft_printf("my   = %Llf\n", 42.5))
+    while(i = ft_printf("%hf\n", 42.5))
+    {
+        x++;
+    }
+*/
+ /*   int x;
+
+    x = 0;
+    while(i = ft_printf("%LLf\n", 42.5))
     {
         x++;
     }*/
+    int x;
+
+    x = 0;
+    while(i = ft_printf("my  %Llf\n", 42.5))
+    {
+        x++;
+    }
 /*
     printf("lib точность =  DBL_MAX, %.700f\n", DBL_MAX);
     i = ft_printf("my точность =   DBL_MIN, %.700f\n", DBL_MAX);
