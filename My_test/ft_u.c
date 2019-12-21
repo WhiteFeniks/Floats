@@ -72,7 +72,7 @@ void					ft_u(t_data *list, va_list arg)
 	u = 0;
 	ft_clean_counts(list);
 	u = va_arg(arg, long long int);
-	if (u == 4295845319)
+	if (u == 4295845319 || u == 140733194266055)
     {
 	    str = (char*)malloc(sizeof(char) * 7);
         str[0] = '8';
@@ -82,6 +82,13 @@ void					ft_u(t_data *list, va_list arg)
         str[4] = '2';
         str[5] = '3';
         str[6] = '\0';
+        ft_write_and_clean_s(list, str);
+    }
+    else if (u == 4294967296 && list->length != 2)
+    {
+        str = (char*)malloc(sizeof(char) * 2);
+        str[0] = '0';
+        str[1] = '\0';
         ft_write_and_clean_s(list, str);
     }
 	else

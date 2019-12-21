@@ -65,15 +65,20 @@ int		main(void)
     printf("m = %d\n",(i = ft_printf("%s %s", "this", "is")));
     printf("\n"); */
 
-    printf("l = %d\n", printf("@moulitest: %.d %.0d", 42, 43));
+    /*printf("l = %d\n", printf("@moulitest: %.d %.0d", 42, 43));
     printf("m = %d\n",(i = ft_printf("@moulitest: %.d %.0d", 42, 43)));
-    printf("\n");
-
+    printf("\n");*/
+/*
     printf("l %.0d\n", 56);
     ft_printf("m %.0d\n", 56);
+
     printf("\n");
     printf("l %.0d\n", 0);
-    ft_printf("m %.0d\n", 0);
+    ft_printf("m %.0d\n", 0);*/
+
+    printf("\n");
+    printf("l %u\n", -1);
+    ft_printf("m %u\n", -1);
 
 
 
@@ -132,13 +137,13 @@ printf("\n");*/
         x++;
     }*/
 
- /*   int x;
+    int x;
 
     x = 0;
-    while(i = ft_printf("%LLf\n", 42.5))
+    while(ft_printf("m %u\n", -1))
     {
         x++;
-    }*/
+    }
 
     //printf("lib %u\n", 4295845319);
     //i = ft_printf("my  %u\n", 4295845319);
