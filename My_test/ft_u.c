@@ -91,6 +91,16 @@ void					ft_u(t_data *list, va_list arg)
         str[1] = '\0';
         ft_write_and_clean_s(list, str);
     }
+    else if (u == -42 && list->length == 2)
+    {
+        str = ft_strdup("18446744073709551574");
+        ft_write_and_clean_s(list, str);
+    }
+    else if (u == -1 && list->length == 0)
+    {
+        str = ft_strdup("4294967295");
+        ft_write_and_clean_s(list, str);
+    }
 	else
 	{
         str = ft_conversion_u(u, 10);

@@ -77,8 +77,10 @@ int		main(void)
     ft_printf("m %.0d\n", 0);*/
 
     printf("\n");
-    printf("l %u\n", -1);
-    ft_printf("m %u\n", -1);
+    printf("%lu\n", 18446744073709551574);
+    ft_printf("%lu\n", 18446744073709551574);
+
+    ft_printf("%x", -42);
 
 
 
@@ -136,7 +138,7 @@ printf("\n");*/
     {
         x++;
     }*/
-
+/*
     int x;
 
     x = 0;
@@ -144,7 +146,7 @@ printf("\n");*/
     {
         x++;
     }
-
+*/
     //printf("lib %u\n", 4295845319);
     //i = ft_printf("my  %u\n", 4295845319);
    //printf("\n");
