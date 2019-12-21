@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/21 21:32:37 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 22:34:08 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 23:59:37 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** 5. Функция подсчитывает длину матиссы
 */
 
-int		ft_count_mantissa(f_floats **new)
+int		ft_count_mantissa(t_floats **new)
 {
 	int i;
 
@@ -28,35 +28,34 @@ int		ft_count_mantissa(f_floats **new)
 
 /*
 ** 4. Функция создает строку из двух int-вых массивов
-** a[0] = i, a[1] = j
+** (*new)->i = i, (*new)->j = j
 */
 
-char	*ft_make_str(int *integer_part, int *fractional_part)
+char	*ft_make_str(t_floats **new, int *integer_part, int *fractional_part)
 {
-	int		a[2];
 	char	*x;
 
-	a[0] = 0;
-	a[1] = 0;
+	(*new)->i = 0;
+	(*new)->j = 0;
 	x = ft_make_zero_char(1100);
-	while (integer_part[a[0]] == 0 && a[0] < 1100)
-		a[0]++;
-	if (a[0] == 1100)
+	while (integer_part[(*new)->i] == 0 && (*new)->i < 1100)
+		(*new)->i++;
+	if ((*new)->i == 1100)
 	{
-		a[1]++;
+		(*new)->j++;
 		x[0] = 48;
 	}
-	while (a[0] < 1100)
-		x[a[1]++] = integer_part[a[0]++] + 48;
-	x[a[1]] = '.';
-	while (fractional_part[a[0]] == 0 && a[0] >= 0)
-		a[0]--;
-	if (a[0] == -1)
-		a[0]++;
-	while (a[0] >= 0)
+	while ((*new)->i < 1100)
+		x[(*new)->j++] = integer_part[(*new)->i++] + 48;
+	x[(*new)->j] = '.';
+	while (fractional_part[(*new)->i] == 0 && (*new)->i >= 0)
+		(*new)->i--;
+	if ((*new)->i == -1)
+		(*new)->i++;
+	while ((*new)->i >= 0)
 	{
-		x[a[0] + a[1] + 1] = fractional_part[a[0]] + 48;
-		a[0]--;
+		x[(*new)->i + (*new)->j + 1] = fractional_part[(*new)->i] + 48;
+		(*new)->i--;
 	}
 	return (x);
 }
@@ -66,7 +65,7 @@ char	*ft_make_str(int *integer_part, int *fractional_part)
 ** и эффективного порядка
 */
 
-int		*make_fractional(f_floats **new, int *x, int i)
+int		*make_fractional(t_floats **new, int *x, int i)
 {
 	int *temp;
 	int *one_arr;
@@ -95,7 +94,7 @@ int		*make_fractional(f_floats **new, int *x, int i)
 ** и эффективного порядка
 */
 
-int		*make_integer(f_floats **new, int *x, int i)
+int		*make_integer(t_floats **new, int *x, int i)
 {
 	int *temp;
 
@@ -113,32 +112,31 @@ int		*make_integer(f_floats **new, int *x, int i)
 ** и возвращает строку result
 */
 
-char	*my_number(f_floats **new)
+char	*my_number(t_floats **new)
 {
-	int		i;
 	char	*result;
 	int		*integer_part;
 	int		*fractional_part;
 	int		*temp1;
 
-	i = 0;
+	(*new)->i = 0;
 	integer_part = ft_make_zero_str(1100);
 	fractional_part = ft_make_zero_str(1100);
 	result = ft_make_zero_char(1100);
-	while (i <= ft_count_mantissa(new))
+	while ((*new)->i <= ft_count_mantissa(new))
 	{
 		if ((*new)->ef_order >= 0)
 		{
 			temp1 = integer_part;
-			integer_part = make_integer(new, integer_part, i);
+			integer_part = make_integer(new, integer_part, (*new)->i);
 			free(temp1);
 		}
 		else
-			fractional_part = make_fractional(new, fractional_part, i);
-		i++;
+			fractional_part = make_fractional(new, fractional_part, (*new)->i);
+		(*new)->i++;
 	}
-	ft_sps_polina(&integer_part, &fractional_part, (*new)->accuracy, i);
-	ft_free_result(&result, ft_make_str(integer_part, fractional_part));
+	ft_sps_polina(&integer_part, &fractional_part, (*new)->accuracy, (*new)->i);
+	ft_free_result(&result, ft_make_str(new, integer_part, fractional_part));
 	ft_free_array(integer_part, fractional_part);
 	return (result);
 }

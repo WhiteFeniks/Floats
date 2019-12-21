@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/21 21:32:17 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 22:23:34 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 23:59:18 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** (Пустые integer_part и fractal_part)
 */
 
-int		check_zero(f_floats **new)
+int		check_zero(t_floats **new)
 {
 	int i;
 	int j;
@@ -55,7 +55,7 @@ int		power_of_two(int power)
 ** числа 16383 (011 1111 1111 1111), чтобы вычислить эффективный порядок
 */
 
-void	make_order(f_floats **new)
+void	make_order(t_floats **new)
 {
 	int		i;
 	int		k;
@@ -79,7 +79,7 @@ void	make_order(f_floats **new)
 ** 2. Функция нахождения позиции, где заканчиваются значащие цифры мантиссы
 */
 
-int		make_mantissa(f_floats **new)
+int		make_mantissa(t_floats **new)
 {
 	int i;
 
@@ -97,7 +97,7 @@ int		make_mantissa(f_floats **new)
 ** дробной и целой части, а после перезаписи в строку
 */
 
-char	*number_breakdown(char number_of_bits[], f_floats **new)
+char	*number_breakdown(char number_of_bits[], t_floats **new)
 {
 	int i;
 	int j;

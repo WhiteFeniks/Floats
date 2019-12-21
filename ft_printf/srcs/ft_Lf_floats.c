@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/21 21:33:50 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 22:57:20 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/22 00:00:15 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 */
 
 char	*write_lf_number_in_binary(size_t const step,
-	void *value, f_floats **new)
+	void *value, t_floats **new)
 {
 	int				i;
 	int				j;
@@ -61,10 +61,10 @@ char	*write_lf_number_in_binary(size_t const step,
 ** отправляем наше количество заходов в цикл, и адрес на наше число
 */
 
-char	*write_lf_number(long double num, f_floats **new)
+char	*write_lf_number(long double num, t_floats **new)
 {
 	int				size_array;
-	union number	value;
+	t_un			value;
 
 	value.x = num;
 	size_array = sizeof(value.my_array);
@@ -77,21 +77,16 @@ char	*write_lf_number(long double num, f_floats **new)
 
 char	*ft_lf_floats(long double num, long long int accuracy)
 {
-	f_floats	*new;
+	t_floats	*new;
 	char		*result;
-	char		*temp;
 	char		*t;
 
 	t = NULL;
-	new = (f_floats*)malloc(sizeof(f_floats));
+	result = NULL;
+	new = (t_floats*)malloc(sizeof(t_floats));
 	if (num != num)
 	{
-		result = ft_make_zero_char(3);
-		temp = result;
-		free(temp);
-		result[0] = 'n';
-		result[1] = 'a';
-		result[2] = 'n';
+		result = ft_strdup("nan");
 		return (result);
 	}
 	new->accuracy = accuracy;

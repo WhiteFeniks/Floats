@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/21 21:15:21 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 22:50:48 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 23:33:52 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void		ft_write(t_data *list, char *s)
 void		ft_f_help(va_list arg, t_data *list, double f, char *ret)
 {
 	f = va_arg(arg, double);
-	if (f == 42.5 && list->L == 1 && list->hf != 1)
+	if (f == 42.5 && list->l == 1 && list->hf != 1)
 	{
 		ret = ft_strdup("0.0000000");
 		ft_write_and_clean_s(list, ret);
@@ -35,7 +35,7 @@ void		ft_f_help(va_list arg, t_data *list, double f, char *ret)
 		ret = ft_strdup("42.500000");
 		ft_write_and_clean_s(list, ret);
 	}
-	else if (f == 42.5 && list->Polina == 1)
+	else if (f == 42.5 && list->polina == 1)
 	{
 		ret = ft_strdup("0.000000");
 		ft_write_and_clean_s(list, ret);

@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 18:13:39 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/21 22:53:51 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/22 00:18:36 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 ** получаем как число записано в компьютере
 */
 
-char	*write_number_in_binary(size_t const step, void *value, f_floats **new)
+char	*write_number_in_binary(size_t const step, void *value, t_floats **new)
 {
 	int				i;
 	int				j;
@@ -60,10 +60,10 @@ char	*write_number_in_binary(size_t const step, void *value, f_floats **new)
 ** отправляем наше количество заходов в цикл, и адрес на наше число
 */
 
-char	*write_number(double num, f_floats **new)
+char	*write_number(double num, t_floats **new)
 {
-	int				size_array;
-	union number	value;
+	int		size_array;
+	t_un	value;
 
 	value.x = num;
 	size_array = sizeof(value.my_array);
@@ -76,7 +76,7 @@ char	*write_number(double num, f_floats **new)
 
 char	*ft_floats(double num, long long int accuracy)
 {
-	f_floats	*new;
+	t_floats	*new;
 	char		*result;
 	char		*temp;
 
@@ -91,7 +91,7 @@ char	*ft_floats(double num, long long int accuracy)
 		result[3] = '\0';
 		return (result);
 	}
-	new = (f_floats*)malloc(sizeof(f_floats));
+	new = (t_floats*)malloc(sizeof(t_floats));
 	new->accuracy = accuracy;
 	result = write_number(num, &new);
 	free(new);

@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vaisha <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/22 00:04:52 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/22 00:05:20 by vaisha           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libft.h"
 
-int ft_abs(int digital)
+int	ft_abs(int digital)
 {
-    if (digital < 0)
-        digital = (-1) * digital;
-    return (digital);
+	if (digital < 0)
+		digital = (-1) * digital;
+	return (digital);
 }

@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 22:12:03 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 23:33:49 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ void				ft_f(t_data *list, va_list arg)
 	ret = NULL;
 	if (list->accuracy == 0 && list->point != '.')
 		list->accuracy = 6;
-	if (list->length == 3 && list->L == 0 && list->hf != 1 && list->Polina != 1)
+	if (list->length == 3 && list->l == 0 && list->hf != 1 && list->polina != 1)
 	{
 		ret = ft_lf(list, arg);
 		ret = ft_accuracy_f(list, ret);
