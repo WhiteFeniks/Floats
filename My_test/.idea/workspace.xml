@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a78dc496-32d9-4b84-94c2-2bd41e837543" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../42FileChecker" beforeDir="false" afterPath="$PROJECT_DIR$/../42FileChecker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ft_printf/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_abs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_atoi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_bzero.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_isalnum.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_isalpha.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_isascii.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_isdigit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_isprint.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_isspace.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_itoa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_lstadd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_lstdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_lstdelone.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_lstiter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_lstmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_lstnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memalloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memccpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memmove.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_memset.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putchar.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putchar_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putendl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putendl_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putnbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putnbr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_putstr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strclr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strdup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_striter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_striteri.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strjoin.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strmapi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strncat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strncmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strncpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strndup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strnequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strnstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strrchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strsplit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strsub.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_strtrim.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_tolower.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/ft_toupper.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libft/libft.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/libftprintf.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/temporary/ft_Lf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/temporary/ft_Lf_floats.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/temporary/ft_hhhhhhelp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_printf/temporary/ft_width_f.o" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VJEgTNABeILB61C0Cq99D83ZHx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a78dc496-32d9-4b84-94c2-2bd41e837543" name="Default Changelist" comment="" />
+      <created>1576962909294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576962909294</updated>
+      <workItem from="1576962913940" duration="261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2006" height="287" key="GridCell.Tab.0.bottom" timestamp="1576963841673">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841673" />
+    <state width="2006" height="287" key="GridCell.Tab.0.center" timestamp="1576963841672">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841672" />
+    <state width="2006" height="287" key="GridCell.Tab.0.left" timestamp="1576963841672">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841672" />
+    <state width="2006" height="287" key="GridCell.Tab.0.right" timestamp="1576963841673">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841673" />
+    <state width="2006" height="287" key="GridCell.Tab.1.bottom" timestamp="1576963841675">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.1.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841675" />
+    <state width="2006" height="287" key="GridCell.Tab.1.center" timestamp="1576963841674">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.1.center/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841674" />
+    <state width="2006" height="287" key="GridCell.Tab.1.left" timestamp="1576963841674">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.1.left/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841674" />
+    <state width="2006" height="287" key="GridCell.Tab.1.right" timestamp="1576963841675">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state width="2006" height="287" key="GridCell.Tab.1.right/0.23.2048.1049@0.23.2048.1049" timestamp="1576963841675" />
+    <state x="680" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1576962913924">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state x="680" y="382" key="com.intellij.ide.util.TipDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1576962913924" />
+  </component>
+</project>
