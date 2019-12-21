@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_floats_2.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/21 21:32:17 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 21:32:19 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 22:23:34 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
- ** 5. Функция проверки на то, что пришло число 0.0
- ** (Пустые integer_part и fractal_part)
- */
+** 5. Функция проверки на то, что пришло число 0.0
+** (Пустые integer_part и fractal_part)
+*/
 
-int check_zero(f_floats **new)
+int		check_zero(f_floats **new)
 {
 	int i;
 	int j;
@@ -34,15 +34,15 @@ int check_zero(f_floats **new)
 }
 
 /*
- ** 4. Функция возведения в степень power числа 2
- */
+** 4. Функция возведения в степень power числа 2
+*/
 
-int power_of_two(int power)
+int		power_of_two(int power)
 {
 	int result;
 
 	result = 1;
-	while(power > 0)
+	while (power > 0)
 	{
 		result = result * 2;
 		power--;
@@ -51,15 +51,15 @@ int power_of_two(int power)
 }
 
 /*
- ** 3. Функция перевода порядка из 2-ой системы в десятичную и вычитание
- ** числа 16383 (011 1111 1111 1111), чтобы вычислить эффективный порядок
- */
+** 3. Функция перевода порядка из 2-ой системы в десятичную и вычитание
+** числа 16383 (011 1111 1111 1111), чтобы вычислить эффективный порядок
+*/
 
-void make_order(f_floats **new)
+void	make_order(f_floats **new)
 {
-	int i;
-	int k;
-	short digit;
+	int		i;
+	int		k;
+	short	digit;
 
 	i = 0;
 	k = 14;
@@ -76,10 +76,10 @@ void make_order(f_floats **new)
 }
 
 /*
- ** 2. Функция нахождения позиции, где заканчиваются значащие цифры мантиссы
- */
+** 2. Функция нахождения позиции, где заканчиваются значащие цифры мантиссы
+*/
 
-int make_mantissa(f_floats **new)
+int		make_mantissa(f_floats **new)
 {
 	int i;
 
@@ -89,15 +89,15 @@ int make_mantissa(f_floats **new)
 		(*new)->mantissa[i] = '\0';
 		i--;
 	}
-	return(i);
+	return (i);
 }
 
 /*
- ** 1. Функция разбивки числа на мантису, порядок и знак, а так же получение
- ** дробной и целой части, а после перезаписи в строку
- */
+** 1. Функция разбивки числа на мантису, порядок и знак, а так же получение
+** дробной и целой части, а после перезаписи в строку
+*/
 
-char *number_breakdown (char number_of_bits[], f_floats **new)
+char	*number_breakdown(char number_of_bits[], f_floats **new)
 {
 	int i;
 	int j;
@@ -107,8 +107,8 @@ char *number_breakdown (char number_of_bits[], f_floats **new)
 	j = 0;
 	while (i <= 15)
 		(*new)->order[j++] = number_of_bits[i++];
-    if ((check_inf_order(new) == 1) && (check_inf_mantissa(new) == 1))
-        return (make_inf(new));
+	if ((check_inf_order(new) == 1) && (check_inf_mantissa(new) == 1))
+		return (make_inf(new));
 	j = 0;
 	while (i < 80)
 		(*new)->mantissa[j++] = number_of_bits[i++];
@@ -123,5 +123,5 @@ char *number_breakdown (char number_of_bits[], f_floats **new)
 	}
 	else
 		(*new)->stroka = my_number(new);
-	return((*new)->stroka);
+	return ((*new)->stroka);
 }

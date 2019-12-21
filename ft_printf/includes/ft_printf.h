@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 21:57:21 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 22:44:06 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,17 @@ typedef struct              f_struct
     long long int           accuracy;
 }				            f_floats;
 
+/*
+** 3. Объединение, где записано наше число. Т.к long double -> 80
+** short -> 16, значит нужно массив из 5 элементов 5*16 = 80
+*/
+
+union	number
+{
+	long double x;
+	short       my_array[5];
+};
+
 int							main();
 int							ft_printf(const char *format, ...);
 int							rem_width_accuracy(const char *format, va_list arg,
@@ -104,14 +115,14 @@ int                         comparasion(int *x, int *y, int accuracy);
 int                         numb_of_zeroes(int *divider);
 int                         *ft_make_zero_str(int size);
 char                        *ft_floats(double num, long long int accuracy);
-char						*ft_Lf_floats(long double num, long long int accuracy);
+char						*ft_lf_floats(long double num, long long int accuracy);
 char                        *number_breakdown (char number_of_bits[], f_floats **new);
 char	                    *my_number(f_floats **new);
 char	                    *ft_make_zero_char(int size);
 void	                    ft_free_array(int *integer_part, int *fractional_part);
 void	                    ft_free_result(char **temp1, char *result);
 void	                    ft_free_new(int **temp1, int *result);
-void                        ft_sps_polina(int **integer_part, int **fractional_part, long long int accuracy, int i);
+void						ft_sps_polina(int **int_part, int **fract_part, long long int acc, int i);
 int                         check_inf_order(f_floats **new);
 int                         check_inf_mantissa(f_floats **new);
 char                        *make_inf(f_floats **new);

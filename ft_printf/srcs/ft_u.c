@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:01:54 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 21:56:39 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 22:04:26 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,5 @@ void					ft_u(t_data *list, va_list arg)
 		ft_write_and_clean_s(list, str);
 	}
 	else
-		ft_u_help(list, str, u);	
+		ft_u_help(list, str, u);
 }

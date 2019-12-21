@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_exp_long_arithmetic.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/21 21:04:30 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 21:04:32 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 22:20:27 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,25 +18,25 @@
 ** справа от 1, вынесена вверх, чтобы уместить в 25 строк.
 */
 
-int    *ft_exp_long_arithmetic(int power)
+int	*ft_exp_long_arithmetic(int power)
 {
-    int *result;
-    int *tmp;
-    int accuracy;
+	int *result;
+	int *tmp;
+	int accuracy;
 
-    accuracy = 1100;
-    result = ft_make_zero_str(accuracy);
-    result[accuracy - 1] = 2;
-    if (power == 0)
-    {
-        result[accuracy - 1] = 1;
-        return (result);
-    }
-    while (power-- > 1)
-    {
-        tmp = result;
-        result = ft_addition_long_arithmetic(result, result, 1100);
-        free(tmp);
-    }
-    return (result);
+	accuracy = 1100;
+	result = ft_make_zero_str(accuracy);
+	result[accuracy - 1] = 2;
+	if (power == 0)
+	{
+		result[accuracy - 1] = 1;
+		return (result);
+	}
+	while (power-- > 1)
+	{
+		tmp = result;
+		result = ft_addition_long_arithmetic(result, result, 1100);
+		free(tmp);
+	}
+	return (result);
 }
