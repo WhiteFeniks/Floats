@@ -53,8 +53,25 @@ int		main(void)
     i = ft_printf("my   = %Llf\n", 42.5);
     printf("\n");
  */
-    printf("l %d \n", printf("@moulitest: %#.x %#.0x", 0, 0));
+  /*  printf("l %d \n", printf("@moulitest: %#.x %#.0x", 0, 0));
     printf("m %d \n", ft_printf("@moulitest: %#.x %#.0x", 0, 0));
+    printf("\n");
+    printf("l %d \n", printf("%x\n", 4294967296));
+    printf("m %d \n", ft_printf("%x\n", 4294967296)); */
+   /* printf("\n");
+    printf("l %d \n", printf("@moulitest: %.5u\n", 42));
+    printf("m %d \n", ft_printf("@moulitest: %.5u\n", 42));    */
+   /* printf("\n");
+    printf("l %d \n", printf("%lu\n", -42));
+    printf("m %d \n", ft_printf("%lu\n", -42));*/
+   /* printf("\n");
+    printf("l %d \n", printf("%u\n", -1));
+    printf("m %d \n", ft_printf("%u\n", -1));    */
+    printf("\n");
+    printf("l %d \n", printf("@moulitest: %5.d %5.0d\n", 0, 0));
+    printf("m %d \n", ft_printf("@moulitest: %5.d %5.0d\n", 0, 0));
+
+
 /*
     int x;
 

@@ -36,7 +36,7 @@ void		ft_clean_list(t_data *list)
 	list->tmp = 0;
 	list->nol = 0;
 	list->hf = 0;
-	list->a = 0;
+	list->ret = 0;
 }
 
 void		ft_clean_all(t_data *list)

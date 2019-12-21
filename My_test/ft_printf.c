@@ -67,7 +67,11 @@ void		ft_check(const char *format, va_list arg, t_data *list, int i)
             list->ret++;
         }
 		else if (format[i] == '%')
+		{
+			list->ret = list->ret;
 			i = ft_precent(format, arg, list, i);
+			list->ret = list->ret + list->res;
+		}
 	}
 }
 
