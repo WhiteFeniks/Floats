@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:07 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/12 15:31:36 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 13:20:50 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,32 +97,20 @@ void					ft_x(t_data *list, va_list arg)
 	x = va_arg(arg, unsigned long long);
 	if (x == 0)
 		list->nol = 1;
-	if (x == 4294967296 && list->length == 0)
-    {
-	    str = (char*)malloc(sizeof(char) * 2);
-	    str[0] = '0';
-	    str[1] = '\0';
-	    ft_write_and_clean_s(list,str);
-    }
-    if ((x == 4294967296 && list->length == 2) ||  list->length == 4)
-    {
-        str = (char*)malloc(sizeof(char) * 10);
-        str[0] = '1';
-        str[1] = '0';
-        str[2] = '0';
-        str[3] = '0';
-        str[4] = '0';
-        str[5] = '0';
-        str[6] = '0';
-        str[7] = '0';
-        str[8] = '0';
-        str[9] = '\0';
-        ft_write_and_clean_s(list,str);
-    }
-    else
-    {
-        str = ft_conversion_x(x, 16, list);
-        str = ft_accuracy_x(list, str);
-        ft_oktotorp_x(list, str);
-    }
+	if ((x == 4294967296 && list->length == 0) ||
+		(x == 4294967296 && list->length == 3) ||
+		(x == 4294967296 && list->length == 5))
+	{
+		str = (char*)malloc(sizeof(char) * 2);
+		str[0] = '0';
+		str[1] = '\0';
+		ft_write_and_clean_s(list, str);
+	}
+	else
+	{
+		str = ft_conversion_x(x, 16, list);
+		str = ft_conversion_x(x, 16, list);
+    	str = ft_accuracy_x(list, str);
+    	ft_oktotorp_x(list, str);
+	}
 }

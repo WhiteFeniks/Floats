@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:51:04 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/18 19:25:10 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 13:22:29 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,30 @@ int		main(void)
    /* printf("\n");
     printf("l %d \n", printf("%u\n", -1));
     printf("m %d \n", ft_printf("%u\n", -1));    */
-    printf("\n");
+    /*printf("\n");
     printf("l %d \n", printf("@moulitest: %5.d %5.0d\n", 0, 0));
     printf("m %d \n", ft_printf("@moulitest: %5.d %5.0d\n", 0, 0));
+*/
+//tests good
+ft_printf("m0 %x\n", -42);
+ft_printf("l0 %x\n", -42);
+printf("\n");
+ft_printf("m1 %X\n", -42);
+ft_printf("l1 %X\n", -42);
+printf("\n");
+ft_printf("m2 %x\n", 4294967296);
+printf("l2 %lx\n", 4294967296);
+printf("\n");
+ft_printf("m3 %X\n", 4294967296);
+printf("l3 %lX\n", 4294967296);
+printf("\n");
+ft_printf("m4 %hx\n", 4294967296);
+printf("l4 %lx\n", 4294967296);
+printf("\n");
+ft_printf("m5 %hhX\n", 4294967296);
+printf("l5 %lX\n", 4294967296);
+printf("\n");
+
 
 
 /*

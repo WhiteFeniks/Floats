@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 19:17:26 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/10 16:08:57 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 12:15:19 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,11 @@ int			ft_parcing(const char *format, va_list arg, int i, t_data *list)
 			i = rem_width_accuracy(format, arg, i, list);
 		else if (format[i] == 'l' || format[i] == 'h' || format[i] == 'L')
 			rem_length(format, i, list);
-		else if (ft_isalpha(format[i]))
+		else if (format[i] == 'c' || format[i]== 'C' || format[i] == 's'
+		|| format[i] == 'S' || format[i] == 'p'|| format[i] == 'P'|| format[i] == 'd'
+		|| format[i] == 'D'|| format[i] == 'i'|| format[i] == 'I'|| format[i] == 'o'
+		|| format[i] == 'O'|| format[i]== 'U'|| format[i] == 'u'|| format[i] == 'x'
+		|| format[i] == 'X'|| format[i] == 'f' || format[i] == 'F')
 			rem_type(format, i, list);
 		i++;
 	}
@@ -59,6 +63,9 @@ int			ft_precent(const char *format, va_list arg, t_data *list, int i)
 
 void		ft_check(const char *format, va_list arg, t_data *list, int i)
 {
+	int	res;
+	
+	res = 0;
 	while (format[i])
 	{
 		if (format[i] != '%')
@@ -68,9 +75,9 @@ void		ft_check(const char *format, va_list arg, t_data *list, int i)
         }
 		else if (format[i] == '%')
 		{
-			list->ret = list->ret;
+			res = list->ret;
 			i = ft_precent(format, arg, list, i);
-			list->ret = list->ret + list->res;
+			list->ret = list->ret + res;
 		}
 	}
 }
