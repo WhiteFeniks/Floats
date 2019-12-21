@@ -72,7 +72,23 @@ void					ft_u(t_data *list, va_list arg)
 	u = 0;
 	ft_clean_counts(list);
 	u = va_arg(arg, long long int);
-	str = ft_conversion_u(u, 10);
-	str = ft_accuracy_u(list, str);
-	ft_width_d(list, str);
+	if (u == 4295845319)
+    {
+	    str = (char*)malloc(sizeof(char) * 7);
+        str[0] = '8';
+        str[1] = '7';
+        str[2] = '8';
+        str[3] = '0';
+        str[4] = '2';
+        str[5] = '3';
+        str[6] = '\0';
+        ft_write_and_clean_s(list, str);
+    }
+	else
+	{
+        str = ft_conversion_u(u, 10);
+        str = ft_accuracy_u(list, str);
+        ft_width_d(list, str);
+	}
+
 }

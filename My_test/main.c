@@ -118,13 +118,18 @@ printf("\n");*/
     {
         x++;
     }*/
-    int x;
+
+    printf("lib %u\n", 4295845319);
+    i = ft_printf("my  %u\n", 4295845319);
+    printf("\n");
+
+ /*   int x;
 
     x = 0;
-    while(i = ft_printf("my  %Llf\n", 42.5))
+    while(i = ft_printf("my  %u\n", 878023))
     {
         x++;
-    }
+    }*/
 /*
     printf("lib точность =  DBL_MAX, %.700f\n", DBL_MAX);
     i = ft_printf("my точность =   DBL_MIN, %.700f\n", DBL_MAX);
