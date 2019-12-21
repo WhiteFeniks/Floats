@@ -48,14 +48,45 @@ int		main(void)
     int i;
 
     i = 0;
-
- /*   printf("lib %Llf\n", 42.5);
-    i = ft_printf("my  %Llf\n", 42.5);
+/*
+    printf("lib %5.1f\n", -7.3);
+    i = ft_printf("my  %5.1f\n", -7.3);
     printf("\n");
 
     printf("lib %Llf\n", 42.5);
     i = ft_printf("my  %Llf\n", 42.5);
     printf("\n");*/
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
+
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
+
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
+
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
+
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
+
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
+
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
+
+    printf("lib %f\n", NULL);
+    i = ft_printf("my  %f\n", NULL);
+    printf("\n");
 /*
     printf("Lib %Lf\n", 42.5l);
     i = ft_printf("My  %Lf\n", 42.5l);
@@ -102,15 +133,15 @@ printf("\n");*/
 
 
 
-/*
-    int x;
+
+  /*  int x;
 
     x = 0;
-    while(i = ft_printf("%hf\n", 42.5))
+    while(i = ft_printf("%f\n", NULL))
     {
         x++;
-    }
-*/
+    }*/
+
  /*   int x;
 
     x = 0;
@@ -119,9 +150,9 @@ printf("\n");*/
         x++;
     }*/
 
-    printf("lib %u\n", 4295845319);
-    i = ft_printf("my  %u\n", 4295845319);
-    printf("\n");
+    //printf("lib %u\n", 4295845319);
+    //i = ft_printf("my  %u\n", 4295845319);
+   //printf("\n");
 
  /*   int x;
 

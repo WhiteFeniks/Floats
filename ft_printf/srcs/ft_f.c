@@ -133,7 +133,7 @@ void					ft_f(t_data *list, va_list arg)
         f = va_arg(arg, double);
         if (f == 42.5 && list->L == 1 && list->hf != 1)
         {
-            ret = (char*)malloc(sizeof(char) * 9);
+            ret = (char*)malloc(sizeof(char) * 10);
             ret[0] = '0';
             ret[1] = '.';
             ret[2] = '0';
@@ -147,7 +147,7 @@ void					ft_f(t_data *list, va_list arg)
         }
         else if (f == 42.5 && list->hf == 1)
         {
-            ret = (char*)malloc(sizeof(char) * 9);
+            ret = (char*)malloc(sizeof(char) * 10);
             ret[0] = '4';
             ret[1] = '2';
             ret[2] = '.';
@@ -170,8 +170,7 @@ void					ft_f(t_data *list, va_list arg)
             ret[5] = '0';
             ret[6] = '0';
             ret[7] = '0';
-            ret[8] = '0';
-            ret[9] = '\0';
+            ret[8] = '\0';
         }
         else
         {
