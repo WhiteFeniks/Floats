@@ -56,37 +56,27 @@ int		main(void)
     printf("lib %Llf\n", 42.5);
     i = ft_printf("my  %Llf\n", 42.5);
     printf("\n");*/
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
+/*
+    printf("l = %d\n", printf("%2c", 0));
+    printf("m = %d\n",(i = ft_printf("%2c", 0)));
+    printf("\n");
+*/
+/*  printf("l = %d\n", printf("%s %s", "this", "is"));
+    printf("m = %d\n",(i = ft_printf("%s %s", "this", "is")));
+    printf("\n"); */
+
+    printf("l = %d\n", printf("@moulitest: %.d %.0d", 42, 43));
+    printf("m = %d\n",(i = ft_printf("@moulitest: %.d %.0d", 42, 43)));
     printf("\n");
 
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
+    printf("l %.0d\n", 56);
+    ft_printf("m %.0d\n", 56);
     printf("\n");
+    printf("l %.0d\n", 0);
+    ft_printf("m %.0d\n", 0);
 
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
-    printf("\n");
 
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
-    printf("\n");
 
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
-    printf("\n");
-
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
-    printf("\n");
-
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
-    printf("\n");
-
-    printf("lib %f\n", NULL);
-    i = ft_printf("my  %f\n", NULL);
-    printf("\n");
 /*
     printf("Lib %Lf\n", 42.5l);
     i = ft_printf("My  %Lf\n", 42.5l);

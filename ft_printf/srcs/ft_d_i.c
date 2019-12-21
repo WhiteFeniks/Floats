@@ -51,7 +51,7 @@ char				*ft_accuracy(t_data *list, char *tmp, char *ret)
 			ret[list->i++] = tmp[list->j++];
 		ret[list->i] = '\0';
 	}
-	else if (list->accuracy == 0 && list->point == '.')
+	else if (list->accuracy == 0 && list->point == '.' && tmp[0] == '0')
 	{
 		ret = (char*)malloc(sizeof(char) * 1);
 		ret[0] = '\0';

@@ -51,6 +51,7 @@ void	ft_width_null(t_data *list, char *tmp)
 		while (list->width-- != 0)
 			ret[list->i++] = ' ';
 		ret[list->i] = '\0';
+		list->ret++;
 		ft_write_and_clean_s(list, ret);
 		write(1, &tmp[0], 1);
 		ft_clean_s(tmp);

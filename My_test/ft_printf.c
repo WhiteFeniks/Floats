@@ -41,6 +41,9 @@ int			ft_parcing(const char *format, va_list arg, int i, t_data *list)
 
 int			ft_precent(const char *format, va_list arg, t_data *list, int i)
 {
+    int     res;
+
+    res = 0;
 	if (format[i] && format[i] == '%' && format[i + 1] == '%')
 	{
 		ft_putchar(format[++i]);
@@ -54,9 +57,11 @@ int			ft_precent(const char *format, va_list arg, t_data *list, int i)
 	}
 	else if (format[i] && format[i] == '%' && list->percent != '.')
 	{
+	    res = list->ret;
 		ft_clean_list(list);
 		list->percent = format[i++];
 		i = ft_parcing(format, arg, i, list);
+		list->ret += res;
 	}
 	return (i);
 }
@@ -74,11 +79,7 @@ void		ft_check(const char *format, va_list arg, t_data *list, int i)
             list->ret++;
         }
 		else if (format[i] == '%')
-		{
-			res = list->ret;
 			i = ft_precent(format, arg, list, i);
-			list->ret = list->ret + res;
-		}
 	}
 }
 
