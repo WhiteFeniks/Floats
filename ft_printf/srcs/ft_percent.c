@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/26 18:36:02 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/06 15:13:22 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 21:46:07 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ void		ft_first_procent(t_data *list, char *s, int x)
 	s[x] = '\0';
 	x = 0;
 	while (s[x])
-    {
-	    write(1, &s[x++], 1);
-	    list->ret++;
-    }
+	{
+		write(1, &s[x++], 1);
+		list->ret++;
+	}
 }
 
 void		ft_second_procent(t_data *list, char *s, int x)
@@ -46,10 +46,10 @@ void		ft_second_procent(t_data *list, char *s, int x)
 	s[x] = '\0';
 	x = 0;
 	while (s[x])
-    {
-	    write(1, &s[x++], 1);
-        list->ret++;
-    }
+	{
+		write(1, &s[x++], 1);
+		list->ret++;
+	}
 }
 
 void		ft_third_procent(t_data *list, char *s, int x)
@@ -66,10 +66,10 @@ void		ft_third_procent(t_data *list, char *s, int x)
 	s[x] = '\0';
 	x = 0;
 	while (s[x])
-    {
-	    write(1, &s[x++], 1);
-        list->ret++;
-    }
+	{
+		write(1, &s[x++], 1);
+		list->ret++;
+	}
 }
 
 int			ft_procent(t_data *list, int i)

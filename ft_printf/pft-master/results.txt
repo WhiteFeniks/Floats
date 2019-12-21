@@ -1,5 +1,0 @@
-Test 2340 (nocrash_nullarg_22) : FAILED.
-    (nocrash test: automatically passes provided no unexpected failure)
-    First line of code: {return test("%f", NULL); }
-    Timed out
-

@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/17 18:02:43 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 21:57:21 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,20 @@ int                         check_inf_mantissa(f_floats **new);
 char                        *make_inf(f_floats **new);
 char						*ft_width_f(t_data *list, char *tmp);
 char						*ft_accuracy_f2(t_data *list, char *tmp, char *ret);
-char						*ft_Lf(t_data *list, va_list arg);
+char						*ft_lf(t_data *list, va_list arg);
+void						ft_f_help(va_list arg, t_data *list, double f, char *ret);
+void						ft_write(t_data *list, char *s);
+char						*ft_accuracy_f(t_data *list, char *tmp);
+char						*ft_oktotorp_f(t_data *list, char *tmp);
+char						*ft_plus_space_f(t_data *list, char *tmp);
+void						ft_u_help(t_data *list, char *str, long long u);
+char						*ft_conversion_u(long long int value, int base);
+char						*ft_accuracy_u(t_data *list, char *tmp);
+
+
+
+
+
 
 
 #endif

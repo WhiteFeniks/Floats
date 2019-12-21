@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 17:49:18 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/10 15:42:48 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 21:44:47 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,14 +103,7 @@ void			ft_null_s(t_data *list, char *str)
 		str = ((char *)malloc(sizeof(char) * (list->width + 1)));
 	else if (list->width < list->len)
 		str = ((char *)malloc(sizeof(char) * (list->len + 1)));
-	tmp = (char *)malloc(sizeof(char) * 7);
-	tmp[list->i++] = '(';
-	tmp[list->i++] = 'n';
-	tmp[list->i++] = 'u';
-	tmp[list->i++] = 'l';
-	tmp[list->i++] = 'l';
-	tmp[list->i++] = ')';
-	tmp[list->i] = '\0';
+	tmp = ft_strdup("(null)");
 	if (list->width != 0 && list->accuracy != 0)
 		ft_first_null(list, tmp, str);
 	else if (list->width == 0 && list->accuracy == 0)
@@ -119,4 +112,5 @@ void			ft_null_s(t_data *list, char *str)
 		ft_third_null(list, tmp, str);
 	else if (list->width == 0 && list->accuracy != 0)
 		ft_fourth_null(list, tmp, str);
+	free(tmp);
 }

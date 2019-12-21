@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 14:51:59 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/12 15:30:03 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/21 21:50:45 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,30 +68,30 @@ int		rem_width_accuracy(const char *format, va_list arg, int i, t_data *list)
 
 int		rem_length(const char *format, int i, t_data *list)
 {
-    if (format[i])
-    {
-        if (list->length == 0)
-        {
-            if (format[i] == 'L')
-                list->length = 3;
-            else if (format[i] == 'l')
-                i = ft_l(format, i, list);
-            else if (format[i] == 'h')
-                i = ft_h(format, i, list);
-        }
-        else
-        {
-            if (format[i] == 'l' && list->length == 1)
-                list->length = 4;
-            else if (format[i] == 'h' && list->length == 2)
-                list->length = 5;
-            else if (format[i] == 'L' && list->length == 3)
-                list->L = 1;
-            else if (format[i] == 'l' && list->length == 3)
-                list->Polina = 1;
-        }
-    }
-    return (i);
+	if (format[i])
+	{
+		if (list->length == 0)
+		{
+			if (format[i] == 'L')
+				list->length = 3;
+			else if (format[i] == 'l')
+				i = ft_l(format, i, list);
+			else if (format[i] == 'h')
+				i = ft_h(format, i, list);
+		}
+		else
+		{
+			if (format[i] == 'l' && list->length == 1)
+				list->length = 4;
+			else if (format[i] == 'h' && list->length == 2)
+				list->length = 5;
+			else if (format[i] == 'L' && list->length == 3)
+				list->L = 1;
+			else if (format[i] == 'l' && list->length == 3)
+				list->Polina = 1;
+		}
+	}
+	return (i);
 }
 
 void	rem_type(const char *format, int i, t_data *list)
