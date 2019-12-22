@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_long_math_substraction.c                        :+:      :+:    :+:   */
+/*   ft_difference_long_arithmetic.c                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/27 17:26:38 by bglover           #+#    #+#             */
-/*   Updated: 2019/10/28 17:53:42 by bglover          ###   ########.fr       */
+/*   Updated: 2019/12/22 05:20:33 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int	*ft_long_math_substraction(int *a, int *b, int acc)
+int	*ft_difference_long_arithmetic(int *a, int *b, int acc)
 {
 	int i;
 	int *rez;

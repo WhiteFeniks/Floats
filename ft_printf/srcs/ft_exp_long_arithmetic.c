@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_long_math_squad.c                               :+:      :+:    :+:   */
+/*   ft_exp_long_arithmetic.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/16 20:18:46 by bglover           #+#    #+#             */
-/*   Updated: 2019/10/28 17:11:19 by bglover          ###   ########.fr       */
+/*   Updated: 2019/12/22 05:27:00 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	*ret(int *rez, int acc)
 	return (rez);
 }
 
-int	*ft_long_math_squad(int squad, int acc)
+int	*ft_exp_long_arithmetic(int squad, int acc)
 {
 	int i;
 	int *rez;

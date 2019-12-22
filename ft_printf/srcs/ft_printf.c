@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/19 15:41:34 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/06 18:35:46 by bglover          ###   ########.fr       */
+/*   Updated: 2019/12/22 05:34:06 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void		ft_determination(t_data *new)
 	else if (new->type == 'x' || new->type == 'X')
 		ft_print_x(new);
 	else if (new->type == 'f')
-		ft_print_float(new);
+		ft_floats(new);
 }
 
 /*

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_long_math_divider.c                             :+:      :+:    :+:   */
+/*   ft_division_long_arithmetic.c                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/17 16:47:35 by bglover           #+#    #+#             */
-/*   Updated: 2019/10/29 19:21:23 by bglover          ###   ########.fr       */
+/*   Updated: 2019/12/22 05:13:11 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	st(int *num, int acc)
 ** Длинное деление
 */
 
-int	*ft_long_math_divider(int *num, int *div, int acc, int numb_of_zero)
+int	*ft_division_long_arithmetic(int *num, int *div, int acc, int numb_of_zero)
 {
 	int i;
 	int *rez;

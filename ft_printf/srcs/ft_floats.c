@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_float.c                                   :+:      :+:    :+:   */
+/*   ft_floats.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/27 15:41:20 by bglover           #+#    #+#             */
-/*   Updated: 2019/11/06 17:51:13 by bglover          ###   ########.fr       */
+/*   Updated: 2019/12/22 05:33:58 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,7 +129,7 @@ int		print_bits(size_t const size, void const *const ptr,
 ** Начало алгоритма
 */
 
-int		ft_print_float(t_data *new)
+int		ft_floats(t_data *new)
 {
 	t_un		un_1;
 	long double db;

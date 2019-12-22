@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 11:32:15 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/06 18:19:59 by bglover          ###   ########.fr       */
+/*   Updated: 2019/12/22 05:34:12 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,12 +86,14 @@ typedef struct			s_data
 }						t_data;
 
 void					ft_putnbr_c(int n, t_data *new);
-int						ft_print_float(t_data *new);
-int						*ft_long_math_divider(int *num, int *div, int acc,
-						int numb_of_zero);
-int						*ft_long_math_squad(int squad, int acc);
-int						*ft_long_math_substraction(int *a, int *b, int acc);
-int						*ft_long_math_summ(int *a, int *b, int acc);
+int						ft_floats(t_data *new);
+int						*ft_division_long_arithmetic(int *num, int *div,
+						int acc, int numb_of_zero);
+int						*ft_exp_long_arithmetic(int squad, int acc);
+int						*ft_difference_long_arithmetic(int *a, int *b,
+						int acc);
+int						*ft_addition_long_arithmetic(int *a, int *b,
+						int acc);
 int						print_before_dot(int *rez, t_data *new, int *rez_celoe);
 int						print_after_dot(int *rez, t_data *new, int j);
 int						make_man(int man[], int por, t_data *new);

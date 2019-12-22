@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bglover <bglover@student.42.fr>            +#+  +:+       +#+         #
+#    By: umoff <umoff@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/27 21:47:45 by msabre            #+#    #+#              #
-#    Updated: 2019/11/06 18:19:16 by bglover          ###   ########.fr        #
+#    Updated: 2019/12/22 05:33:13 by umoff            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,9 +24,10 @@ DIR_O = temporary
 
 HEADER = includes/ft_printf.h
 
-SOURCES = ft_print_float.c ft_long_math_substraction.c ft_long_math_squad.c ft_long_math_divider.c \
-          ft_long_math_summ.c ft_print.c ft_make_man.c ft_try.c auxiliary.c dec.c ft_printf.c \
-          mutual_exclusion.c output.c parser.c simple.c unsigned.c x.c x_add.c ft_print_nan_inf.c\
+SOURCES = ft_floats.c ft_difference_long_arithmetic.c ft_exp_long_arithmetic.c \
+		  ft_division_long_arithmetic.c ft_addition_long_arithmetic.c ft_print.c \
+		  ft_make_man.c ft_try.c auxiliary.c dec.c ft_printf.c mutual_exclusion.c \
+		  output.c parser.c simple.c unsigned.c x.c x_add.c ft_print_nan_inf.c \
 		  ft_print_help.c
 
 OBJS = $(addprefix $(DIR_O)/,$(SOURCES:.c=.o))
