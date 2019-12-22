@@ -3,148 +3,226 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 16:50:51 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/22 00:03:23 by vaisha           ###   ########.fr       */
+/*   Created: 2019/04/25 11:32:15 by doberyn           #+#    #+#             */
+/*   Updated: 2019/11/06 18:19:59 by bglover          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-
-# include <unistd.h>
-# include <stdarg.h>
 # include <stdlib.h>
-# include "../includes/libft.h"
-
-/*
-** 3. Объединение, где записано наше число. Т.к long double -> 80
-** short -> 16, значит нужно массив из 5 элементов 5*16 = 80
-*/
+# include <stdarg.h>
+# include "libft.h"
 
 typedef	union
 {
-	long double				x;
-	short					my_array[5];
-}							t_un;
+	long double			i;
+	short				c[5];
+}						t_un;
+
+typedef struct			s_hex
+{
+	char				*str;
+	int					size;
+	int					prlen;
+	int					shlen;
+}						t_hex;
+
+typedef struct			s_uns
+{
+	unsigned long long	data;
+	char				*str;
+	int					len;
+	char				sign;
+	char				*tmp;
+}						t_uns;
+
+typedef struct			s_sig
+{
+	long long int		data;
+	char				*str;
+	int					len;
+	char				sign;
+}						t_sig;
+
+typedef struct			s_flags
+{
+	int					plus;
+	int					sharp:1;
+	int					zero:1;
+	int					space;
+	int					minus:1;
+}						t_flags;
+
+typedef struct			s_iterators
+{
+	int					g;
+	int					i;
+	int					count;
+	int					save;
+}						t_iterators;
+
+typedef struct			s_base
+{
+	const char			*str;
+	va_list				arg;
+}						t_base;
+
+typedef struct			s_data
+{
+	int					percent;
+	int					width;
+	int					dot:1;
+	int					prec;
+	int					w:1;
+	int					length;
+	char				type;
+	int					sign;
+	t_flags				fl;
+	t_base				bs;
+	t_iterators			it;
+}						t_data;
+
+void					ft_putnbr_c(int n, t_data *new);
+int						ft_print_float(t_data *new);
+int						*ft_long_math_divider(int *num, int *div, int acc,
+						int numb_of_zero);
+int						*ft_long_math_squad(int squad, int acc);
+int						*ft_long_math_substraction(int *a, int *b, int acc);
+int						*ft_long_math_summ(int *a, int *b, int acc);
+int						print_before_dot(int *rez, t_data *new, int *rez_celoe);
+int						print_after_dot(int *rez, t_data *new, int j);
+int						make_man(int man[], int por, t_data *new);
+int						*ft_first_try(int **temp, int **div, int acc);
+int						*ft_second_try(int **temp, int **div, int acc);
+int						*ft_third_try(int **num, int **temp, int acc);
+int						*ft_trying_four(int **num, int *rez);
+int						ft_print_nan(t_data *new);
+int						ft_print_inf(t_data *new);
+int						ft_get_size_f(t_data *new, int j);
+void					print_before_dot_help(int *rez_celoe, t_data *new,
+						int *rez, int j);
+void					ft_print_after(t_data *new, int len);
+void					ft_putchar_1(t_data *new);
 
 /*
-** 1 = l;2 = h;3 = L;4 = ll;5 = hh;
+**	dec.c - десятичные
+** 	fixed	✓
+**	norme	✓
 */
 
-typedef struct				s_data
-{
-	char					percent;
-	char					plus_space;
-	char					minus_null;
-	char					hash;
-	char					point;
-	char					type;
-	long long int			width;
-	long long int			accuracy;
-	int						length;
-	long long int			ret;
-	long long int			len;
-	long long int			i;
-	long long int			j;
-	long long int			tmp;
-	int						nol;
-	int						hf;
-	int						l;
-	int						polina;
-	int						res;
-}							t_data;
+void					ft_type_conversion_signed(t_sig *sig, t_data *new);
+void					ft_print_dec(t_data *new);
 
-typedef struct				s_struct
-{
-	char					*stroka;
-	int						order[15];
-	int						mantissa[64];
-	int						ef_order;
-	int						sign;
-	long long int			accuracy;
-	long long				i;
-	long long				j;
-}							t_floats;
+/*
+**	simple.c - простые типы
+** 	fixed	✓
+**	norme	✓
+*/
 
-int							main();
-int							ft_printf(const char *format, ...);
-int							rem_width_accuracy(const char *format, va_list arg,
-							int i, t_data *list);
-int							rem_length(const char *format, int i, t_data *list);
-int							ft_take_digit(const char *format, int i,
-							t_data *list);
-int							ft_l(const char *format, int i, t_data *list);
-int							ft_h(const char *format, int i, t_data *list);
-int							ft_procent(t_data *list, int i);
-int							ft_precent(const char *format, va_list arg,
-							t_data *list, int i);
-void						ft_allocation(t_data *list, va_list arg);
-void						rem_type(const char *format, int i, t_data *list);
-void						rem_flag(const char *format, int i, t_data *list);
-void						ft_f(t_data *list, va_list arg);
-void						ft_c(t_data *list, va_list arg);
-void						ft_d_i(t_data *list, va_list arg);
-void						ft_o(t_data *list, va_list arg);
-void						ft_p(t_data *list, va_list arg);
-void						ft_s(t_data *list, va_list arg);
-void						ft_u(t_data *list, va_list arg);
-void						ft_x(t_data *list, va_list arg);
-void						ft_before(t_data *list, char *s, char *str);
-void						ft_width_s(t_data *list);
-void						ft_write_and_clean_s(t_data *list, char *s);
-void						ft_only_width(t_data *list, char *s, char *str);
-void						ft_width_d(t_data *list, char *tmp);
-void						ft_clean_counts(t_data *list);
-void						ft_clean_list(t_data *list);
-void						ft_clean_all(t_data *list);
-void						ft_clean_s(char *s);
-void						ft_null(t_data *list, char *str);
-char						*ft_accuracy_o(t_data *list, char *tmp, char *ret);
-void						ft_null_s(t_data *list, char *str);
-void						ft_width_null_s(t_data *list, char *str, char *tmp);
-int							ft_help_i(t_data *list, int value);
-void						ft_list_null(t_data *list, char *s, char *str);
-void						ft_list_null2(t_data *list, char *s, char *str);
-void						ft_list_null3(t_data *list, char *s, char *str);
-int							*ft_addition_long_arithmetic(int *x,
-							int *y, int accuracy);
-int							*ft_difference_long_arithmetic(int *x,
-							int *y, int accuracy);
-int							*ft_exp_long_arithmetic(int power);
-int							*ft_division_long_arithmetic(int *x, int *y,
-							int accuracy, int numb_of_zero);
-int							comparasion(int *x, int *y, int accuracy);
-int							numb_of_zeroes(int *divider);
-int							*ft_make_zero_str(int size);
-char						*ft_floats(double num, long long int accuracy);
-char						*ft_lf_floats(long double num,
-							long long int accuracy);
-char						*number_breakdown (char number_of_bits[],
-							t_floats **new);
-char						*my_number(t_floats **new);
-char						*ft_make_zero_char(int size);
-void						ft_free_array(int *integer_part,
-							int *fractional_part);
-void						ft_free_result(char **temp1, char *result);
-void						ft_free_new(int **temp1, int *result);
-void						ft_sps_polina(int **int_part, int **fract_part,
-							long long int acc, int i);
-int							check_inf_order(t_floats **new);
-int							check_inf_mantissa(t_floats **new);
-char						*make_inf(t_floats **new);
-char						*ft_width_f(t_data *list, char *tmp);
-char						*ft_accuracy_f2(t_data *list, char *tmp, char *ret);
-char						*ft_lf(t_data *list, va_list arg);
-void						ft_f_help(va_list arg, t_data *list, double f,
-							char *ret);
-void						ft_write(t_data *list, char *s);
-char						*ft_accuracy_f(t_data *list, char *tmp);
-char						*ft_oktotorp_f(t_data *list, char *tmp);
-char						*ft_plus_space_f(t_data *list, char *tmp);
-void						ft_u_help(t_data *list, char *str, long long u);
-char						*ft_conversion_u(long long int value, int base);
-char						*ft_accuracy_u(t_data *list, char *tmp);
+void					ft_print_c(t_data *new);
+void					ft_print_s(t_data *new);
+void					ft_print_p(t_data *new);
+void					ft_print_percent(t_data *new);
+
+/*
+**	auxiliary.c - вспомогательные
+** 	fixed	✓
+**	norme	✓
+*/
+
+void					ft_leveling(int count, char c, t_data *new);
+void					ft_precision(char sign, int len, t_data *new);
+char					ft_width(char sign, int len, t_data *new);
+
+/*
+**	unsigned.c - беззнаковые
+** 	fixed	✓
+**	norme	✓
+*/
+
+void					ft_type_conversion_unsigned(t_uns *uns, t_data *new);
+void					ft_print_o(t_data *new);
+void					ft_print_u(t_data *new);
+
+/*
+**	unsigned.c - безнаковые
+** 	fixed	✓
+**	norme	✓
+*/
+
+void					ft_type_conversion_unsigned(t_uns *uns, t_data *new);
+void					ft_print_o(t_data *new);
+void					ft_print_u(t_data *new);
+
+/*
+**	output.c - вывод
+** 	fixed	✓
+**	norme	✓
+*/
+
+void					ft_putstr_precision(char *str, int len, t_data *new);
+void					ft_putchar_space(char c, t_data *new);
+void					ft_putchar_c(char c, t_data *new);
+void					ft_putstr_c(char *s, t_data *new);
+
+/*
+**	mutual_exclusion.c - взаимоисключения
+** 	fixed	✓
+**	norme	✓
+*/
+
+void					ft_mutual_exclusion_prec(int len, t_data *new);
+void					ft_mutual_exclusion_width(int len, t_data *new);
+void					ft_mutual_exclusion(t_data *new, long long data,
+						char c);
+
+/*
+**	x_add.c
+** 	fixed	✓
+**	norme
+*/
+
+int						ft_get_size(t_uns *uns, t_data *new);
+char					*ft_precision_x(int len, char *str, t_data *new);
+char					*ft_sharp_x(int len, char *str, t_data *new);
+char					*ft_width_x(int len, char *str, t_data *new);
+char					*ft_add_x(int len, char *str, char *dst, t_data *new);
+
+/*
+**	x.c
+** 	fixed	✓
+**	norme	✓
+*/
+
+char					*ft_toupper(char *str);
+void					ft_formating_x(t_uns *uns, t_data *new);
+void					ft_print_x(t_data *new);
+
+/*
+**	parcer.c
+** 	fixed	✓
+**	norme	✓
+*/
+
+int						ft_structuring(t_data *new);
+void					ft_flags(t_data *new);
+int						ft_get_number(t_data *new);
+void					ft_get_length(t_data *new);
+void					ft_l_or_h(int l, int h, int big_l, t_data *new);
+
+/*
+**	ft_printf.c
+** 	fixed	✓
+**	norme	✓
+*/
+
+void					ft_structure_cleaning(t_data *new);
+void					ft_determination(t_data *new);
+void					ft_start(const char *format, t_data *new);
+int						ft_vprintf(const char *format, t_data *new);
+int						ft_printf(const char *format, ...);
 
 #endif

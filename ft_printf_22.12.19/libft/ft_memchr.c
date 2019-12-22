@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/07 21:07:33 by doberyn           #+#    #+#             */
-/*   Updated: 2019/04/18 13:50:09 by doberyn          ###   ########.fr       */
+/*   Created: 2019/04/17 15:01:59 by umoff             #+#    #+#             */
+/*   Updated: 2019/05/21 14:34:23 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*str;
-	size_t	counter;
+	unsigned char	sym;
+	unsigned char	*buf;
 
-	str = (char *)b;
-	counter = 0;
-	while (counter != len)
+	sym = (unsigned char)c;
+	buf = (unsigned char *)s;
+	while (n > 0)
 	{
-		str[counter] = (char)c;
-		counter++;
+		n--;
+		if (*buf == sym)
+			return (buf);
+		buf++;
 	}
-	return ((void *)str);
+	return (0);
 }

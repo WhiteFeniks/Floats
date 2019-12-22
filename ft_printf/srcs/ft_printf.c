@@ -3,101 +3,120 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/13 19:17:26 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 21:48:51 by vaisha           ###   ########.fr       */
+/*   Created: 2019/10/19 15:41:34 by doberyn           #+#    #+#             */
+/*   Updated: 2019/11/06 18:35:46 by bglover          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int			ft_parcing(const char *format, va_list arg, int i, t_data *list)
+/*
+** ft_structure_cleaning - зачистка структуры для
+** повторного применения.
+** norme  ✓
+** fixed  ✓
+*/
+
+void		ft_structure_cleaning(t_data *new)
 {
-	while (format[i] && format[i] != '%' && list->type == '.')
-	{
-		if (format[i] == '+' || format[i] == '-' || format[i] == ' ' ||
-			format[i] == '0' || format[i] == '#')
-			rem_flag(format, i, list);
-		else if ((ft_isdigit(format[i])) ||
-			format[i] == '*' || format[i] == '.')
-			i = rem_width_accuracy(format, arg, i, list);
-		else if (format[i] == 'l' || format[i] == 'h' || format[i] == 'L')
-			rem_length(format, i, list);
-		else if (format[i] == 'c' || format[i] == 'C' || format[i] == 's'
-		|| format[i] == 'S' || format[i] == 'p' || format[i] == 'P' ||
-		format[i] == 'd' || format[i] == 'D' || format[i] == 'i' ||
-		format[i] == 'I' || format[i] == 'o'
-		|| format[i] == 'O' || format[i] == 'U' || format[i] == 'u' ||
-		format[i] == 'x' || format[i] == 'X' || format[i] == 'f' ||
-		format[i] == 'F')
-			rem_type(format, i, list);
-		i++;
-	}
-	if (list->type != '.')
-		ft_allocation(list, arg);
-	else if (list->type == '.' && format[i] == '%')
-		i = ft_procent(list, i);
-	return (i);
+	new->fl.zero = 0;
+	new->fl.sharp = 0;
+	new->fl.space = 0;
+	new->fl.plus = 0;
+	new->fl.minus = 0;
+	new->it.g = 0;
+	new->percent = 0;
+	new->width = 0;
+	new->prec = 0;
+	new->dot = 0;
+	new->length = 0;
+	new->type = '0';
+	new->w = 0;
 }
 
-int			ft_precent(const char *format, va_list arg, t_data *list, int i)
-{
-	int		res;
+/*
+** ft_determination - функция которая определяет в какую
+** функцию отправить струкруту.
+** norme	✓
+** fixed	✓
+*/
 
-	res = 0;
-	if (format[i] && format[i] == '%' && format[i + 1] == '%')
-	{
-		ft_putchar(format[++i]);
-		i++;
-		list->ret++;
-	}
-	else if (format[i] && format[i] == '%' && list->percent == '.')
-	{
-		list->percent = format[i++];
-		i = ft_parcing(format, arg, i, list);
-	}
-	else if (format[i] && format[i] == '%' && list->percent != '.')
-	{
-		res = list->ret;
-		ft_clean_list(list);
-		list->percent = format[i++];
-		i = ft_parcing(format, arg, i, list);
-		list->ret += res;
-	}
-	return (i);
+void		ft_determination(t_data *new)
+{
+	if (new->type == 'c')
+		ft_print_c(new);
+	else if (new->type == 's')
+		ft_print_s(new);
+	else if (new->type == 'p')
+		ft_print_p(new);
+	else if (new->percent == 2)
+		ft_print_percent(new);
+	else if (new->type == 'd' || new->type == 'i' || new->type == 'D')
+		ft_print_dec(new);
+	else if (new->type == 'u')
+		ft_print_u(new);
+	else if (new->type == 'o')
+		ft_print_o(new);
+	else if (new->type == 'x' || new->type == 'X')
+		ft_print_x(new);
+	else if (new->type == 'f')
+		ft_print_float(new);
 }
 
-void		ft_check(const char *format, va_list arg, t_data *list, int i)
+/*
+** ft_start - функция которая инициализирует переменные.
+** norme	✓
+** fixed	✓
+*/
+
+void		ft_start(const char *format, t_data *new)
 {
-	while (format[i])
+	new->it.i = 0;
+	new->it.count = 0;
+	new->bs.str = format;
+}
+
+/*
+** ft_vprintf - функция которая запускает весь процесс
+** norme	✓
+** fixed	✓
+*/
+
+int			ft_vprintf(const char *format, t_data *new)
+{
+	ft_start(format, new);
+	while (new->bs.str[new->it.i] != '\0')
 	{
-		if (format[i] != '%')
+		new->it.g = 0;
+		if (new->bs.str[new->it.i] != '%')
+			ft_putchar_c(new->bs.str[new->it.i], new);
+		else
 		{
-			ft_putchar(format[i++]);
-			list->ret++;
+			ft_structure_cleaning(new);
+			new->it.g = ft_structuring(new);
+			ft_determination(new);
 		}
-		else if (format[i] == '%')
-			i = ft_precent(format, arg, list, i);
+		new->it.i = (new->it.g != 0) ? new->it.g : new->it.i + 1;
 	}
+	return (new->it.count);
 }
+
+/*
+** ft_printf - главная функция которая передеает
+** начальные значения и активирует библеотеку stdarg.
+** norme	✓
+** fixed	✓
+*/
 
 int			ft_printf(const char *format, ...)
 {
-	va_list	ap;
-	t_data	*list;
-	int		i;
-	int		res;
+	t_data	new;
+	int		done;
 
-	i = 0;
-	res = 0;
-	list = NULL;
-	va_start(ap, format);
-	list = (t_data*)malloc(sizeof(t_data));
-	ft_clean_list(list);
-	ft_check(format, ap, list, i);
-	res = list->ret;
-	ft_clean_all(list);
-	va_end(ap);
-	return (res);
+	va_start(new.bs.arg, format);
+	done = ft_vprintf(format, &new);
+	va_end(new.bs.arg);
+	return (done);
 }

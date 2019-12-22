@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_itoa_base_unsig.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/07 21:07:33 by doberyn           #+#    #+#             */
-/*   Updated: 2019/04/18 13:50:09 by doberyn          ###   ########.fr       */
+/*   Created: 2019/10/23 17:05:01 by doberyn           #+#    #+#             */
+/*   Updated: 2019/10/23 17:05:05 by doberyn          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+char	*ft_itoa_base_unsig(unsigned long long value, int base)
 {
-	char	*str;
-	size_t	counter;
+	char				*str;
+	short				size;
+	char				*tab;
+	unsigned long long	tmp;
 
-	str = (char *)b;
-	counter = 0;
-	while (counter != len)
+	size = 0;
+	tab = "0123456789abcdef";
+	if (base < 2 || base > 16)
+		return (0);
+	tmp = value;
+	while (tmp /= base)
+		size++;
+	size = size + 1;
+	str = (char *)malloc(sizeof(char) * size + 1);
+	str[size] = '\0';
+	while (size > 0)
 	{
-		str[counter] = (char)c;
-		counter++;
+		str[size - 1] = tab[value % base];
+		size--;
+		value /= base;
 	}
-	return ((void *)str);
+	return (str);
 }

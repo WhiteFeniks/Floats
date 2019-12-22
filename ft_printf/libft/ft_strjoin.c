@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_srtjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/20 19:27:03 by umoff             #+#    #+#             */
-/*   Updated: 2019/05/21 14:34:23 by umoff            ###   ########.fr       */
+/*   Created: 2019/04/12 21:07:40 by doberyn           #+#    #+#             */
+/*   Updated: 2019/04/19 20:10:30 by doberyn          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,23 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	int		j;
-	char	*buf;
+	size_t	len;
+	char	*str;
+	size_t	i;
+	size_t	c;
 
 	i = 0;
-	j = 0;
-	if ((!(s1)) || (!(s2)))
-		return (0);
-	if (!(buf = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
-		return (0);
-	while (s1[i])
-	{
-		buf[i] = s1[i];
-		i++;
-	}
-	while (s2[j])
-	{
-		buf[i] = s2[j];
-		j++;
-		i++;
-	}
-	return (buf);
+	c = 0;
+	if (!s1 || !s2)
+		return (NULL);
+	len = ft_strlen(s1) + ft_strlen(s2);
+	if (!(str = (char *)malloc(sizeof(char) * len + 1)))
+		return (NULL);
+	while (s1[i] != '\0')
+		str[c++] = s1[i++];
+	i = 0;
+	while (s2[i] != '\0')
+		str[c++] = s2[i++];
+	str[c] = '\0';
+	return ((char *)str);
 }

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/07 21:07:33 by doberyn           #+#    #+#             */
-/*   Updated: 2019/04/18 13:50:09 by doberyn          ###   ########.fr       */
+/*   Created: 2019/04/06 19:29:22 by doberyn           #+#    #+#             */
+/*   Updated: 2019/04/18 13:56:04 by doberyn          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+size_t		ft_intlen(long long data)
 {
-	char	*str;
-	size_t	counter;
+	size_t	len;
 
-	str = (char *)b;
-	counter = 0;
-	while (counter != len)
-	{
-		str[counter] = (char)c;
-		counter++;
-	}
-	return ((void *)str);
+	len = 0;
+	while (data /= 10)
+		len++;
+	return (len + 1);
 }
