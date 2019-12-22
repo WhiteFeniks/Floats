@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_f.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:16 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 23:33:49 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/22 01:27:48 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,6 +122,7 @@ void				ft_f(t_data *list, va_list arg)
 		ret = ft_plus_space_f(list, ret);
 		ret = ft_width_f(list, ret);
 		ft_write(list, ret);
+		free(ret);
 	}
 	else
 		ft_f_help(arg, list, f, ret);

@@ -1,3 +1,0 @@
-/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/umoff/git_floats/Floats/untitled folder/cmake-build-debug/CMakeFiles/untitled_folder.dir

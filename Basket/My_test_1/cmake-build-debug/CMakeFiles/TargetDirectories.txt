@@ -1,3 +1,0 @@
-/Users/umoff/Polina_union/My_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/umoff/Polina_union/My_test/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/umoff/Polina_union/My_test/cmake-build-debug/CMakeFiles/My_test.dir

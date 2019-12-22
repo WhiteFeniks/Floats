@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_x.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:02:07 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 22:03:44 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/22 01:13:08 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,6 @@ void					ft_x(t_data *list, va_list arg)
 	}
 	else
 	{
-		str = ft_conversion_x(x, 16, list);
 		str = ft_conversion_x(x, 16, list);
 		str = ft_accuracy_x(list, str);
 		ft_oktotorp_x(list, str);

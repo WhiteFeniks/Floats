@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hhhhhhelp.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/21 21:15:21 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 23:33:52 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/22 01:45:04 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void		ft_f_help(va_list arg, t_data *list, double f, char *ret)
 		ret = ft_oktotorp_f(list, ret);
 		ret = ft_plus_space_f(list, ret);
 		ret = ft_width_f(list, ret);
-		ft_write(list, ret);
+		ft_write_and_clean_s(list, ret);
 	}
 }
 

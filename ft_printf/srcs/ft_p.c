@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_p.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 13:01:05 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/09 15:57:26 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/22 01:38:32 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,16 +77,20 @@ void					ft_p(t_data *list, va_list arg)
 	unsigned long long	p;
 	char				*tmp;
 	char				*str;
+	char				*t;
 
 	tmp = NULL;
+	t = NULL;
 	p = va_arg(arg, unsigned long long);
 	tmp = ft_conversion_p(p, 16);
 	list->len = (ft_strlen(tmp));
-	str = (char*)malloc(sizeof(char) * list->len + 3);
+	str = (char*)malloc(sizeof(char) * 3);
 	str[0] = '0';
 	str[1] = 'x';
-	str = ft_strjoin(str, tmp);
+	str[2] = '\0';
+	t = ft_strjoin(str, tmp);
+	free(str);
 	ft_clean_s(tmp);
-	str = ft_accuracy_p(list, str);
-	ft_width_d(list, str);
+	t = ft_accuracy_p(list, t);
+	ft_width_d(list, t);
 }

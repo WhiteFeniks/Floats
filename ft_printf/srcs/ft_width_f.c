@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_width_f.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/13 16:42:36 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/21 22:00:35 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/22 01:42:24 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,10 @@ char		*ft_width_f(t_data *list, char *tmp)
 	list->len = ft_strlen(tmp);
 	ft_clean_counts(list);
 	if (list->width <= list->len)
+	{
 		res = ft_strdup(tmp);
+		free(tmp);
+	}
 	else if (list->width > list->len)
 	{
 		res = (char*)malloc(sizeof(char) * list->width + 1);
