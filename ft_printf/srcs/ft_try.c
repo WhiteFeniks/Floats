@@ -5,18 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 21:42:26 by bglover           #+#    #+#             */
-/*   Updated: 2019/12/22 05:23:23 by umoff            ###   ########.fr       */
+/*   Created: 2019/12/24 18:00:38 by umoff             #+#    #+#             */
+/*   Updated: 2019/12/24 18:00:41 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** Вспомогательные функции мантиссы
+** Вспомогательные функции деления для длинной арифметики
+** чтобы уместить в 25 строк
 */
 
-int	*ft_first_try(int **temp, int **div, int acc)
+int	*ft_division_add_1(int **temp, int **div, int acc)
 {
 	int *temp_1;
 
@@ -26,7 +27,7 @@ int	*ft_first_try(int **temp, int **div, int acc)
 	return (*temp);
 }
 
-int	*ft_second_try(int **temp, int **div, int acc)
+int	*ft_division_add_2(int **temp, int **div, int acc)
 {
 	int *temp_1;
 
@@ -36,7 +37,7 @@ int	*ft_second_try(int **temp, int **div, int acc)
 	return (*temp);
 }
 
-int	*ft_third_try(int **num, int **temp, int acc)
+int	*ft_division_add_3(int **num, int **temp, int acc)
 {
 	int *temp_1;
 
@@ -46,11 +47,7 @@ int	*ft_third_try(int **num, int **temp, int acc)
 	return (*num);
 }
 
-/*
-** Вспомогательная функция деления
-*/
-
-int	*ft_trying_four(int **num, int *rez)
+int	*ft_division_free(int **num, int *rez)
 {
 	free(*num);
 	return (rez);

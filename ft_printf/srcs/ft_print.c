@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 17:22:25 by bglover           #+#    #+#             */
-/*   Updated: 2019/11/06 18:16:56 by bglover          ###   ########.fr       */
+/*   Created: 2019/12/24 17:12:32 by umoff             #+#    #+#             */
+/*   Updated: 2019/12/24 17:26:00 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-**	 Вывод на печать чисел после точки
+** Вывод на печать чисел после точки
 */
 
 int		print_after_dot(int *rez, t_data *new, int j)
@@ -35,36 +35,40 @@ int		print_after_dot(int *rez, t_data *new, int j)
 }
 
 /*
-** Округление вывода
+** Округление целой и дробной части числа
 */
 
-void	round_rez(int *rez_celoe, int *rez, t_data *new)
+void	round_res(int *integer_part, int *fract_part, t_data *new)
 {
 	int i;
 
 	i = new->prec;
 	if (new->prec == 0)
-		if (rez[0] >= 5)
-			rez_celoe[1099]++;
-	if (rez[i] != 0 && rez[i] >= 5)
-		rez[i - 1] += 1;
-	if (rez[i - 1] == 10)
-		while (rez[--i] == 10)
+		if (fract_part[0] >= 5)
+			integer_part[1099]++;
+	if (fract_part[i] != 0 && fract_part[i] >= 5)
+		fract_part[i - 1] += 1;
+	if (fract_part[i - 1] == 10)
+		while (fract_part[--i] == 10)
 		{
-			rez[i - 1] += rez[i] / 10;
-			rez[i] = rez[i] % 10;
+			fract_part[i - 1] += fract_part[i] / 10;
+			fract_part[i] = fract_part[i] % 10;
 			if (i == 0)
 			{
 				i = 1099;
-				rez_celoe[i] += 1;
-				while (rez_celoe[i] == 10)
+				integer_part[i] += 1;
+				while (integer_part[i] == 10)
 				{
-					rez_celoe[i - 1] += rez_celoe[i] / 10;
-					rez_celoe[i] = rez_celoe[i] % 10;
+					integer_part[i - 1] += integer_part[i] / 10;
+					integer_part[i] = integer_part[i] % 10;
 				}
 			}
 		}
 }
+
+/*
+** Функция для печати различных флагов
+*/
 
 void	ft_putchar_flag(t_data *new, char c)
 {
@@ -92,8 +96,13 @@ void	ft_putchar_flag(t_data *new, char c)
 		new->it.save++;
 	}
 	if (c == '.')
-		ft_putchar_1(new);
+		ft_putchar_dot(new);
 }
+
+/*
+** Дополнительная функция для печати числа до точки
+** (см. ft_mutual_exclusion - функция которая взаимоисключает флаги)
+*/
 
 void	ft_print_before(t_data *new, int j)
 {
@@ -118,17 +127,18 @@ void	ft_print_before(t_data *new, int j)
 }
 
 /*
-**	 Вывод на печать чисел до точки
+** Функция округления и вывода на печать числа до точки
+** при этом учитывая флаги
 */
 
-int		print_before_dot(int *rez_celoe, t_data *new, int *rez)
+int		print_before_dot(int *integer_part, int *fract_part, t_data *new)
 {
 	int i;
 	int j;
 
-	round_rez(rez_celoe, rez, new);
+	round_res(integer_part, fract_part, new);
 	i = 0;
-	while (rez_celoe[i] == 0 && i + 1 != 1100)
+	while (integer_part[i] == 0 && i + 1 != 1100)
 		i++;
 	j = 1100 - i + new->sign;
 	if (new->fl.minus == 0)
@@ -141,10 +151,10 @@ int		print_before_dot(int *rez_celoe, t_data *new, int *rez)
 	else if (new->fl.minus != 0 && new->sign == 1)
 		ft_putchar_flag(new, '-');
 	while (i < 1100)
-		ft_putnbr_c(rez_celoe[i++], new);
+		ft_putnbr_c(integer_part[i++], new);
 	if (new->prec > 0 || (new->fl.sharp != 0 && new->prec == 0))
 		ft_putchar_flag(new, '.');
-	i = print_after_dot(rez, new, j);
-	print_before_dot_help(rez_celoe, new, rez, j);
+	i = print_after_dot(fract_part, new, j);
+	print_before_dot_addit(integer_part, fract_part, new, j);
 	return (i);
 }

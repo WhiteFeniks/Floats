@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/16 20:18:46 by bglover           #+#    #+#             */
-/*   Updated: 2019/12/22 05:27:00 by umoff            ###   ########.fr       */
+/*   Created: 2019/12/24 15:12:33 by umoff             #+#    #+#             */
+/*   Updated: 2019/12/24 18:02:06 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,16 @@ int	*ret(int *rez, int acc)
 	return (rez);
 }
 
+/*
+** Функция возведения в степень двойки (длинная арфиметика)
+*/
+
 int	*ft_exp_long_arithmetic(int squad, int acc)
 {
 	int i;
 	int *rez;
 
-	rez = ft_intstr(acc);
+	rez = ft_make_zero_str(acc);
 	if (squad == 0)
 		return (ret(rez, acc));
 	rez[acc - 1] = 2;

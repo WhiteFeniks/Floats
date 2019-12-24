@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/06 17:30:37 by doberyn           #+#    #+#             */
-/*   Updated: 2019/04/20 00:15:06 by doberyn          ###   ########.fr       */
+/*   Created: 2019/12/24 15:33:01 by umoff             #+#    #+#             */
+/*   Updated: 2019/12/24 15:33:04 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void				ft_putstr(char const *s);
 size_t				ft_strlen(const char *s);
 void				ft_putchar(char c);
 void				*ft_memchr(const void *s, int c, size_t n);
-int					*ft_intstr(int size);
+int					*ft_make_zero_str(int size);
 size_t				ft_intlen(long long data);
 
 #endif

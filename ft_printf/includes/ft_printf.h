@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/25 11:32:15 by doberyn           #+#    #+#             */
-/*   Updated: 2019/12/22 05:34:12 by umoff            ###   ########.fr       */
+/*   Created: 2019/12/24 18:05:13 by umoff             #+#    #+#             */
+/*   Updated: 2019/12/24 18:05:16 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,20 +94,21 @@ int						*ft_difference_long_arithmetic(int *a, int *b,
 						int acc);
 int						*ft_addition_long_arithmetic(int *a, int *b,
 						int acc);
-int						print_before_dot(int *rez, t_data *new, int *rez_celoe);
-int						print_after_dot(int *rez, t_data *new, int j);
-int						make_man(int man[], int por, t_data *new);
-int						*ft_first_try(int **temp, int **div, int acc);
-int						*ft_second_try(int **temp, int **div, int acc);
-int						*ft_third_try(int **num, int **temp, int acc);
-int						*ft_trying_four(int **num, int *rez);
+int						print_before_dot(int *integer_part,
+						int *fract_part, t_data *new);
+int						print_after_dot(int *fract_part, t_data *new, int j);
+int						ft_make_man(int man[], int order, t_data *new);
+int						*ft_division_add_1(int **temp, int **div, int acc);
+int						*ft_division_add_2(int **temp, int **div, int acc);
+int						*ft_division_add_3(int **num, int **temp, int acc);
+int						*ft_division_free(int **num, int *rez);
 int						ft_print_nan(t_data *new);
 int						ft_print_inf(t_data *new);
 int						ft_get_size_f(t_data *new, int j);
-void					print_before_dot_help(int *rez_celoe, t_data *new,
-						int *rez, int j);
+void					print_before_dot_addit(int *integer_part,
+						int *fract_part, t_data *new, int j);
 void					ft_print_after(t_data *new, int len);
-void					ft_putchar_1(t_data *new);
+void					ft_putchar_dot(t_data *new);
 
 /*
 **	dec.c - десятичные

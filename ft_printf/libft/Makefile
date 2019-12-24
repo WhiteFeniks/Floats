@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: doberyn <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: umoff <umoff@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/06 18:14:41 by doberyn           #+#    #+#              #
-#    Updated: 2019/04/10 18:13:02 by doberyn          ###   ########.fr        #
+#    Updated: 2019/12/24 15:32:49 by umoff            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC = gcc
 
 CFLAGS = -Wall -Werror -Wextra -I. -c
 
-CFILE = 	ft_memchr.c \
+CFILE = ft_memchr.c \
 		ft_strlen.c \
 		ft_isdigit.c \
 		ft_putchar.c \
@@ -26,7 +26,7 @@ CFILE = 	ft_memchr.c \
         ft_itoa_base_unsig.c \
         ft_memset.c \
         ft_memlcpy.c \
-        ft_intstr.c \
+        ft_make_zero_str.c \
         ft_intlen.c
 
 

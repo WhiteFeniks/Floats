@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/17 16:47:35 by bglover           #+#    #+#             */
-/*   Updated: 2019/12/22 05:13:11 by umoff            ###   ########.fr       */
+/*   Created: 2019/12/24 15:12:02 by umoff             #+#    #+#             */
+/*   Updated: 2019/12/24 18:02:42 by umoff            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	st(int *num, int acc)
 }
 
 /*
-** Длинное деление
+** Функция деления одного числа num на другое div (длинная арфиметика)
 */
 
 int	*ft_division_long_arithmetic(int *num, int *div, int acc, int numb_of_zero)
@@ -66,24 +66,24 @@ int	*ft_division_long_arithmetic(int *num, int *div, int acc, int numb_of_zero)
 	int *rez;
 	int *temp;
 
-	rez = ft_intstr(acc);
+	rez = ft_make_zero_str(acc);
 	numb_of_zero = acc - 2 - numb_of_zeroes(div);
 	num[numb_of_zeroes(div) - 1] = 1;
 	num[acc - 1] = 0;
 	while (++numb_of_zero < acc)
 	{
-		temp = ft_intstr(acc);
+		temp = ft_make_zero_str(acc);
 		while (comparasion(num, temp, acc) || --rez[numb_of_zero] == 10)
 		{
 			rez[numb_of_zero]++;
-			temp = ft_first_try(&temp, &div, acc);
+			temp = ft_division_add_1(&temp, &div, acc);
 		}
-		temp = ft_second_try(&temp, &div, acc);
-		num = ft_third_try(&num, &temp, acc);
+		temp = ft_division_add_2(&temp, &div, acc);
+		num = ft_division_add_3(&num, &temp, acc);
 		i = st(num, acc);
 		free(temp);
 		if (i == acc)
-			return (ft_trying_four(&num, rez));
+			return (ft_division_free(&num, rez));
 		num = mult_on_ten(num, i, acc);
 	}
 	return (rez);
