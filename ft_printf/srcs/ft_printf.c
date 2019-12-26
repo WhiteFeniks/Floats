@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 18:00:50 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/26 15:40:31 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/26 17:06:59 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void		ft_structure_cleaning(t_data *new)
 ** функцию отправить струкруту
 */
 
-void		ft_determination(t_data *new)
+void		ft_allocation(t_data *new)
 {
 	if (new->type == 'c')
 		ft_print_c(new);
@@ -88,7 +88,7 @@ int			ft_vprintf(const char *format, t_data *new)
 		{
 			ft_structure_cleaning(new);
 			new->it.g = ft_structuring(new);
-			ft_determination(new);
+			ft_allocation(new);
 		}
 		new->it.i = (new->it.g != 0) ? new->it.g : new->it.i + 1;
 	}
@@ -103,10 +103,10 @@ int			ft_vprintf(const char *format, t_data *new)
 int			ft_printf(const char *format, ...)
 {
 	t_data	new;
-	int		done;
+	int		ret;
 
 	va_start(new.bs.arg, format);
-	done = ft_vprintf(format, &new);
+	ret = ft_vprintf(format, &new);
 	va_end(new.bs.arg);
-	return (done);
+	return (ret);
 }

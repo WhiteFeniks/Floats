@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 18:05:13 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/26 15:48:31 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/26 16:38:53 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,10 @@ typedef struct			s_sig
 typedef struct			s_flags
 {
 	int					plus;
-	int					sharp:1;
-	int					zero:1;
+	int					sharp;
+	int					zero;
 	int					space;
-	int					minus:1;
+	int					minus;
 }						t_flags;
 
 typedef struct			s_iterators
@@ -74,9 +74,9 @@ typedef struct			s_data
 {
 	int					percent;
 	int					width;
-	int					dot:1;
+	int					dot;
 	int					prec;
-	int					w:1;
+	int					w;
 	int					length;
 	char				type;
 	int					sign;
