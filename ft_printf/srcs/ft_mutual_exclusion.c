@@ -3,19 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   mutual_exclusion.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 16:14:28 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/06 18:24:58 by bglover          ###   ########.fr       */
+/*   Created: 2019/12/26 15:25:27 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:26:16 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_mutual_exclusion_prec - взаимоисключение точности.
-** norme  ✓
-** fixed  ✓
+** взаимоисключение точности
 */
 
 void	ft_mutual_exclusion_prec(int len, t_data *new)
@@ -25,9 +23,7 @@ void	ft_mutual_exclusion_prec(int len, t_data *new)
 }
 
 /*
-** ft_mutual_exclusion_prec - взаимоисключение ширины.
-** norme  ✓
-** fixed  ✓
+** взаимоисключение ширины
 */
 
 void	ft_mutual_exclusion_width(int len, t_data *new)
@@ -52,10 +48,7 @@ void	ft_mutual_exclusion_help(t_data *new, long long data, char c)
 }
 
 /*
-** ft_mutual_exclusion - функция которая взаимоисключает флаги.
-** флаги.
-** norme	✓
-** fixed	✓
+** ф-ия которая взаимоисключает флаги
 */
 
 void	ft_mutual_exclusion(t_data *new, long long data, char c)

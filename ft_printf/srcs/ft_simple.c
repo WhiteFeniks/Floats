@@ -3,19 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   simple.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 18:48:26 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/06 17:49:29 by bglover          ###   ########.fr       */
+/*   Created: 2019/12/26 15:21:16 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:21:20 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_print_c - функция которая обрабатывает тип с(символ)
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает тип %с
 */
 
 void			ft_print_c(t_data *new)
@@ -34,9 +32,7 @@ void			ft_print_c(t_data *new)
 }
 
 /*
-** ft_print_s - функция которая обрабатывает тип s(строка)
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает тип %s
 */
 
 void			ft_print_s(t_data *new)
@@ -66,9 +62,7 @@ void			ft_print_s(t_data *new)
 }
 
 /*
-** ft_print_p - функция которая обрабатывает тип p(указатель).
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает тип %p
 */
 
 void			ft_print_p(t_data *new)
@@ -97,9 +91,7 @@ void			ft_print_p(t_data *new)
 }
 
 /*
-** ft_print_percent - функция которая обрабатывает два %.
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает %%
 */
 
 void			ft_print_percent(t_data *new)

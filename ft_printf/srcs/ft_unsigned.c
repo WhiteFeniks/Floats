@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   unsigned.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 18:37:34 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/03 18:44:13 by doberyn          ###   ########.fr       */
+/*   Created: 2019/12/26 15:21:31 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:21:34 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_type_conversion_unsigned - функция которая определяет
-** тип и записывает значение. Работает с беззнаковыми значениями(unsigned).
-** norme	✓
-** fixed	✓
+** ф-ия которая определяет тип и записывает значение(unsigned)
 */
 
 void		ft_type_conversion_unsigned(t_uns *uns, t_data *new)
@@ -34,9 +31,7 @@ void		ft_type_conversion_unsigned(t_uns *uns, t_data *new)
 }
 
 /*
-** ft_print_o - функция которая обрабатывает восьмеричный беззнакоывй тип %o
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает восьмеричный беззнакоывй тип %o
 */
 
 void		ft_print_o(t_data *new)
@@ -68,10 +63,7 @@ void		ft_print_o(t_data *new)
 }
 
 /*
-** ft_print_u - функция для обработки и печати целого
-** без знака в десятичном виде типа %u.
-** norme	✓
-** fixed	✓
+** ф-ия для обработки и печати целого без знака в десятичном виде типа %u.
 */
 
 void		ft_print_u(t_data *new)

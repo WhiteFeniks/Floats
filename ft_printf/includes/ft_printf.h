@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 18:05:13 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/24 18:05:16 by umoff            ###   ########.fr       */
+/*   Updated: 2019/12/26 15:48:31 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,18 +111,14 @@ void					ft_print_after(t_data *new, int len);
 void					ft_putchar_dot(t_data *new);
 
 /*
-**	dec.c - десятичные
-** 	fixed	✓
-**	norme	✓
+**	ft_dec.c
 */
 
 void					ft_type_conversion_signed(t_sig *sig, t_data *new);
 void					ft_print_dec(t_data *new);
 
 /*
-**	simple.c - простые типы
-** 	fixed	✓
-**	norme	✓
+**	ft_simple.c
 */
 
 void					ft_print_c(t_data *new);
@@ -131,9 +127,7 @@ void					ft_print_p(t_data *new);
 void					ft_print_percent(t_data *new);
 
 /*
-**	auxiliary.c - вспомогательные
-** 	fixed	✓
-**	norme	✓
+**	ft_auxiliary.c
 */
 
 void					ft_leveling(int count, char c, t_data *new);
@@ -141,9 +135,7 @@ void					ft_precision(char sign, int len, t_data *new);
 char					ft_width(char sign, int len, t_data *new);
 
 /*
-**	unsigned.c - беззнаковые
-** 	fixed	✓
-**	norme	✓
+**	ft_unsigned.c
 */
 
 void					ft_type_conversion_unsigned(t_uns *uns, t_data *new);
@@ -151,19 +143,7 @@ void					ft_print_o(t_data *new);
 void					ft_print_u(t_data *new);
 
 /*
-**	unsigned.c - безнаковые
-** 	fixed	✓
-**	norme	✓
-*/
-
-void					ft_type_conversion_unsigned(t_uns *uns, t_data *new);
-void					ft_print_o(t_data *new);
-void					ft_print_u(t_data *new);
-
-/*
-**	output.c - вывод
-** 	fixed	✓
-**	norme	✓
+**	ft_output.c
 */
 
 void					ft_putstr_precision(char *str, int len, t_data *new);
@@ -172,9 +152,7 @@ void					ft_putchar_c(char c, t_data *new);
 void					ft_putstr_c(char *s, t_data *new);
 
 /*
-**	mutual_exclusion.c - взаимоисключения
-** 	fixed	✓
-**	norme	✓
+**	ft_mutual_exclusion.c
 */
 
 void					ft_mutual_exclusion_prec(int len, t_data *new);
@@ -183,9 +161,7 @@ void					ft_mutual_exclusion(t_data *new, long long data,
 						char c);
 
 /*
-**	x_add.c
-** 	fixed	✓
-**	norme
+**	ft_x_add.c
 */
 
 int						ft_get_size(t_uns *uns, t_data *new);
@@ -195,9 +171,7 @@ char					*ft_width_x(int len, char *str, t_data *new);
 char					*ft_add_x(int len, char *str, char *dst, t_data *new);
 
 /*
-**	x.c
-** 	fixed	✓
-**	norme	✓
+**	ft_x.c
 */
 
 char					*ft_toupper(char *str);
@@ -205,9 +179,7 @@ void					ft_formating_x(t_uns *uns, t_data *new);
 void					ft_print_x(t_data *new);
 
 /*
-**	parcer.c
-** 	fixed	✓
-**	norme	✓
+**	ft_parcer.c
 */
 
 int						ft_structuring(t_data *new);
@@ -218,8 +190,6 @@ void					ft_l_or_h(int l, int h, int big_l, t_data *new);
 
 /*
 **	ft_printf.c
-** 	fixed	✓
-**	norme	✓
 */
 
 void					ft_structure_cleaning(t_data *new);

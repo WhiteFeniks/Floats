@@ -3,19 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   x_add.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 16:05:10 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/06 17:49:02 by bglover          ###   ########.fr       */
+/*   Created: 2019/12/26 15:16:42 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:18:04 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_width_x - функция которая определяет длину строки.
-** norme	✓
-** fixed	✓
+** ф-ия которая определяет длину строки
 */
 
 int			ft_get_size(t_uns *uns, t_data *new)
@@ -44,9 +42,7 @@ int			ft_get_size(t_uns *uns, t_data *new)
 }
 
 /*
-** ft_width_x - функция которая определяет в какое место вставить точность.
-** norme	✓
-** fixed	✓
+** ф-ия которая определяет в какое место вставить точность
 */
 
 char		*ft_precision_x(int len, char *str, t_data *new)
@@ -79,9 +75,7 @@ char		*ft_precision_x(int len, char *str, t_data *new)
 }
 
 /*
-** ft_width_x - функция которая определяет в какое место вставить число.
-** norme	✓
-** fixed	✓
+** ф-ия которая определяет в какое место вставить число
 */
 
 char		*ft_add_x(int len, char *str, char *dst, t_data *new)
@@ -104,9 +98,7 @@ char		*ft_add_x(int len, char *str, char *dst, t_data *new)
 }
 
 /*
-** ft_width_x - функция которая определяет в какое место вставить ширину.
-** norme	✓
-** fixed	✓
+** ф-ия которая определяет в какое место вставить ширину
 */
 
 char		*ft_width_x(int len, char *str, t_data *new)
@@ -136,9 +128,7 @@ char		*ft_width_x(int len, char *str, t_data *new)
 }
 
 /*
-** ft_sharp_x - функция которая определяет в какое место вставить (0x);
-** norme
-** fixed
+** ф-ия которая определяет в какое место вставить 0x
 */
 
 char		*ft_sharp_x(int len, char *str, t_data *new)

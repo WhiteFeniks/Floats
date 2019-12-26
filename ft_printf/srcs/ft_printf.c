@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: umoff <umoff@student.42.fr>                +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 18:00:50 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/24 18:00:52 by umoff            ###   ########.fr       */
+/*   Updated: 2019/12/26 15:40:31 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_structure_cleaning - зачистка структуры для
-** повторного применения.
-** norme  ✓
-** fixed  ✓
+** зачистка структуры для
+** повторного применения
 */
 
 void		ft_structure_cleaning(t_data *new)
@@ -37,10 +35,8 @@ void		ft_structure_cleaning(t_data *new)
 }
 
 /*
-** ft_determination - функция которая определяет в какую
-** функцию отправить струкруту.
-** norme	✓
-** fixed	✓
+** ф-ия которая определяет в какую
+** функцию отправить струкруту
 */
 
 void		ft_determination(t_data *new)
@@ -66,9 +62,7 @@ void		ft_determination(t_data *new)
 }
 
 /*
-** ft_start - функция которая инициализирует переменные.
-** norme	✓
-** fixed	✓
+** ф-ия которая инициализирует переменные
 */
 
 void		ft_start(const char *format, t_data *new)
@@ -79,9 +73,7 @@ void		ft_start(const char *format, t_data *new)
 }
 
 /*
-** ft_vprintf - функция которая запускает весь процесс
-** norme	✓
-** fixed	✓
+** ф-ия которая запускает весь процесс
 */
 
 int			ft_vprintf(const char *format, t_data *new)
@@ -104,10 +96,8 @@ int			ft_vprintf(const char *format, t_data *new)
 }
 
 /*
-** ft_printf - главная функция которая передеает
-** начальные значения и активирует библеотеку stdarg.
-** norme	✓
-** fixed	✓
+** главная ф-ия которая передает
+** начальные значения и активирует stdarg
 */
 
 int			ft_printf(const char *format, ...)

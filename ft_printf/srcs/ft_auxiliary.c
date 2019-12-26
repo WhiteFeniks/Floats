@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   auxiliary.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bglover <bglover@student.42.fr>            +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 18:45:13 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/06 18:11:14 by bglover          ###   ########.fr       */
+/*   Created: 2019/12/26 15:27:29 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:28:33 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_leveling - функция которая печатает определенный символ (c),
-** определенное колличество раз (count)
-** norme  ✓
-** fixed  ✓
+** ф-ия которая печатает определенный символ определенное кол-во раз
 */
 
 void		ft_leveling(int count, char c, t_data *new)
@@ -29,9 +26,7 @@ void		ft_leveling(int count, char c, t_data *new)
 }
 
 /*
-** ft_precision - функция которая обрабатывает точность.
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает точность
 */
 
 void		ft_precision(char sign, int len, t_data *new)
@@ -67,9 +62,7 @@ char		ft_width_help(char sign, t_data *new)
 }
 
 /*
-** ft_width - функция которая обрабатывает ширину.
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает ширину
 */
 
 char		ft_width(char sign, int len, t_data *new)

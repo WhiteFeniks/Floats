@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 15:40:16 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/03 15:40:19 by doberyn          ###   ########.fr       */
+/*   Created: 2019/12/26 15:22:00 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:23:53 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_l_or_h - вспомогательная функцифя к ft_get_length,
+** вспомогательная ф-ия к ft_get_length,
 ** в этой функции производится исключение и запись в структуру
-** norme  ✓
-** fixed  ✓
 */
 
 void	ft_l_or_h(int l, int h, int big_l, t_data *new)
@@ -44,9 +42,7 @@ void	ft_l_or_h(int l, int h, int big_l, t_data *new)
 }
 
 /*
-** ft_get_length - функция которая определяет длину(length)
-** norme  ✓
-** fixed  ✓
+** ф-ия которая определяет длину
 */
 
 void	ft_get_length(t_data *new)
@@ -74,10 +70,8 @@ void	ft_get_length(t_data *new)
 }
 
 /*
-** ft_get_number - функция которая определяет и записывает
+** ф-ия которая определяет и записывает
 ** в структуру(ширина и точнось) числа.
-** norme  ✓
-** fixed  ✓
 */
 
 int		ft_get_number(t_data *new)
@@ -105,9 +99,7 @@ int		ft_get_number(t_data *new)
 }
 
 /*
-** ft_flags - функция которая определяет флаги(flags)
-** norme  ✓
-** fixed  ✓
+** ф-ия которая определяет флаги
 */
 
 void	ft_flags(t_data *new)
@@ -125,10 +117,8 @@ void	ft_flags(t_data *new)
 }
 
 /*
-** ft_structuring - функция парсинга строки(str)
-** и формирование данных в струкруту(new)
-** norme  ✓
-** fixed  ✓
+** ф-ия парсинга строки
+** и запоминание данных в лист
 */
 
 int		ft_structuring(t_data *new)

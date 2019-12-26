@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   dec.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 18:52:09 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/03 18:52:11 by doberyn          ###   ########.fr       */
+/*   Created: 2019/12/26 15:26:34 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:27:21 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_type_conversion_signed - функция которая определяет
-** тип и записывает значение. Работает со знаковыми значениями(signed).
-** norme	✓
-** fixed	✓
+** ф-ия которая определяет тип и записывает значение(signed)
 */
 
 void		ft_type_conversion_signed(t_sig *sig, t_data *new)
@@ -34,9 +31,7 @@ void		ft_type_conversion_signed(t_sig *sig, t_data *new)
 }
 
 /*
-** ft_print_dec - функция которая обрабатывает десятичные типы %d и %i
-** norme	✓
-** fixed	✓
+** ф-ия которая обрабатывает %d и %i
 */
 
 void		ft_print_dec(t_data *new)

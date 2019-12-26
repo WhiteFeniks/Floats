@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   output.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doberyn <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/03 16:37:08 by doberyn           #+#    #+#             */
-/*   Updated: 2019/11/03 16:37:11 by doberyn          ###   ########.fr       */
+/*   Created: 2019/12/26 15:24:02 by vaisha            #+#    #+#             */
+/*   Updated: 2019/12/26 15:25:14 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
 /*
-** ft_putstr_precision - модифицированная версия putstr
-** которая учитывает точнось вывода.
-** norme  ✓
-** fixed  ✓
+** версия putstr которая учитывает точнось вывода
 */
 
 void		ft_putstr_precision(char *str, int len, t_data *new)
@@ -29,11 +26,8 @@ void		ft_putstr_precision(char *str, int len, t_data *new)
 }
 
 /*
-** ft_putchar_space - модифицированная версия putchar
-** которая подсчитывает колличество напечатанных символов
+** версия putchar которая подсчитывает колличество напечатанных символов
 ** и обнуляет пробел.
-** norme
-** fix 	  ✓
 */
 
 void		ft_putchar_space(char c, t_data *new)
@@ -44,10 +38,7 @@ void		ft_putchar_space(char c, t_data *new)
 }
 
 /*
-** ft_putchar_c - модифицированная версия putchar
-** которая подсчитывает колличество напечатанных символов.
-** norme
-** fix 	  ✓
+** версия putchar которая подсчитывает колличество напечатанных символов
 */
 
 void		ft_putchar_c(char c, t_data *new)
@@ -57,10 +48,7 @@ void		ft_putchar_c(char c, t_data *new)
 }
 
 /*
-** ft_putstr_c - модифицированная версия putstr
-** которая работает с ft_putchar_c.
-** norme  ✓
-** fixed  ✓
+** версия putstr которая работает с ft_putchar_c
 */
 
 void		ft_putstr_c(char *s, t_data *new)
