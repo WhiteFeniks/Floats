@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 18:00:50 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/26 17:06:59 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/26 18:14:15 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ int			ft_vprintf(const char *format, t_data *new)
 		else
 		{
 			ft_structure_cleaning(new);
-			new->it.g = ft_structuring(new);
+			new->it.g = ft_parcing(new);
 			ft_allocation(new);
 		}
 		new->it.i = (new->it.g != 0) ? new->it.g : new->it.i + 1;

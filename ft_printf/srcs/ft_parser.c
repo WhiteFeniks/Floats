@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/26 16:47:10 by vaisha            #+#    #+#             */
-/*   Updated: 2019/12/26 16:52:51 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/26 18:13:56 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,7 +121,7 @@ void	ft_flags(t_data *new)
 ** и запоминание данных в лист
 */
 
-int		ft_structuring(t_data *new)
+int		ft_parcing(t_data *new)
 {
 	while (new->bs.str[new->it.i] != '\0' &&
 			new->type == '0' && new->percent < 2)

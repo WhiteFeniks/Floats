@@ -6,7 +6,7 @@
 /*   By: vaisha <vaisha@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 18:05:13 by umoff             #+#    #+#             */
-/*   Updated: 2019/12/26 16:38:53 by vaisha           ###   ########.fr       */
+/*   Updated: 2019/12/26 18:13:32 by vaisha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -182,7 +182,7 @@ void					ft_print_x(t_data *new);
 **	ft_parcer.c
 */
 
-int						ft_structuring(t_data *new);
+int						ft_parcing(t_data *new);
 void					ft_flags(t_data *new);
 int						ft_get_number(t_data *new);
 void					ft_get_length(t_data *new);
